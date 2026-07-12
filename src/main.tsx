@@ -1,27 +1,31 @@
-import { StrictMode } from 'react';
-import ReactDOM from 'react-dom/client';
 import {
-  Outlet,
-  RouterProvider,
   createRootRoute,
   createRoute,
   createRouter,
+  Outlet,
+  RouterProvider,
 } from '@tanstack/react-router';
-
-import * as TanStackQueryProvider from './integration/tanstack-query';
-import HeaderEl from './components/Header';
-import FooterEl from './components/Footer';
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
 import App from './App';
+import FooterEl from './components/Footer';
+import HeaderEl from './components/Header';
+import * as TanStackQueryProvider from './integration/tanstack-query';
+import createAboutRoute from './routes/aboutPage';
+import createCountriesRoute from './routes/Countries';
+import createProjectPageRoute from './routes/Countries/countryPage';
+import createDataExplorer from './routes/dataExplorer';
 import createTanStackQueryDemoRoute from './routes/queryDemo';
+import createResourceRoute from './routes/resourcesPage';
 
 import './styles/fonts.css';
 import './styles/style.css';
 
 const rootRoute = createRootRoute({
   component: () => (
-    <div className='flex flex-col gap-0 min-h-screen'>
+    <div className='flex min-h-screen flex-col gap-0'>
       <HeaderEl />
-      <main className='grow-1 flex flex-col justify-center'>
+      <main className='flex grow-1 flex-col justify-center'>
         <div className='flex flex-col justify-center'>
           <Outlet />
         </div>
@@ -40,6 +44,11 @@ const indexRoute = createRoute({
 const routeTree = rootRoute.addChildren([
   indexRoute,
   createTanStackQueryDemoRoute(rootRoute),
+  createAboutRoute(rootRoute),
+  createDataExplorer(rootRoute),
+  createResourceRoute(rootRoute),
+  createCountriesRoute(rootRoute),
+  createProjectPageRoute(rootRoute),
 ]);
 
 const TanStackQueryProviderContext = TanStackQueryProvider.getContext();
