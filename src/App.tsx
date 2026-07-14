@@ -1,3 +1,10 @@
+import { Link } from '@tanstack/react-router';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@undp/design-system-react/Accordion';
 import {
   Banner,
   BannerBody,
@@ -5,12 +12,7 @@ import {
   BannerBodySidebar,
 } from '@undp/design-system-react/Banner';
 import { Button } from '@undp/design-system-react/Button';
-import {
-  FeaturedCard,
-  FeaturedCardDescription,
-  FeaturedCardFooter,
-  FeaturedCardTitle,
-} from '@undp/design-system-react/FeaturedCard';
+import { Card, CardFooter, CardHeader, CardImage, CardTitle } from '@undp/design-system-react/Card';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
 import { PageHeader, PageHeaderContent } from '@undp/design-system-react/PageHeader';
 import { Spacer } from '@undp/design-system-react/Spacer';
@@ -20,7 +22,9 @@ import {
   StatCardTitle,
   StatCardValue,
 } from '@undp/design-system-react/StatCard';
-import { Blockquote, H1, H2, H4, H5, P } from '@undp/design-system-react/Typography';
+import { H1, H2, H3, H4, H5, P } from '@undp/design-system-react/Typography';
+import { BriefcaseBusiness, EqualNot, HandCoins, NotebookText } from 'lucide-react';
+import { COUNTRIES } from './Constants';
 
 function App() {
   return (
@@ -63,7 +67,7 @@ function App() {
         id='stats'
         className='mx-auto flex w-full max-w-[1920px] flex-col gap-10 px-4 sm:px-6 lg:px-8'
       >
-        <H2>Key umbers</H2>
+        <H2>Key numbers</H2>
         <Grid gap='24px' noOfCol={{ base: 1, md: 3 }}>
           <GridItem noOfColSpan={1}>
             <StatCard hoverColor='yellow'>
@@ -100,100 +104,153 @@ function App() {
         </Grid>
       </section>
       <Spacer size='8xl' />
-      <section
-        id='quote'
-        className='flex w-3/4 flex-col gap-10 bg-accent-yellow px-4 py-20 sm:px-6 lg:px-20'
-      >
-        <H4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam nec nibh
-          auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla, sit amet dictum lectus.
-          Praesent tempor augue eget velit posuere semper. Sed lobortis sapien nec porta aliquet.
-        </H4>
-        <Blockquote>— Name Surname</Blockquote>
+      <section id='key-findings' className='bg-primary-gray-200 py-20'>
+        <div className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
+          <div className='mx-auto w-full max-w-[1920px] bg-primary-white p-6'>
+            <H2>Key findings</H2>
+            <Accordion type='single' variant='tertiary' collapsible defaultValue='item-1'>
+              <AccordionItem value='item-1'>
+                <AccordionTrigger className='cursor-pointer'>
+                  <div className='flex items-center gap-2 text-[1.25rem] normal-case'>
+                    <BriefcaseBusiness size={20} />
+                    Work rarely means security
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <Grid noOfCol={{ base: 1, md: 2 }}>
+                    <GridItem noOfColSpan={1}>
+                      <div className='flex flex-col'>
+                        <H5>
+                          Roma households are economically active, but the available work is
+                          overwhelmingly informal, undocumented, and unprotected.
+                        </H5>
+                        <H4 weight='bold' marginBottom='none'>
+                          32
+                        </H4>
+                        <P size='base'>
+                          Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
+                        </P>
+                      </div>
+                    </GridItem>
+                    <GridItem noOfColSpan={1}>
+                      <div className='h-full bg-primary-gray-200' />
+                    </GridItem>
+                  </Grid>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value='item-2'>
+                <AccordionTrigger className='cursor-pointer'>
+                  <div className='flex items-center gap-2 text-[1.25rem] normal-case'>
+                    <NotebookText size={20} />
+                    Schooling ends early, and rarely restarts
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <Grid noOfCol={{ base: 1, md: 2 }}>
+                    <GridItem noOfColSpan={1}>
+                      <div className='flex flex-col'>
+                        <H5>
+                          Roma households are economically active, but the available work is
+                          overwhelmingly informal, undocumented, and unprotected.
+                        </H5>
+                        <H4 weight='bold' marginBottom='none'>
+                          32
+                        </H4>
+                        <P size='base'>
+                          Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
+                        </P>
+                      </div>
+                    </GridItem>
+                    <GridItem noOfColSpan={1}>
+                      <div className='h-full bg-primary-gray-200' />
+                    </GridItem>
+                  </Grid>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value='item-3'>
+                <AccordionTrigger className='cursor-pointer'>
+                  <div className='flex items-center gap-2 text-[1.25rem] normal-case'>
+                    <EqualNot size={20} />
+                    Discrimination touches nearly every account
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <Grid noOfCol={{ base: 1, md: 2 }}>
+                    <GridItem noOfColSpan={1}>
+                      <div className='flex flex-col'>
+                        <H5>
+                          Roma households are economically active, but the available work is
+                          overwhelmingly informal, undocumented, and unprotected.
+                        </H5>
+                        <H4 weight='bold' marginBottom='none'>
+                          32
+                        </H4>
+                        <P size='base'>
+                          Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
+                        </P>
+                      </div>
+                    </GridItem>
+                    <GridItem noOfColSpan={1}>
+                      <div className='h-full bg-primary-gray-200' />
+                    </GridItem>
+                  </Grid>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value='item-4'>
+                <AccordionTrigger className='cursor-pointer'>
+                  <div className='flex items-center gap-2 text-[1.25rem] normal-case'>
+                    <HandCoins size={20} />
+                    Housing and health costs compound each other
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <Grid noOfCol={{ base: 1, md: 2 }}>
+                    <GridItem noOfColSpan={1}>
+                      <div className='flex flex-col'>
+                        <H5>
+                          Roma households are economically active, but the available work is
+                          overwhelmingly informal, undocumented, and unprotected.
+                        </H5>
+                        <H4 weight='bold' marginBottom='none'>
+                          32
+                        </H4>
+                        <P size='base'>
+                          Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
+                        </P>
+                      </div>
+                    </GridItem>
+                    <GridItem noOfColSpan={1}>
+                      <div className='h-full bg-primary-gray-200' />
+                    </GridItem>
+                  </Grid>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
       </section>
       <Spacer size='8xl' />
-      <section id='featured-stories' className='mx-auto max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-        <Grid noOfCol={{ base: 1, md: 3 }}>
-          <GridItem>
-            {' '}
-            <H2 className='font-bold md:text-5xl'>
-              Featured
-              <br />
-              stories
-            </H2>
-          </GridItem>
-          <GridItem>
-            <a target='_blank' href='https://www.undp.org/' rel='noopener'>
-              <FeaturedCard backgroundColor='gray' size='full' className='min-h-[400px]'>
-                <FeaturedCardTitle>Story title</FeaturedCardTitle>
-                <FeaturedCardDescription>
-                  <P>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam
-                    nec nibh auctor
-                  </P>
-                </FeaturedCardDescription>
-                <FeaturedCardFooter>
-                  <Button padding='none' variant='link'>
-                    Read more
-                  </Button>
-                </FeaturedCardFooter>
-              </FeaturedCard>
-            </a>
-          </GridItem>
-          <GridItem>
-            <a target='_blank' href='https://www.undp.org/' rel='noopener'>
-              <FeaturedCard backgroundColor='gray' size='full' className='min-h-[400px]'>
-                <FeaturedCardTitle>Story title</FeaturedCardTitle>
-                <FeaturedCardDescription>
-                  <P>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam
-                    nec nibh auctor
-                  </P>
-                </FeaturedCardDescription>
-                <FeaturedCardFooter>
-                  <Button padding='none' variant='link'>
-                    Read more
-                  </Button>
-                </FeaturedCardFooter>
-              </FeaturedCard>
-            </a>
-          </GridItem>
-          <GridItem noOfColSpan={{ base: 1, md: 2 }}>
-            <a target='_blank' href='https://www.undp.org/' rel='noopener'>
-              <FeaturedCard backgroundColor='gray' size='full' className='min-h-[400px]'>
-                <FeaturedCardTitle>Story title</FeaturedCardTitle>
-                <FeaturedCardDescription>
-                  <P>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam
-                    nec nibh auctor
-                  </P>
-                </FeaturedCardDescription>
-                <FeaturedCardFooter>
-                  <Button padding='none' variant='link'>
-                    Read more
-                  </Button>
-                </FeaturedCardFooter>
-              </FeaturedCard>
-            </a>
-          </GridItem>
-          <GridItem>
-            <a target='_blank' href='https://www.undp.org/' rel='noopener'>
-              <FeaturedCard backgroundColor='gray' size='full' className='min-h-[400px]'>
-                <FeaturedCardTitle>Story title</FeaturedCardTitle>
-                <FeaturedCardDescription>
-                  <P>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam
-                    nec nibh auctor
-                  </P>
-                </FeaturedCardDescription>
-                <FeaturedCardFooter>
-                  <Button padding='none' variant='link'>
-                    Read more
-                  </Button>
-                </FeaturedCardFooter>
-              </FeaturedCard>
-            </a>
-          </GridItem>
+      <section id='country-cards' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
+        <H3>Explore countries</H3>
+        <Spacer size='2xl' />
+        <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} gap='32px'>
+          {COUNTRIES.map((country) => (
+            <GridItem key={country.id}>
+              <Link to='/countries/$countryId' params={{ countryId: country.id }}>
+                <Card backgroundColor='white' size='full' variant='with-image'>
+                  <CardHeader>
+                    <CardImage src='/imgs/placeholder.webp' />
+                    <CardTitle>{country.name}</CardTitle>
+                  </CardHeader>
+                  <CardFooter>
+                    <Button padding='none' variant='link'>
+                      Read more
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </Link>
+            </GridItem>
+          ))}
         </Grid>
       </section>
       <Spacer size='8xl' />

@@ -54,7 +54,7 @@ export function Resource() {
                 <ResourceCardDescription>{card.text}</ResourceCardDescription>
               </ResourceCardContent>
               <ResourceCardFooter>
-                <Button variant='link'>Read more</Button>
+                <Button variant='link'>Download</Button>
               </ResourceCardFooter>
             </ResourceCard>
           </GridItem>

@@ -1,375 +1,226 @@
 import type { AnyRoute } from '@tanstack/react-router';
-import { createRoute } from '@tanstack/react-router';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@undp/design-system-react/Accordion';
-import {
-  Banner,
-  BannerBody,
-  BannerBodyContent,
-  BannerBodySidebar,
-} from '@undp/design-system-react/Banner';
+import { createRoute, Link, useParams } from '@tanstack/react-router';
+import { Button } from '@undp/design-system-react/Button';
+import { Card, CardFooter, CardHeader, CardImage, CardTitle } from '@undp/design-system-react/Card';
+import { cn } from '@undp/design-system-react/cn';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
-import { PageHeader, PageHeaderContent } from '@undp/design-system-react/PageHeader';
+import { Separator } from '@undp/design-system-react/Separator';
 import { Spacer } from '@undp/design-system-react/Spacer';
-import {
-  StatCard,
-  StatCardDescription,
-  StatCardTitle,
-  StatCardValue,
-} from '@undp/design-system-react/StatCard';
-import { H1, H2, H3, H4, H5, P } from '@undp/design-system-react/Typography';
-import { VizCarousel } from '@undp/design-system-react/VizCarousel';
+import { H2, H3, H4, H5, P } from '@undp/design-system-react/Typography';
+import { DownloadIcon } from 'lucide-react';
+import { useState } from 'react';
+import { COUNTRIES } from '@/Constants';
+import { KeyFindings } from './Components/keyFindings';
 
 export function CountryPage() {
+  const params = useParams({ strict: false });
+  const country: string = params.countryId;
+  const categories = [
+    'Social Vulnerability',
+    'Labor & Livelihood',
+    'Education & Youth',
+    'Discrimination',
+    'Health & Care',
+    'Housing & Living',
+  ];
+  const [selectedCategory, setSelectedCategory] = useState('Social Vulnerability');
   return (
     <div className='w-full antialiased'>
-      <PageHeader
-        className='h-auto px-0 sm:px-2 md:h-[calc(100vh_-_115px)]'
-        backgroundImage='/imgs/header_img.webp'
-        contentMode='light'
-        variant='secondary'
-      >
-        <PageHeaderContent>
-          <H5>Country Page</H5>
-          <H1 size='sm'>Moldova</H1>
-        </PageHeaderContent>
-      </PageHeader>
-      <section id='about'>
-        <Banner
-          backgroundColor='black'
-          bodyGap='base'
-          bodyMaxWidth='full'
-          padding='none'
-          sidebarWidth='base'
-          className='px-4 py-16 sm:px-12 sm:py-24 lg:px-32 lg:py-60'
-        >
-          <BannerBody>
-            <BannerBodySidebar>
-              <H2>About</H2>
-            </BannerBodySidebar>
-            <BannerBodyContent>
-              <H4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam nec
-                nibh auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla, sit amet dictum
-                lectus. Praesent tempor augue eget velit posuere semper. Sed lobortis sapien nec
-                porta aliquet. Fusce sit amet est sed ipsum sagittis mattis a vel augue. Donec ut
-                augue vitae elit pellentesque vulputate id at orci. Aliquam erat volutpat. Donec
-                risus odio, placerat a auctor eu, fringilla non mauris. In hac habitasse platea
-                dictumst
-              </H4>
-            </BannerBodyContent>
-          </BannerBody>
-        </Banner>
-      </section>
-      <Spacer size='8xl' />
-      <section id='stats' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-        <H5>Overview</H5>
-        <H3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam nec nibh
-          auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla, sit amet dictum lectus.
-        </H3>
-        <Grid gap='24px' noOfCol={{ base: 1, md: 3 }}>
-          <GridItem noOfColSpan={1}>
-            <StatCard hoverColor='yellow'>
-              <StatCardValue>34</StatCardValue>
-              <StatCardTitle>people interviewed</StatCardTitle>
-              <StatCardDescription>Lorem ipsum dolor sit amet</StatCardDescription>
-            </StatCard>
-          </GridItem>
-          <GridItem noOfColSpan={1}>
-            <StatCard hoverColor='yellow'>
-              <StatCardValue>34</StatCardValue>
-              <StatCardTitle>people interviewed</StatCardTitle>
-              <StatCardDescription>Lorem ipsum dolor sit amet</StatCardDescription>
-            </StatCard>
-          </GridItem>
-          <GridItem noOfColSpan={1}>
-            <StatCard hoverColor='yellow'>
-              <StatCardValue>34</StatCardValue>
-              <StatCardTitle>people interviewed</StatCardTitle>
-              <StatCardDescription>Lorem ipsum dolor sit amet</StatCardDescription>
-            </StatCard>
-          </GridItem>
-        </Grid>
-      </section>
-      <Spacer size='8xl' />
-      <section id='country-snapshots' className='mx-auto w-full bg-primary-gray-200 py-12'>
+      <section id='header' className='mx-auto w-full bg-primary-gray-200 py-20'>
         <div className='mx-auto max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-          <H5>Country snapshots</H5>
-          <H3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam nec nibh
-            auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla, sit amet dictum lectus.
-          </H3>
-          <div className='w-full bg-primary-white p-6'>
-            <VizCarousel
-              slideNo
-              slides={[
-                {
-                  content: (
-                    <div className='flex flex-col'>
-                      <H3>Snapshot 1</H3>
-                      <P>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan
-                        quam nec nibh auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla,
-                        sit amet dictum lectus.
-                      </P>
-                      <Grid noOfCol={3}>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              100%
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              32
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              600
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                      </Grid>
-                    </div>
-                  ),
-                  viz: <div className='h-full min-h-[320px] w-full bg-primary-gray-300' />,
-                },
-                {
-                  content: (
-                    <div className='flex flex-col'>
-                      <H3>Snapshot 2</H3>
-                      <P>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan
-                        quam nec nibh auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla,
-                        sit amet dictum lectus.
-                      </P>
-                      <Grid noOfCol={3}>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              100%
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              32
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              600
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                      </Grid>
-                    </div>
-                  ),
-                  viz: <div className='h-full w-full bg-primary-gray-500' />,
-                },
-                {
-                  content: (
-                    <div className='flex flex-col'>
-                      <H3>Snapshot 3</H3>
-                      <P>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan
-                        quam nec nibh auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla,
-                        sit amet dictum lectus.
-                      </P>
-                      <Grid noOfCol={3}>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              100%
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              32
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                        <GridItem noOfColSpan={1}>
-                          <div>
-                            <H4 marginBottom='none' weight='bold'>
-                              600
-                            </H4>
-                            <P size='base'>Lorem ipsum dolor sit amet</P>
-                          </div>
-                        </GridItem>
-                      </Grid>
-                    </div>
-                  ),
-                  viz: <div className='h-full w-full bg-primary-gray-300' />,
-                },
-              ]}
-              vizWidth='base'
-            />
+          <div className='w-full md:w-1/2'>
+            <P className='uppercase' size='xs' weight='bold' marginBottom='none'>
+              Country report
+            </P>
+            <Spacer size='2xl' />
+            <H2 className='font-heading capitalize' marginBottom='none'>
+              {country}
+            </H2>
+            <Spacer size='2xl' />
+            <H3>
+              A household-level portrait of Roma vulnerability — from national survey to lived
+              experience
+            </H3>
+            <Spacer size='sm' />
+            <P>
+              Lorem ipsum dolor sit amet consectetur. Suspendisse in posuere eu laoreet. Non fames
+              pulvinar purus netus nisi. Tempus sodales habitasse sed adipiscing. Eu in pretium at
+              sed vivamus dui nam. Arcu nisi eget vel eu convallis diam integer.
+            </P>
           </div>
+          <Spacer size='2xl' />
+          <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} className='w-full'>
+            <GridItem noOfColSpan={1}>
+              <H4 weight='bold' marginBottom='none'>
+                1000
+              </H4>
+              <P>households surveyed</P>
+            </GridItem>
+            <GridItem noOfColSpan={1}>
+              <H4 weight='bold' marginBottom='none'>
+                700
+              </H4>
+              <P>Roma households interviewed</P>
+            </GridItem>
+            <GridItem noOfColSpan={1}>
+              <H4 weight='bold' marginBottom='none'>
+                63
+              </H4>
+              <P>localities covered</P>
+            </GridItem>
+            <GridItem noOfColSpan={1}>
+              <H4 weight='bold' marginBottom='none'>
+                547
+              </H4>
+              <P>micro-narratives collected</P>
+            </GridItem>
+          </Grid>
         </div>
       </section>
       <Spacer size='8xl' />
-      <section id='key=findings' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-        <H5>Key findings</H5>
-        <H3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam nec nibh
-          auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla, sit amet dictum lectus.
-        </H3>
-        <Accordion type='single' variant='tertiary' collapsible defaultValue='item-1'>
-          <AccordionItem value='item-1'>
-            <AccordionTrigger className='text-[1.25rem] normal-case'>
-              Lorem ipsum dolor sit amet
-            </AccordionTrigger>
-            <AccordionContent>
-              <Grid noOfCol={{ base: 1, md: 2 }}>
-                <GridItem noOfColSpan={1}>
-                  <div className='flex flex-col'>
-                    <H5>
-                      Lorem ipsum dolor sit amet consectetur. At maecenas enim proin accumsan enim
-                      lacus pellentesque vestibulum semper.
-                    </H5>
-                    <H4 weight='bold' marginBottom='none'>
-                      32
-                    </H4>
-                    <P size='base'>
-                      Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
-                    </P>
-                    <H4 weight='bold' marginBottom='none'>
-                      32
-                    </H4>
-                    <P size='base'>
-                      Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
-                    </P>
-                  </div>
-                </GridItem>
-                <GridItem noOfColSpan={1}>
-                  <div className='h-full bg-primary-gray-200' />
-                </GridItem>
-              </Grid>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value='item-2'>
-            <AccordionTrigger className='text-[1.25rem] normal-case'>
-              Lorem ipsum dolor sit amet
-            </AccordionTrigger>
-            <AccordionContent>
-              <Grid noOfCol={{ base: 1, md: 2 }}>
-                <GridItem noOfColSpan={1}>
-                  <div className='flex flex-col'>
-                    <H5>
-                      Lorem ipsum dolor sit amet consectetur. At maecenas enim proin accumsan enim
-                      lacus pellentesque vestibulum semper.
-                    </H5>
-                    <H4 weight='bold' marginBottom='none'>
-                      32
-                    </H4>
-                    <P size='base'>
-                      Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
-                    </P>
-                    <H4 weight='bold' marginBottom='none'>
-                      32
-                    </H4>
-                    <P size='base'>
-                      Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
-                    </P>
-                  </div>
-                </GridItem>
-                <GridItem noOfColSpan={1}>
-                  <div className='h-full bg-primary-gray-200' />
-                </GridItem>
-              </Grid>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value='item-3'>
-            <AccordionTrigger className='text-[1.25rem] normal-case'>
-              Lorem ipsum dolor sit amet
-            </AccordionTrigger>
-            <AccordionContent>
-              <Grid noOfCol={{ base: 1, md: 2 }}>
-                <GridItem noOfColSpan={1}>
-                  <div className='flex flex-col'>
-                    <H5>
-                      Lorem ipsum dolor sit amet consectetur. At maecenas enim proin accumsan enim
-                      lacus pellentesque vestibulum semper.
-                    </H5>
-                    <H4 weight='bold' marginBottom='none'>
-                      32
-                    </H4>
-                    <P size='base'>
-                      Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
-                    </P>
-                    <H4 weight='bold' marginBottom='none'>
-                      32
-                    </H4>
-                    <P size='base'>
-                      Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
-                    </P>
-                  </div>
-                </GridItem>
-                <GridItem noOfColSpan={1}>
-                  <div className='h-full bg-primary-gray-200' />
-                </GridItem>
-              </Grid>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value='item-4'>
-            <AccordionTrigger className='text-[1.25rem] normal-case'>
-              Lorem ipsum dolor sit amet
-            </AccordionTrigger>
-            <AccordionContent>
-              <Grid noOfCol={{ base: 1, md: 2 }}>
-                <GridItem noOfColSpan={1}>
-                  <div className='flex flex-col'>
-                    <H5>
-                      Lorem ipsum dolor sit amet consectetur. At maecenas enim proin accumsan enim
-                      lacus pellentesque vestibulum semper.
-                    </H5>
-                    <H4 weight='bold' marginBottom='none'>
-                      32
-                    </H4>
-                    <P size='base'>
-                      Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
-                    </P>
-                    <H4 weight='bold' marginBottom='none'>
-                      32
-                    </H4>
-                    <P size='base'>
-                      Lorem ipsum dolor sit amet consectetur. Eget purus praesent in pulvinar.
-                    </P>
-                  </div>
-                </GridItem>
-                <GridItem noOfColSpan={1}>
-                  <div className='h-full bg-primary-gray-200' />
-                </GridItem>
-              </Grid>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+      <section id='stats' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
+        <H3>Key findings</H3>
+        <Spacer size='6xl' />
+        <KeyFindings
+          index={1}
+          title='Work rarely means security'
+          description={
+            <P size='base' marginBottom='none'>
+              Roma households are economically active, but the available work is overwhelmingly
+              informal, undocumented, and unprotected{' '}
+              <span className='font-bold'>
+                – 73.3% of employed Roma work informally, vs. 33.3% of non-Roma.
+              </span>
+            </P>
+          }
+          persona={{
+            name: 'Vasile · Composite narrative persona',
+            description:
+              "He stretches every leu and puts his children's schooling and his mother's medication first — and it still is not enough.",
+          }}
+        />
+        <Spacer size='6xl' />
+        <Separator variant='light' />
+        <Spacer size='6xl' />
+        <KeyFindings
+          index={2}
+          title='Schooling ends early, and rarely restarts'
+          description={
+            <P size='base' marginBottom='none'>
+              Housing instability is a leading, underrecognized driver: nationally,{' '}
+              <span className='font-bold'>
+                56.3% of Roma youth (15–25) are NEET, vs. 14.7% of non-Roma.
+              </span>
+            </P>
+          }
+          persona={{
+            name: 'Vasile · Composite narrative persona',
+            description:
+              "He stretches every leu and puts his children's schooling and his mother's medication first — and it still is not enough.",
+          }}
+          reverse
+        />
+        <Spacer size='6xl' />
+        <Separator variant='light' />
+        <Spacer size='6xl' />
+        <KeyFindings
+          index={2}
+          title='Discrimination touches nearly every account'
+          description={
+            <P size='base' marginBottom='none'>
+              <span className='font-bold'>
+                Only 0.2% of Moldova micro-narratives recorded no form of discrimination at all.
+              </span>{' '}
+              It shows up in hiring and in routine contact with public institutions alike. 56.3% of
+              Roma youth (15–25) are NEET, vs. 14.7% of non-Roma.
+            </P>
+          }
+          persona={{
+            name: 'Lilia · Composite narrative persona',
+            description:
+              'Employers turn her away, shop staff watch her closely, police checks feel routine.',
+          }}
+        />
       </section>
       <Spacer size='8xl' />
+      <section id='key-findings' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
+        <H3>
+          Explore data on Roma communities in{' '}
+          {country.replace(/\b\w/g, (char) => char.toUpperCase())}
+        </H3>
+        <div className='flex flex-wrap gap-4'>
+          {categories.map((category) => (
+            <button
+              type='button'
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={cn(
+                'rounded-full border px-4 py-1 text-[14px]',
+                selectedCategory === category
+                  ? 'border-primary-gray-700 bg-primary-gray-700 text-primary-white'
+                  : 'border-primary-gray-500 text-primary-gray-700 hover:bg-primary-gray-200',
+              )}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+        <Spacer size='2xl' />
+        <div className='w-full bg-primary-gray-200 p-4 md:p-8'>
+          <div className='w-full md:w-1/2'>
+            <H5 weight='bold'>{selectedCategory}</H5>
+            <P size='base'>
+              Lorem ipsum dolor sit amet consectetur. Nunc bibendum massa bibendum enim mauris. Non
+              quam malesuada sed lobortis placerat ut aliquam. Cras eget dui.
+            </P>
+          </div>
+          <Separator variant='light' />
+          <Spacer size='2xl' />
+          <div className='h-[250px] w-full bg-primary-blue-100' />
+        </div>
+      </section>
+      <Spacer size='2xl' />
+      <section id='download-report' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
+        <button
+          type='button'
+          className='flex w-full flex-col bg-primary-gray-200 p-6 hover:bg-primary-gray-300 md:p-10'
+        >
+          <H4 weight='bold'>Download report</H4>
+          <P size='lg' marginBottom='none'>
+            Lorem ipsum dolor sit amet consectetur. Consequat tempus.
+          </P>
+          <Spacer size='2xl' />
+          <Button variant='link-without-icon' padding='none' className='w-fit'>
+            Download <DownloadIcon className='text-accent-red' />
+          </Button>
+        </button>
+      </section>
+      <Spacer size='8xl' />
+      <section id='key-findings' className='bg-primary-gray-200 py-20'>
+        <div className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
+          <H3>Explore other countries</H3>
+          <Spacer size='2xl' />
+          <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} gap='32px'>
+            {COUNTRIES.filter((d) => d.id !== country).map((country) => (
+              <GridItem key={country.id}>
+                <Link to='/countries/$countryId' params={{ countryId: country.id }}>
+                  <Card backgroundColor='white' size='full' variant='with-image'>
+                    <CardHeader>
+                      <CardImage src='/imgs/placeholder.webp' />
+                      <CardTitle>{country.name}</CardTitle>
+                    </CardHeader>
+                    <CardFooter>
+                      <Button padding='none' variant='link'>
+                        Read more
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </Link>
+              </GridItem>
+            ))}
+          </Grid>
+        </div>
+      </section>
     </div>
   );
 }

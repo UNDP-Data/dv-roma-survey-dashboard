@@ -53,6 +53,27 @@ export function About() {
         Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
         enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
         est, vitae finibus eros diam a turpis.
+        <br />
+        <br />
+        Pellentesque quis leo facilisis, pretium ipsum nec, rutrum orci. Fusce lectus diam, porta ac
+        urna id, aliquet lacinia erat. Duis vehicula sodales quam, eget vulputate enim pharetra in.
+        Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
+        enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
+        est, vitae finibus eros diam a turpis.
+        <br />
+        <br />
+        Pellentesque quis leo facilisis, pretium ipsum nec, rutrum orci. Fusce lectus diam, porta ac
+        urna id, aliquet lacinia erat. Duis vehicula sodales quam, eget vulputate enim pharetra in.
+        Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
+        enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
+        est, vitae finibus eros diam a turpis.
+        <br />
+        <br />
+        Pellentesque quis leo facilisis, pretium ipsum nec, rutrum orci. Fusce lectus diam, porta ac
+        urna id, aliquet lacinia erat. Duis vehicula sodales quam, eget vulputate enim pharetra in.
+        Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
+        enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
+        est, vitae finibus eros diam a turpis.
       </P>
     </div>
   );
