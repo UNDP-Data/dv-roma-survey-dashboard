@@ -31,8 +31,7 @@ function App() {
         contentMode='dark'
       >
         <PageHeaderContent className='max-w-[100%] sm:max-w-[50%]'>
-          <H5>Roma survey</H5>
-          <H1 size='sm'>Roma Survey dashboard</H1>
+          <H1 size='sm'>Roma Survey in Georgia, Moldova and Ukraine</H1>
         </PageHeaderContent>
       </PageHeader>
       <section id='about'>
@@ -50,13 +49,10 @@ function App() {
             </BannerBodySidebar>
             <BannerBodyContent>
               <H4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan quam nec
-                nibh auctor, nec ultrices orci ullamcorper. Donec sed luctus nulla, sit amet dictum
-                lectus. Praesent tempor augue eget velit posuere semper. Sed lobortis sapien nec
-                porta aliquet. Fusce sit amet est sed ipsum sagittis mattis a vel augue. Donec ut
-                augue vitae elit pellentesque vulputate id at orci. Aliquam erat volutpat. Donec
-                risus odio, placerat a auctor eu, fringilla non mauris. In hac habitasse platea
-                dictumst
+                The survey aims to build a robust data set for effective evidence-based
+                decision-making on policies that promote Roma inclusion in order to narrow the gap
+                between Roma and non-Roma populations with regard to multi-dimensional poverty and
+                access to socio-economic rights in Georgia, Moldova, and Ukraine.
               </H4>
             </BannerBodyContent>
           </BannerBody>
@@ -67,37 +63,16 @@ function App() {
         id='stats'
         className='mx-auto flex w-full max-w-[1920px] flex-col gap-10 px-4 sm:px-6 lg:px-8'
       >
-        <H2>Key stats</H2>
-        <Grid gap='24px' noOfCol={{ base: 1, sm: 2, md: 4 }}>
-          <GridItem noOfColSpan={{ base: 1, sm: 2 }}>
+        <H2>Key umbers</H2>
+        <Grid gap='24px' noOfCol={{ base: 1, md: 3 }}>
+          <GridItem noOfColSpan={1}>
             <StatCard hoverColor='yellow'>
               <StatCardValue>35%</StatCardValue>
               <StatCardTitle>Employment</StatCardTitle>
               <StatCardDescription>Share of people employed</StatCardDescription>
             </StatCard>
           </GridItem>
-          <GridItem noOfColSpan={1}>
-            <StatCard hoverColor='yellow'>
-              <StatCardValue>10%</StatCardValue>
-              <StatCardTitle>Unemployment</StatCardTitle>
-              <StatCardDescription>Share of unemployed people</StatCardDescription>
-            </StatCard>
-          </GridItem>
-          <GridItem noOfColSpan={1}>
-            <StatCard hoverColor='yellow'>
-              <StatCardValue>10%</StatCardValue>
-              <StatCardTitle>Unemployment</StatCardTitle>
-              <StatCardDescription>Share of unemployed people</StatCardDescription>
-            </StatCard>
-          </GridItem>
-          <GridItem noOfColSpan={1}>
-            <StatCard hoverColor='yellow'>
-              <StatCardValue>10%</StatCardValue>
-              <StatCardTitle>Unemployment</StatCardTitle>
-              <StatCardDescription>Share of unemployed people</StatCardDescription>
-            </StatCard>
-          </GridItem>
-          <GridItem noOfColSpan={1}>
+          <GridItem noOfColSpan={{ base: 1, md: 2 }}>
             <StatCard hoverColor='yellow'>
               <StatCardValue>10%</StatCardValue>
               <StatCardTitle>Unemployment</StatCardTitle>
@@ -110,6 +85,13 @@ function App() {
               size='full'
               className='col-span-1 min-h-[180px] sm:min-h-[240px] md:col-span-2'
             >
+              <StatCardValue>10%</StatCardValue>
+              <StatCardTitle>Unemployment</StatCardTitle>
+              <StatCardDescription>Share of unemployed people</StatCardDescription>
+            </StatCard>
+          </GridItem>
+          <GridItem noOfColSpan={1}>
+            <StatCard hoverColor='yellow'>
               <StatCardValue>10%</StatCardValue>
               <StatCardTitle>Unemployment</StatCardTitle>
               <StatCardDescription>Share of unemployed people</StatCardDescription>
