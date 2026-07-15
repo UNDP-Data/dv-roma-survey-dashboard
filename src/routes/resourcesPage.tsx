@@ -41,7 +41,7 @@ export function Resource() {
     },
   ];
   return (
-    <div className='mx-auto my-8 w-full max-w-[1920px] px-4'>
+    <div className='mx-auto my-8 w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
       <H1 size='sm'>Resources</H1>
       <Spacer size='2xl' />
       <Grid noOfCol={{ base: 1, sm: 2, md: 4, lg: 6 }}>

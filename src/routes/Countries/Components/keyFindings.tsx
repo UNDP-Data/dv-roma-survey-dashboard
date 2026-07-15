@@ -25,7 +25,7 @@ export function KeyFindings({
 }) {
   const keyFindingContent = (
     <div className='flex flex-col gap-2'>
-      <P className='uppercase' size='xs' weight='bold' marginBottom='none'>
+      <P className='uppercase' size='xs' marginBottom='none'>
         Key finding {index}
       </P>
       <H5 weight='bold' marginBottom='none'>

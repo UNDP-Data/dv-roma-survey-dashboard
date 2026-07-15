@@ -5,7 +5,7 @@ import { H1, P } from '@undp/design-system-react/Typography';
 
 export function About() {
   return (
-    <div className='mx-auto my-8 w-full max-w-[1920px] px-4'>
+    <div className='mx-auto my-8 w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
       <H1 size='sm'>About</H1>
       <Spacer size='2xl' />
       <P>

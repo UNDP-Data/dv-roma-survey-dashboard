@@ -29,7 +29,7 @@ export function CountryPage() {
       <section id='header' className='mx-auto w-full bg-primary-gray-200 py-20'>
         <div className='mx-auto max-w-[1920px] px-4 sm:px-6 lg:px-8'>
           <div className='w-full md:w-1/2'>
-            <P className='uppercase' size='xs' weight='bold' marginBottom='none'>
+            <P className='uppercase' size='xs' marginBottom='none'>
               Country report
             </P>
             <Spacer size='2xl' />
