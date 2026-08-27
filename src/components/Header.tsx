@@ -26,7 +26,7 @@ export default function HeaderEl() {
                     to='/countries/$countryId'
                     params={{ countryId: country.id }}
                     key={country.id}
-                    className='w-full p-3 hover:bg-primary-gray-300 hover:text-primary-blue-600'
+                    className='w-full p-3 hover:bg-surface-hover hover:text-primary'
                   >
                     <P size='sm' marginBottom='none'>
                       {country.name}

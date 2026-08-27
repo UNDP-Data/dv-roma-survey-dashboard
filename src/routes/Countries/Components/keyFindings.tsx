@@ -13,7 +13,7 @@ export function KeyFindings({
   title,
   description,
   persona,
-  viz = <div className='h-full w-full bg-primary-gray-200' />,
+  viz = <div className='h-full w-full bg-surface' />,
   reverse = false,
 }: {
   index: number;
@@ -33,17 +33,17 @@ export function KeyFindings({
       </H5>
       {description}
       <div className='mt-4'>
-        <div className='relative left-4 z-2 h-8 w-8 rounded-full bg-primary-gray-700 p-1'>
+        <div className='relative left-4 z-2 h-8 w-8 rounded-full bg-foreground-soft p-1'>
           <UserRound size={24} strokeWidth={2} stroke='#fff' />
         </div>
-        <div className='relative -mt-4 rounded-[2px] border border-primary-gray-400 bg-primary-gray-200 px-6 pt-8 pb-4'>
+        <div className='relative -mt-4 rounded-xs border border-stroke bg-surface px-6 pt-8 pb-4'>
           <P size='base' marginBottom='xs'>
             {persona.description}
           </P>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <span className='cursor-help font-sans text-base text-primary-gray-550 underline decoration-dotted underline-offset-4'>
+                <span className='cursor-help font-sans text-base text-content-secondary underline decoration-dotted underline-offset-4'>
                   {persona.name}
                 </span>
               </TooltipTrigger>
@@ -51,7 +51,7 @@ export function KeyFindings({
                 <P
                   size='sm'
                   marginBottom='none'
-                  className='m-0 max-w-64 border-none bg-primary-white p-2 text-primary-black md:m-0 md:p-2'
+                  className='m-0 max-w-64 border-none bg-background p-2 text-content-primary md:m-0 md:p-2'
                 >
                   This is not a real person; his story represents experiences documented across
                   multiple household accounts.

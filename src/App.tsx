@@ -30,17 +30,17 @@ function App() {
   return (
     <div className='flex flex-col antialiased'>
       <PageHeader
-        className='h-auto px-0 sm:px-2 md:h-[calc(100vh_-_115px)]'
+        className='h-auto px-0 sm:px-2 md:h-[calc(100vh-115px)]'
         backgroundImage='imgs/header_img.webp'
         contentMode='dark'
       >
-        <PageHeaderContent className='max-w-[100%] sm:max-w-[50%]'>
+        <PageHeaderContent className='max-w-full sm:max-w-[50%]'>
           <H1 size='sm'>Roma Survey in Georgia, Moldova and Ukraine</H1>
         </PageHeaderContent>
       </PageHeader>
       <section id='about'>
         <Banner
-          backgroundColor='black'
+          backgroundColor='foreground'
           bodyGap='base'
           bodyMaxWidth='full'
           padding='none'
@@ -87,7 +87,7 @@ function App() {
             <StatCard
               hoverColor='yellow'
               size='full'
-              className='col-span-1 min-h-[180px] sm:min-h-[240px] md:col-span-2'
+              className='col-span-1 min-h-45 sm:min-h-60 md:col-span-2'
             >
               <StatCardValue>10%</StatCardValue>
               <StatCardTitle>Unemployment</StatCardTitle>
@@ -104,9 +104,9 @@ function App() {
         </Grid>
       </section>
       <Spacer size='8xl' />
-      <section id='key-findings' className='bg-primary-gray-200 py-20'>
+      <section id='key-findings' className='bg-surface py-20'>
         <div className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-          <div className='mx-auto w-full max-w-[1920px] bg-primary-white p-6'>
+          <div className='mx-auto w-full max-w-[1920px] bg-background p-6'>
             <H2>Key findings</H2>
             <Accordion type='single' variant='tertiary' collapsible defaultValue='item-1'>
               <AccordionItem value='item-1'>
@@ -133,7 +133,7 @@ function App() {
                       </div>
                     </GridItem>
                     <GridItem noOfColSpan={1}>
-                      <div className='h-full bg-primary-gray-200' />
+                      <div className='h-full bg-surface' />
                     </GridItem>
                   </Grid>
                 </AccordionContent>
@@ -162,7 +162,7 @@ function App() {
                       </div>
                     </GridItem>
                     <GridItem noOfColSpan={1}>
-                      <div className='h-full bg-primary-gray-200' />
+                      <div className='h-full bg-surface' />
                     </GridItem>
                   </Grid>
                 </AccordionContent>
@@ -191,7 +191,7 @@ function App() {
                       </div>
                     </GridItem>
                     <GridItem noOfColSpan={1}>
-                      <div className='h-full bg-primary-gray-200' />
+                      <div className='h-full bg-surface' />
                     </GridItem>
                   </Grid>
                 </AccordionContent>
@@ -220,7 +220,7 @@ function App() {
                       </div>
                     </GridItem>
                     <GridItem noOfColSpan={1}>
-                      <div className='h-full bg-primary-gray-200' />
+                      <div className='h-full bg-surface' />
                     </GridItem>
                   </Grid>
                 </AccordionContent>
@@ -237,7 +237,7 @@ function App() {
           {COUNTRIES.map((country) => (
             <GridItem key={country.id}>
               <Link to='/countries/$countryId' params={{ countryId: country.id }}>
-                <Card backgroundColor='white' size='full' variant='with-image'>
+                <Card backgroundColor='background' size='full' variant='with-image'>
                   <CardHeader>
                     <CardImage src='/imgs/placeholder.webp' />
                     <CardTitle>{country.name}</CardTitle>

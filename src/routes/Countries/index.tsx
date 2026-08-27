@@ -20,7 +20,12 @@ export function CountriesListing() {
         {countryList.map((d) => (
           <GridItem key={d.name}>
             <Link to='/{-$locale}/countries/$countryId' params={{ countryId: d.id }}>
-              <Card className='h-full' backgroundColor='white' size='full' variant='with-image'>
+              <Card
+                className='h-full'
+                backgroundColor='background'
+                size='full'
+                variant='with-image'
+              >
                 <CardHeader>
                   <CardImage src='/imgs/resources-01' />
                   <CardTitle>{d.name}</CardTitle>

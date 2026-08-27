@@ -14,7 +14,7 @@ import * as TanStackQueryProvider from './integration/tanstack-query';
 import createAboutRoute from './routes/aboutPage';
 import createCountriesRoute from './routes/Countries';
 import createProjectPageRoute from './routes/Countries/countryPage';
-import createDataExplorer from './routes/dataExplorer';
+import createDataExplorer from './routes/DataExplorer';
 import createTanStackQueryDemoRoute from './routes/queryDemo';
 import createResourceRoute from './routes/resourcesPage';
 
@@ -25,7 +25,7 @@ const rootRoute = createRootRoute({
   component: () => (
     <div className='flex min-h-screen flex-col gap-0'>
       <HeaderEl />
-      <main className='flex grow-1 flex-col justify-center'>
+      <main className='flex grow flex-col justify-center'>
         <div className='flex flex-col justify-center'>
           <Outlet />
         </div>

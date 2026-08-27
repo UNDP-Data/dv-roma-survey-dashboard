@@ -26,7 +26,7 @@ export function CountryPage() {
   const [selectedCategory, setSelectedCategory] = useState('Social Vulnerability');
   return (
     <div className='w-full antialiased'>
-      <section id='header' className='mx-auto w-full bg-primary-gray-200 py-20'>
+      <section id='header' className='mx-auto w-full bg-surface py-20'>
         <div className='mx-auto max-w-[1920px] px-4 sm:px-6 lg:px-8'>
           <div className='w-full md:w-1/2'>
             <P className='uppercase' size='xs' marginBottom='none'>
@@ -100,7 +100,7 @@ export function CountryPage() {
           }}
         />
         <Spacer size='6xl' />
-        <Separator variant='light' />
+        <Separator color='surface-md' />
         <Spacer size='6xl' />
         <KeyFindings
           index={2}
@@ -121,7 +121,7 @@ export function CountryPage() {
           reverse
         />
         <Spacer size='6xl' />
-        <Separator variant='light' />
+        <Separator color='surface-md' />
         <Spacer size='6xl' />
         <KeyFindings
           index={2}
@@ -157,8 +157,8 @@ export function CountryPage() {
               className={cn(
                 'rounded-full border px-4 py-1 text-[14px]',
                 selectedCategory === category
-                  ? 'border-primary-gray-700 bg-primary-gray-700 text-primary-white'
-                  : 'border-primary-gray-500 text-primary-gray-700 hover:bg-primary-gray-200',
+                  ? 'border-stroke-4xl bg-foreground-soft text-content-reverse'
+                  : 'border-stroke text-content-primary hover:bg-surface',
               )}
             >
               {category}
@@ -166,7 +166,7 @@ export function CountryPage() {
           ))}
         </div>
         <Spacer size='2xl' />
-        <div className='w-full bg-primary-gray-200 p-4 md:p-8'>
+        <div className='w-full bg-surface p-4 md:p-8'>
           <div className='w-full md:w-1/2'>
             <H5 weight='bold'>{selectedCategory}</H5>
             <P size='base'>
@@ -174,29 +174,29 @@ export function CountryPage() {
               quam malesuada sed lobortis placerat ut aliquam. Cras eget dui.
             </P>
           </div>
-          <Separator variant='light' />
+          <Separator color='surface-md' />
           <Spacer size='2xl' />
-          <div className='h-[250px] w-full bg-primary-blue-100' />
+          <div className='h-62.5 w-full bg-blue-100' />
         </div>
       </section>
       <Spacer size='2xl' />
       <section id='download-report' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
         <button
           type='button'
-          className='flex w-full flex-col bg-primary-gray-200 p-6 hover:bg-primary-gray-300 md:p-10'
+          className='flex w-full flex-col bg-surface p-6 hover:bg-surface-hover md:p-10'
         >
           <H4 weight='bold'>Download report</H4>
           <P size='lg' marginBottom='none'>
             Lorem ipsum dolor sit amet consectetur. Consequat tempus.
           </P>
           <Spacer size='2xl' />
-          <Button variant='link-without-icon' padding='none' className='w-fit'>
+          <Button variant='link' arrow={false} padding='none' className='w-fit'>
             Download <DownloadIcon className='text-accent-red' />
           </Button>
         </button>
       </section>
       <Spacer size='8xl' />
-      <section id='key-findings' className='bg-primary-gray-200 py-20'>
+      <section id='key-findings' className='bg-surface py-20'>
         <div className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
           <H3>Explore other countries</H3>
           <Spacer size='2xl' />
@@ -204,7 +204,7 @@ export function CountryPage() {
             {COUNTRIES.filter((d) => d.id !== country).map((country) => (
               <GridItem key={country.id}>
                 <Link to='/countries/$countryId' params={{ countryId: country.id }}>
-                  <Card backgroundColor='white' size='full' variant='with-image'>
+                  <Card backgroundColor='background' size='full' variant='with-image'>
                     <CardHeader>
                       <CardImage src='/imgs/placeholder.webp' />
                       <CardTitle>{country.name}</CardTitle>
