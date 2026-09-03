@@ -18,7 +18,7 @@ export default function HeaderEl() {
         siteSubName='Europe and Central Asia'
       />
       <HeaderMainNavUnit>
-        <HeaderMenuUnit>
+        <HeaderMenuUnit className='justify-end! gap-12! pr-4'>
           <Link to='/'>Home</Link>
           <Link to='/data-explorer'>Data explorer</Link>
           <HoverCard openDelay={0} closeDelay={60}>
