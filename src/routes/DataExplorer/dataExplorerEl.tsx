@@ -56,32 +56,59 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
       <VisualizationWidgetHeader
         defaultValue={selectedTheme}
         onChange={setSelectedTheme}
-        activeItemClass='bg-background text-accent-blue'
-        className='h-20'
+        activeItemClass='bg-background font-bold text-accent-blue shadow-[inset_0_3px_0_0_var(--accent-blue)]'
+        className='h-16 overflow-x-auto sm:h-20'
       >
-        <VisualizationWidgetHeaderItem value='work and employment' className='basis-0'>
-          <BriefcaseBusiness size={20} strokeWidth={1.5} />
-          Work & employment
+        <VisualizationWidgetHeaderItem
+          value='work and employment'
+          className='basis-0 sm:min-w-32 sm:shrink-0'
+        >
+          <BriefcaseBusiness
+            size={20}
+            strokeWidth={selectedTheme === 'work and employment' ? 2 : 1.5}
+          />
+          <span className='hidden sm:inline'>Work and employment</span>
         </VisualizationWidgetHeaderItem>
-        <VisualizationWidgetHeaderItem value='education' className='basis-0'>
-          <GraduationCap size={20} strokeWidth={1.5} />
-          Education
+        <VisualizationWidgetHeaderItem
+          value='education'
+          className='basis-0 sm:min-w-32 sm:shrink-0'
+        >
+          <GraduationCap size={20} strokeWidth={selectedTheme === 'education' ? 2 : 1.5} />
+          <span className='hidden sm:inline'>Education</span>
         </VisualizationWidgetHeaderItem>
-        <VisualizationWidgetHeaderItem value='health' className='basis-0'>
-          <Heart size={20} strokeWidth={1.5} />
-          Health
+        <VisualizationWidgetHeaderItem value='health' className='basis-0 sm:min-w-32 sm:shrink-0'>
+          <Heart size={20} strokeWidth={selectedTheme === 'health' ? 2 : 1.5} />
+          <span className='hidden sm:inline'>Health</span>
         </VisualizationWidgetHeaderItem>
-        <VisualizationWidgetHeaderItem value='living conditions' className='basis-0'>
-          <House size={20} strokeWidth={1.5} />
-          Living conditions
+        <VisualizationWidgetHeaderItem
+          value='living conditions'
+          className='basis-0 sm:min-w-32 sm:shrink-0'
+        >
+          <House size={20} strokeWidth={selectedTheme === 'living conditions' ? 2 : 1.5} />
+          <span className='hidden sm:inline'>Living conditions</span>
         </VisualizationWidgetHeaderItem>
-        <VisualizationWidgetHeaderItem value='discrimination' className='basis-0'>
-          <AlignHorizontalJustifyCenter size={20} strokeWidth={1.5} />
-          Discrimination
+        <VisualizationWidgetHeaderItem
+          value='discrimination'
+          className='basis-0 sm:min-w-32 sm:shrink-0'
+        >
+          <AlignHorizontalJustifyCenter
+            size={20}
+            strokeWidth={selectedTheme === 'discrimination' ? 2 : 1.5}
+          />
+          <span className='hidden sm:inline'>Discrimination</span>
         </VisualizationWidgetHeaderItem>
       </VisualizationWidgetHeader>
       <VisualizationWidgetBody className='@3xl:max-h-none @3xl:flex-col border-stroke border-t'>
         <VisualizationWidgetBodyContent className='@3xl:max-h-none flex-col bg-gray-100 p-6'>
+          {/* The tabs are icon-only below sm, so name the active one here. */}
+          <P
+            size='sm'
+            weight='bold'
+            marginBottom='sm'
+            className='text-accent-blue uppercase sm:hidden'
+          >
+            {selectedTheme}
+          </P>
           <div className='flex flex-wrap items-center justify-between'>
             <P size='xl' weight='bold' marginBottom='sm' className='text-2xl'>
               Featured indicators
@@ -89,7 +116,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
             <ColorLegend colors={COLORS} colorDomain={GROUPS} showNAColor={false} />
           </div>
           <Spacer size='base' />
-          <div className='rounded-xs border border-stroke bg-background'>
+          <div className='w-full min-w-0 rounded-xs border border-stroke bg-background'>
             <FeaturedIndicatorsTable indicators={data.slice(0, 5)} />
           </div>
           <Spacer size='3xl' />
@@ -165,7 +192,10 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                   </P>
                   <Spacer size='base' />
                   <div className='flex items-center gap-2'>
-                    <span className='h-3 w-3 shrink-0 rounded-full bg-accent-red' />
+                    <span
+                      className='h-3 w-3 shrink-0 rounded-full'
+                      style={{ backgroundColor: COLORS[0] }}
+                    />
                     <P size='base' marginBottom='none'>
                       Roma
                     </P>
@@ -176,7 +206,10 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                     </P>
                   </div>
                   <div className='flex items-center gap-2'>
-                    <span className='h-3 w-3 shrink-0 rounded-full bg-accent-blue' />
+                    <span
+                      className='h-3 w-3 shrink-0 rounded-full'
+                      style={{ backgroundColor: COLORS[1] }}
+                    />
                     <P size='base' marginBottom='none'>
                       Non-Roma
                     </P>
@@ -247,75 +280,83 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                   </P>
                 </div>
                 <Spacer size='base' />
-                <div className='flex flex-col gap-4'>
-                  <div className='flex items-center justify-between gap-4 rounded-xs border border-stroke bg-background p-6'>
+                <div className='grid auto-rows-fr grid-cols-1 gap-4'>
+                  <div className='flex items-stretch justify-between gap-4 rounded-xs border border-stroke bg-background p-6'>
                     <div className='flex flex-col gap-2'>
                       <P size='xs' weight='bold' marginBottom='none' className='uppercase'>
                         Roma
                       </P>
-                      <div className='flex items-baseline gap-1 text-accent-red'>
-                        <H3 marginBottom='none' className='text-accent-red'>
-                          {romaValue}
-                        </H3>
-                        {romaRow?.yesPercent !== undefined ? (
-                          <P size='lg' marginBottom='none' className='text-accent-red'>
-                            %
-                          </P>
+                      <div className='flex grow flex-col justify-center gap-2'>
+                        <div className='flex items-baseline gap-1'>
+                          <H3 marginBottom='none' style={{ color: COLORS[0] }}>
+                            {romaValue}
+                          </H3>
+                          {romaRow?.yesPercent !== undefined ? (
+                            <P size='lg' marginBottom='none' style={{ color: COLORS[0] }}>
+                              %
+                            </P>
+                          ) : null}
+                        </div>
+                        {gap !== undefined ? (
+                          <Badge
+                            variant='surface-sm'
+                            size='sm'
+                            rounded='sm'
+                            className='w-fit rounded-lg'
+                          >
+                            {gap > 0 ? '+' : ''}
+                            {gap.toFixed(1)} pp vs non-Roma
+                          </Badge>
                         ) : null}
                       </div>
-                      {gap !== undefined ? (
-                        <Badge
-                          variant='surface-sm'
-                          size='sm'
-                          rounded='sm'
-                          className='w-fit rounded-lg'
-                        >
-                          {gap > 0 ? '+' : ''}
-                          {gap.toFixed(1)} pp vs non-Roma
-                        </Badge>
-                      ) : null}
                     </div>
-                    <div className='w-30'>
+                    <div className='hidden w-30 shrink-0 self-center xl:block'>
                       {romaRow?.yesPercent !== undefined ? (
                         <DonutChart
                           data={[
                             { label: 'yes', size: romaRow.yesPercent },
                             { label: 'no', size: romaRow.noPercent },
                           ]}
+                          width={120}
+                          height={120}
                           padding='0'
                           strokeWidth={15}
-                          colors={['var(--accent-red)', 'var(--surface-sm)']}
+                          colors={[COLORS[0], 'var(--surface-sm)']}
                           showColorScale={false}
                         />
                       ) : null}
                     </div>
                   </div>
-                  <div className='flex items-center justify-between gap-4 rounded-xs border border-stroke bg-background p-6'>
+                  <div className='flex items-stretch justify-between gap-4 rounded-xs border border-stroke bg-background p-6'>
                     <div className='flex flex-col gap-2'>
                       <P size='xs' weight='bold' marginBottom='none' className='uppercase'>
                         Non-Roma
                       </P>
-                      <div className='flex items-baseline gap-1'>
-                        <H3 marginBottom='none' className='text-accent-blue'>
-                          {nonRomaValue}
-                        </H3>
-                        {nonRomaRow?.yesPercent !== undefined ? (
-                          <P size='lg' marginBottom='none' className='text-accent-blue'>
-                            %
-                          </P>
-                        ) : null}
+                      <div className='flex grow flex-col justify-center gap-2'>
+                        <div className='flex items-baseline gap-1'>
+                          <H3 marginBottom='none' style={{ color: COLORS[1] }}>
+                            {nonRomaValue}
+                          </H3>
+                          {nonRomaRow?.yesPercent !== undefined ? (
+                            <P size='lg' marginBottom='none' style={{ color: COLORS[1] }}>
+                              %
+                            </P>
+                          ) : null}
+                        </div>
                       </div>
                     </div>
-                    <div className='w-30'>
+                    <div className='hidden w-30 shrink-0 self-center xl:block'>
                       {nonRomaRow?.yesPercent !== undefined ? (
                         <DonutChart
                           data={[
                             { label: 'yes', size: nonRomaRow.yesPercent },
                             { label: 'no', size: nonRomaRow.noPercent },
                           ]}
+                          width={120}
+                          height={120}
                           padding='0'
                           strokeWidth={15}
-                          colors={['var(--accent-blue)', 'var(--surface-sm)']}
+                          colors={[COLORS[1], 'var(--surface-sm)']}
                           showColorScale={false}
                         />
                       ) : null}
