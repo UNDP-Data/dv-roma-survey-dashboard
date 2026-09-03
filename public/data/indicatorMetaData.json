@@ -1,0 +1,2900 @@
+[
+  {
+    "id": "acceptance_as_spouse",
+    "title": "Would accept the other ethnicity as a spouse (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Social Cohesion",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "acceptance_as_neighbours",
+    "title": "Would accept the other ethnicity as neighbours (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Social Cohesion",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "acceptance_as_close_friends",
+    "title": "Would accept the other ethnicity as close friends (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Social Cohesion",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "acceptance_as_co_workers",
+    "title": "Would accept the other ethnicity as co-workers (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Social Cohesion",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "social_distance_score_closest_accepted_r",
+    "title": "Closest accepted relationship with the other ethnicity (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Social Cohesion",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "bribes_never_necessary_with_police",
+    "title": "Bribes never necessary with police (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Governance",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "bribes_never_necessary_for_official_docu",
+    "title": "Bribes never necessary for official documents (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Governance",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "bribes_never_necessary_for_medical_treat",
+    "title": "Bribes never necessary for medical treatment (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Governance",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "bribes_never_necessary_for_school_servic",
+    "title": "Bribes never necessary for school services (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Governance",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "women_have_money_of_their_own",
+    "title": "Women with financial independence (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Women's Empowerment",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "women_make_spending_decisions_themselves",
+    "title": "Women with financial autonomy (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Women's Empowerment",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "makes_ends_meet_with_difficulty",
+    "title": "Household makes ends meet with difficulty (UNDP, FRA)",
+    "category": "living conditions",
+    "subCategory": "Economic Security",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "months_household_can_live_off_savings",
+    "title": "Months household can live off savings (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Economic Security",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "household head",
+      "age": "household head",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "mean",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "no_emergency_funding_source",
+    "title": "No emergency funding source (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Economic Security",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "own_savings_as_emergency_source",
+    "title": "Own savings as emergency source (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Economic Security",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "smartphone_ownership",
+    "title": "Smartphone ownership (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Digital Inclusion",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "internet_access_at_home",
+    "title": "Personal internet access at home (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Digital Inclusion",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "can_buy_something_for_themselves",
+    "title": "Can buy something for themselves (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Material Deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "child_enrolled_in_daycare",
+    "title": "Child enrolled in daycare (UNDP)",
+    "category": "education",
+    "subCategory": "Early Childhood",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "daycare_too_expensive",
+    "title": "Daycare too expensive (UNDP)",
+    "category": "education",
+    "subCategory": "Early Childhood",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "no_daycare_nearby",
+    "title": "No daycare nearby (UNDP)",
+    "category": "education",
+    "subCategory": "Early Childhood",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "environmental_health_consequences",
+    "title": "Environmental health consequences (UNDP)",
+    "category": "health",
+    "subCategory": "Environment",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "affected_by_floods_mudslides",
+    "title": "Affected by floods/mudslides (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Environment",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "household head",
+      "age": "household head",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "would_consider_moving_again",
+    "title": "Migration intent (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Migration",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "refugee_displaced_due_to_conflict",
+    "title": "Refugee/displaced due to conflict (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Migration",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "household_had_self_employment_income",
+    "title": "Household received self-employment income (UNDP)",
+    "category": "work and employment",
+    "subCategory": "Livelihoods",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "household head",
+      "age": "household head",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "produces_vegetables_for_own_consumption",
+    "title": "Produces vegetables for own consumption (UNDP)",
+    "category": "work and employment",
+    "subCategory": "Livelihoods",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "household head",
+      "age": "household head",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "disability_pension_recipients",
+    "title": "Disability pension recipients (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Social Protection",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "household head",
+      "age": "household head",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "child_family_benefit_recipients",
+    "title": "Child/family benefit recipients (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Social Protection",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "household head",
+      "age": "household head",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "last_resort_assistance_recipients",
+    "title": "Last-resort assistance recipients (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Social Protection",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "household head",
+      "age": "household head",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "educational_attainment",
+    "title": "Undereducated member in the household (UNDP)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "completed_secondary_education_ages_18_65",
+    "title": "Completed secondary education, ages 18–65 (UNDP)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "school_attendance",
+    "title": "Children living in households where not all 6–15 kids attend school (UNDP)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "school_attendance_ages_6_15",
+    "title": "School attendance, ages 6–15 (UNDP)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "preschool_education",
+    "title": "Preschool education in the household (UNDP)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "youth_neet",
+    "title": "People living in households with a youth NEET (ages 15–29) (UNDP)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "health_access_unmet_medical_need",
+    "title": "Unmet medical need in the past year (UNDP)",
+    "category": "health",
+    "subCategory": "Health",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "health_service_quality",
+    "title": "Unsatisfactory quality of care received (UNDP)",
+    "category": "health",
+    "subCategory": "Health",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "medical_insurance",
+    "title": "People living in households where not all members have medical insurance (UNDP)",
+    "category": "health",
+    "subCategory": "Health",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "food_insecurity",
+    "title": "Severe food insecurity in the household (hungry and a whole day without eating) (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Nutrition",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "unemployment_and_seasonal_occasional_employment",
+    "title": "Household members affected by job insecurity of a household member (UNDP)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "informal_employment",
+    "title": "People living in households with informal employment (UNDP)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "child_and_adolescent_labour_proxy",
+    "title": "People living in households where at least one child or adolescent (ages 5–17) performs some economic activity (UNDP)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "access_to_drinking_water",
+    "title": "No piped drinking water inside the dwelling (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "access_to_basic_sanitation_public_sewerage",
+    "title": "Not connected to public sewerage (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "indoor_toilet_companion",
+    "title": "No toilet inside the dwelling (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "ability_to_keep_home_adequately_warm",
+    "title": "Cannot afford to keep the home adequately warm (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "garbage_disposal",
+    "title": "No public garbage collection (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "overcrowding",
+    "title": "Overcrowding (less than 9 m² per person) (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "housing_defects",
+    "title": "Housing defects (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "internet_access",
+    "title": "People living in a household with no internet access (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "durables",
+    "title": "People living in a household with at most one durable good (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Housing / WASH",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "no_bank_account",
+    "title": "People living in a household with no bank account (UNDP, FRA)",
+    "category": "living conditions",
+    "subCategory": "Financial / social",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "household_arrears",
+    "title": "People living in a household that is in arrears (UNDP)",
+    "category": "living conditions",
+    "subCategory": "Financial / social",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_unexpected_expenses",
+    "title": "Cannot afford unexpected expenses (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_a_one_week_holiday",
+    "title": "Cannot afford a one-week holiday (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_a_meal_with_meat_chicken_or_fish_e",
+    "title": "Cannot afford a meal with meat, chicken or fish every second day (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_to_keep_the_home_adequately_warm",
+    "title": "Cannot afford to keep the home adequately warm (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_to_replace_worn_out_furniture",
+    "title": "Cannot afford to replace worn-out furniture (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "arrears_on_housing_utility_or_hire_purchase_paym",
+    "title": "Arrears on housing, utility or hire-purchase payments (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_a_car_or_van",
+    "title": "Cannot afford a car or van (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_to_replace_worn_out_clothes",
+    "title": "Cannot afford to replace worn-out clothes (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_two_pairs_of_properly_fitting_shoe",
+    "title": "Cannot afford two pairs of properly fitting shoes (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_a_small_amount_of_money_for_person",
+    "title": "Cannot afford a small amount of money for personal spending each week (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_a_regular_leisure_activity",
+    "title": "Cannot afford a regular leisure activity (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_to_get_together_with_friends_or_fa",
+    "title": "Cannot afford to get together with friends or family at least once a month (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "cannot_afford_internet_access_at_home_for_person",
+    "title": "Cannot afford internet access at home for personal use (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "material_and_social_deprivation_lacking_5_or_mor",
+    "title": "Material and social deprivation (5 or more of 13 items) (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "severe_material_and_social_deprivation_lacking_7",
+    "title": "Severe material and social deprivation (7 or more of 13 items) (UNDP)",
+    "category": "living conditions",
+    "subCategory": "EU-SILC material and social deprivation",
+    "source": "UNDP",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_employed_15_64",
+    "title": "Employed last week (ILO, ages 15–64) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_unemployed_15_64",
+    "title": "Unemployed, ages 15–64 (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_inactive_15_64",
+    "title": "Inactive (15–64) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_employed_25_64",
+    "title": "Employed (25–64) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_unemployed_25_64",
+    "title": "Unemployed (25–64) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_inactive_25_64",
+    "title": "Inactive (25–64) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_employed_15_24",
+    "title": "Employed (15–24) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_unemployed_15_24",
+    "title": "Unemployed (15–24) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_inactive_in_education_15_24",
+    "title": "Inactive in education (15–24) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_neet_inactive_not_in_education_15_24",
+    "title": "NEET inactive not in education (15–24) (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_neet_15_24",
+    "title": "NEET, ages 15–24 (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_no_medical_insurance",
+    "title": "No medical insurance (World Bank)",
+    "category": "health",
+    "subCategory": "Health",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_bad_or_very_bad_self_rated_health",
+    "title": "Bad or very bad self-rated health (World Bank)",
+    "category": "health",
+    "subCategory": "Health",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_overcrowded_persons_per_room_1",
+    "title": "Overcrowded (persons per room >1) (World Bank)",
+    "category": "living conditions",
+    "subCategory": "Housing",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_severely_overcrowded_persons_per_room_2",
+    "title": "Severely overcrowded (persons per room >2) (World Bank)",
+    "category": "living conditions",
+    "subCategory": "Housing",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_hunger_risk_cannot_afford_meat_every_second_d",
+    "title": "Hunger risk (cannot afford meat every second day) (World Bank)",
+    "category": "living conditions",
+    "subCategory": "Nutrition",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_severe_hunger_risk_went_to_bed_hungry",
+    "title": "Severe hunger in the household (went to bed hungry) (World Bank)",
+    "category": "living conditions",
+    "subCategory": "Nutrition",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_informal_employment_employed_15_64",
+    "title": "Informal employment among employed, ages 15–64 (World Bank)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_no_documentation_no_valid_id_or_passport",
+    "title": "Has identity documentation (ID card or passport) (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Documentation",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_past_year_discrimination_ethnicity_skin_colou",
+    "title": "Discriminated against in the past year because of ethnicity or skin colour (ethnic ground) (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_past_year_discrimination_gender",
+    "title": "Discriminated against in the past year because of gender (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_past_year_discrimination_sexual_orientation_o",
+    "title": "Discriminated against in the past year because of sexual orientation or gender identity (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_past_year_discrimination_disability_health",
+    "title": "Discriminated against in the past year because of disability or health (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_past_year_discrimination_another_reason",
+    "title": "Discriminated against in the past year because of another reason (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_any_past_year_discrimination_any_ground",
+    "title": "Discriminated against in the past year (any ground) (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_job_seeking_discrimination_past_5_years_among",
+    "title": "Discrimination when looking for work in the past 5 years (any ground) (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "wb_at_work_discrimination_past_5_years_among_at_",
+    "title": "Discrimination at work in the past 5 years (any ground) (World Bank)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "World Bank",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_matdepr4",
+    "title": "Severe material deprivation (cannot afford ≥4 of 9 items) (FRA)",
+    "category": "living conditions",
+    "subCategory": "Severe material deprivation (FRA Framework)",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_matdepr4ch",
+    "title": "Children under 18 in severe material deprivation (4 or more of 9 items) (FRA)",
+    "category": "living conditions",
+    "subCategory": "Severe material deprivation (FRA Framework)",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_si08_02",
+    "title": "Cannot afford meal with meat/chicken/fish every second day (FRA)",
+    "category": "living conditions",
+    "subCategory": "Severe material deprivation (FRA Framework)",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_hunger",
+    "title": "Went to bed hungry in the past month (lack of money for food) (FRA)",
+    "category": "living conditions",
+    "subCategory": "Living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_hungerch",
+    "title": "Children under 18 in a household where someone went to bed hungry (FRA)",
+    "category": "living conditions",
+    "subCategory": "Living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_endsmeet",
+    "title": "Household makes ends meet with difficulty (FRA)",
+    "category": "living conditions",
+    "subCategory": "Living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_si07r",
+    "title": "Do not have a bank account (respondents 16+) (FRA)",
+    "category": "living conditions",
+    "subCategory": "Living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_ece_partic",
+    "title": "Children aged 3 to primary-start age attending early childhood education (FRA)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_edumax",
+    "title": "Completed upper secondary education, ages 20–24 (FRA)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_hch05b2",
+    "title": "Children 6–15 in schools where all/most schoolmates are Roma (FRA)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_edu_attending_compulsoryage",
+    "title": "Attending school at compulsory age (FRA)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_early_leaver",
+    "title": "Early leavers from education and training (18–24) (FRA)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_edutert",
+    "title": "Aged 30–34 with tertiary education (FRA)",
+    "category": "education",
+    "subCategory": "Education",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_work",
+    "title": "Main activity is paid work, ages 20–64 (FRA)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_neet",
+    "title": "NEET, ages 16–24 (FRA)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_dhe01_r",
+    "title": "Good or very good self-rated health, ages 16+ (FRA)",
+    "category": "health",
+    "subCategory": "Health",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_hea_insurance",
+    "title": "Has medical insurance, ages 16+ (FRA)",
+    "category": "health",
+    "subCategory": "Health",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_overcrowd",
+    "title": "Overcrowding (Eurostat rooms rule) (FRA)",
+    "category": "living conditions",
+    "subCategory": "Housing / living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_hls04_1r",
+    "title": "No tap water inside the dwelling (FRA)",
+    "category": "living conditions",
+    "subCategory": "Housing / living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_sanitation1",
+    "title": "Neither toilet nor shower/bathroom inside (FRA)",
+    "category": "living conditions",
+    "subCategory": "Housing / living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_hls06_3",
+    "title": "Leaking roof / damp / rot (FRA)",
+    "category": "living conditions",
+    "subCategory": "Housing / living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_eviction",
+    "title": "Forced to leave accommodation in past 5 years (FRA)",
+    "category": "living conditions",
+    "subCategory": "Housing / living conditions",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "household head",
+      "employment": "household head"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_gender_employment_gap",
+    "title": "Gender gap in paid work (men − women, ages 20–64, pp) (FRA)",
+    "category": "work and employment",
+    "subCategory": "Employment",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "person",
+      "age": "person",
+      "education": "person",
+      "employment": "person"
+    },
+    "valueType": "genderGap",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_dis12overall",
+    "title": "Discrimination in core areas of life in the past year (ethnic ground) (FRA)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_redisoverall1",
+    "title": "Reported the last discrimination incident (ethnic ground) (FRA)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_dis12eduinst",
+    "title": "Discrimination in education in the past year (ethnic ground) (FRA)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_dis12atwork",
+    "title": "Discrimination at work in the past year (ethnic ground) (FRA)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_dis12lkwork",
+    "title": "Discrimination when looking for work in the past year (ethnic ground) (FRA)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_dis12health",
+    "title": "Discrimination in healthcare in the past year (ethnic ground) (FRA)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  },
+  {
+    "id": "fra_dis5house",
+    "title": "Discrimination when looking for housing in the past 5 years (ethnic ground) (FRA)",
+    "category": "discrimination",
+    "subCategory": "Discrimination",
+    "source": "FRA",
+    "calculationTypeForDisaggregation": {
+      "sex": "respondent",
+      "age": "respondent",
+      "education": "respondent",
+      "employment": "respondent"
+    },
+    "valueType": "percentage",
+    "availableDisaggregations": [
+      "age",
+      "sex",
+      "urbanization",
+      "education",
+      "employment",
+      "householdSize",
+      "childrenInHousehold"
+    ]
+  }
+]

@@ -1,39 +1,3 @@
-"""
-Convert the Roma Dashboard Data Extract (xlsx) into one JSON file per country tab.
-
-Each sheet is a stack of "indicator blocks". A block looks like:
-
-    Row 0: <id>                 <description>
-    Row 1: 'formula'            <metaData text>
-    Row 2: 'base'               <base/universe text>
-    Row 3: (blank)
-    Row 4: (blank col A)  'Total' 'Population' ''  'Roma - Sex...' '' 'Non-Roma - Sex...' ...
-    Row 5: (blank col A)  'Total' 'Roma' 'Non-Roma' 'Female' 'Male' 'Female' 'Male' ...
-    Row 6: 'n='                 <counts per column>
-    Row 7+: 'Yes'/'No'/'Total'  OR  'Mean'  OR  'Gap (pp)'   <values per column>
-    Row N: (blank)  -> next block starts
-
-Column layout (fixed across every block in this workbook):
-    col 2 = overall total (population, Roma+Non-Roma combined)
-    col 3 = Roma, no breakdown
-    col 4 = Non-Roma, no breakdown
-    col 5+ = pairs of merged groups: "Roma - <disaggregation>" then
-             "Non-Roma - <disaggregation>", each spanning 2-4 sub-columns
-             (the categories, given on the row right below the group row).
-
-This script walks each block, uses the two header rows to figure out which
-ethnicity + disaggregation + category every column belongs to, and emits:
-
-{
-  "id": ...,
-  "description": ...,
-  "metaData": ...,
-  "total": <overall n=>,
-  "roma": [ {disaggregation, category, noOfRespondents, yesPercent, noPercent} | {..., mean} | {..., gapPp}, ... ],
-  "nonRoma": [ ... ]
-}
-"""
-
 import json
 import re
 from pathlib import Path
