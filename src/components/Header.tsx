@@ -12,7 +12,11 @@ import { COUNTRIES } from '@/Constants';
 export default function HeaderEl() {
   return (
     <Header>
-      <HeaderLogoUnit hyperlink='/' siteName='Roma Survey Dashboard' />
+      <HeaderLogoUnit
+        hyperlink='/'
+        siteName='Roma Socio-Economic Scoreboard'
+        siteSubName='Europe and Central Asia'
+      />
       <HeaderMainNavUnit>
         <HeaderMenuUnit>
           <Link to='/'>Home</Link>
