@@ -5,6 +5,7 @@ import {
   Outlet,
   RouterProvider,
 } from '@tanstack/react-router';
+import { ConfigProvider } from '@undp/design-system-react/ConfigProvider';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -74,9 +75,11 @@ if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <StrictMode>
-      <TanStackQueryProvider.Provider {...TanStackQueryProviderContext}>
-        <RouterProvider router={router} />
-      </TanStackQueryProvider.Provider>
+      <ConfigProvider config={{ foreground: '#141d25' }}>
+        <TanStackQueryProvider.Provider {...TanStackQueryProviderContext}>
+          <RouterProvider router={router} />
+        </TanStackQueryProvider.Provider>
+      </ConfigProvider>
     </StrictMode>,
   );
 }
