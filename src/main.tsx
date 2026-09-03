@@ -75,7 +75,7 @@ if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <StrictMode>
-      <ConfigProvider config={{ foreground: '#141d25' }}>
+      <ConfigProvider config={{ foreground: '#141d25', stroke: { base: '#edeff0' } }}>
         <TanStackQueryProvider.Provider {...TanStackQueryProviderContext}>
           <RouterProvider router={router} />
         </TanStackQueryProvider.Provider>
