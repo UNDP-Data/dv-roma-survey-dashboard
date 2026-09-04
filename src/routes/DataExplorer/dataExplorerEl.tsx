@@ -405,7 +405,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                 </div>
                 <Spacer size='base' />
                 <P size='sm' marginBottom='none' className='text-content-tertiary'>
-                  Survey fieldwork carried out in [TBA]
+                  Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma
                 </P>
               </GridItem>
               <GridItem noOfColSpan={{ base: 1, lg: 3 }}>
