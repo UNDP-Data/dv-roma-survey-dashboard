@@ -10,11 +10,11 @@ import { Spacer } from '@undp/design-system-react/Spacer';
 import { P } from '@undp/design-system-react/Typography';
 import { useState } from 'react';
 import { COLORS, GROUPS } from '@/Constants';
-import type { SurveyIndicator } from '@/types';
+import type { IndicatorMetaData, SurveyIndicator } from '@/types';
 
 interface Props {
   indicator?: SurveyIndicator;
-  valueType?: string;
+  meta?: IndicatorMetaData;
 }
 
 function getIndicatorRange(
@@ -30,9 +30,10 @@ function getIndicatorRange(
   return { minValue: Math.min(...values), maxValue: Math.max(...values) };
 }
 
-export const DisaggregationsPanel = ({ indicator, valueType }: Props) => {
+export const DisaggregationsPanel = ({ indicator, meta }: Props) => {
   const [openDisaggregations, setOpenDisaggregations] = useState<string[]>([]);
-  const range = getIndicatorRange(indicator, valueType);
+  const range = getIndicatorRange(indicator, meta?.valueType);
+  const calcType = meta?.calculationTypeForDisaggregation;
   return (
     <>
       <div className='flex items-center justify-between gap-4 pb-2'>
@@ -61,7 +62,7 @@ export const DisaggregationsPanel = ({ indicator, valueType }: Props) => {
       >
         <AccordionItem className='py-0' value='sex'>
           <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
-            Sex of the respondent
+            Sex of the {calcType?.sex ?? 'respondent'}
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
             <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
@@ -125,7 +126,7 @@ export const DisaggregationsPanel = ({ indicator, valueType }: Props) => {
         </AccordionItem>
         <AccordionItem className='py-0' value='age group'>
           <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
-            Age groups of the respondent
+            Age groups of the {calcType?.age ?? 'respondent'}
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
             <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
@@ -253,7 +254,7 @@ export const DisaggregationsPanel = ({ indicator, valueType }: Props) => {
         </AccordionItem>
         <AccordionItem className='py-0' value='education'>
           <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
-            Educational attainment of the respondent
+            Educational attainment of the {calcType?.education ?? 'respondent'}
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
             <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
@@ -317,7 +318,7 @@ export const DisaggregationsPanel = ({ indicator, valueType }: Props) => {
         </AccordionItem>
         <AccordionItem className='py-0' value='employment status'>
           <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
-            Employment status of the respondent
+            Employment status of the {calcType?.employment ?? 'respondent'}
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
             <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>

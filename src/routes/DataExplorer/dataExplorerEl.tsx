@@ -411,7 +411,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               <GridItem noOfColSpan={{ base: 1, lg: 3 }}>
                 <DisaggregationsPanel
                   indicator={selectedIndicatorData}
-                  valueType={metaById.get(selectedIndicator)?.valueType}
+                  meta={metaById.get(selectedIndicator)}
                 />
               </GridItem>
             </Grid>

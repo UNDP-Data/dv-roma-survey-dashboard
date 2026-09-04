@@ -59,5 +59,6 @@ export interface IndicatorMetaData {
   subCategory: string;
   source: string;
   valueType: string;
+  calculationTypeForDisaggregation: Record<string, string>;
   availableDisaggregations: string[];
 }
