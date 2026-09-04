@@ -5,6 +5,7 @@
 import csv
 import json
 import sys
+import re
 
 
 AVAILABLE_DISAGGREGATIONS = [
@@ -28,7 +29,7 @@ def convert(input_csv: str, output_json: str) -> None:
         for row in reader:
             record = {
                 "id": row.get("slug", "").strip(),
-                "title": row.get("title", "").strip(),
+                "title": re.sub(r'\s*\([^)]*\)$', '', row.get("title", "").strip()),
                 "category": row.get("domain", "").strip(),
                 "subCategory": row.get("theme", "").strip(),
                 "source": row.get("source", "").strip(),
@@ -38,6 +39,8 @@ def convert(input_csv: str, output_json: str) -> None:
                     "education": row.get("edu_emp_of", "").strip(),
                     "employment": row.get("edu_emp_of", "").strip(),
                 },
+                "formula": row.get("formula", "").strip(),
+                "surveyBase": row.get("base", "").strip(),
                 "valueType": "percentage",
                 "availableDisaggregations": AVAILABLE_DISAGGREGATIONS,
             }
