@@ -24,15 +24,21 @@ import {
 } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { COLORS, FEATURED_INDICATORS, GROUPS } from '@/Constants';
-import type { SurveyIndicator } from '@/types';
+import type { IndicatorMetaData, SurveyIndicator } from '@/types';
 import { DisaggregationsPanel } from './components/disaggregationsPanel';
 import { FeaturedIndicatorsTable } from './components/featuredIndicatorsTable';
 
-function useSurveyData(country: string) {
-  return useQuery({
+function useDataExplorerData(country: string) {
+  const { data, isLoading, isError } = useQuery({
     queryKey: ['survey-data', country],
     queryFn: () => fetchAndParseJSON(`./data/${country}.json`) as Promise<SurveyIndicator[]>,
   });
+  const { data: metaData } = useQuery({
+    queryKey: ['indicator-metadata'],
+    queryFn: () =>
+      fetchAndParseJSON('./data/indicatorMetaData.json') as Promise<IndicatorMetaData[]>,
+  });
+  return { data, isLoading, isError, metaData };
 }
 
 type Theme = keyof typeof FEATURED_INDICATORS;
@@ -40,7 +46,7 @@ type Theme = keyof typeof FEATURED_INDICATORS;
 export const DataExplorerEl = ({ country }: { country: string }) => {
   const [selectedTheme, setSelectedTheme] = useState<Theme>('work and employment');
   const [selectedIndicator, setSelectedIndicator] = useState('acceptance_as_spouse');
-  const { data, isLoading, isError } = useSurveyData(country);
+  const { data, isLoading, isError, metaData } = useDataExplorerData(country);
   const exploreSectionRef = useRef<HTMLDivElement>(null);
 
   const handleFeaturedSelect = (id: string) => {
@@ -55,6 +61,20 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
   const featuredIndicators = FEATURED_INDICATORS[selectedTheme]
     .map((id) => data.find((d) => d.id === id))
     .filter((d): d is SurveyIndicator => d !== undefined);
+
+  const metaById = new Map((metaData ?? []).map((m) => [m.id, m]));
+  const themeIndicators = data.filter((d) => metaById.get(d.id)?.category === selectedTheme);
+
+  const indicatorGroups = new Map<string, { label: string; value: string }[]>();
+  for (const d of themeIndicators) {
+    const groupKey = metaById.get(d.id)?.subCategory ?? 'Other';
+    const group = indicatorGroups.get(groupKey) ?? [];
+    group.push({ label: d.description, value: d.id });
+    indicatorGroups.set(groupKey, group);
+  }
+  const indicatorOptions = [...indicatorGroups.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([label, options]) => ({ label, options }));
 
   const selectedIndicatorData = data.find((d) => d.id === selectedIndicator);
   const romaRow = selectedIndicatorData?.roma.find((el) => el.disaggregation === 'none');
@@ -151,10 +171,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               value={{ label: selectedIndicatorData?.description, value: selectedIndicator }}
               // biome-ignore lint/suspicious/noExplicitAny: Need to fix in the DS
               onChange={(d: any) => setSelectedIndicator(d.value)}
-              options={data.map((d) => ({
-                label: d.description,
-                value: d.id,
-              }))}
+              options={indicatorOptions}
               showCheck
               size='base'
               variant='light'

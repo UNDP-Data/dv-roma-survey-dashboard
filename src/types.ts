@@ -51,3 +51,13 @@ export interface OptionType {
   label: string;
   value: string;
 }
+
+export interface IndicatorMetaData {
+  id: string;
+  title: string;
+  category: string;
+  subCategory: string;
+  source: string;
+  valueType: string;
+  availableDisaggregations: string[];
+}
