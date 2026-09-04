@@ -147,7 +147,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
           </P>
           <div className='max-w-75 md:max-w-100'>
             <DropdownSelect
-              color='primary'
+              color='blue'
               value={{ label: selectedIndicatorData?.description, value: selectedIndicator }}
               // biome-ignore lint/suspicious/noExplicitAny: Need to fix in the DS
               onChange={(d: any) => setSelectedIndicator(d.value)}

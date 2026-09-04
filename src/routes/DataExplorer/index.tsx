@@ -22,7 +22,7 @@ export const dataExplorer = () => {
         </P>
         <div className='max-w-75 md:max-w-100'>
           <DropdownSelect
-            color='primary'
+            color='blue'
             value={selectedCountry}
             // biome-ignore lint/suspicious/noExplicitAny: Need to fix in the DS
             onChange={(d: any) => setSelectedCountry(d)}

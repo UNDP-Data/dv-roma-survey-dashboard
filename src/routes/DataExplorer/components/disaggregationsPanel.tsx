@@ -41,7 +41,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
         onValueChange={setOpenDisaggregations}
       >
         <AccordionItem className='py-0' value='sex'>
-          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base'>
+          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
             Sex of the respondent
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
@@ -107,7 +107,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
           </AccordionContent>
         </AccordionItem>
         <AccordionItem className='py-0' value='age group'>
-          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base'>
+          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
             Age groups of the respondent
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
@@ -173,7 +173,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
           </AccordionContent>
         </AccordionItem>
         <AccordionItem className='py-0' value='urbanisation'>
-          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base'>
+          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
             Urbanisation
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
@@ -239,7 +239,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
           </AccordionContent>
         </AccordionItem>
         <AccordionItem className='py-0' value='education'>
-          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base'>
+          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
             Educational attainment of the respondent
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
@@ -305,7 +305,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
           </AccordionContent>
         </AccordionItem>
         <AccordionItem className='py-0' value='employment status'>
-          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base'>
+          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
             Employment status of the respondent
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
@@ -371,7 +371,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
           </AccordionContent>
         </AccordionItem>
         <AccordionItem className='py-0' value='household size'>
-          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base'>
+          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
             Household size
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
@@ -437,7 +437,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
           </AccordionContent>
         </AccordionItem>
         <AccordionItem className='py-0' value='children in household'>
-          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base'>
+          <AccordionTrigger className='max-h-10 py-0 text-xs normal-case sm:text-base [&>svg]:text-accent-blue'>
             Children in the household
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
