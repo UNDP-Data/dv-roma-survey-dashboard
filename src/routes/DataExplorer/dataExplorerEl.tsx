@@ -23,7 +23,7 @@ import {
   House,
 } from 'lucide-react';
 import { useState } from 'react';
-import { COLORS, GROUPS } from '@/Constants';
+import { COLORS, FEATURED_INDICATORS, GROUPS } from '@/Constants';
 import type { SurveyIndicator } from '@/types';
 import { DisaggregationsPanel } from './components/disaggregationsPanel';
 import { FeaturedIndicatorsTable } from './components/featuredIndicatorsTable';
@@ -35,14 +35,20 @@ function useSurveyData(country: string) {
   });
 }
 
+type Theme = keyof typeof FEATURED_INDICATORS;
+
 export const DataExplorerEl = ({ country }: { country: string }) => {
-  const [selectedTheme, setSelectedTheme] = useState('work and employment');
+  const [selectedTheme, setSelectedTheme] = useState<Theme>('work and employment');
   const [selectedIndicator, setSelectedIndicator] = useState('acceptance_as_spouse');
   const { data, isLoading, isError } = useSurveyData(country);
 
   if (isLoading) return <Spinner size='lg' className='mx-auto my-20' />;
 
   if (isError || !data) return <>Error</>;
+
+  const featuredIndicators = FEATURED_INDICATORS[selectedTheme]
+    .map((id) => data.find((d) => d.id === id))
+    .filter((d): d is SurveyIndicator => d !== undefined);
 
   const selectedIndicatorData = data.find((d) => d.id === selectedIndicator);
   const romaRow = selectedIndicatorData?.roma.find((el) => el.disaggregation === 'none');
@@ -51,11 +57,14 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
   const nonRomaValue = nonRomaRow?.yesPercent ?? nonRomaRow?.mean ?? nonRomaRow?.gapPp;
   const gap =
     romaValue !== undefined && nonRomaValue !== undefined ? romaValue - nonRomaValue : undefined;
+
   return (
     <VisualizationWidget>
       <VisualizationWidgetHeader
         defaultValue={selectedTheme}
-        onChange={setSelectedTheme}
+        onChange={(value) => {
+          if (value in FEATURED_INDICATORS) setSelectedTheme(value as Theme);
+        }}
         activeItemClass='bg-background font-bold text-accent-blue shadow-[inset_0_3px_0_0_var(--accent-blue)]'
         className='h-16 overflow-x-auto sm:h-20'
       >
@@ -117,7 +126,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
           </div>
           <Spacer size='base' />
           <div className='w-full min-w-0 rounded-xs border border-stroke bg-background'>
-            <FeaturedIndicatorsTable indicators={data.slice(0, 5)} />
+            <FeaturedIndicatorsTable indicators={featuredIndicators} />
           </div>
           <Spacer size='3xl' />
           <P size='xl' weight='bold' marginBottom='sm' className='text-2xl'>

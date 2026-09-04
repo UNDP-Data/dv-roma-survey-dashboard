@@ -30,8 +30,10 @@ export const FeaturedIndicatorsTable = ({ indicators }: { indicators: SurveyIndi
         const suffix = romaData?.yesPercent !== undefined ? '%' : '';
         return (
           <TableRow key={indicator.id}>
-            <TableCell className='w-[25%] whitespace-normal py-2 pr-4 text-sm sm:w-[50%] sm:text-p-sm md:text-p-sm lg:text-p-sm'>
-              {indicator.description}
+            <TableCell className='w-[25%] overflow-hidden py-2 pr-4 text-sm sm:w-[50%] sm:text-p-sm md:text-p-sm lg:text-p-sm'>
+              <span className='block truncate' title={indicator.description}>
+                {indicator.description}
+              </span>
             </TableCell>
             <TableCell
               className='w-[10%] pr-4 font-semibold text-p-sm sm:w-[10%] md:text-p-sm lg:text-p-sm'
