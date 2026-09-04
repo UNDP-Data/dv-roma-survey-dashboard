@@ -12,8 +12,27 @@ import { useState } from 'react';
 import { COLORS, GROUPS } from '@/Constants';
 import type { SurveyIndicator } from '@/types';
 
-export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicator }) => {
+interface Props {
+  indicator?: SurveyIndicator;
+  valueType?: string;
+}
+
+function getIndicatorRange(
+  indicator: SurveyIndicator | undefined,
+  valueType?: string,
+): { minValue: number; maxValue: number } | undefined {
+  if (valueType === 'percentage') return { minValue: 0, maxValue: 100 };
+  if (!indicator) return undefined;
+  const values = [...indicator.roma, ...indicator.nonRoma]
+    .map((el) => el.yesPercent ?? el.mean ?? el.gapPp)
+    .filter((v): v is number => v !== undefined);
+  if (values.length === 0) return undefined;
+  return { minValue: Math.min(...values), maxValue: Math.max(...values) };
+}
+
+export const DisaggregationsPanel = ({ indicator, valueType }: Props) => {
   const [openDisaggregations, setOpenDisaggregations] = useState<string[]>([]);
+  const range = getIndicatorRange(indicator, valueType);
   return (
     <>
       <div className='flex items-center justify-between gap-4 pb-2'>
@@ -45,7 +64,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
             Sex of the respondent
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
               {indicator?.roma
                 .filter((el) => el.disaggregation === 'sex')
                 .map((el) => el.category)
@@ -81,12 +100,10 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                       orientation='horizontal'
                       height={48}
                       topMargin={0}
-                      hideAxisLine
                       showLabels={false}
                       leftMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
-                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -98,12 +115,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                             ? '%'
                             : '',
                       }}
-                      maxValue={
-                        indicator?.roma.find((romaData) => romaData.category === el)?.yesPercent !==
-                        undefined
-                          ? 100
-                          : undefined
-                      }
+                      maxValue={range?.maxValue}
+                      minValue={range?.minValue}
                     />
                   </div>
                 ))}
@@ -115,7 +128,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
             Age groups of the respondent
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
               {indicator?.roma
                 .filter((el) => el.disaggregation === 'age group')
                 .map((el) => el.category)
@@ -153,10 +166,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
-                      hideAxisLine
                       showLabels={false}
                       leftMargin={0}
-                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -168,12 +179,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                             ? '%'
                             : '',
                       }}
-                      maxValue={
-                        indicator?.roma.find((romaData) => romaData.category === el)?.yesPercent !==
-                        undefined
-                          ? 100
-                          : undefined
-                      }
+                      maxValue={range?.maxValue}
+                      minValue={range?.minValue}
                     />
                   </div>
                 ))}
@@ -185,7 +192,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
             Urbanisation
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
               {indicator?.roma
                 .filter((el) => el.disaggregation === 'urbanisation')
                 .map((el) => el.category)
@@ -223,9 +230,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
-                      trackColor='var(--surface-sm)'
                       showColorScale={false}
-                      hideAxisLine
                       showLabels={false}
                       leftMargin={0}
                       showTicks={false}
@@ -238,12 +243,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                             ? '%'
                             : '',
                       }}
-                      maxValue={
-                        indicator?.roma.find((romaData) => romaData.category === el)?.yesPercent !==
-                        undefined
-                          ? 100
-                          : undefined
-                      }
+                      maxValue={range?.maxValue}
+                      minValue={range?.minValue}
                     />
                   </div>
                 ))}
@@ -255,7 +256,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
             Educational attainment of the respondent
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
               {indicator?.roma
                 .filter((el) => el.disaggregation === 'education')
                 .map((el) => el.category)
@@ -293,10 +294,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
-                      hideAxisLine
                       showLabels={false}
                       leftMargin={0}
-                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -308,12 +307,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                             ? '%'
                             : '',
                       }}
-                      maxValue={
-                        indicator?.roma.find((romaData) => romaData.category === el)?.yesPercent !==
-                        undefined
-                          ? 100
-                          : undefined
-                      }
+                      maxValue={range?.maxValue}
+                      minValue={range?.minValue}
                     />
                   </div>
                 ))}
@@ -325,7 +320,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
             Employment status of the respondent
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
               {indicator?.roma
                 .filter((el) => el.disaggregation === 'employment status')
                 .map((el) => el.category)
@@ -363,10 +358,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
-                      hideAxisLine
                       showLabels={false}
                       leftMargin={0}
-                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -378,12 +371,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                             ? '%'
                             : '',
                       }}
-                      maxValue={
-                        indicator?.roma.find((romaData) => romaData.category === el)?.yesPercent !==
-                        undefined
-                          ? 100
-                          : undefined
-                      }
+                      maxValue={range?.maxValue}
+                      minValue={range?.minValue}
                     />
                   </div>
                 ))}
@@ -395,7 +384,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
             Household size
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
               {indicator?.roma
                 .filter((el) => el.disaggregation === 'household size')
                 .map((el) => el.category)
@@ -433,9 +422,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
-                      trackColor='var(--surface-sm)'
                       showColorScale={false}
-                      hideAxisLine
                       showLabels={false}
                       leftMargin={0}
                       showTicks={false}
@@ -448,12 +435,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                             ? '%'
                             : '',
                       }}
-                      maxValue={
-                        indicator?.roma.find((romaData) => romaData.category === el)?.yesPercent !==
-                        undefined
-                          ? 100
-                          : undefined
-                      }
+                      maxValue={range?.maxValue}
+                      minValue={range?.minValue}
                     />
                   </div>
                 ))}
@@ -465,7 +448,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
             Children in the household
           </AccordionTrigger>
           <AccordionContent className='h-auto animate-none'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col [&>*+*]:border-stroke [&>*+*]:border-t'>
               {indicator?.roma
                 .filter((el) => el.disaggregation === 'children in household')
                 .map((el) => el.category)
@@ -501,12 +484,10 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                       orientation='horizontal'
                       height={48}
                       topMargin={0}
-                      hideAxisLine
                       showLabels={false}
                       leftMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
-                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -518,12 +499,8 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                             ? '%'
                             : '',
                       }}
-                      maxValue={
-                        indicator?.roma.find((romaData) => romaData.category === el)?.yesPercent !==
-                        undefined
-                          ? 100
-                          : undefined
-                      }
+                      maxValue={range?.maxValue}
+                      minValue={range?.minValue}
                     />
                   </div>
                 ))}
