@@ -1,7 +1,7 @@
 [
   {
     "id": "acceptance_as_spouse",
-    "title": "Would accept the other ethnicity as a spouse (UNDP)",
+    "title": "Would accept the other ethnicity as a spouse",
     "category": "living conditions",
     "subCategory": "Social Cohesion",
     "source": "UNDP",
@@ -11,6 +11,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who would accept the other ethnicity as a spouse or marriage partner (agree or strongly agree)",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -24,7 +26,7 @@
   },
   {
     "id": "acceptance_as_neighbours",
-    "title": "Would accept the other ethnicity as neighbours (UNDP)",
+    "title": "Would accept the other ethnicity as neighbours",
     "category": "living conditions",
     "subCategory": "Social Cohesion",
     "source": "UNDP",
@@ -34,6 +36,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who would accept the other ethnicity as neighbours (agree or strongly agree)",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -47,7 +51,7 @@
   },
   {
     "id": "acceptance_as_close_friends",
-    "title": "Would accept the other ethnicity as close friends (UNDP)",
+    "title": "Would accept the other ethnicity as close friends",
     "category": "living conditions",
     "subCategory": "Social Cohesion",
     "source": "UNDP",
@@ -57,6 +61,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who would accept the other ethnicity as close friends (agree or strongly agree)",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -70,7 +76,7 @@
   },
   {
     "id": "acceptance_as_co_workers",
-    "title": "Would accept the other ethnicity as co-workers (UNDP)",
+    "title": "Would accept the other ethnicity as co-workers",
     "category": "living conditions",
     "subCategory": "Social Cohesion",
     "source": "UNDP",
@@ -80,6 +86,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who would accept the other ethnicity as co-workers (agree or strongly agree)",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -93,7 +101,7 @@
   },
   {
     "id": "social_distance_score_closest_accepted_r",
-    "title": "Closest accepted relationship with the other ethnicity (UNDP)",
+    "title": "Closest accepted relationship with the other ethnicity",
     "category": "living conditions",
     "subCategory": "Social Cohesion",
     "source": "UNDP",
@@ -103,6 +111,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "Among respondents interviewed: average closest relationship accepted with someone from the other ethnicity (1=spouse, 2=friend, 3=neighbour, 4=co-worker, 5=none). Neither counts as No.",
+    "surveyBase": "Respondents interviewed with valid answers on all four relationship items",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -116,7 +126,7 @@
   },
   {
     "id": "bribes_never_necessary_with_police",
-    "title": "Bribes never necessary with police (UNDP)",
+    "title": "Bribes never necessary with police",
     "category": "living conditions",
     "subCategory": "Governance",
     "source": "UNDP",
@@ -126,6 +136,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say bribes are never necessary when dealing with the police",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -139,7 +151,7 @@
   },
   {
     "id": "bribes_never_necessary_for_official_docu",
-    "title": "Bribes never necessary for official documents (UNDP)",
+    "title": "Bribes never necessary for official documents",
     "category": "living conditions",
     "subCategory": "Governance",
     "source": "UNDP",
@@ -149,6 +161,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say bribes are never necessary to obtain official documents",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -162,7 +176,7 @@
   },
   {
     "id": "bribes_never_necessary_for_medical_treat",
-    "title": "Bribes never necessary for medical treatment (UNDP)",
+    "title": "Bribes never necessary for medical treatment",
     "category": "living conditions",
     "subCategory": "Governance",
     "source": "UNDP",
@@ -172,6 +186,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say bribes are never necessary to get medical treatment",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -185,7 +201,7 @@
   },
   {
     "id": "bribes_never_necessary_for_school_servic",
-    "title": "Bribes never necessary for school services (UNDP)",
+    "title": "Bribes never necessary for school services",
     "category": "living conditions",
     "subCategory": "Governance",
     "source": "UNDP",
@@ -195,6 +211,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say bribes are never necessary for school services",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -208,7 +226,7 @@
   },
   {
     "id": "women_have_money_of_their_own",
-    "title": "Women with financial independence (UNDP)",
+    "title": "Women with financial independence",
     "category": "living conditions",
     "subCategory": "Women's Empowerment",
     "source": "UNDP",
@@ -218,6 +236,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of female respondents interviewed who have money of their own that they alone decide how to use",
+    "surveyBase": "Female respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -231,7 +251,7 @@
   },
   {
     "id": "women_make_spending_decisions_themselves",
-    "title": "Women with financial autonomy (UNDP)",
+    "title": "Women with financial autonomy",
     "category": "living conditions",
     "subCategory": "Women's Empowerment",
     "source": "UNDP",
@@ -241,6 +261,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of female respondents interviewed who have money of their own and decide mostly alone how to spend it",
+    "surveyBase": "Female respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -254,7 +276,7 @@
   },
   {
     "id": "makes_ends_meet_with_difficulty",
-    "title": "Household makes ends meet with difficulty (UNDP, FRA)",
+    "title": "Household makes ends meet with difficulty",
     "category": "living conditions",
     "subCategory": "Economic Security",
     "source": "UNDP",
@@ -264,6 +286,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that makes ends meet with difficulty or great difficulty",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -277,7 +301,7 @@
   },
   {
     "id": "months_household_can_live_off_savings",
-    "title": "Months household can live off savings (UNDP)",
+    "title": "Months household can live off savings",
     "category": "living conditions",
     "subCategory": "Economic Security",
     "source": "UNDP",
@@ -287,7 +311,9 @@
       "education": "household head",
       "employment": "household head"
     },
-    "valueType": "mean",
+    "formula": "Among households: weighted average number of months the household could live off savings if income stopped",
+    "surveyBase": "Surveyed households with a valid months-of-savings answer; don't know and refused excluded",
+    "valueType": "percentage",
     "availableDisaggregations": [
       "age",
       "sex",
@@ -300,7 +326,7 @@
   },
   {
     "id": "no_emergency_funding_source",
-    "title": "No emergency funding source (UNDP)",
+    "title": "No emergency funding source",
     "category": "living conditions",
     "subCategory": "Economic Security",
     "source": "UNDP",
@@ -310,6 +336,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who could turn to no one for emergency funding",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -323,7 +351,7 @@
   },
   {
     "id": "own_savings_as_emergency_source",
-    "title": "Own savings as emergency source (UNDP)",
+    "title": "Own savings as emergency source",
     "category": "living conditions",
     "subCategory": "Economic Security",
     "source": "UNDP",
@@ -333,6 +361,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who would use own savings as the main emergency funding source",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -346,7 +376,7 @@
   },
   {
     "id": "smartphone_ownership",
-    "title": "Smartphone ownership (UNDP)",
+    "title": "Smartphone ownership",
     "category": "living conditions",
     "subCategory": "Digital Inclusion",
     "source": "UNDP",
@@ -356,6 +386,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who personally own a smartphone",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -369,7 +401,7 @@
   },
   {
     "id": "internet_access_at_home",
-    "title": "Personal internet access at home (UNDP)",
+    "title": "Personal internet access at home",
     "category": "living conditions",
     "subCategory": "Digital Inclusion",
     "source": "UNDP",
@@ -379,6 +411,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who have internet access at home for personal use",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -392,7 +426,7 @@
   },
   {
     "id": "can_buy_something_for_themselves",
-    "title": "Can buy something for themselves (UNDP)",
+    "title": "Can buy something for themselves",
     "category": "living conditions",
     "subCategory": "Material Deprivation",
     "source": "UNDP",
@@ -402,6 +436,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who can spend a small amount of money on themselves each week",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -415,7 +451,7 @@
   },
   {
     "id": "child_enrolled_in_daycare",
-    "title": "Child enrolled in daycare (UNDP)",
+    "title": "Child enrolled in daycare",
     "category": "education",
     "subCategory": "Early Childhood",
     "source": "UNDP",
@@ -425,6 +461,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members aged 0–5 enrolled in organised daycare or preschool",
+    "surveyBase": "All children in the surveyed households, who are aged 0–5 with a valid enrolment answer; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -438,7 +476,7 @@
   },
   {
     "id": "daycare_too_expensive",
-    "title": "Daycare too expensive (UNDP)",
+    "title": "Daycare too expensive",
     "category": "education",
     "subCategory": "Early Childhood",
     "source": "UNDP",
@@ -448,6 +486,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members who are non-enrolled children aged 0–5 for whom daycare is too expensive",
+    "surveyBase": "All children in the surveyed households, who are aged 0–5 and not enrolled in daycare",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -461,7 +501,7 @@
   },
   {
     "id": "no_daycare_nearby",
-    "title": "No daycare nearby (UNDP)",
+    "title": "No daycare nearby",
     "category": "education",
     "subCategory": "Early Childhood",
     "source": "UNDP",
@@ -471,6 +511,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members who are non-enrolled children aged 0–5 for whom no daycare is available nearby",
+    "surveyBase": "All children in the surveyed households, who are aged 0–5 and not enrolled in daycare",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -484,7 +526,7 @@
   },
   {
     "id": "environmental_health_consequences",
-    "title": "Environmental health consequences (UNDP)",
+    "title": "Environmental health consequences",
     "category": "health",
     "subCategory": "Environment",
     "source": "UNDP",
@@ -494,6 +536,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that reports health consequences from environmental problems",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -507,7 +551,7 @@
   },
   {
     "id": "affected_by_floods_mudslides",
-    "title": "Affected by floods/mudslides (UNDP)",
+    "title": "Affected by floods/mudslides",
     "category": "living conditions",
     "subCategory": "Environment",
     "source": "UNDP",
@@ -517,6 +561,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of households somewhat or very much affected by floods, mudflows or landslides",
+    "surveyBase": "Surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -530,7 +576,7 @@
   },
   {
     "id": "would_consider_moving_again",
-    "title": "Migration intent (UNDP)",
+    "title": "Migration intent",
     "category": "living conditions",
     "subCategory": "Migration",
     "source": "UNDP",
@@ -540,6 +586,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who would consider moving (again)",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -553,7 +601,7 @@
   },
   {
     "id": "refugee_displaced_due_to_conflict",
-    "title": "Refugee/displaced due to conflict (UNDP)",
+    "title": "Refugee/displaced due to conflict",
     "category": "living conditions",
     "subCategory": "Migration",
     "source": "UNDP",
@@ -563,6 +611,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household with members who are refugees or internally displaced because of conflict",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -576,7 +626,7 @@
   },
   {
     "id": "household_had_self_employment_income",
-    "title": "Household received self-employment income (UNDP)",
+    "title": "Household received self-employment income",
     "category": "work and employment",
     "subCategory": "Livelihoods",
     "source": "UNDP",
@@ -586,6 +636,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of households that received self-employment income",
+    "surveyBase": "Surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -599,7 +651,7 @@
   },
   {
     "id": "produces_vegetables_for_own_consumption",
-    "title": "Produces vegetables for own consumption (UNDP)",
+    "title": "Produces vegetables for own consumption",
     "category": "work and employment",
     "subCategory": "Livelihoods",
     "source": "UNDP",
@@ -609,6 +661,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of households that produce vegetables for their own consumption",
+    "surveyBase": "Surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -622,7 +676,7 @@
   },
   {
     "id": "disability_pension_recipients",
-    "title": "Disability pension recipients (UNDP)",
+    "title": "Disability pension recipients",
     "category": "living conditions",
     "subCategory": "Social Protection",
     "source": "UNDP",
@@ -632,6 +686,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of households that receive a disability pension",
+    "surveyBase": "Surveyed households; don't know and refused on pension receipt (and type, if asked) excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -645,7 +701,7 @@
   },
   {
     "id": "child_family_benefit_recipients",
-    "title": "Child/family benefit recipients (UNDP)",
+    "title": "Child/family benefit recipients",
     "category": "living conditions",
     "subCategory": "Social Protection",
     "source": "UNDP",
@@ -655,6 +711,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of households that receive child or family benefits",
+    "surveyBase": "Surveyed households; don't know and refused on social assistance (and type, if asked) excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -668,7 +726,7 @@
   },
   {
     "id": "last_resort_assistance_recipients",
-    "title": "Last-resort assistance recipients (UNDP)",
+    "title": "Last-resort assistance recipients",
     "category": "living conditions",
     "subCategory": "Social Protection",
     "source": "UNDP",
@@ -678,6 +736,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of households that receive last-resort assistance",
+    "surveyBase": "Surveyed households; don't know and refused on social assistance (and type, if asked) excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -691,16 +751,18 @@
   },
   {
     "id": "educational_attainment",
-    "title": "Undereducated member in the household (UNDP)",
+    "title": "Undereducated member in the household",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where at least one adult aged 18–65 has not completed secondary education",
+    "surveyBase": "All members of surveyed households; household is deprived if any qualifying member has below-secondary education",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -714,16 +776,18 @@
   },
   {
     "id": "completed_secondary_education_ages_18_65",
-    "title": "Completed secondary education, ages 18–65 (UNDP)",
+    "title": "Completed secondary education, ages 18–65",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 18–65 who have completed secondary education (same A9 cut as FRA EDUMAX, wider age)",
+    "surveyBase": "All members of surveyed households aged 18–65 with a valid education answer",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -737,16 +801,18 @@
   },
   {
     "id": "school_attendance",
-    "title": "Children living in households where not all 6–15 kids attend school (UNDP)",
+    "title": "Children living in households where not all 6–15 kids attend school",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where at least one child aged 6–15 has temporarily left or permanently stopped school (B1 in 10, 11 or 12)",
+    "surveyBase": "All members of surveyed households; children aged 6–15 who have temporarily left or permanently stopped school",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -760,16 +826,18 @@
   },
   {
     "id": "school_attendance_ages_6_15",
-    "title": "School attendance, ages 6–15 (UNDP)",
+    "title": "School attendance, ages 6–15",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members aged 6–15 who are currently attending school (B1 in 1–9). Person-level among those with a classifiable current-education answer (B1 in 1–12).",
+    "surveyBase": "All children in the surveyed households, who are aged 6–15 with a classifiable current-education answer",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -783,16 +851,18 @@
   },
   {
     "id": "preschool_education",
-    "title": "Preschool education in the household (UNDP)",
+    "title": "Preschool education in the household",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household with a five-year-old where that child is not enrolled in organised preschool or daycare",
+    "surveyBase": "All members of surveyed households in households with at least one child aged 5 and a valid enrolment answer",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -806,16 +876,18 @@
   },
   {
     "id": "youth_neet",
-    "title": "People living in households with a youth NEET (ages 15–29) (UNDP)",
+    "title": "People living in households with a youth NEET (ages 15–29)",
     "category": "work and employment",
     "subCategory": "Employment",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where at least one young person aged 15–29 is not in education, employment or training",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -829,16 +901,18 @@
   },
   {
     "id": "health_access_unmet_medical_need",
-    "title": "Unmet medical need in the past year (UNDP)",
+    "title": "Unmet medical need in the past year",
     "category": "health",
     "subCategory": "Health",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "respondent",
       "age": "respondent",
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who needed a medical examination or treatment in the past year and did not receive it on at least one occasion",
+    "surveyBase": "Respondents interviewed with a valid answer on need for and receipt of care",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -852,16 +926,18 @@
   },
   {
     "id": "health_service_quality",
-    "title": "Unsatisfactory quality of care received (UNDP)",
+    "title": "Unsatisfactory quality of care received",
     "category": "health",
     "subCategory": "Health",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "respondent",
       "age": "respondent",
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who received medical care and said the quality was not always or never satisfactory",
+    "surveyBase": "Respondents interviewed who received medical care and rated its quality",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -875,16 +951,18 @@
   },
   {
     "id": "medical_insurance",
-    "title": "People living in households where not all members have medical insurance (UNDP)",
+    "title": "People living in households where not all members have medical insurance",
     "category": "health",
     "subCategory": "Health",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where at least one member has no medical insurance",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -898,16 +976,18 @@
   },
   {
     "id": "food_insecurity",
-    "title": "Severe food insecurity in the household (hungry and a whole day without eating) (UNDP)",
+    "title": "Severe food insecurity in the household (hungry and a whole day without eating)",
     "category": "living conditions",
     "subCategory": "Nutrition",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where, because of lack of money, someone was hungry but did not eat and someone went a whole day without eating",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -921,16 +1001,18 @@
   },
   {
     "id": "unemployment_and_seasonal_occasional_employment",
-    "title": "Household members affected by job insecurity of a household member (UNDP)",
+    "title": "Household members affected by job insecurity of a household member",
     "category": "work and employment",
     "subCategory": "Employment",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where at least one working-age member (16–64) is unemployed or only seasonally/occasionally employed",
+    "surveyBase": "All members of surveyed households; working age defined as 16–64 for all sexes",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -944,16 +1026,18 @@
   },
   {
     "id": "informal_employment",
-    "title": "People living in households with informal employment (UNDP)",
+    "title": "People living in households with informal employment",
     "category": "work and employment",
     "subCategory": "Employment",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where at least one employed member has no written contract or no social contributions paid for the job",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -967,16 +1051,18 @@
   },
   {
     "id": "child_and_adolescent_labour_proxy",
-    "title": "People living in households where at least one child or adolescent (ages 5–17) performs some economic activity (UNDP)",
+    "title": "People living in households where at least one child or adolescent (ages 5–17) performs some economic activity",
     "category": "work and employment",
     "subCategory": "Employment",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where at least one child or adolescent aged 5–17 is engaged in economic activity",
+    "surveyBase": "All members of surveyed households; household counted if at least one child or adolescent aged 5–17 is engaged in economic activity (proxy, not a full child-labour module)",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -990,16 +1076,18 @@
   },
   {
     "id": "access_to_drinking_water",
-    "title": "No piped drinking water inside the dwelling (UNDP)",
+    "title": "No piped drinking water inside the dwelling",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household whose main drinking water is not piped inside the dwelling",
+    "surveyBase": "All members of surveyed households; don't know and refused on water source excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1013,16 +1101,18 @@
   },
   {
     "id": "access_to_basic_sanitation_public_sewerage",
-    "title": "Not connected to public sewerage (UNDP)",
+    "title": "Not connected to public sewerage",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household not connected to the public sewerage network",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1036,16 +1126,18 @@
   },
   {
     "id": "indoor_toilet_companion",
-    "title": "No toilet inside the dwelling (UNDP)",
+    "title": "No toilet inside the dwelling",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household with no toilet inside the dwelling",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1059,16 +1151,18 @@
   },
   {
     "id": "ability_to_keep_home_adequately_warm",
-    "title": "Cannot afford to keep the home adequately warm (UNDP)",
+    "title": "Cannot afford to keep the home adequately warm",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford to keep the home adequately warm",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1082,16 +1176,18 @@
   },
   {
     "id": "garbage_disposal",
-    "title": "No public garbage collection (UNDP)",
+    "title": "No public garbage collection",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household without public garbage collection",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1105,16 +1201,18 @@
   },
   {
     "id": "overcrowding",
-    "title": "Overcrowding (less than 9 m² per person) (UNDP)",
+    "title": "Overcrowding (less than 9 m² per person)",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household with less than 9 m² of living space per person",
+    "surveyBase": "All members of surveyed households with a valid dwelling size and household size",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1128,16 +1226,18 @@
   },
   {
     "id": "housing_defects",
-    "title": "Housing defects (UNDP)",
+    "title": "Housing defects",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household with leaking roof, damp walls/floors/foundation, or rot in window frames or floor",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1151,16 +1251,18 @@
   },
   {
     "id": "internet_access",
-    "title": "People living in a household with no internet access (UNDP)",
+    "title": "People living in a household with no internet access",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household without internet access at home",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1174,16 +1276,18 @@
   },
   {
     "id": "durables",
-    "title": "People living in a household with at most one durable good (UNDP)",
+    "title": "People living in a household with at most one durable good",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that owns at most one of: washing machine, TV, computer, car, or phone",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1197,16 +1301,18 @@
   },
   {
     "id": "no_bank_account",
-    "title": "People living in a household with no bank account (UNDP, FRA)",
+    "title": "People living in a household with no bank account",
     "category": "living conditions",
     "subCategory": "Financial / social",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members aged 16+ living in a household with no bank account",
+    "surveyBase": "All members of surveyed households aged 16+; based on whether anyone in the household has a bank account",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1220,16 +1326,18 @@
   },
   {
     "id": "household_arrears",
-    "title": "People living in a household that is in arrears (UNDP)",
+    "title": "People living in a household that is in arrears",
     "category": "living conditions",
     "subCategory": "Financial / social",
-    "source": "UNDP",
+    "source": "UNDP MPI",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that was more than once in arrears on housing, utility or related payments",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1243,7 +1351,7 @@
   },
   {
     "id": "cannot_afford_unexpected_expenses",
-    "title": "Cannot afford unexpected expenses (UNDP)",
+    "title": "Cannot afford unexpected expenses",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1253,6 +1361,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford an unexpected required expense",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1266,7 +1376,7 @@
   },
   {
     "id": "cannot_afford_a_one_week_holiday",
-    "title": "Cannot afford a one-week holiday (UNDP)",
+    "title": "Cannot afford a one-week holiday",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1276,6 +1386,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford a one-week annual holiday away from home",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1289,7 +1401,7 @@
   },
   {
     "id": "cannot_afford_a_meal_with_meat_chicken_or_fish_e",
-    "title": "Cannot afford a meal with meat, chicken or fish every second day (UNDP)",
+    "title": "Cannot afford a meal with meat, chicken or fish every second day",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1299,6 +1411,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford a meal with meat, chicken, fish (or vegetarian equivalent) every second day",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1312,7 +1426,7 @@
   },
   {
     "id": "cannot_afford_to_keep_the_home_adequately_warm",
-    "title": "Cannot afford to keep the home adequately warm (UNDP)",
+    "title": "Cannot afford to keep the home adequately warm",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1322,6 +1436,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford to keep the home adequately warm",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1335,7 +1451,7 @@
   },
   {
     "id": "cannot_afford_to_replace_worn_out_furniture",
-    "title": "Cannot afford to replace worn-out furniture (UNDP)",
+    "title": "Cannot afford to replace worn-out furniture",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1345,6 +1461,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford to replace worn-out furniture",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1358,7 +1476,7 @@
   },
   {
     "id": "arrears_on_housing_utility_or_hire_purchase_paym",
-    "title": "Arrears on housing, utility or hire-purchase payments (UNDP)",
+    "title": "Arrears on housing, utility or hire-purchase payments",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1368,6 +1486,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household with arrears on mortgage, rent, utility bills or hire-purchase payments",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1381,7 +1501,7 @@
   },
   {
     "id": "cannot_afford_a_car_or_van",
-    "title": "Cannot afford a car or van (UNDP)",
+    "title": "Cannot afford a car or van",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1391,6 +1511,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford a car or van",
+    "surveyBase": "All members of surveyed households; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1404,7 +1526,7 @@
   },
   {
     "id": "cannot_afford_to_replace_worn_out_clothes",
-    "title": "Cannot afford to replace worn-out clothes (UNDP)",
+    "title": "Cannot afford to replace worn-out clothes",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1414,6 +1536,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who cannot afford to replace worn-out clothes",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1427,7 +1551,7 @@
   },
   {
     "id": "cannot_afford_two_pairs_of_properly_fitting_shoe",
-    "title": "Cannot afford two pairs of properly fitting shoes (UNDP)",
+    "title": "Cannot afford two pairs of properly fitting shoes",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1437,6 +1561,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who cannot afford two pairs of properly fitting shoes",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1450,7 +1576,7 @@
   },
   {
     "id": "cannot_afford_a_small_amount_of_money_for_person",
-    "title": "Cannot afford a small amount of money for personal spending each week (UNDP)",
+    "title": "Cannot afford a small amount of money for personal spending each week",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1460,6 +1586,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who cannot afford to spend a small amount of money on themselves each week",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1473,7 +1601,7 @@
   },
   {
     "id": "cannot_afford_a_regular_leisure_activity",
-    "title": "Cannot afford a regular leisure activity (UNDP)",
+    "title": "Cannot afford a regular leisure activity",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1483,6 +1611,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who cannot afford a regular leisure activity",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1496,7 +1626,7 @@
   },
   {
     "id": "cannot_afford_to_get_together_with_friends_or_fa",
-    "title": "Cannot afford to get together with friends or family at least once a month (UNDP)",
+    "title": "Cannot afford to get together with friends or family at least once a month",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1506,6 +1636,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who cannot afford to get together with friends or family for a drink or meal at least once a month",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1519,7 +1651,7 @@
   },
   {
     "id": "cannot_afford_internet_access_at_home_for_person",
-    "title": "Cannot afford internet access at home for personal use (UNDP)",
+    "title": "Cannot afford internet access at home for personal use",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1529,6 +1661,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who cannot afford internet access at home for personal use",
+    "surveyBase": "Respondents interviewed; don't know and refused excluded",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1542,7 +1676,7 @@
   },
   {
     "id": "material_and_social_deprivation_lacking_5_or_mor",
-    "title": "Material and social deprivation (5 or more of 13 items) (UNDP)",
+    "title": "Material and social deprivation (5 or more of 13 items)",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1552,6 +1686,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who cannot afford at least 5 of the 13 Eurostat/EU-SILC material and social deprivation items",
+    "surveyBase": "Respondents interviewed with a complete 13-item deprivation profile (household and personal items combined)",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1565,7 +1701,7 @@
   },
   {
     "id": "severe_material_and_social_deprivation_lacking_7",
-    "title": "Severe material and social deprivation (7 or more of 13 items) (UNDP)",
+    "title": "Severe material and social deprivation (7 or more of 13 items)",
     "category": "living conditions",
     "subCategory": "EU-SILC material and social deprivation",
     "source": "UNDP",
@@ -1575,6 +1711,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who cannot afford at least 7 of the 13 Eurostat/EU-SILC material and social deprivation items",
+    "surveyBase": "Respondents interviewed with a complete 13-item deprivation profile (household and personal items combined)",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1588,7 +1726,7 @@
   },
   {
     "id": "wb_employed_15_64",
-    "title": "Employed last week (ILO, ages 15–64) (World Bank)",
+    "title": "Employed last week (ILO, ages 15–64)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1598,6 +1736,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–64 who are employed in the ILO reference-week sense (paid work last week, temporarily absent from a job, or about to start work)",
+    "surveyBase": "All members of surveyed households aged 15–64 with a classifiable employment status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1611,7 +1751,7 @@
   },
   {
     "id": "wb_unemployed_15_64",
-    "title": "Unemployed, ages 15–64 (World Bank)",
+    "title": "Unemployed, ages 15–64",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1621,6 +1761,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–64 who are unemployed (ILO: not employed, searched in the last 4 weeks and available, or waiting on a job interview)",
+    "surveyBase": "All members of surveyed households aged 15–64 with a classifiable employment status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1634,7 +1776,7 @@
   },
   {
     "id": "wb_inactive_15_64",
-    "title": "Inactive (15–64) (World Bank)",
+    "title": "Inactive (15–64)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1644,6 +1786,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–64 who are economically inactive",
+    "surveyBase": "All members of surveyed households aged 15–64 with a classifiable employment status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1657,7 +1801,7 @@
   },
   {
     "id": "wb_employed_25_64",
-    "title": "Employed (25–64) (World Bank)",
+    "title": "Employed (25–64)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1667,6 +1811,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 25–64 who are employed (paid work)",
+    "surveyBase": "All members of surveyed households aged 25–64 with a classifiable employment status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1680,7 +1826,7 @@
   },
   {
     "id": "wb_unemployed_25_64",
-    "title": "Unemployed (25–64) (World Bank)",
+    "title": "Unemployed (25–64)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1690,6 +1836,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 25–64 who are unemployed",
+    "surveyBase": "All members of surveyed households aged 25–64 with a classifiable employment status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1703,7 +1851,7 @@
   },
   {
     "id": "wb_inactive_25_64",
-    "title": "Inactive (25–64) (World Bank)",
+    "title": "Inactive (25–64)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1713,6 +1861,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 25–64 who are economically inactive",
+    "surveyBase": "All members of surveyed households aged 25–64 with a classifiable employment status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1726,7 +1876,7 @@
   },
   {
     "id": "wb_employed_15_24",
-    "title": "Employed (15–24) (World Bank)",
+    "title": "Employed (15–24)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1736,6 +1886,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–24 who are employed (paid work)",
+    "surveyBase": "All members of surveyed households aged 15–24 with a classifiable employment status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1749,7 +1901,7 @@
   },
   {
     "id": "wb_unemployed_15_24",
-    "title": "Unemployed (15–24) (World Bank)",
+    "title": "Unemployed (15–24)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1759,6 +1911,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–24 who are unemployed",
+    "surveyBase": "All members of surveyed households aged 15–24 with a classifiable employment status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1772,7 +1926,7 @@
   },
   {
     "id": "wb_inactive_in_education_15_24",
-    "title": "Inactive in education (15–24) (World Bank)",
+    "title": "Inactive in education (15–24)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1782,6 +1936,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–24 who are inactive and in education",
+    "surveyBase": "All members of surveyed households aged 15–24",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1795,7 +1951,7 @@
   },
   {
     "id": "wb_neet_inactive_not_in_education_15_24",
-    "title": "NEET inactive not in education (15–24) (World Bank)",
+    "title": "NEET inactive not in education (15–24)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1805,6 +1961,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–24 who are inactive and not in education",
+    "surveyBase": "All members of surveyed households aged 15–24",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1818,7 +1976,7 @@
   },
   {
     "id": "wb_neet_15_24",
-    "title": "NEET, ages 15–24 (World Bank)",
+    "title": "NEET, ages 15–24",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1828,6 +1986,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–24 who are not employed and not enrolled in education or training",
+    "surveyBase": "All members of surveyed households aged 15–24",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1841,7 +2001,7 @@
   },
   {
     "id": "wb_no_medical_insurance",
-    "title": "No medical insurance (World Bank)",
+    "title": "No medical insurance",
     "category": "health",
     "subCategory": "Health",
     "source": "World Bank",
@@ -1851,6 +2011,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members with no medical insurance",
+    "surveyBase": "All members of surveyed households with a valid insurance answer",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1864,7 +2026,7 @@
   },
   {
     "id": "wb_bad_or_very_bad_self_rated_health",
-    "title": "Bad or very bad self-rated health (World Bank)",
+    "title": "Bad or very bad self-rated health",
     "category": "health",
     "subCategory": "Health",
     "source": "World Bank",
@@ -1874,6 +2036,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members who rate their health as bad or very bad",
+    "surveyBase": "All members of surveyed households with a valid self-rated health answer",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1887,7 +2051,7 @@
   },
   {
     "id": "wb_overcrowded_persons_per_room_1",
-    "title": "Overcrowded (persons per room >1) (World Bank)",
+    "title": "Overcrowded (persons per room >1)",
     "category": "living conditions",
     "subCategory": "Housing",
     "source": "World Bank",
@@ -1897,6 +2061,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in dwellings with more than one person per room",
+    "surveyBase": "All members of surveyed households with rooms information",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1910,7 +2076,7 @@
   },
   {
     "id": "wb_severely_overcrowded_persons_per_room_2",
-    "title": "Severely overcrowded (persons per room >2) (World Bank)",
+    "title": "Severely overcrowded (persons per room >2)",
     "category": "living conditions",
     "subCategory": "Housing",
     "source": "World Bank",
@@ -1920,6 +2086,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in dwellings with more than two persons per room",
+    "surveyBase": "All members of surveyed households with rooms information",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1933,7 +2101,7 @@
   },
   {
     "id": "wb_hunger_risk_cannot_afford_meat_every_second_d",
-    "title": "Hunger risk (cannot afford meat every second day) (World Bank)",
+    "title": "Hunger risk (cannot afford meat every second day)",
     "category": "living conditions",
     "subCategory": "Nutrition",
     "source": "World Bank",
@@ -1943,6 +2111,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford a meal with meat, chicken or fish every second day",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1956,7 +2126,7 @@
   },
   {
     "id": "wb_severe_hunger_risk_went_to_bed_hungry",
-    "title": "Severe hunger in the household (went to bed hungry) (World Bank)",
+    "title": "Severe hunger in the household (went to bed hungry)",
     "category": "living conditions",
     "subCategory": "Nutrition",
     "source": "World Bank",
@@ -1966,6 +2136,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where someone went to bed hungry because of lack of money for food",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -1979,7 +2151,7 @@
   },
   {
     "id": "wb_informal_employment_employed_15_64",
-    "title": "Informal employment among employed, ages 15–64 (World Bank)",
+    "title": "Informal employment among employed, ages 15–64",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "World Bank",
@@ -1989,6 +2161,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 15–64 who are employed and whose job is informal (no written contract and/or no social contributions, depending on job type)",
+    "surveyBase": "All members of surveyed households aged 15–64 who are employed, with a classifiable job status",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2002,7 +2176,7 @@
   },
   {
     "id": "wb_no_documentation_no_valid_id_or_passport",
-    "title": "Has identity documentation (ID card or passport) (World Bank)",
+    "title": "Has identity documentation (ID card or passport)",
     "category": "discrimination",
     "subCategory": "Documentation",
     "source": "World Bank",
@@ -2012,6 +2186,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members who have a valid or expired identity card or passport. No documentation = neither document, or no ID and passport missing. Expired counts as documented.",
+    "surveyBase": "All members of surveyed households with a classifiable documentation answer (selected-adult weight)",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2025,7 +2201,7 @@
   },
   {
     "id": "wb_past_year_discrimination_ethnicity_skin_colou",
-    "title": "Discriminated against in the past year because of ethnicity or skin colour (ethnic ground) (World Bank)",
+    "title": "Discriminated against in the past year because of ethnicity or skin colour (ethnic ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "World Bank",
@@ -2035,6 +2211,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say they were discriminated against in the past year because of ethnicity, skin colour or language (ethnic ground; any situation; not domain-specific). Roma and non-Roma can both score this.",
+    "surveyBase": "Respondents interviewed who answered yes or no on this ground",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2048,7 +2226,7 @@
   },
   {
     "id": "wb_past_year_discrimination_gender",
-    "title": "Discriminated against in the past year because of gender (World Bank)",
+    "title": "Discriminated against in the past year because of gender",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "World Bank",
@@ -2058,6 +2236,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say they were discriminated against in the past year because of gender",
+    "surveyBase": "Respondents interviewed who answered yes or no on this ground",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2071,7 +2251,7 @@
   },
   {
     "id": "wb_past_year_discrimination_sexual_orientation_o",
-    "title": "Discriminated against in the past year because of sexual orientation or gender identity (World Bank)",
+    "title": "Discriminated against in the past year because of sexual orientation or gender identity",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "World Bank",
@@ -2081,6 +2261,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say they were discriminated against in the past year because of sexual orientation or gender identity",
+    "surveyBase": "Respondents interviewed who answered yes or no on this ground",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2094,7 +2276,7 @@
   },
   {
     "id": "wb_past_year_discrimination_disability_health",
-    "title": "Discriminated against in the past year because of disability or health (World Bank)",
+    "title": "Discriminated against in the past year because of disability or health",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "World Bank",
@@ -2104,6 +2286,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say they were discriminated against in the past year because of disability or health",
+    "surveyBase": "Respondents interviewed who answered yes or no on this ground",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2117,7 +2301,7 @@
   },
   {
     "id": "wb_past_year_discrimination_another_reason",
-    "title": "Discriminated against in the past year because of another reason (World Bank)",
+    "title": "Discriminated against in the past year because of another reason",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "World Bank",
@@ -2127,6 +2311,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who say they were discriminated against in the past year because of another reason",
+    "surveyBase": "Respondents interviewed who answered yes or no on this ground",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2140,7 +2326,7 @@
   },
   {
     "id": "wb_any_past_year_discrimination_any_ground",
-    "title": "Discriminated against in the past year (any ground) (World Bank)",
+    "title": "Discriminated against in the past year (any ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "World Bank",
@@ -2150,6 +2336,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who report discrimination or harassment in the past year on any ground (ethnicity/skin colour, gender, SOGI, age, religion, disability/health, migration, or another reason). Roma and non-Roma can both score this.",
+    "surveyBase": "Respondents interviewed",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2163,7 +2351,7 @@
   },
   {
     "id": "wb_job_seeking_discrimination_past_5_years_among",
-    "title": "Discrimination when looking for work in the past 5 years (any ground) (World Bank)",
+    "title": "Discrimination when looking for work in the past 5 years (any ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "World Bank",
@@ -2173,6 +2361,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who looked for work in the past 5 years and were discriminated against when looking for work on any ground (ethnicity/being Roma or other reasons such as gender, age, disability)",
+    "surveyBase": "Respondents interviewed who were at risk of job-seeking discrimination",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2186,7 +2376,7 @@
   },
   {
     "id": "wb_at_work_discrimination_past_5_years_among_at_",
-    "title": "Discrimination at work in the past 5 years (any ground) (World Bank)",
+    "title": "Discrimination at work in the past 5 years (any ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "World Bank",
@@ -2196,6 +2386,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who had a job in the past 5 years and were discriminated against at work on any ground (ethnicity/being Roma or other reasons such as gender, age, disability)",
+    "surveyBase": "Respondents interviewed who were at risk of workplace discrimination",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2209,7 +2401,7 @@
   },
   {
     "id": "fra_matdepr4",
-    "title": "Severe material deprivation (cannot afford ≥4 of 9 items) (FRA)",
+    "title": "Severe material deprivation (cannot afford ≥4 of 9 items)",
     "category": "living conditions",
     "subCategory": "Severe material deprivation (FRA Framework)",
     "source": "FRA",
@@ -2219,6 +2411,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford at least 4 of 9 basic items (classic severe material deprivation)",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2232,7 +2426,7 @@
   },
   {
     "id": "fra_matdepr4ch",
-    "title": "Children under 18 in severe material deprivation (4 or more of 9 items) (FRA)",
+    "title": "Children under 18 in severe material deprivation (4 or more of 9 items)",
     "category": "living conditions",
     "subCategory": "Severe material deprivation (FRA Framework)",
     "source": "FRA",
@@ -2242,6 +2436,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members under 18 in households that cannot afford at least 4 of 9 basic items",
+    "surveyBase": "All children in the surveyed households, who are aged 0–17",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2255,7 +2451,7 @@
   },
   {
     "id": "fra_si08_02",
-    "title": "Cannot afford meal with meat/chicken/fish every second day (FRA)",
+    "title": "Cannot afford meal with meat/chicken/fish every second day",
     "category": "living conditions",
     "subCategory": "Severe material deprivation (FRA Framework)",
     "source": "FRA",
@@ -2265,6 +2461,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that cannot afford a meal with meat, chicken or fish (or vegetarian equivalent) every second day",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2278,7 +2476,7 @@
   },
   {
     "id": "fra_hunger",
-    "title": "Went to bed hungry in the past month (lack of money for food) (FRA)",
+    "title": "Went to bed hungry in the past month (lack of money for food)",
     "category": "living conditions",
     "subCategory": "Living conditions",
     "source": "FRA",
@@ -2288,6 +2486,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household where someone went to bed hungry in the past month because there was not enough money for food",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2301,7 +2501,7 @@
   },
   {
     "id": "fra_hungerch",
-    "title": "Children under 18 in a household where someone went to bed hungry (FRA)",
+    "title": "Children under 18 in a household where someone went to bed hungry",
     "category": "living conditions",
     "subCategory": "Living conditions",
     "source": "FRA",
@@ -2311,6 +2511,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members under 18 in households where someone went to bed hungry in the past month",
+    "surveyBase": "All children in the surveyed households, who are aged 0–17",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2324,7 +2526,7 @@
   },
   {
     "id": "fra_endsmeet",
-    "title": "Household makes ends meet with difficulty (FRA)",
+    "title": "Household makes ends meet with difficulty",
     "category": "living conditions",
     "subCategory": "Living conditions",
     "source": "FRA",
@@ -2334,6 +2536,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household that make ends meet with difficulty or great difficulty",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2347,7 +2551,7 @@
   },
   {
     "id": "fra_si07r",
-    "title": "Do not have a bank account (respondents 16+) (FRA)",
+    "title": "Do not have a bank account (respondents 16+)",
     "category": "living conditions",
     "subCategory": "Living conditions",
     "source": "FRA",
@@ -2357,6 +2561,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members aged 16+ living in a household with no bank account",
+    "surveyBase": "All members of surveyed households aged 16+",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2370,7 +2576,7 @@
   },
   {
     "id": "fra_ece_partic",
-    "title": "Children aged 3 to primary-start age attending early childhood education (FRA)",
+    "title": "Children aged 3 to primary-start age attending early childhood education",
     "category": "education",
     "subCategory": "Education",
     "source": "FRA",
@@ -2380,6 +2586,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members from age 3 to the start of primary school who attend early childhood education",
+    "surveyBase": "All children in the surveyed households, who are aged 3 up to (but not including) primary-school starting age",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2393,7 +2601,7 @@
   },
   {
     "id": "fra_edumax",
-    "title": "Completed upper secondary education, ages 20–24 (FRA)",
+    "title": "Completed upper secondary education, ages 20–24",
     "category": "education",
     "subCategory": "Education",
     "source": "FRA",
@@ -2403,6 +2611,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 20–24 who have at least upper secondary education",
+    "surveyBase": "All members of surveyed households aged 20–24",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2416,7 +2626,7 @@
   },
   {
     "id": "fra_hch05b2",
-    "title": "Children 6–15 in schools where all/most schoolmates are Roma (FRA)",
+    "title": "Children 6–15 in schools where all/most schoolmates are Roma",
     "category": "education",
     "subCategory": "Education",
     "source": "FRA",
@@ -2426,6 +2636,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members aged 6–15 who are in school and report that all or most schoolmates are Roma",
+    "surveyBase": "All children in the surveyed households, who are aged 6–15 and attending school",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2439,7 +2651,7 @@
   },
   {
     "id": "fra_edu_attending_compulsoryage",
-    "title": "Attending school at compulsory age (FRA)",
+    "title": "Attending school at compulsory age",
     "category": "education",
     "subCategory": "Education",
     "source": "FRA",
@@ -2449,6 +2661,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members of compulsory schooling age who are attending education",
+    "surveyBase": "All children in the surveyed households, who are of compulsory schooling age (country-specific)",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2462,7 +2676,7 @@
   },
   {
     "id": "fra_early_leaver",
-    "title": "Early leavers from education and training (18–24) (FRA)",
+    "title": "Early leavers from education and training (18–24)",
     "category": "education",
     "subCategory": "Education",
     "source": "FRA",
@@ -2472,6 +2686,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 18–24 who left education early (below upper secondary and not in education)",
+    "surveyBase": "All members of surveyed households aged 18–24 with a valid education answer",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2485,7 +2701,7 @@
   },
   {
     "id": "fra_edutert",
-    "title": "Aged 30–34 with tertiary education (FRA)",
+    "title": "Aged 30–34 with tertiary education",
     "category": "education",
     "subCategory": "Education",
     "source": "FRA",
@@ -2495,6 +2711,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 30–34 who have tertiary education",
+    "surveyBase": "All members of surveyed households aged 30–34",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2508,7 +2726,7 @@
   },
   {
     "id": "fra_work",
-    "title": "Main activity is paid work, ages 20–64 (FRA)",
+    "title": "Main activity is paid work, ages 20–64",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "FRA",
@@ -2518,6 +2736,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 20–64 whose main activity is paid work",
+    "surveyBase": "All members of surveyed households aged 20–64",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2531,7 +2751,7 @@
   },
   {
     "id": "fra_neet",
-    "title": "NEET, ages 16–24 (FRA)",
+    "title": "NEET, ages 16–24",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "FRA",
@@ -2541,6 +2761,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 16–24 who are not in employment, education or training",
+    "surveyBase": "All members of surveyed households aged 16–24",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2554,7 +2776,7 @@
   },
   {
     "id": "fra_dhe01_r",
-    "title": "Good or very good self-rated health, ages 16+ (FRA)",
+    "title": "Good or very good self-rated health, ages 16+",
     "category": "health",
     "subCategory": "Health",
     "source": "FRA",
@@ -2564,6 +2786,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 16+ who rate their health as very good or good",
+    "surveyBase": "All members of surveyed households aged 16+",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2577,7 +2801,7 @@
   },
   {
     "id": "fra_hea_insurance",
-    "title": "Has medical insurance, ages 16+ (FRA)",
+    "title": "Has medical insurance, ages 16+",
     "category": "health",
     "subCategory": "Health",
     "source": "FRA",
@@ -2587,6 +2811,8 @@
       "education": "person",
       "employment": "person"
     },
+    "formula": "% of household members aged 16+ who have medical insurance coverage",
+    "surveyBase": "All members of surveyed households aged 16+",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2600,7 +2826,7 @@
   },
   {
     "id": "fra_overcrowd",
-    "title": "Overcrowding (Eurostat rooms rule) (FRA)",
+    "title": "Overcrowding (Eurostat rooms rule)",
     "category": "living conditions",
     "subCategory": "Housing / living conditions",
     "source": "FRA",
@@ -2610,6 +2836,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in overcrowded housing (Eurostat rooms rule)",
+    "surveyBase": "All members of surveyed households with valid rooms information",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2623,7 +2851,7 @@
   },
   {
     "id": "fra_hls04_1r",
-    "title": "No tap water inside the dwelling (FRA)",
+    "title": "No tap water inside the dwelling",
     "category": "living conditions",
     "subCategory": "Housing / living conditions",
     "source": "FRA",
@@ -2633,6 +2861,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a dwelling with no tap water inside",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2646,7 +2876,7 @@
   },
   {
     "id": "fra_sanitation1",
-    "title": "Neither toilet nor shower/bathroom inside (FRA)",
+    "title": "Neither toilet nor shower/bathroom inside",
     "category": "living conditions",
     "subCategory": "Housing / living conditions",
     "source": "FRA",
@@ -2656,6 +2886,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a dwelling with neither a toilet nor a shower/bathroom inside",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2669,7 +2901,7 @@
   },
   {
     "id": "fra_hls06_3",
-    "title": "Leaking roof / damp / rot (FRA)",
+    "title": "Leaking roof / damp / rot",
     "category": "living conditions",
     "subCategory": "Housing / living conditions",
     "source": "FRA",
@@ -2679,6 +2911,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a dwelling with a leaking roof, damp walls, or rot",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2692,7 +2926,7 @@
   },
   {
     "id": "fra_eviction",
-    "title": "Forced to leave accommodation in past 5 years (FRA)",
+    "title": "Forced to leave accommodation in past 5 years",
     "category": "living conditions",
     "subCategory": "Housing / living conditions",
     "source": "FRA",
@@ -2702,6 +2936,8 @@
       "education": "household head",
       "employment": "household head"
     },
+    "formula": "% of household members living in a household forced to leave their accommodation in the past 5 years",
+    "surveyBase": "All members of surveyed households",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2715,7 +2951,7 @@
   },
   {
     "id": "fra_gender_employment_gap",
-    "title": "Gender gap in paid work (men − women, ages 20–64, pp) (FRA)",
+    "title": "Gender gap in paid work (men − women, ages 20–64, pp)",
     "category": "work and employment",
     "subCategory": "Employment",
     "source": "FRA",
@@ -2725,7 +2961,9 @@
       "education": "person",
       "employment": "person"
     },
-    "valueType": "genderGap",
+    "formula": "Among household members: percentage-point difference between men’s and women’s paid-work rates among ages 20–64 (FRA main-activity / last-week paid work, not ILO employment)",
+    "surveyBase": "All members of surveyed households aged 20–64 with a valid activity status",
+    "valueType": "percentage",
     "availableDisaggregations": [
       "age",
       "sex",
@@ -2738,7 +2976,7 @@
   },
   {
     "id": "fra_dis12overall",
-    "title": "Discrimination in core areas of life in the past year (ethnic ground) (FRA)",
+    "title": "Discrimination in core areas of life in the past year (ethnic ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "FRA",
@@ -2748,6 +2986,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who were in a core-life situation in the past 5 years and were discriminated against in the past 12 months because they were Roma / because of ethnicity. Not combined with other grounds.",
+    "surveyBase": "Respondents interviewed who were in any J2 risk situation (looked for work, had a job, housing search, health, education, admin, or other core contact in the past 5 years)",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2761,7 +3001,7 @@
   },
   {
     "id": "fra_redisoverall1",
-    "title": "Reported the last discrimination incident (ethnic ground) (FRA)",
+    "title": "Reported the last discrimination incident (ethnic ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "FRA",
@@ -2771,6 +3011,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who experienced ethnic-ground discrimination in the past 12 months and reported the last incident",
+    "surveyBase": "Respondents interviewed who experienced discrimination in the past 12 months",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2784,7 +3026,7 @@
   },
   {
     "id": "fra_dis12eduinst",
-    "title": "Discrimination in education in the past year (ethnic ground) (FRA)",
+    "title": "Discrimination in education in the past year (ethnic ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "FRA",
@@ -2794,6 +3036,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who, as a student or as a parent, had contact with a school or training institution in the past 5 years and were discriminated against by staff there in the past 12 months because they were Roma / because of ethnicity. Not combined with other grounds (gender, age, disability, etc.).",
+    "surveyBase": "Respondents interviewed who had contact with a school or training institution as a student or parent",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2807,7 +3051,7 @@
   },
   {
     "id": "fra_dis12atwork",
-    "title": "Discrimination at work in the past year (ethnic ground) (FRA)",
+    "title": "Discrimination at work in the past year (ethnic ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "FRA",
@@ -2817,6 +3061,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who had a job in the past 5 years and were discriminated against at work in the past 12 months because they were Roma / because of ethnicity. Not combined with other grounds (gender, age, disability, etc.).",
+    "surveyBase": "Respondents interviewed who were at risk of discrimination at work",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2830,7 +3076,7 @@
   },
   {
     "id": "fra_dis12lkwork",
-    "title": "Discrimination when looking for work in the past year (ethnic ground) (FRA)",
+    "title": "Discrimination when looking for work in the past year (ethnic ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "FRA",
@@ -2840,6 +3086,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who looked for work in the past 5 years and were discriminated against when looking for work in the past 12 months because they were Roma / because of ethnicity. Not combined with other grounds (gender, age, disability, etc.).",
+    "surveyBase": "Respondents interviewed who were at risk of discrimination when looking for work",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2853,7 +3101,7 @@
   },
   {
     "id": "fra_dis12health",
-    "title": "Discrimination in healthcare in the past year (ethnic ground) (FRA)",
+    "title": "Discrimination in healthcare in the past year (ethnic ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "FRA",
@@ -2863,6 +3111,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who used health services in the past 5 years and were discriminated against in healthcare in the past 12 months because they were Roma / because of ethnicity. Not combined with other grounds (gender, age, disability, etc.).",
+    "surveyBase": "Respondents interviewed who were at risk of discrimination in healthcare",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
@@ -2876,7 +3126,7 @@
   },
   {
     "id": "fra_dis5house",
-    "title": "Discrimination when looking for housing in the past 5 years (ethnic ground) (FRA)",
+    "title": "Discrimination when looking for housing in the past 5 years (ethnic ground)",
     "category": "discrimination",
     "subCategory": "Discrimination",
     "source": "FRA",
@@ -2886,6 +3136,8 @@
       "education": "respondent",
       "employment": "respondent"
     },
+    "formula": "% of respondents interviewed who looked for housing in the past 5 years and were discriminated against because they were Roma / because of ethnicity. Not combined with other grounds.",
+    "surveyBase": "Respondents interviewed who were at risk of discrimination when looking for housing",
     "valueType": "percentage",
     "availableDisaggregations": [
       "age",
