@@ -50,7 +50,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                 .filter((el) => el.disaggregation === 'sex')
                 .map((el) => el.category)
                 .map((el) => (
-                  <div key={el} className='bg-surface p-4'>
+                  <div key={el} className='p-4'>
                     <P size='base' weight='bold' marginBottom='none'>
                       {el}
                     </P>
@@ -79,10 +79,14 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                         },
                       ]}
                       orientation='horizontal'
-                      height={60}
+                      height={48}
                       topMargin={0}
+                      hideAxisLine
+                      showLabels={false}
+                      leftMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
+                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -116,7 +120,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                 .filter((el) => el.disaggregation === 'age group')
                 .map((el) => el.category)
                 .map((el) => (
-                  <div key={el} className='bg-surface p-4'>
+                  <div key={el} className='p-4'>
                     <P size='base' weight='bold' marginBottom='none'>
                       {el}
                     </P>
@@ -145,10 +149,14 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                         },
                       ]}
                       orientation='horizontal'
-                      height={60}
+                      height={48}
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
+                      hideAxisLine
+                      showLabels={false}
+                      leftMargin={0}
+                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -182,7 +190,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                 .filter((el) => el.disaggregation === 'urbanisation')
                 .map((el) => el.category)
                 .map((el) => (
-                  <div key={el} className='bg-surface p-4'>
+                  <div key={el} className='p-4'>
                     <P size='base' weight='bold' marginBottom='none'>
                       {el}
                     </P>
@@ -211,11 +219,15 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                         },
                       ]}
                       orientation='horizontal'
-                      height={60}
+                      height={48}
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
+                      trackColor='var(--surface-sm)'
                       showColorScale={false}
+                      hideAxisLine
+                      showLabels={false}
+                      leftMargin={0}
                       showTicks={false}
                       showValues
                       valueColor='var(--content-primary)'
@@ -248,7 +260,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                 .filter((el) => el.disaggregation === 'education')
                 .map((el) => el.category)
                 .map((el) => (
-                  <div key={el} className='bg-surface p-4'>
+                  <div key={el} className='p-4'>
                     <P size='base' weight='bold' marginBottom='none'>
                       {el}
                     </P>
@@ -277,10 +289,14 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                         },
                       ]}
                       orientation='horizontal'
-                      height={60}
+                      height={48}
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
+                      hideAxisLine
+                      showLabels={false}
+                      leftMargin={0}
+                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -314,7 +330,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                 .filter((el) => el.disaggregation === 'employment status')
                 .map((el) => el.category)
                 .map((el) => (
-                  <div key={el} className='bg-surface p-4'>
+                  <div key={el} className='p-4'>
                     <P size='base' weight='bold' marginBottom='none'>
                       {el}
                     </P>
@@ -343,10 +359,14 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                         },
                       ]}
                       orientation='horizontal'
-                      height={60}
+                      height={48}
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
+                      hideAxisLine
+                      showLabels={false}
+                      leftMargin={0}
+                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
@@ -380,7 +400,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                 .filter((el) => el.disaggregation === 'household size')
                 .map((el) => el.category)
                 .map((el) => (
-                  <div key={el} className='bg-surface p-4'>
+                  <div key={el} className='p-4'>
                     <P size='base' weight='bold' marginBottom='none'>
                       {el}
                     </P>
@@ -409,11 +429,15 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                         },
                       ]}
                       orientation='horizontal'
-                      height={60}
+                      height={48}
                       topMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
+                      trackColor='var(--surface-sm)'
                       showColorScale={false}
+                      hideAxisLine
+                      showLabels={false}
+                      leftMargin={0}
                       showTicks={false}
                       showValues
                       valueColor='var(--content-primary)'
@@ -446,7 +470,7 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                 .filter((el) => el.disaggregation === 'children in household')
                 .map((el) => el.category)
                 .map((el) => (
-                  <div key={el} className='bg-surface p-4'>
+                  <div key={el} className='p-4'>
                     <P size='base' weight='bold' marginBottom='none'>
                       {el}
                     </P>
@@ -475,10 +499,14 @@ export const DisaggregationsPanel = ({ indicator }: { indicator?: SurveyIndicato
                         },
                       ]}
                       orientation='horizontal'
-                      height={60}
+                      height={48}
                       topMargin={0}
+                      hideAxisLine
+                      showLabels={false}
+                      leftMargin={0}
                       bottomMargin={0}
                       colors={COLORS}
+                      trackColor='var(--surface-sm)'
                       showColorScale={false}
                       showTicks={false}
                       showValues
