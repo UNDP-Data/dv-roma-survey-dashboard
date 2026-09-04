@@ -22,7 +22,7 @@ import {
   Heart,
   House,
 } from 'lucide-react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { COLORS, FEATURED_INDICATORS, GROUPS } from '@/Constants';
 import type { SurveyIndicator } from '@/types';
 import { DisaggregationsPanel } from './components/disaggregationsPanel';
@@ -41,6 +41,12 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
   const [selectedTheme, setSelectedTheme] = useState<Theme>('work and employment');
   const [selectedIndicator, setSelectedIndicator] = useState('acceptance_as_spouse');
   const { data, isLoading, isError } = useSurveyData(country);
+  const exploreSectionRef = useRef<HTMLDivElement>(null);
+
+  const handleFeaturedSelect = (id: string) => {
+    setSelectedIndicator(id);
+    exploreSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   if (isLoading) return <Spinner size='lg' className='mx-auto my-20' />;
 
@@ -126,9 +132,13 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
           </div>
           <Spacer size='base' />
           <div className='w-full min-w-0 rounded-xs border border-stroke bg-background'>
-            <FeaturedIndicatorsTable indicators={featuredIndicators} />
+            <FeaturedIndicatorsTable
+              indicators={featuredIndicators}
+              onSelect={handleFeaturedSelect}
+            />
           </div>
           <Spacer size='3xl' />
+          <div ref={exploreSectionRef} />
           <P size='xl' weight='bold' marginBottom='sm' className='text-2xl'>
             Explore all indicators
           </P>

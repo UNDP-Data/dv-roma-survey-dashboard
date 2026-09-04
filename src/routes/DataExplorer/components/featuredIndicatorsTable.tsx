@@ -10,7 +10,13 @@ import {
 import { COLORS, GROUPS } from '@/Constants';
 import type { SurveyIndicator } from '@/types';
 
-export const FeaturedIndicatorsTable = ({ indicators }: { indicators: SurveyIndicator[] }) => (
+export const FeaturedIndicatorsTable = ({
+  indicators,
+  onSelect,
+}: {
+  indicators: SurveyIndicator[];
+  onSelect?: (id: string) => void;
+}) => (
   <Table className='min-w-120 table-fixed sm:min-w-160'>
     <TableHeader className='[&>tr]:border-stroke [&>tr]:border-b'>
       <TableRow className='[&>th]:whitespace-normal [&>th]:bg-background [&>th]:py-2 [&>th]:pr-2 [&>th]:font-bold [&>th]:text-content-tertiary [&>th]:text-xs [&>th]:uppercase [&>th]:leading-base [&>th]:last:pr-2 sm:[&>th]:whitespace-nowrap sm:[&>th]:pr-4 sm:[&>th]:last:pr-3 md:[&>th]:text-xs lg:[&>th]:text-xs'>
@@ -29,7 +35,11 @@ export const FeaturedIndicatorsTable = ({ indicators }: { indicators: SurveyIndi
         const nonRomaValue = nonRomaData?.yesPercent ?? nonRomaData?.mean ?? nonRomaData?.gapPp;
         const suffix = romaData?.yesPercent !== undefined ? '%' : '';
         return (
-          <TableRow key={indicator.id}>
+          <TableRow
+            key={indicator.id}
+            onClick={() => onSelect?.(indicator.id)}
+            className='cursor-pointer hover:bg-surface-2xs'
+          >
             <TableCell className='w-[25%] overflow-hidden py-2 pr-4 text-sm sm:w-[50%] sm:text-p-sm md:text-p-sm lg:text-p-sm'>
               <span className='block truncate' title={indicator.description}>
                 {indicator.description}
