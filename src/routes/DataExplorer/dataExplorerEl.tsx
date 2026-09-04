@@ -172,6 +172,10 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               // biome-ignore lint/suspicious/noExplicitAny: Need to fix in the DS
               onChange={(d: any) => setSelectedIndicator(d.value)}
               options={indicatorOptions}
+              classNames={{
+                groupHeading: () =>
+                  'font-bold! text-xs! uppercase! py-2! m-0! bg-transparent! text-content-tertiary! cursor-default!',
+              }}
               showCheck
               size='base'
               variant='light'
