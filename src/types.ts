@@ -58,6 +58,8 @@ export interface IndicatorMetaData {
   category: string;
   subCategory: string;
   source: string;
+  formula: string;
+  surveyBase: string;
   valueType: string;
   calculationTypeForDisaggregation: Record<string, string>;
   availableDisaggregations: string[];

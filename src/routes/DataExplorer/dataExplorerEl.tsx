@@ -67,9 +67,10 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
 
   const indicatorGroups = new Map<string, { label: string; value: string }[]>();
   for (const d of themeIndicators) {
-    const groupKey = metaById.get(d.id)?.subCategory ?? 'Other';
+    const meta = metaById.get(d.id);
+    const groupKey = meta?.subCategory ?? 'Other';
     const group = indicatorGroups.get(groupKey) ?? [];
-    group.push({ label: d.description, value: d.id });
+    group.push({ label: meta ? `${meta.title} (${meta.source})` : d.description, value: d.id });
     indicatorGroups.set(groupKey, group);
   }
   const indicatorOptions = [...indicatorGroups.entries()]
@@ -77,6 +78,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
     .map(([label, options]) => ({ label, options }));
 
   const selectedIndicatorData = data.find((d) => d.id === selectedIndicator);
+  const selectedMeta = metaById.get(selectedIndicator);
   const romaRow = selectedIndicatorData?.roma.find((el) => el.disaggregation === 'none');
   const nonRomaRow = selectedIndicatorData?.nonRoma.find((el) => el.disaggregation === 'none');
   const romaValue = romaRow?.yesPercent ?? romaRow?.mean ?? romaRow?.gapPp;
@@ -135,7 +137,6 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
       </VisualizationWidgetHeader>
       <VisualizationWidgetBody className='@3xl:max-h-none @3xl:flex-col border-stroke border-t'>
         <VisualizationWidgetBodyContent className='@3xl:max-h-none flex-col bg-gray-100 p-6'>
-          {/* The tabs are icon-only below sm, so name the active one here. */}
           <P
             size='sm'
             weight='bold'
@@ -168,7 +169,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
           <div className='max-w-75 md:max-w-100'>
             <DropdownSelect
               color='blue'
-              value={{ label: selectedIndicatorData?.description, value: selectedIndicator }}
+              value={{ label: selectedMeta?.title, value: selectedMeta?.id }}
               // biome-ignore lint/suspicious/noExplicitAny: Need to fix in the DS
               onChange={(d: any) => setSelectedIndicator(d.value)}
               options={indicatorOptions}
@@ -183,19 +184,19 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
             />
           </div>
           <div className='mx-auto mt-4 mb-8 w-full rounded-xs border border-stroke bg-background p-6'>
-            <P size='xl'>{selectedIndicatorData?.description ?? ''}</P>
+            <P size='xl'>{selectedMeta?.title}</P>
             <Grid
               gap='16px'
               noOfCol={{
                 base: 1,
-                md: 4,
+                md: 12,
                 sm: 2,
               }}
             >
               <GridItem
                 noOfColSpan={{
                   base: 1,
-                  md: 1,
+                  md: 5,
                   sm: 1,
                 }}
               >
@@ -210,14 +211,36 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                   </P>
                   <Spacer size='base' />
                   <P size='base' marginBottom='none'>
-                    {selectedIndicatorData?.description}
+                    {selectedMeta?.formula}
                   </P>
                 </div>
               </GridItem>
               <GridItem
                 noOfColSpan={{
                   base: 1,
-                  md: 1,
+                  md: 3,
+                  sm: 1,
+                }}
+              >
+                <div className='h-full border-stroke lg:border-l lg:pl-6'>
+                  <P
+                    size='xs'
+                    weight='bold'
+                    marginBottom='none'
+                    className='text-content-tertiary uppercase'
+                  >
+                    Survey base
+                  </P>
+                  <Spacer size='base' />
+                  <P size='base' marginBottom='none'>
+                    {selectedMeta?.surveyBase}
+                  </P>
+                </div>
+              </GridItem>
+              <GridItem
+                noOfColSpan={{
+                  base: 1,
+                  md: 2,
                   sm: 1,
                 }}
               >
@@ -264,29 +287,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               <GridItem
                 noOfColSpan={{
                   base: 1,
-                  md: 1,
-                  sm: 1,
-                }}
-              >
-                <div className='h-full border-stroke lg:border-l lg:pl-6'>
-                  <P
-                    size='xs'
-                    weight='bold'
-                    marginBottom='none'
-                    className='text-content-tertiary uppercase'
-                  >
-                    Survey base
-                  </P>
-                  <Spacer size='base' />
-                  <P size='base' marginBottom='none'>
-                    –
-                  </P>
-                </div>
-              </GridItem>
-              <GridItem
-                noOfColSpan={{
-                  base: 1,
-                  md: 1,
+                  md: 2,
                   sm: 1,
                 }}
               >
@@ -301,7 +302,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                   </P>
                   <Spacer size='base' />
                   <P size='base' marginBottom='none'>
-                    World Bank
+                    {selectedMeta?.source}
                   </P>
                 </div>
               </GridItem>
@@ -409,10 +410,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                 </P>
               </GridItem>
               <GridItem noOfColSpan={{ base: 1, lg: 3 }}>
-                <DisaggregationsPanel
-                  indicator={selectedIndicatorData}
-                  meta={metaById.get(selectedIndicator)}
-                />
+                <DisaggregationsPanel indicator={selectedIndicatorData} meta={selectedMeta} />
               </GridItem>
             </Grid>
           </div>
