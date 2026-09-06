@@ -181,19 +181,16 @@ export function CountryPage() {
       </section>
       <Spacer size='2xl' />
       <section id='download-report' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-        <button
-          type='button'
-          className='flex w-full flex-col bg-surface p-6 hover:bg-surface-hover md:p-10'
-        >
+        <div className='flex w-full flex-col bg-surface p-6 md:p-10'>
           <H4 weight='bold'>Download report</H4>
           <P size='lg' marginBottom='none'>
             Lorem ipsum dolor sit amet consectetur. Consequat tempus.
           </P>
           <Spacer size='2xl' />
           <Button variant='link' arrow={false} padding='none' className='w-fit'>
-            Download <DownloadIcon className='text-accent-red' />
+            Download <DownloadIcon className='text-accent-blue' />
           </Button>
-        </button>
+        </div>
       </section>
       <Spacer size='8xl' />
       <section id='key-findings' className='bg-surface py-20'>

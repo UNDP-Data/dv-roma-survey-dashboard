@@ -1,11 +1,5 @@
 import { Link } from '@tanstack/react-router';
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@undp/design-system-react/Accordion';
-import {
   Banner,
   BannerBody,
   BannerBodyContent,
@@ -16,14 +10,7 @@ import { Card, CardFooter, CardHeader, CardImage, CardTitle } from '@undp/design
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
 import { PageHeader, PageHeaderContent } from '@undp/design-system-react/PageHeader';
 import { Spacer } from '@undp/design-system-react/Spacer';
-import {
-  StatCard,
-  StatCardDescription,
-  StatCardTitle,
-  StatCardValue,
-} from '@undp/design-system-react/StatCard';
-import { H1, H2, H3, H4, H5, P } from '@undp/design-system-react/Typography';
-import { BriefcaseBusiness, EqualNot, HandCoins, NotebookText } from 'lucide-react';
+import { H1, H2, H4 } from '@undp/design-system-react/Typography';
 import { COUNTRIES } from './Constants';
 
 function App() {
@@ -35,7 +22,7 @@ function App() {
         contentMode='dark'
       >
         <PageHeaderContent className='max-w-full sm:max-w-[50%]'>
-          <H1 size='sm'>Roma Survey in Georgia, Moldova and Ukraine</H1>
+          <H1 size='sm'>Roma Socio-Economic Scoreboard</H1>
         </PageHeaderContent>
       </PageHeader>
       <section id='about'>
@@ -45,25 +32,36 @@ function App() {
           bodyMaxWidth='full'
           padding='none'
           sidebarWidth='base'
-          className='px-4 py-16 sm:px-12 sm:py-24 lg:px-32 lg:py-60'
+          className='px-4 py-16 sm:px-12 sm:py-24 lg:px-32 lg:py-40'
         >
           <BannerBody>
             <BannerBodySidebar>
-              <H2>About</H2>
+              <H2>Overview</H2>
             </BannerBodySidebar>
             <BannerBodyContent>
               <H4>
-                The survey aims to build a robust data set for effective evidence-based
-                decision-making on policies that promote Roma inclusion in order to narrow the gap
-                between Roma and non-Roma populations with regard to multi-dimensional poverty and
-                access to socio-economic rights in Georgia, Moldova, and Ukraine.
+                For the Roma communities scattered across Europe and its neighbours, precarious
+                livelihoods and discrimination are everyday realities. Roma are resilient, but they
+                struggle with barriers of poverty and exclusion, and often invisibility.
+              </H4>
+              <H4>
+                The Roma Socio-Economic Scoreboard is a snapshot of key social and economic
+                indicators based on harmonized, comparable data from household surveys across
+                Georgia, Moldova and Ukraine.
+              </H4>
+              <H4>
+                The Scoreboard is designed as a resource for policymakers, researchers, civil
+                society organizations, and advocates working to advance well-being Roma communities.
+                By making evidence more visible and accessible, it amplifies the visibility of
+                challenges faced by Roma, and accompanies effective policy and programme design,
+                monitor progress and data-driven decision-making.
               </H4>
             </BannerBodyContent>
           </BannerBody>
         </Banner>
       </section>
       <Spacer size='8xl' />
-      <section
+      {/* <section
         id='stats'
         className='mx-auto flex w-full max-w-[1920px] flex-col gap-10 px-4 sm:px-6 lg:px-8'
       >
@@ -228,18 +226,17 @@ function App() {
             </Accordion>
           </div>
         </div>
-      </section>
-      <Spacer size='8xl' />
+      </section> */}
       <section id='country-cards' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-        <H3>Explore countries</H3>
+        <H2>Explore countries</H2>
         <Spacer size='2xl' />
         <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} gap='32px'>
           {COUNTRIES.map((country) => (
             <GridItem key={country.id}>
               <Link to='/countries/$countryId' params={{ countryId: country.id }}>
-                <Card backgroundColor='background' size='full' variant='with-image'>
+                <Card border={false} backgroundColor='background' size='full' variant='with-image'>
                   <CardHeader>
-                    <CardImage src='/imgs/placeholder.webp' />
+                    <CardImage src='/imgs/placeholder.webp' className='min-h-100' />
                     <CardTitle>{country.name}</CardTitle>
                   </CardHeader>
                   <CardFooter>

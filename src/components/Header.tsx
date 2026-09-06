@@ -7,18 +7,26 @@ import {
 } from '@undp/design-system-react/Header';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@undp/design-system-react/HoverCard';
 import { P } from '@undp/design-system-react/Typography';
+import { ChevronDown } from 'lucide-react';
 import { COUNTRIES } from '@/Constants';
 
 export default function HeaderEl() {
   return (
     <Header>
-      <HeaderLogoUnit hyperlink='/' siteName='Roma Survey Dashboard' />
+      <HeaderLogoUnit
+        hyperlink='/'
+        siteName='Roma Socio-Economic Scoreboard'
+        siteSubName='Europe and Central Asia'
+      />
       <HeaderMainNavUnit>
-        <HeaderMenuUnit>
+        <HeaderMenuUnit className='justify-end! gap-12! pr-4'>
           <Link to='/'>Home</Link>
           <Link to='/data-explorer'>Data explorer</Link>
           <HoverCard openDelay={0} closeDelay={60}>
-            <HoverCardTrigger>Countries</HoverCardTrigger>
+            <HoverCardTrigger className='flex items-center gap-1'>
+              Countries
+              <ChevronDown size={16} />
+            </HoverCardTrigger>
             <HoverCardContent side='bottom' align='center' className='p-0'>
               <div className='flex flex-col px-0 py-2'>
                 {COUNTRIES.map((country) => (

@@ -2,3 +2,7 @@
 @import "@undp/design-system-react/theme.css";
 @import "@undp/data-viz/style.css";
 @import "tailwindcss";
+
+.undp-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
