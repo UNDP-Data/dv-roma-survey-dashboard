@@ -754,7 +754,7 @@
     "title": "Undereducated member in the household",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -779,7 +779,7 @@
     "title": "Completed secondary education, ages 18–65",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -804,7 +804,7 @@
     "title": "Children living in households where not all 6–15 kids attend school",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -829,7 +829,7 @@
     "title": "School attendance, ages 6–15",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -854,7 +854,7 @@
     "title": "Preschool education in the household",
     "category": "education",
     "subCategory": "Education",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -879,7 +879,7 @@
     "title": "People living in households with a youth NEET (ages 15–29)",
     "category": "work and employment",
     "subCategory": "Employment",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -904,7 +904,7 @@
     "title": "Unmet medical need in the past year",
     "category": "health",
     "subCategory": "Health",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "respondent",
       "age": "respondent",
@@ -929,7 +929,7 @@
     "title": "Unsatisfactory quality of care received",
     "category": "health",
     "subCategory": "Health",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "respondent",
       "age": "respondent",
@@ -954,7 +954,7 @@
     "title": "People living in households where not all members have medical insurance",
     "category": "health",
     "subCategory": "Health",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -979,7 +979,7 @@
     "title": "Severe food insecurity in the household (hungry and a whole day without eating)",
     "category": "living conditions",
     "subCategory": "Nutrition",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1004,7 +1004,7 @@
     "title": "Household members affected by job insecurity of a household member",
     "category": "work and employment",
     "subCategory": "Employment",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1029,7 +1029,7 @@
     "title": "People living in households with informal employment",
     "category": "work and employment",
     "subCategory": "Employment",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1054,7 +1054,7 @@
     "title": "People living in households where at least one child or adolescent (ages 5–17) performs some economic activity",
     "category": "work and employment",
     "subCategory": "Employment",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1079,7 +1079,7 @@
     "title": "No piped drinking water inside the dwelling",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1104,7 +1104,7 @@
     "title": "Not connected to public sewerage",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1129,7 +1129,7 @@
     "title": "No toilet inside the dwelling",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1154,7 +1154,7 @@
     "title": "Cannot afford to keep the home adequately warm",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1179,7 +1179,7 @@
     "title": "No public garbage collection",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1204,7 +1204,7 @@
     "title": "Overcrowding (less than 9 m² per person)",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1229,7 +1229,7 @@
     "title": "Housing defects",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1254,7 +1254,7 @@
     "title": "People living in a household with no internet access",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1279,7 +1279,7 @@
     "title": "People living in a household with at most one durable good",
     "category": "living conditions",
     "subCategory": "Housing / WASH",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1304,7 +1304,7 @@
     "title": "People living in a household with no bank account",
     "category": "living conditions",
     "subCategory": "Financial / social",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
@@ -1329,7 +1329,7 @@
     "title": "People living in a household that is in arrears",
     "category": "living conditions",
     "subCategory": "Financial / social",
-    "source": "UNDP MPI",
+    "source": "UNDP",
     "calculationTypeForDisaggregation": {
       "sex": "person",
       "age": "person",
