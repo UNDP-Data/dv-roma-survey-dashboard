@@ -155,6 +155,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
           <div className='w-full min-w-0 rounded-xs border border-stroke bg-background'>
             <FeaturedIndicatorsTable
               indicators={featuredIndicators}
+              metaById={metaById}
               onSelect={handleFeaturedSelect}
             />
           </div>
