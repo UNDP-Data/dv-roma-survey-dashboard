@@ -1,7 +1,7 @@
 export const COUNTRIES = [
-  { id: 'georgia', name: 'Georgia' },
-  { id: 'moldova', name: 'Moldova' },
-  { id: 'ukraine', name: 'Ukraine' },
+  { id: 'georgia', name: 'Georgia', isoCode: 'GEO' },
+  { id: 'moldova', name: 'Moldova', isoCode: 'MDA' },
+  { id: 'ukraine', name: 'Ukraine', isoCode: 'UKR' },
 ];
 
 export const COLORS = ['var(--accent-red)', 'var(--accent-violet)'];

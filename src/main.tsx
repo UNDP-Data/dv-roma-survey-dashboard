@@ -12,12 +12,11 @@ import App from './App';
 import FooterEl from './components/Footer';
 import HeaderEl from './components/Header';
 import * as TanStackQueryProvider from './integration/tanstack-query';
-import createAboutRoute from './routes/aboutPage';
-import createCountriesRoute from './routes/Countries';
-import createProjectPageRoute from './routes/Countries/countryPage';
-import createDataExplorer from './routes/DataExplorer';
-import createTanStackQueryDemoRoute from './routes/queryDemo';
-import createResourceRoute from './routes/resourcesPage';
+import createAboutRoute from './routes/About/about.route';
+import createProjectPageRoute from './routes/Countries/CountryPage/countryPage.route';
+import createCountriesRoute from './routes/Countries/countriesListing.route';
+import createDataExplorerRoute from './routes/DataExplorer/dataExplorer.route';
+import createResourceRoute from './routes/Resources/resources.routes';
 
 import './styles/fonts.css';
 import './styles/style.css';
@@ -44,9 +43,8 @@ const indexRoute = createRoute({
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
-  createTanStackQueryDemoRoute(rootRoute),
   createAboutRoute(rootRoute),
-  createDataExplorer(rootRoute),
+  createDataExplorerRoute(rootRoute),
   createResourceRoute(rootRoute),
   createCountriesRoute(rootRoute),
   createProjectPageRoute(rootRoute),

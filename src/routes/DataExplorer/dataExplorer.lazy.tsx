@@ -1,5 +1,4 @@
-import type { AnyRoute } from '@tanstack/react-router';
-import { createRoute } from '@tanstack/react-router';
+import { createLazyRoute } from '@tanstack/react-router';
 import { Button } from '@undp/design-system-react/Button';
 import { DropdownSelect } from '@undp/design-system-react/DropdownSelect';
 import { Spacer } from '@undp/design-system-react/Spacer';
@@ -69,10 +68,6 @@ export const dataExplorer = () => {
   );
 };
 
-export default function createDataExplorer(parentRoute: AnyRoute) {
-  return createRoute({
-    path: '/data-explorer',
-    component: dataExplorer,
-    getParentRoute: () => parentRoute,
-  });
-}
+export const Route = createLazyRoute('/data-explorer')({
+  component: dataExplorer,
+});
