@@ -1,5 +1,4 @@
-import type { AnyRoute } from '@tanstack/react-router';
-import { createRoute, Link, useParams } from '@tanstack/react-router';
+import { createLazyRoute, Link, useParams } from '@tanstack/react-router';
 import { Button } from '@undp/design-system-react/Button';
 import { Card, CardFooter, CardHeader, CardImage, CardTitle } from '@undp/design-system-react/Card';
 import { cn } from '@undp/design-system-react/cn';
@@ -14,7 +13,7 @@ import { KeyFindings } from './Components/keyFindings';
 
 export function CountryPage() {
   const params = useParams({ strict: false });
-  const country: string = params.countryId;
+  const country: string = params.countryId || 'MDA';
   const categories = [
     'Social Vulnerability',
     'Labor & Livelihood',
@@ -222,10 +221,6 @@ export function CountryPage() {
   );
 }
 
-export default function createProjectPageRoute(parentRoute: AnyRoute) {
-  return createRoute({
-    path: '/countries/$countryId',
-    component: CountryPage,
-    getParentRoute: () => parentRoute,
-  });
-}
+export const Route = createLazyRoute('/countries/$countryId')({
+  component: CountryPage,
+});
