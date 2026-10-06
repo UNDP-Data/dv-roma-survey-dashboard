@@ -64,3 +64,9 @@ export interface IndicatorMetaData {
   calculationTypeForDisaggregation: Record<string, string>;
   availableDisaggregations: string[];
 }
+
+export interface RecommendationDataType {
+  themeId: string;
+  mainRecommendation: string;
+  detailedRecommendations: string[];
+}

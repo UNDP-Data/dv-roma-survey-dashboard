@@ -46,7 +46,7 @@ export const DisaggregationsPanel = ({ indicator, meta }: Props) => {
             className='text-accent-blue hover:text-blue-400'
             size='xs'
             padding='none'
-            arrow={false}
+            endIcon='none'
             onClick={() => setOpenDisaggregations([])}
           >
             Collapse all

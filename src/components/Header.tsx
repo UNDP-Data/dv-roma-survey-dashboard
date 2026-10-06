@@ -32,8 +32,8 @@ export default function HeaderEl() {
                 {COUNTRIES.map((country) => (
                   <Link
                     to='/countries/$countryId'
-                    params={{ countryId: country.id }}
-                    key={country.id}
+                    params={{ countryId: country.isoCode }}
+                    key={country.isoCode}
                     className='w-full p-3 hover:bg-surface-hover hover:text-primary'
                   >
                     <P size='sm' marginBottom='none'>
