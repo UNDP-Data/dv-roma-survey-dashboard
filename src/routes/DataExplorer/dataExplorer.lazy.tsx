@@ -3,7 +3,6 @@ import { Button } from '@undp/design-system-react/Button';
 import { DropdownSelect } from '@undp/design-system-react/DropdownSelect';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { H3, H4, P } from '@undp/design-system-react/Typography';
-import { DownloadIcon } from 'lucide-react';
 import { useState } from 'react';
 import { DataExplorerEl } from './dataExplorerEl';
 
@@ -58,8 +57,8 @@ export const dataExplorer = () => {
             Lorem ipsum dolor sit amet consectetur. Consequat tempus.
           </P>
           <Spacer size='2xl' />
-          <Button variant='link' arrow={false} padding='none' className='w-fit'>
-            Download <DownloadIcon className='text-accent-blue' />
+          <Button variant='link' endIcon='download' padding='none' className='w-fit'>
+            Download
           </Button>
         </div>
       </section>

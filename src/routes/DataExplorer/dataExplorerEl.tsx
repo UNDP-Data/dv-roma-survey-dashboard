@@ -341,7 +341,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                         </div>
                         {gap !== undefined ? (
                           <Badge
-                            variant='surface-sm'
+                            color='surface-sm'
                             size='sm'
                             rounded='sm'
                             className='w-fit rounded-lg'

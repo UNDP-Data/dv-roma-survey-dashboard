@@ -1,216 +1,288 @@
+import { useQuery } from '@tanstack/react-query';
 import { createLazyRoute, Link, useParams } from '@tanstack/react-router';
+import { fetchAndParseJSON } from '@undp/data-viz/fetchAndParseData';
+import { Badge } from '@undp/design-system-react/Badge';
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from '@undp/design-system-react/Breadcrumb';
 import { Button } from '@undp/design-system-react/Button';
-import { Card, CardFooter, CardHeader, CardImage, CardTitle } from '@undp/design-system-react/Card';
-import { cn } from '@undp/design-system-react/cn';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
+import {
+  PageHeader,
+  PageHeaderContent,
+  PageHeaderHead,
+} from '@undp/design-system-react/PageHeader';
 import { Separator } from '@undp/design-system-react/Separator';
 import { Spacer } from '@undp/design-system-react/Spacer';
-import { H2, H3, H4, H5, P } from '@undp/design-system-react/Typography';
-import { DownloadIcon } from 'lucide-react';
+import { Spinner } from '@undp/design-system-react/Spinner';
+import { H1, H3, H4, H5, P } from '@undp/design-system-react/Typography';
+import { Minus, Plus } from 'lucide-react';
 import { useState } from 'react';
-import { COUNTRIES } from '@/Constants';
-import { KeyFindings } from './Components/keyFindings';
+import { COUNTRIES, THEMES } from '@/Constants';
+import type { RecommendationDataType } from '@/types';
 
+function useRecommendationsData(isoCode: string) {
+  return useQuery({
+    queryKey: ['recommendations', isoCode],
+    queryFn: () =>
+      fetchAndParseJSON(`/data/recommendation/${isoCode}.json`) as Promise<
+        RecommendationDataType[]
+      >,
+  });
+}
 export function CountryPage() {
   const params = useParams({ strict: false });
-  const country: string = params.countryId || 'MDA';
-  const categories = [
-    'Social Vulnerability',
-    'Labor & Livelihood',
-    'Education & Youth',
-    'Discrimination',
-    'Health & Care',
-    'Housing & Living',
-  ];
-  const [selectedCategory, setSelectedCategory] = useState('Social Vulnerability');
+  const countryCode: string = params.countryId || 'MDA';
+  const { data: recommendations, isLoading, isError } = useRecommendationsData(countryCode);
+  const country = COUNTRIES.find((country) => country.isoCode === countryCode)?.name;
+  const [selectedRecommendation, setSelectedRecommendation] = useState<string | null>(null);
   return (
     <div className='w-full antialiased'>
-      <section id='header' className='mx-auto w-full bg-surface py-20'>
-        <div className='mx-auto max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-          <div className='w-full md:w-1/2'>
-            <P className='uppercase' size='xs' marginBottom='none'>
-              Country report
-            </P>
-            <Spacer size='2xl' />
-            <H2 className='font-heading capitalize' marginBottom='none'>
-              {country}
-            </H2>
-            <Spacer size='2xl' />
-            <H3>
-              A household-level portrait of Roma vulnerability — from national survey to lived
-              experience
-            </H3>
-            <Spacer size='sm' />
-            <P>
-              Lorem ipsum dolor sit amet consectetur. Suspendisse in posuere eu laoreet. Non fames
-              pulvinar purus netus nisi. Tempus sodales habitasse sed adipiscing. Eu in pretium at
-              sed vivamus dui nam. Arcu nisi eget vel eu convallis diam integer.
-            </P>
-          </div>
+      <section id='header' className='mx-auto w-full'>
+        <PageHeader backgroundImage='/imgs/country_hero.webp' contentMode='dark'>
+          <PageHeaderHead>
+            <Breadcrumb variant='reverse'>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href='/'>Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href='/countries'>Countries</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>{country}</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </PageHeaderHead>
+          <PageHeaderContent className='@2xl:w-1/3'>
+            <H1 size='sm'>Lives on narrow margins in {country}</H1>
+            <H4 marginBottom='none'>Barriers, opportunities and strategies of Roma</H4>
+          </PageHeaderContent>
+        </PageHeader>
+      </section>
+      <Spacer size='8xl' />
+      <Spacer size='8xl' />
+      <section id='intro-text' className='mx-auto w-full px-4'>
+        <div className='mx-auto max-w-190'>
+          <H3 marginBottom='none'>
+            For Roma in Moldova, building a future means navigating compounding disadvantages in an
+            uncertain present.
+          </H3>
           <Spacer size='2xl' />
-          <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} className='w-full'>
-            <GridItem noOfColSpan={1}>
-              <H4 weight='bold' marginBottom='none'>
-                1000
-              </H4>
-              <P>households surveyed</P>
+          <P>
+            Roma face disadvantages across education, work, housing, health and public services —
+            with discrimination cutting through all of them. These pressures compound: exclusion in
+            one area narrows what is possible in the next, so barriers accumulate within households
+            and carry across generations.
+          </P>
+          <P>
+            Shared barriers affect people differently depending on circumstance. Gender, age or
+            place pull households onto different paths — a young woman who leaves school when she
+            marries, a man who moves between countries for seasonal work, an older person without
+            insurance in a village where the nearest service is a bus ride away.
+          </P>
+          <P>
+            Despite this, Roma families continue to pursue better lives. They assemble strategies
+            from seasonal, informal or entrepreneurial work, undertake care and housing labour for
+            each other, and strive for their children to stay at school. They are resilient —
+            managing what the day demands while aspiring for better and secure lives.
+          </P>
+        </div>
+      </section>
+      <Spacer size='8xl' />
+      <Spacer size='8xl' />
+      <section id='scrolly' className='mx-auto w-full'>
+        <div className='h-screen w-full bg-surface' />
+      </section>
+      <Spacer size='6xl' />
+      <section id='themes' className='mx-auto w-full px-4 py-16'>
+        <div className='mx-auto max-w-7xl'>
+          <H4 weight='bold'>Read the full story behind each theme</H4>
+          <Spacer size='2xl' />
+          <Grid noOfCol={{ base: 1, sm: 2, md: 3, lg: 5 }} gap='16px'>
+            {THEMES.map((theme) => (
+              <GridItem key={theme.id} className='group cursor-pointer'>
+                <div className='flex h-full min-h-87.5 flex-col border border-stroke px-0 pb-5'>
+                  <div className='h-1.5 w-full' style={{ backgroundColor: `var(--${theme.id})` }} />
+                  <Spacer size='2xl' />
+                  <div className='px-5'>
+                    <Badge
+                      style={{
+                        backgroundColor: `var(--${theme.id}-light)`,
+                        color: `var(--${theme.id})`,
+                      }}
+                    >
+                      {theme.name}
+                    </Badge>
+                  </div>
+                  <Spacer size='xl' />
+                  <P size='xl' marginBottom='none' className='grow px-5'>
+                    {theme.description}
+                  </P>
+                  <Spacer size='4xl' />
+                  <div className='px-5 py-5'>
+                    <Button variant='link' endIcon='arrow-2' padding='none'>
+                      Read more
+                    </Button>
+                  </div>
+                </div>
+              </GridItem>
+            ))}
+          </Grid>
+        </div>
+      </section>
+      <Spacer size='6xl' />
+      <section
+        id='recommendations'
+        className='mx-auto w-full bg-secondary px-4 py-16 text-content-reverse'
+      >
+        <div className='mx-auto max-w-7xl'>
+          <H4 weight='bold'>Recommendations</H4>
+          <Spacer size='2xl' />
+          {isLoading && <Spinner size='lg' className='mx-auto my-20' />}
+          {isError && <P>Error loading recommendations</P>}
+          {recommendations && !isLoading && !isError && (
+            <Grid noOfCol={{ base: 1, sm: 1, md: 1, lg: 1 }} gap='16px'>
+              {recommendations.map((recommendation) => (
+                <GridItem
+                  key={recommendation.themeId}
+                  className='bg-background text-content-primary'
+                >
+                  <button
+                    type='button'
+                    aria-expanded={selectedRecommendation === recommendation.themeId}
+                    className='flex w-full flex-col items-start bg-background px-0 pb-5'
+                    onClick={() =>
+                      setSelectedRecommendation(
+                        selectedRecommendation === recommendation.themeId
+                          ? null
+                          : recommendation.themeId,
+                      )
+                    }
+                  >
+                    <div
+                      className='h-1.5 w-full'
+                      style={{ backgroundColor: `var(--${recommendation.themeId})` }}
+                    />
+                    <Spacer size='2xl' />
+                    <div className='px-5'>
+                      <Badge
+                        style={{
+                          backgroundColor: `var(--${recommendation.themeId}-light)`,
+                          color: `var(--${recommendation.themeId})`,
+                        }}
+                      >
+                        {THEMES.find((d) => d.id === recommendation.themeId)?.name}
+                      </Badge>
+                    </div>
+                    <Spacer size='xl' />
+                    <div className='flex w-full items-center justify-between px-5'>
+                      <H4 weight='bold' marginBottom='none'>
+                        {recommendation.mainRecommendation}
+                      </H4>
+                      {selectedRecommendation === recommendation.themeId ? (
+                        <Minus size={20} />
+                      ) : (
+                        <Plus size={20} />
+                      )}
+                    </div>
+                  </button>
+                  {selectedRecommendation === recommendation.themeId && (
+                    <div className='p-5'>
+                      {recommendation.detailedRecommendations.map((d, i) => (
+                        <P
+                          key={d}
+                          marginBottom='none'
+                          className={
+                            i < recommendation.detailedRecommendations.length - 1
+                              ? 'border-stroke border-b py-3'
+                              : 'pt-3'
+                          }
+                        >
+                          {d}
+                        </P>
+                      ))}
+                    </div>
+                  )}
+                </GridItem>
+              ))}
+            </Grid>
+          )}
+          <Spacer size='4xl' />
+          <Separator color='background' className='opacity-20' />
+          <Spacer size='4xl' />
+          <H4 weight='bold'>What's next</H4>
+          <Spacer size='2xl' />
+          <Grid noOfCol={{ base: 2, sm: 2, md: 2, lg: 2 }} gap='16px'>
+            <GridItem className='group cursor-pointer bg-background text-content-primary'>
+              <div className='flex h-full w-full flex-col p-8'>
+                <H5 weight='bold'>Download the full report</H5>
+                <P size='base' className='grow'>
+                  Findings, personal accounts, methodology and recommendations for Roma in Moldova.
+                </P>
+                <Spacer size='2xl' />
+                <div>
+                  <Button variant='link' endIcon='download' padding='none'>
+                    Download
+                  </Button>
+                </div>
+              </div>
             </GridItem>
-            <GridItem noOfColSpan={1}>
-              <H4 weight='bold' marginBottom='none'>
-                700
-              </H4>
-              <P>Roma households interviewed</P>
-            </GridItem>
-            <GridItem noOfColSpan={1}>
-              <H4 weight='bold' marginBottom='none'>
-                63
-              </H4>
-              <P>localities covered</P>
-            </GridItem>
-            <GridItem noOfColSpan={1}>
-              <H4 weight='bold' marginBottom='none'>
-                547
-              </H4>
-              <P>micro-narratives collected</P>
+            <GridItem className='group cursor-pointer bg-background text-content-primary'>
+              <Link to='/data-explorer'>
+                <div className='flex h-full w-full flex-col p-8'>
+                  <H5 weight='bold'>Explore the data</H5>
+                  <P size='base' className='grow'>
+                    Every indicator for Roma and nearby non-Roma, with breakdowns by sex, age and
+                    place.
+                  </P>
+                  <Spacer size='2xl' />
+                  <div>
+                    <Button variant='link' endIcon='arrow' padding='none'>
+                      Open data explorer
+                    </Button>
+                  </div>
+                </div>
+              </Link>
             </GridItem>
           </Grid>
         </div>
       </section>
-      <Spacer size='8xl' />
-      <section id='stats' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-        <H3>Key findings</H3>
-        <Spacer size='6xl' />
-        <KeyFindings
-          index={1}
-          title='Work rarely means security'
-          description={
-            <P size='base' marginBottom='none'>
-              Roma households are economically active, but the available work is overwhelmingly
-              informal, undocumented, and unprotected{' '}
-              <span className='font-bold'>
-                – 73.3% of employed Roma work informally, vs. 33.3% of non-Roma.
-              </span>
-            </P>
-          }
-          persona={{
-            name: 'Vasile · Composite narrative persona',
-            description:
-              "He stretches every leu and puts his children's schooling and his mother's medication first — and it still is not enough.",
-          }}
-        />
-        <Spacer size='6xl' />
-        <Separator color='surface-md' />
-        <Spacer size='6xl' />
-        <KeyFindings
-          index={2}
-          title='Schooling ends early, and rarely restarts'
-          description={
-            <P size='base' marginBottom='none'>
-              Housing instability is a leading, underrecognized driver: nationally,{' '}
-              <span className='font-bold'>
-                56.3% of Roma youth (15–25) are NEET, vs. 14.7% of non-Roma.
-              </span>
-            </P>
-          }
-          persona={{
-            name: 'Vasile · Composite narrative persona',
-            description:
-              "He stretches every leu and puts his children's schooling and his mother's medication first — and it still is not enough.",
-          }}
-          reverse
-        />
-        <Spacer size='6xl' />
-        <Separator color='surface-md' />
-        <Spacer size='6xl' />
-        <KeyFindings
-          index={2}
-          title='Discrimination touches nearly every account'
-          description={
-            <P size='base' marginBottom='none'>
-              <span className='font-bold'>
-                Only 0.2% of Moldova micro-narratives recorded no form of discrimination at all.
-              </span>{' '}
-              It shows up in hiring and in routine contact with public institutions alike. 56.3% of
-              Roma youth (15–25) are NEET, vs. 14.7% of non-Roma.
-            </P>
-          }
-          persona={{
-            name: 'Lilia · Composite narrative persona',
-            description:
-              'Employers turn her away, shop staff watch her closely, police checks feel routine.',
-          }}
-        />
-      </section>
-      <Spacer size='8xl' />
-      <section id='key-findings' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-        <H3>
-          Explore data on Roma communities in{' '}
-          {country.replace(/\b\w/g, (char) => char.toUpperCase())}
-        </H3>
-        <div className='flex flex-wrap gap-4'>
-          {categories.map((category) => (
-            <button
-              type='button'
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={cn(
-                'rounded-full border px-4 py-1 text-[14px]',
-                selectedCategory === category
-                  ? 'border-stroke-4xl bg-foreground-soft text-content-reverse'
-                  : 'border-stroke text-content-primary hover:bg-surface',
-              )}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-        <Spacer size='2xl' />
-        <div className='w-full bg-surface p-4 md:p-8'>
-          <div className='w-full md:w-1/2'>
-            <H5 weight='bold'>{selectedCategory}</H5>
-            <P size='base'>
-              Lorem ipsum dolor sit amet consectetur. Nunc bibendum massa bibendum enim mauris. Non
-              quam malesuada sed lobortis placerat ut aliquam. Cras eget dui.
-            </P>
-          </div>
-          <Separator color='surface-md' />
+      <section id='explore-other-countries' className='mx-auto w-full bg-surface px-4 py-16'>
+        <div className='mx-auto max-w-7xl'>
+          <H4 weight='bold'>Other countries</H4>
           <Spacer size='2xl' />
-          <div className='h-62.5 w-full bg-blue-100' />
-        </div>
-      </section>
-      <Spacer size='2xl' />
-      <section id='download-report' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-        <div className='flex w-full flex-col bg-surface p-6 md:p-10'>
-          <H4 weight='bold'>Download report</H4>
-          <P size='lg' marginBottom='none'>
-            Lorem ipsum dolor sit amet consectetur. Consequat tempus.
-          </P>
-          <Spacer size='2xl' />
-          <Button variant='link' arrow={false} padding='none' className='w-fit'>
-            Download <DownloadIcon className='text-accent-blue' />
-          </Button>
-        </div>
-      </section>
-      <Spacer size='8xl' />
-      <section id='key-findings' className='bg-surface py-20'>
-        <div className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-          <H3>Explore other countries</H3>
-          <Spacer size='2xl' />
-          <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} gap='32px'>
-            {COUNTRIES.filter((d) => d.id !== country).map((country) => (
-              <GridItem key={country.id}>
+          <Grid noOfCol={{ base: 2, sm: 2, md: 2 }} gap='16px'>
+            {COUNTRIES.filter((d) => d.isoCode !== countryCode).map((country) => (
+              <GridItem
+                key={country.id}
+                className='group cursor-pointer bg-background text-content-primary'
+              >
                 <Link to='/countries/$countryId' params={{ countryId: country.id }}>
-                  <Card backgroundColor='background' size='full' variant='with-image'>
-                    <CardHeader>
-                      <CardImage src='/imgs/placeholder.webp' />
-                      <CardTitle>{country.name}</CardTitle>
-                    </CardHeader>
-                    <CardFooter>
-                      <Button padding='none' variant='link'>
-                        Read more
+                  <div className='flex h-full flex-col border border-stroke px-0 pb-5'>
+                    <div className='h-1.5 w-full' style={{ backgroundColor: `var(--secondary)` }} />
+                    <Spacer size='3xl' />
+                    <H5 weight='bold' className='px-5'>
+                      {country.name}
+                    </H5>
+                    <P size='base' className='grow px-5'>
+                      How Roma households compare with their neighbours in {country.name}.
+                    </P>
+                    <Spacer size='2xl' />
+                    <div className='px-5'>
+                      <Button variant='link' endIcon='arrow' padding='none'>
+                        Open data explorer
                       </Button>
-                    </CardFooter>
-                  </Card>
+                    </div>
+                  </div>
                 </Link>
               </GridItem>
             ))}
