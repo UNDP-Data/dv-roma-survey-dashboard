@@ -70,3 +70,14 @@ export interface RecommendationDataType {
   mainRecommendation: string;
   detailedRecommendations: string[];
 }
+
+export interface SlideContent {
+  vizContent: {
+    title: string;
+    subTitle: string;
+    romaHighlighted: number;
+    nonRomaHighlighted: number;
+    slideContent?: undefined;
+  };
+  slideContent?: React.ReactNode;
+}

@@ -23,6 +23,9 @@
   --discrimination: #c45f1a;
   --discrimination-hover: #eb7325;
   --discrimination-light: #f7ebe3;
+
+  --roma: #c94a44;
+  --non-roma: #0076c1;
 }
 
 @theme {
@@ -41,4 +44,7 @@
   --color-discrimination: var(--discrimination);
   --color-discrimination-hover: var(--discrimination-hover);
   --color-discrimination-light: var(--discrimination-light);
+
+  --color-roma: var(--roma);
+  --color-non-roma: var(--non-roma);
 }

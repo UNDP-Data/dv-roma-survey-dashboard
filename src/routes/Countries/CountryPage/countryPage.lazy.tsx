@@ -25,6 +25,7 @@ import { Minus, Plus } from 'lucide-react';
 import { useState } from 'react';
 import { COUNTRIES, THEMES } from '@/Constants';
 import type { RecommendationDataType } from '@/types';
+import ScrollyTellingViz from './Components/ScrollyTellingViz';
 
 function useRecommendationsData(isoCode: string) {
   return useQuery({
@@ -100,7 +101,7 @@ export function CountryPage() {
       <Spacer size='8xl' />
       <Spacer size='8xl' />
       <section id='scrolly' className='mx-auto w-full'>
-        <div className='h-screen w-full bg-surface' />
+        <ScrollyTellingViz />
       </section>
       <Spacer size='6xl' />
       <section id='themes' className='mx-auto w-full px-4 py-16'>
