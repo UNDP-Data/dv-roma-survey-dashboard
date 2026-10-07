@@ -39,7 +39,7 @@ export function IconCluster({
       <g id={`${populationGroup}-dot-plot`} transform='translate(0, 50)'>
         {positionData.map((pos, i) => (
           // biome-ignore lint/suspicious/noArrayIndexKey: index is unique
-          <g key={`${populationGroup}-${i}`} transform={`translate(${pos.x}, ${pos.y})`}>
+          <g key={`${populationGroup}-${i}`} transform={`translate(${pos[0]}, ${pos[1]})`}>
             <motion.path
               // biome-ignore lint/suspicious/noArrayIndexKey: index is unique
               key={`${populationGroup}-${i}`}
