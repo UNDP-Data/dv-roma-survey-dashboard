@@ -81,3 +81,5 @@ export interface SlideContent {
   };
   slideContent?: React.ReactNode;
 }
+
+export type Themes = 'Education' | 'Health' | 'Employment' | 'Housing' | 'Discrimination';

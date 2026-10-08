@@ -1,7 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { createLazyRoute, Link, useParams } from '@tanstack/react-router';
 import { fetchAndParseJSON } from '@undp/data-viz/fetchAndParseData';
-import { Badge } from '@undp/design-system-react/Badge';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -11,6 +10,13 @@ import {
   BreadcrumbSeparator,
 } from '@undp/design-system-react/Breadcrumb';
 import { Button } from '@undp/design-system-react/Button';
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from '@undp/design-system-react/Drawer';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
 import {
   PageHeader,
@@ -24,7 +30,8 @@ import { H1, H3, H4, H5, P } from '@undp/design-system-react/Typography';
 import { Minus, Plus } from 'lucide-react';
 import { useState } from 'react';
 import { COUNTRIES, THEMES } from '@/Constants';
-import type { RecommendationDataType } from '@/types';
+import { CardEl } from '@/components/CardEl';
+import type { RecommendationDataType, Themes } from '@/types';
 import ScrollyTellingViz from './Components/ScrollyTellingViz';
 
 function useRecommendationsData(isoCode: string) {
@@ -111,30 +118,26 @@ export function CountryPage() {
           <Grid noOfCol={{ base: 1, sm: 2, md: 3, lg: 5 }} gap='16px'>
             {THEMES.map((theme) => (
               <GridItem key={theme.id} className='group cursor-pointer'>
-                <div className='flex h-full min-h-87.5 flex-col border border-stroke px-0 pb-5'>
-                  <div className='h-1.5 w-full' style={{ backgroundColor: `var(--${theme.id})` }} />
-                  <Spacer size='2xl' />
-                  <div className='px-5'>
-                    <Badge
-                      style={{
-                        backgroundColor: `var(--${theme.id}-light)`,
-                        color: `var(--${theme.id})`,
-                      }}
-                    >
-                      {theme.name}
-                    </Badge>
-                  </div>
-                  <Spacer size='xl' />
-                  <P size='xl' marginBottom='none' className='grow px-5'>
-                    {theme.description}
-                  </P>
-                  <Spacer size='4xl' />
-                  <div className='px-5 py-5'>
-                    <Button variant='link' endIcon='arrow-2' padding='none'>
-                      Read more
-                    </Button>
-                  </div>
-                </div>
+                <Drawer direction='right'>
+                  <DrawerTrigger className='w-full'>
+                    <CardEl variant={theme.name as Themes} showBadge={true} className='min-h-87.5'>
+                      <P size='xl' marginBottom='none' className='grow'>
+                        {theme.description}
+                      </P>
+                      <Spacer size='4xl' />
+                      <div className='pt-5'>
+                        <Button variant='link' endIcon='arrow-2' padding='none'>
+                          Read more
+                        </Button>
+                      </div>
+                    </CardEl>
+                  </DrawerTrigger>
+                  <DrawerContent>
+                    <DrawerHeader>
+                      <DrawerTitle>{theme.name}</DrawerTitle>
+                    </DrawerHeader>
+                  </DrawerContent>
+                </Drawer>
               </GridItem>
             ))}
           </Grid>
@@ -160,7 +163,7 @@ export function CountryPage() {
                   <button
                     type='button'
                     aria-expanded={selectedRecommendation === recommendation.themeId}
-                    className='flex w-full flex-col items-start bg-background px-0 pb-5'
+                    className='flex w-full flex-col items-start p-0'
                     onClick={() =>
                       setSelectedRecommendation(
                         selectedRecommendation === recommendation.themeId
@@ -169,50 +172,40 @@ export function CountryPage() {
                       )
                     }
                   >
-                    <div
-                      className='h-1.5 w-full'
-                      style={{ backgroundColor: `var(--${recommendation.themeId})` }}
-                    />
-                    <Spacer size='2xl' />
-                    <div className='px-5'>
-                      <Badge
-                        style={{
-                          backgroundColor: `var(--${recommendation.themeId}-light)`,
-                          color: `var(--${recommendation.themeId})`,
-                        }}
-                      >
-                        {THEMES.find((d) => d.id === recommendation.themeId)?.name}
-                      </Badge>
-                    </div>
-                    <Spacer size='xl' />
-                    <div className='flex w-full items-center justify-between px-5'>
-                      <H4 weight='bold' marginBottom='none'>
-                        {recommendation.mainRecommendation}
-                      </H4>
-                      {selectedRecommendation === recommendation.themeId ? (
-                        <Minus size={20} />
-                      ) : (
-                        <Plus size={20} />
+                    <CardEl
+                      variant={THEMES.find((d) => d.id === recommendation.themeId)?.name as Themes}
+                      showBadge={true}
+                      className='items-start border-0 bg-background'
+                    >
+                      <div className='flex w-full items-center justify-between'>
+                        <H4 weight='bold' marginBottom='none'>
+                          {recommendation.mainRecommendation}
+                        </H4>
+                        {selectedRecommendation === recommendation.themeId ? (
+                          <Minus size={20} />
+                        ) : (
+                          <Plus size={20} />
+                        )}
+                      </div>
+                      {selectedRecommendation === recommendation.themeId && (
+                        <div className='pt-5'>
+                          {recommendation.detailedRecommendations.map((d, i) => (
+                            <P
+                              key={d}
+                              marginBottom='none'
+                              className={
+                                i < recommendation.detailedRecommendations.length - 1
+                                  ? 'border-stroke border-b py-3'
+                                  : 'pt-3'
+                              }
+                            >
+                              {d}
+                            </P>
+                          ))}
+                        </div>
                       )}
-                    </div>
+                    </CardEl>
                   </button>
-                  {selectedRecommendation === recommendation.themeId && (
-                    <div className='p-5'>
-                      {recommendation.detailedRecommendations.map((d, i) => (
-                        <P
-                          key={d}
-                          marginBottom='none'
-                          className={
-                            i < recommendation.detailedRecommendations.length - 1
-                              ? 'border-stroke border-b py-3'
-                              : 'pt-3'
-                          }
-                        >
-                          {d}
-                        </P>
-                      ))}
-                    </div>
-                  )}
                 </GridItem>
               ))}
             </Grid>
@@ -268,22 +261,18 @@ export function CountryPage() {
                 className='group cursor-pointer bg-background text-content-primary'
               >
                 <Link to='/countries/$countryId' params={{ countryId: country.id }}>
-                  <div className='flex h-full flex-col border border-stroke px-0 pb-5'>
-                    <div className='h-1.5 w-full' style={{ backgroundColor: `var(--secondary)` }} />
-                    <Spacer size='3xl' />
-                    <H5 weight='bold' className='px-5'>
-                      {country.name}
-                    </H5>
-                    <P size='base' className='grow px-5'>
+                  <CardEl>
+                    <H5 weight='bold'>{country.name}</H5>
+                    <P size='base' className='grow'>
                       How Roma households compare with their neighbours in {country.name}.
                     </P>
                     <Spacer size='2xl' />
-                    <div className='px-5'>
+                    <div>
                       <Button variant='link' endIcon='arrow' padding='none'>
                         Open data explorer
                       </Button>
                     </div>
-                  </div>
+                  </CardEl>
                 </Link>
               </GridItem>
             ))}

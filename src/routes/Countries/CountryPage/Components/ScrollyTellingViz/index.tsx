@@ -1,8 +1,8 @@
-import { Badge } from '@undp/design-system-react/Badge';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { H5, P } from '@undp/design-system-react/Typography';
 import { animate, motion, useMotionValue } from 'motion/react';
 import { useEffect, useRef, useState } from 'react';
+import { CardEl } from '@/components/CardEl';
 import type { SlideContent } from '@/types';
 import { IconCluster } from './iconCluster';
 import { NeighborhoodViz, NeighborhoodVizDef } from './neighborhoodViz';
@@ -16,27 +16,23 @@ const SLIDES: SlideContent[] = [
       nonRomaHighlighted: 0,
     },
     slideContent: (
-      <>
-        <div className='h-1.5 w-full bg-secondary' />
-        <Spacer size='2xl' />
-        <div className='px-5 pb-5'>
-          <P weight='bold' size='xl'>
-            Same localities, different realities
-          </P>
-          <P size='base'>
-            Roma and non-Roma people live side by side in the same localities. Yet their experiences
-            can be very different. To better understand these disparities and bring to light the
-            vulnerabilities experienced by Roma, households from both groups were surveyed across
-            the same localities.
-          </P>
-          <P size='base' marginBottom='none'>
-            The results show significant disparities between Roma and non-Roma populations across a
-            wide range of issues, including housing, education, employment, health, and experience
-            of discrimination and violence. These differences often reflect systemic inequalities
-            and disadvantages faced by Roma communities.
-          </P>
-        </div>
-      </>
+      <CardEl>
+        <P weight='bold' size='xl'>
+          Same localities, different realities
+        </P>
+        <P size='base'>
+          Roma and non-Roma people live side by side in the same localities. Yet their experiences
+          can be very different. To better understand these disparities and bring to light the
+          vulnerabilities experienced by Roma, households from both groups were surveyed across the
+          same localities.
+        </P>
+        <P size='base' marginBottom='none'>
+          The results show significant disparities between Roma and non-Roma populations across a
+          wide range of issues, including housing, education, employment, health, and experience of
+          discrimination and violence. These differences often reflect systemic inequalities and
+          disadvantages faced by Roma communities.
+        </P>
+      </CardEl>
     ),
   },
   {
@@ -47,42 +43,38 @@ const SLIDES: SlideContent[] = [
       subTitle: '',
     },
     slideContent: (
-      <>
-        <div className='h-1.5 w-full bg-secondary' />
-        <Spacer size='2xl' />
-        <div className='px-5 pb-5'>
-          <P weight='bold' size='xl'>
-            Disparities that carry through life
-          </P>
-          <P size='base' leading='xl'>
-            These disparities begin in{' '}
-            <span className='rounded-full bg-education-light px-2 py-1 font-bold text-education'>
-              education
-            </span>
-            , continue into{' '}
-            <span className='rounded-full bg-employment-light px-2 py-1 font-bold text-employment'>
-              employment
-            </span>
-            , and shape adult life through
-            <span className='rounded-full bg-housing-light px-2 py-1 font-bold text-housing'>
-              housing
-            </span>
-            and{' '}
-            <span className='rounded-full bg-health-light px-2 py-1 font-bold text-health'>
-              health
-            </span>
-            , while{' '}
-            <span className='rounded-full bg-discrimination-light px-2 py-1 font-bold text-discrimination'>
-              discrimination
-            </span>{' '}
-            cuts across all these areas.
-          </P>
-          <P size='base' marginBottom='none'>
-            To make these differences easier to see and compare across areas, each result is shown
-            out of 100 people.
-          </P>
-        </div>
-      </>
+      <CardEl>
+        <P weight='bold' size='xl'>
+          Disparities that carry through life
+        </P>
+        <P size='base' leading='xl'>
+          These disparities begin in{' '}
+          <span className='rounded-full bg-education-light px-2 py-1 font-bold text-education'>
+            education
+          </span>
+          , continue into{' '}
+          <span className='rounded-full bg-employment-light px-2 py-1 font-bold text-employment'>
+            employment
+          </span>
+          , and shape adult life through
+          <span className='rounded-full bg-housing-light px-2 py-1 font-bold text-housing'>
+            housing
+          </span>
+          and{' '}
+          <span className='rounded-full bg-health-light px-2 py-1 font-bold text-health'>
+            health
+          </span>
+          , while{' '}
+          <span className='rounded-full bg-discrimination-light px-2 py-1 font-bold text-discrimination'>
+            discrimination
+          </span>{' '}
+          cuts across all these areas.
+        </P>
+        <P size='base' marginBottom='none'>
+          To make these differences easier to see and compare across areas, each result is shown out
+          of 100 people.
+        </P>
+      </CardEl>
     ),
   },
   {
@@ -94,21 +86,15 @@ const SLIDES: SlideContent[] = [
         'Adults aged 18 to 65. Only 11 in 100 Roma have completed secondary education, against 60 in 100 non-Roma.',
     },
     slideContent: (
-      <>
-        <div className='h-1.5 w-full bg-education' />
-        <Spacer size='2xl' />
-        <div className='px-5 pb-5'>
-          <Badge className='bg-education-light text-education'>Education</Badge>
-          <Spacer size='xl' />
-          <P weight='bold' size='xl'>
-            Gaps in education span the learning cycle and adulthood
-          </P>
-          <P size='base' marginBottom='none'>
-            Roma children are less likely to be enrolled at every stage, from preschool to
-            university, and the gap carries into adult life.
-          </P>
-        </div>
-      </>
+      <CardEl variant='Education'>
+        <P weight='bold' size='xl'>
+          Gaps in education span the learning cycle and adulthood
+        </P>
+        <P size='base' marginBottom='none'>
+          Roma children are less likely to be enrolled at every stage, from preschool to university,
+          and the gap carries into adult life.
+        </P>
+      </CardEl>
     ),
   },
   {
@@ -119,21 +105,15 @@ const SLIDES: SlideContent[] = [
       subTitle: 'Employed people aged 15 to 64.',
     },
     slideContent: (
-      <>
-        <div className='h-1.5 w-full bg-employment' />
-        <Spacer size='2xl' />
-        <div className='px-5 pb-5'>
-          <Badge className='bg-employment-light text-employment'>Employment</Badge>
-          <Spacer size='xl' />
-          <P weight='bold' size='xl'>
-            Finding work does not ensure a secure livelihood
-          </P>
-          <P size='base' marginBottom='none'>
-            Roma women have fewer openings into work, and men more often work without contracts or
-            protection.
-          </P>
-        </div>
-      </>
+      <CardEl variant='Employment'>
+        <P weight='bold' size='xl'>
+          Finding work does not ensure a secure livelihood
+        </P>
+        <P size='base' marginBottom='none'>
+          Roma women have fewer openings into work, and men more often work without contracts or
+          protection.
+        </P>
+      </CardEl>
     ),
   },
   {
@@ -144,22 +124,16 @@ const SLIDES: SlideContent[] = [
       subTitle: 'Too few rooms for the household',
     },
     slideContent: (
-      <>
-        <div className='h-1.5 w-full bg-housing' />
-        <Spacer size='2xl' />
-        <div className='px-5 pb-5'>
-          <Badge className='bg-housing-light text-housing'>Housing</Badge>
-          <Spacer size='xl' />
-          <P weight='bold' size='xl'>
-            Having a roof does not ensure adequate space, sanitation or warmthFinding work does not
-            ensure a secure livelihood
-          </P>
-          <P size='base' marginBottom='none'>
-            Roma homes are more often overcrowded, damp or without indoor sanitation. Insecure
-            renting forces families to move.
-          </P>
-        </div>
-      </>
+      <CardEl variant='Housing'>
+        <P weight='bold' size='xl'>
+          Having a roof does not ensure adequate space, sanitation or warmthFinding work does not
+          ensure a secure livelihood
+        </P>
+        <P size='base' marginBottom='none'>
+          Roma homes are more often overcrowded, damp or without indoor sanitation. Insecure renting
+          forces families to move.
+        </P>
+      </CardEl>
     ),
   },
   {
@@ -170,21 +144,15 @@ const SLIDES: SlideContent[] = [
       subTitle: 'All ages',
     },
     slideContent: (
-      <>
-        <div className='h-1.5 w-full bg-health' />
-        <Spacer size='2xl' />
-        <div className='px-5 pb-5'>
-          <Badge className='bg-health-light text-health'>Health</Badge>
-          <Spacer size='xl' />
-          <P weight='bold' size='xl'>
-            Poor health constrains opportunities for many Roma during their working years
-          </P>
-          <P size='base' marginBottom='none'>
-            Roma adults report poor health more often, and many lack insurance. Caring for relatives
-            often means giving up paid work.
-          </P>
-        </div>
-      </>
+      <CardEl variant='Health'>
+        <P weight='bold' size='xl'>
+          Poor health constrains opportunities for many Roma during their working years
+        </P>
+        <P size='base' marginBottom='none'>
+          Roma adults report poor health more often, and many lack insurance. Caring for relatives
+          often means giving up paid work.
+        </P>
+      </CardEl>
     ),
   },
   {
@@ -195,22 +163,15 @@ const SLIDES: SlideContent[] = [
       subTitle: 'Because of ethnicity, skin colour or language.',
     },
     slideContent: (
-      <>
-        <div className='h-1.5 w-full bg-discrimination' />
-        <Spacer size='2xl' />
-        <div className='px-5 pb-5'>
-          <Badge className='bg-discrimination-light text-discrimination'>Discrimination</Badge>
-          <Spacer size='xl' />
-          <P weight='bold' size='xl'>
-            Unequal treatment and administrative barriers restrict access to opportunities and
-            support
-          </P>
-          <P size='base' marginBottom='none'>
-            A third of Roma faced discrimination in the past year. Services are nearby, but
-            paperwork and repeated visits keep them out of reach.
-          </P>
-        </div>
-      </>
+      <CardEl variant='Discrimination'>
+        <P weight='bold' size='xl'>
+          Unequal treatment and administrative barriers restrict access to opportunities and support
+        </P>
+        <P size='base' marginBottom='none'>
+          A third of Roma faced discrimination in the past year. Services are nearby, but paperwork
+          and repeated visits keep them out of reach.
+        </P>
+      </CardEl>
     ),
   },
 ];
