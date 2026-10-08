@@ -65,10 +65,17 @@ export interface IndicatorMetaData {
   availableDisaggregations: string[];
 }
 
+export type Themes = 'Education' | 'Health' | 'Employment' | 'Housing' | 'Discrimination';
+
 export interface RecommendationDataType {
-  themeId: string;
+  theme: Themes;
   mainRecommendation: string;
   detailedRecommendations: string[];
+}
+
+export interface FullStoryDataType {
+  theme: Themes;
+  description: string;
 }
 
 export interface SlideContent {
@@ -81,5 +88,3 @@ export interface SlideContent {
   };
   slideContent?: React.ReactNode;
 }
-
-export type Themes = 'Education' | 'Health' | 'Employment' | 'Housing' | 'Discrimination';

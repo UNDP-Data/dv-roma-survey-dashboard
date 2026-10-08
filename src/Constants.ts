@@ -7,36 +7,6 @@ export const COUNTRIES = [
 export const COLORS = ['var(--accent-red)', 'var(--accent-violet)'];
 export const GROUPS = ['Roma', 'non-Roma'];
 
-export const THEMES = [
-  {
-    name: 'Education',
-    description:
-      'Gaps in education span the learning cycle and adulthood, leaving a trace along the life course',
-    id: 'education',
-  },
-  {
-    name: 'Employment',
-    description: 'Finding work does not ensure a secure livelihood',
-    id: 'employment',
-  },
-  {
-    name: 'Housing',
-    description: 'Having a roof does not ensure adequate space, sanitation or warmth.',
-    id: 'housing',
-  },
-  {
-    name: 'Health',
-    description: 'Poor health constrains opportunities for many Roma during their working years',
-    id: 'health',
-  },
-  {
-    name: 'Discrimination',
-    description:
-      'Unequal treatment and administrative barriers restrict access to opportunities and support',
-    id: 'discrimination',
-  },
-];
-
 export const FEATURED_INDICATORS = {
   'work and employment': [
     'wb_unemployed_15_64',

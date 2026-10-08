@@ -29,9 +29,9 @@ import { Spinner } from '@undp/design-system-react/Spinner';
 import { H1, H3, H4, H5, P } from '@undp/design-system-react/Typography';
 import { Minus, Plus } from 'lucide-react';
 import { useState } from 'react';
-import { COUNTRIES, THEMES } from '@/Constants';
+import { COUNTRIES } from '@/Constants';
 import { CardEl } from '@/components/CardEl';
-import type { RecommendationDataType, Themes } from '@/types';
+import type { FullStoryDataType, RecommendationDataType, Themes } from '@/types';
 import ScrollyTellingViz from './Components/ScrollyTellingViz';
 
 function useRecommendationsData(isoCode: string) {
@@ -43,12 +43,25 @@ function useRecommendationsData(isoCode: string) {
       >,
   });
 }
+
+function useFullStoryData(isoCode: string) {
+  return useQuery({
+    queryKey: ['fullStory', isoCode],
+    queryFn: () =>
+      fetchAndParseJSON(`/data/fullStory/${isoCode}.json`) as Promise<FullStoryDataType[]>,
+  });
+}
 export function CountryPage() {
   const params = useParams({ strict: false });
   const countryCode: string = params.countryId || 'MDA';
   const { data: recommendations, isLoading, isError } = useRecommendationsData(countryCode);
+  const {
+    data: fullStory,
+    isLoading: isLoadingFullStory,
+    isError: isErrorFullStory,
+  } = useFullStoryData(countryCode);
   const country = COUNTRIES.find((country) => country.isoCode === countryCode)?.name;
-  const [selectedRecommendation, setSelectedRecommendation] = useState<string | null>(null);
+  const [selectedRecommendation, setSelectedRecommendation] = useState<Themes | null>(null);
   return (
     <div className='w-full antialiased'>
       <section id='header' className='mx-auto w-full'>
@@ -115,32 +128,36 @@ export function CountryPage() {
         <div className='mx-auto max-w-7xl'>
           <H4 weight='bold'>Read the full story behind each theme</H4>
           <Spacer size='2xl' />
-          <Grid noOfCol={{ base: 1, sm: 2, md: 3, lg: 5 }} gap='16px'>
-            {THEMES.map((theme) => (
-              <GridItem key={theme.id} className='group cursor-pointer'>
-                <Drawer direction='right'>
-                  <DrawerTrigger className='w-full'>
-                    <CardEl variant={theme.name as Themes} showBadge={true} className='min-h-87.5'>
-                      <P size='xl' marginBottom='none' className='grow'>
-                        {theme.description}
-                      </P>
-                      <Spacer size='4xl' />
-                      <div className='pt-5'>
-                        <Button variant='link' endIcon='arrow-2' padding='none'>
-                          Read more
-                        </Button>
-                      </div>
-                    </CardEl>
-                  </DrawerTrigger>
-                  <DrawerContent>
-                    <DrawerHeader>
-                      <DrawerTitle>{theme.name}</DrawerTitle>
-                    </DrawerHeader>
-                  </DrawerContent>
-                </Drawer>
-              </GridItem>
-            ))}
-          </Grid>
+          {isLoadingFullStory && <Spinner size='lg' className='mx-auto my-20' />}
+          {isErrorFullStory && <P>Error loading data</P>}
+          {fullStory && !isLoadingFullStory && !isErrorFullStory && (
+            <Grid noOfCol={{ base: 1, sm: 2, md: 3, lg: 5 }} gap='16px'>
+              {fullStory.map((theme) => (
+                <GridItem key={theme.theme} className='group cursor-pointer'>
+                  <Drawer direction='right'>
+                    <DrawerTrigger className='w-full'>
+                      <CardEl variant={theme.theme} showBadge={true} className='min-h-87.5'>
+                        <P size='xl' marginBottom='none' className='grow'>
+                          {theme.description}
+                        </P>
+                        <Spacer size='4xl' />
+                        <div className='pt-5'>
+                          <Button variant='link' endIcon='arrow-2' padding='none'>
+                            Read more
+                          </Button>
+                        </div>
+                      </CardEl>
+                    </DrawerTrigger>
+                    <DrawerContent>
+                      <DrawerHeader>
+                        <DrawerTitle>{theme.theme}</DrawerTitle>
+                      </DrawerHeader>
+                    </DrawerContent>
+                  </Drawer>
+                </GridItem>
+              ))}
+            </Grid>
+          )}
         </div>
       </section>
       <Spacer size='6xl' />
@@ -156,24 +173,21 @@ export function CountryPage() {
           {recommendations && !isLoading && !isError && (
             <Grid noOfCol={{ base: 1, sm: 1, md: 1, lg: 1 }} gap='16px'>
               {recommendations.map((recommendation) => (
-                <GridItem
-                  key={recommendation.themeId}
-                  className='bg-background text-content-primary'
-                >
+                <GridItem key={recommendation.theme} className='bg-background text-content-primary'>
                   <button
                     type='button'
-                    aria-expanded={selectedRecommendation === recommendation.themeId}
+                    aria-expanded={selectedRecommendation === recommendation.theme}
                     className='flex w-full flex-col items-start p-0'
                     onClick={() =>
                       setSelectedRecommendation(
-                        selectedRecommendation === recommendation.themeId
+                        selectedRecommendation === recommendation.theme
                           ? null
-                          : recommendation.themeId,
+                          : recommendation.theme,
                       )
                     }
                   >
                     <CardEl
-                      variant={THEMES.find((d) => d.id === recommendation.themeId)?.name as Themes}
+                      variant={recommendation.theme}
                       showBadge={true}
                       className='items-start border-0 bg-background'
                     >
@@ -181,13 +195,13 @@ export function CountryPage() {
                         <H4 weight='bold' marginBottom='none'>
                           {recommendation.mainRecommendation}
                         </H4>
-                        {selectedRecommendation === recommendation.themeId ? (
+                        {selectedRecommendation === recommendation.theme ? (
                           <Minus size={20} />
                         ) : (
                           <Plus size={20} />
                         )}
                       </div>
-                      {selectedRecommendation === recommendation.themeId && (
+                      {selectedRecommendation === recommendation.theme && (
                         <div className='pt-5'>
                           {recommendation.detailedRecommendations.map((d, i) => (
                             <P

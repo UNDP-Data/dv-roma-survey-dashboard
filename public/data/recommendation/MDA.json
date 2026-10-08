@@ -1,6 +1,6 @@
 [
   {
-    "themeId": "education",
+    "theme": "Education",
     "mainRecommendation": "Keep education open across generations",
     "detailedRecommendations": [
       "Expand preschool outreach, school-readiness programmes and help with participation costs",
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "themeId": "employment",
+    "theme": "Employment",
     "mainRecommendation": "Keep education open across generations",
     "detailedRecommendations": [
       "Expand preschool outreach, school-readiness programmes and help with participation costs",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "themeId": "housing",
+    "theme": "Housing",
     "mainRecommendation": "Keep education open across generations",
     "detailedRecommendations": [
       "Expand preschool outreach, school-readiness programmes and help with participation costs",
@@ -27,7 +27,7 @@
     ]
   },
   {
-    "themeId": "health",
+    "theme": "Health",
     "mainRecommendation": "Keep education open across generations",
     "detailedRecommendations": [
       "Expand preschool outreach, school-readiness programmes and help with participation costs",
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "themeId": "discrimination",
+    "theme": "Discrimination",
     "mainRecommendation": "Keep education open across generations",
     "detailedRecommendations": [
       "Expand preschool outreach, school-readiness programmes and help with participation costs",
