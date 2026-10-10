@@ -110,12 +110,12 @@ export function CountryPage() {
       <Spacer size='6xl' />
       <section id='themes' className='mx-auto w-full px-4 py-16'>
         <div className='mx-auto max-w-7xl'>
-          <H4 weight='bold'>Read the full story behind each theme</H4>
+          <H4>Read the full story behind each theme</H4>
           <Spacer size='2xl' />
           {isLoading && <Spinner size='lg' className='mx-auto my-20' />}
           {isError && <P>Error loading data</P>}
           {data && !isLoading && !isError && (
-            <Grid noOfCol={{ base: 1, sm: 2, md: 3, lg: 5 }} gap='16px'>
+            <Grid noOfCol={{ base: 1, sm: 2, md: 2, lg: 3, xl: 5 }} gap='16px'>
               {data.fullStoryCards.map((theme) => (
                 <GridItem key={theme.theme} className='group cursor-pointer'>
                   <Drawer direction='right'>
@@ -125,7 +125,7 @@ export function CountryPage() {
                           {theme.description}
                         </P>
                         <Spacer size='4xl' />
-                        <div className='pt-5'>
+                        <div className='w-fit pt-5'>
                           <Button variant='link' endIcon='arrow-2' padding='none'>
                             Read more
                           </Button>
@@ -219,7 +219,7 @@ export function CountryPage() {
           <Spacer size='4xl' />
           <H4 weight='bold'>What's next</H4>
           <Spacer size='2xl' />
-          <Grid noOfCol={{ base: 2, sm: 2, md: 2, lg: 2 }} gap='16px'>
+          <Grid noOfCol={{ base: 1, sm: 2, md: 2, lg: 2 }} gap='16px'>
             <GridItem className='group cursor-pointer bg-background text-content-primary'>
               <div className='flex h-full w-full flex-col p-8'>
                 <H5 weight='bold'>Download the full report</H5>
@@ -258,7 +258,7 @@ export function CountryPage() {
         <div className='mx-auto max-w-7xl'>
           <H4 weight='bold'>Other countries</H4>
           <Spacer size='2xl' />
-          <Grid noOfCol={{ base: 2, sm: 2, md: 2 }} gap='16px'>
+          <Grid noOfCol={{ base: 1, sm: 2, md: 2 }} gap='16px'>
             {COUNTRIES.filter((d) => d.isoCode !== countryCode).map((country) => (
               <GridItem
                 key={country.id}
