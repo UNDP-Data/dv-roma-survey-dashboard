@@ -110,7 +110,7 @@ export function CountryPage() {
       <Spacer size='6xl' />
       <section id='themes' className='mx-auto w-full px-4 py-16'>
         <div className='mx-auto max-w-7xl'>
-          <H4>Read the full story behind each theme</H4>
+          <H4 weight='bold'>Read the full story behind each theme</H4>
           <Spacer size='2xl' />
           {isLoading && <Spinner size='lg' className='mx-auto my-20' />}
           {isError && <P>Error loading data</P>}
@@ -222,8 +222,8 @@ export function CountryPage() {
           <Grid noOfCol={{ base: 1, sm: 2, md: 2, lg: 2 }} gap='16px'>
             <GridItem className='group cursor-pointer bg-background text-content-primary'>
               <div className='flex h-full w-full flex-col p-8'>
-                <H5 weight='bold'>Download the full report</H5>
-                <P size='base' className='grow'>
+                <H5>Download the full report</H5>
+                <P size='base' className='grow' marginBottom='none'>
                   Findings, personal accounts, methodology and recommendations for Roma in Moldova.
                 </P>
                 <Spacer size='2xl' />
@@ -237,8 +237,8 @@ export function CountryPage() {
             <GridItem className='group cursor-pointer bg-background text-content-primary'>
               <Link to='/data-explorer'>
                 <div className='flex h-full w-full flex-col p-8'>
-                  <H5 weight='bold'>Explore the data</H5>
-                  <P size='base' className='grow'>
+                  <H5>Explore the data</H5>
+                  <P size='base' className='grow' marginBottom='none'>
                     Every indicator for Roma and nearby non-Roma, with breakdowns by sex, age and
                     place.
                   </P>
@@ -266,8 +266,8 @@ export function CountryPage() {
               >
                 <Link to='/countries/$countryId' params={{ countryId: country.id }}>
                   <CardEl>
-                    <H5 weight='bold'>{country.name}</H5>
-                    <P size='base' className='grow'>
+                    <H5>{country.name}</H5>
+                    <P size='base' className='grow' marginBottom='none'>
                       How Roma households compare with their neighbours in {country.name}.
                     </P>
                     <Spacer size='2xl' />
