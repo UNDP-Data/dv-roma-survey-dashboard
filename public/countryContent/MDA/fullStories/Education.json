@@ -1,0 +1,67 @@
+{
+  "title": "Gaps in education span the learning cycle and adulthood, leaving a trace along the life course",
+  "source": "Source: EU-MIDIS II and HBS 2017 data",
+  "sections": [
+    {
+      "className": "",
+      "title":"Participation is lower at every stage of education",
+      "content": [
+        {
+          "type": "text",
+          "className": "",
+          "content": "##### Participation is lower at every stage of education\n\nParticipation is lower at every stage of education. Roma children and young people are less likely than their non-Roma neighbours to be enrolled at every stage, from preschool to university. The largest gaps come before primary school and at upper secondary level, when continued study can open the way to further qualifications and work."
+        },
+        { "type": "separator", "className": "" },
+        {
+          "type": "text",
+          "className": "",
+          "content": "##### Lorem ipsum Participation is lower at every stage of education\n\nParticipation is lower at every stage of education. Roma children and young people are less likely than their non-Roma neighbours to be enrolled at every stage, from preschool to university. The largest gaps come before primary school and at upper secondary level, when continued study can open the way to further qualifications and work."
+        },
+        { "type": "separator", "className": "" },
+        {
+          "type": "graph",
+          "title": "Young people not in employment, education or training (NEET), ages 16 to 24",
+          "subTitle": "Share of all people aged 16 to 24 who are neither employed nor in education or training, shown for Roma and nearby non-Roma, overall and by sex",
+          "graphType": "groupedBarChart",
+          "data":[
+            {
+              "label": "Total",
+              "size": [10,20]
+            },
+            {
+              "label": "Men",
+              "size": [10,20]
+            },
+            {
+              "label": "Women",
+              "size": [10,20]
+            }
+          ],
+          "settings":{               
+          }
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 34,
+          "populationGroup": "roma"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 15,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "quote",
+          "content": "Large gaps are visible before primary school and at upper secondary level.",
+          "author": "Elena"
+        }
+      ],
+      "microViz":{
+        "value": 2,
+        "text":"Roma children are enrolled in pre-primary education"
+      }
+    }
+  ]  
+}

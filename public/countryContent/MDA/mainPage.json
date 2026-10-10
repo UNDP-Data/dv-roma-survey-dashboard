@@ -1,0 +1,71 @@
+{
+  "recommendations": [
+    {
+      "theme": "Education",
+      "mainRecommendation": "Keep education open across generations",
+      "detailedRecommendations": [
+        "Expand preschool outreach, school-readiness programmes and help with participation costs",
+        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
+        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+      ]
+    },
+    {
+      "theme": "Employment",
+      "mainRecommendation": "Keep education open across generations",
+      "detailedRecommendations": [
+        "Expand preschool outreach, school-readiness programmes and help with participation costs",
+        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
+        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+      ]
+    },
+    {
+      "theme": "Housing",
+      "mainRecommendation": "Keep education open across generations",
+      "detailedRecommendations": [
+        "Expand preschool outreach, school-readiness programmes and help with participation costs",
+        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
+        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+      ]
+    },
+    {
+      "theme": "Health",
+      "mainRecommendation": "Keep education open across generations",
+      "detailedRecommendations": [
+        "Expand preschool outreach, school-readiness programmes and help with participation costs",
+        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
+        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+      ]
+    },
+    {
+      "theme": "Discrimination",
+      "mainRecommendation": "Keep education open across generations",
+      "detailedRecommendations": [
+        "Expand preschool outreach, school-readiness programmes and help with participation costs",
+        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
+        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+      ]
+    }
+  ],
+  "fullStoryCards": [
+    {
+      "theme": "Education",
+      "description": "Gaps in education span the learning cycle and adulthood, leaving a trace along the life course"
+    },
+    {
+      "theme": "Employment",
+      "description": "Finding work does not ensure a secure livelihood"
+    },
+    {
+      "theme": "Housing",
+      "description": "Having a roof does not ensure adequate space, sanitation or warmth."
+    },
+    {
+      "theme": "Health",
+      "description": "Poor health constrains opportunities for many Roma during their working years"
+    },
+    {
+      "theme": "Discrimination",
+      "description": "Unequal treatment and administrative barriers restrict access to opportunities and support"
+    }
+  ]
+}

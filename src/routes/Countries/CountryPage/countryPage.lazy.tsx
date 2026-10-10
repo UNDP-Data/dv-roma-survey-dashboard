@@ -10,13 +10,7 @@ import {
   BreadcrumbSeparator,
 } from '@undp/design-system-react/Breadcrumb';
 import { Button } from '@undp/design-system-react/Button';
-import {
-  Drawer,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from '@undp/design-system-react/Drawer';
+import { Drawer, DrawerContent, DrawerTrigger } from '@undp/design-system-react/Drawer';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
 import {
   PageHeader,
@@ -32,34 +26,24 @@ import { useState } from 'react';
 import { COUNTRIES } from '@/Constants';
 import { CardEl } from '@/components/CardEl';
 import type { FullStoryDataType, RecommendationDataType, Themes } from '@/types';
+import { FullStory } from './Components/fullStory';
 import ScrollyTellingViz from './Components/ScrollyTellingViz';
 
-function useRecommendationsData(isoCode: string) {
+function usePageContentData(isoCode: string) {
   return useQuery({
-    queryKey: ['recommendations', isoCode],
+    queryKey: ['get-page-content', isoCode],
     queryFn: () =>
-      fetchAndParseJSON(`/data/recommendation/${isoCode}.json`) as Promise<
-        RecommendationDataType[]
-      >,
+      fetchAndParseJSON(`/countryContent/${isoCode}/mainPage.json`) as Promise<{
+        recommendations: RecommendationDataType[];
+        fullStoryCards: FullStoryDataType[];
+      }>,
   });
 }
 
-function useFullStoryData(isoCode: string) {
-  return useQuery({
-    queryKey: ['fullStory', isoCode],
-    queryFn: () =>
-      fetchAndParseJSON(`/data/fullStory/${isoCode}.json`) as Promise<FullStoryDataType[]>,
-  });
-}
 export function CountryPage() {
   const params = useParams({ strict: false });
   const countryCode: string = params.countryId || 'MDA';
-  const { data: recommendations, isLoading, isError } = useRecommendationsData(countryCode);
-  const {
-    data: fullStory,
-    isLoading: isLoadingFullStory,
-    isError: isErrorFullStory,
-  } = useFullStoryData(countryCode);
+  const { data, isLoading, isError } = usePageContentData(countryCode);
   const country = COUNTRIES.find((country) => country.isoCode === countryCode)?.name;
   const [selectedRecommendation, setSelectedRecommendation] = useState<Themes | null>(null);
   return (
@@ -128,11 +112,11 @@ export function CountryPage() {
         <div className='mx-auto max-w-7xl'>
           <H4 weight='bold'>Read the full story behind each theme</H4>
           <Spacer size='2xl' />
-          {isLoadingFullStory && <Spinner size='lg' className='mx-auto my-20' />}
-          {isErrorFullStory && <P>Error loading data</P>}
-          {fullStory && !isLoadingFullStory && !isErrorFullStory && (
+          {isLoading && <Spinner size='lg' className='mx-auto my-20' />}
+          {isError && <P>Error loading data</P>}
+          {data && !isLoading && !isError && (
             <Grid noOfCol={{ base: 1, sm: 2, md: 3, lg: 5 }} gap='16px'>
-              {fullStory.map((theme) => (
+              {data.fullStoryCards.map((theme) => (
                 <GridItem key={theme.theme} className='group cursor-pointer'>
                   <Drawer direction='right'>
                     <DrawerTrigger className='w-full'>
@@ -148,10 +132,16 @@ export function CountryPage() {
                         </div>
                       </CardEl>
                     </DrawerTrigger>
-                    <DrawerContent>
-                      <DrawerHeader>
-                        <DrawerTitle>{theme.theme}</DrawerTitle>
-                      </DrawerHeader>
+                    <DrawerContent className='p-0! [&_.undp-scrollbar]:p-0!'>
+                      <FullStory
+                        isoCode={countryCode}
+                        theme={theme.theme}
+                        recommendation={
+                          data.recommendations.find(
+                            (el) => el.theme === theme.theme,
+                          ) as RecommendationDataType
+                        }
+                      />
                     </DrawerContent>
                   </Drawer>
                 </GridItem>
@@ -170,9 +160,9 @@ export function CountryPage() {
           <Spacer size='2xl' />
           {isLoading && <Spinner size='lg' className='mx-auto my-20' />}
           {isError && <P>Error loading recommendations</P>}
-          {recommendations && !isLoading && !isError && (
+          {data && !isLoading && !isError && (
             <Grid noOfCol={{ base: 1, sm: 1, md: 1, lg: 1 }} gap='16px'>
-              {recommendations.map((recommendation) => (
+              {data.recommendations.map((recommendation) => (
                 <GridItem key={recommendation.theme} className='bg-background text-content-primary'>
                   <button
                     type='button'

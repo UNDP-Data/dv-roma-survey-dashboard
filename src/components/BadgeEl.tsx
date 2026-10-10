@@ -4,15 +4,19 @@ import type { Themes } from '@/types';
 export function BadgeEl({
   variant,
   className,
+  reverse = false,
 }: React.ComponentProps<'div'> & {
   variant: Themes;
+  reverse?: boolean;
 }) {
   return (
     <Badge
       className={className}
       style={{
-        backgroundColor: `var(--${variant.toLowerCase()}-light)`,
-        color: `var(--${variant.toLowerCase()})`,
+        backgroundColor: reverse
+          ? `var(--${variant.toLowerCase()})`
+          : `var(--${variant.toLowerCase()}-light)`,
+        color: reverse ? 'var(--content-reverse)' : `var(--${variant.toLowerCase()})`,
       }}
     >
       {variant}
