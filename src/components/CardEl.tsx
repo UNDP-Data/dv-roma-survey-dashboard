@@ -7,10 +7,12 @@ export function CardEl({
   className,
   variant,
   showBadge = true,
+  childrenClassName,
   children,
 }: React.ComponentProps<'div'> & {
   variant?: Themes;
   showBadge?: boolean;
+  childrenClassName?: string;
 }) {
   const bgColorClass =
     variant === 'Education'
@@ -36,7 +38,7 @@ export function CardEl({
           <Spacer size='xl' />
         </>
       )}
-      <div className='flex w-full grow flex-col px-5 pb-5'>{children}</div>
+      <div className={cn('flex w-full grow flex-col px-5 pb-5', childrenClassName)}>{children}</div>
     </div>
   );
 }
