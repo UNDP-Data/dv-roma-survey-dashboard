@@ -1,4 +1,5 @@
 import { Badge } from '@undp/design-system-react/Badge';
+import { cn } from '@undp/design-system-react/cn';
 import type { Themes } from '@/types';
 
 export function BadgeEl({
@@ -11,7 +12,7 @@ export function BadgeEl({
 }) {
   return (
     <Badge
-      className={className}
+      className={cn('px-2.5 py-0.5 font-semibold', className)}
       style={{
         backgroundColor: reverse
           ? `var(--${variant.toLowerCase()})`

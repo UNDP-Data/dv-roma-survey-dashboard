@@ -1,4 +1,3 @@
-import { Spacer } from '@undp/design-system-react/Spacer';
 import { P } from '@undp/design-system-react/Typography';
 import { type MotionValue, motion, useTransform } from 'motion/react';
 
@@ -49,6 +48,7 @@ export function IconCluster({
           weight='bold'
           marginBottom='none'
           style={{ color: `var(--${populationGroup})` }}
+          leading='xs'
         >
           {activeSlideIndex > 1 ? (
             <motion.span>{animatedLabel}</motion.span>
@@ -56,7 +56,6 @@ export function IconCluster({
             populationGroupTitleCase
           )}
         </P>
-        <Spacer size='sm' />
         <P size='base' className='text-content-tertiary' marginBottom='none'>
           {activeSlideIndex > 1 ? populationGroupTitleCase : '100 people'}
         </P>

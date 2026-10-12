@@ -26,7 +26,12 @@ import { Minus, Plus } from 'lucide-react';
 import { useState } from 'react';
 import { COUNTRIES } from '@/Constants';
 import { CardEl } from '@/components/CardEl';
-import type { FullStoryDataType, RecommendationDataType, Themes } from '@/types';
+import type {
+  FullStoryDataType,
+  RecommendationDataType,
+  ScrollySectionDataType,
+  Themes,
+} from '@/types';
 import { FullStory } from './Components/FullStory';
 import ScrollyTellingViz from './Components/ScrollyTellingViz';
 
@@ -36,6 +41,7 @@ function usePageContentData(isoCode: string) {
     queryFn: () =>
       fetchAndParseJSON(`/countryContent/${isoCode}/mainPage.json`) as Promise<{
         intro: { title: string; content: string };
+        scrollyTelling: ScrollySectionDataType[];
         recommendations: RecommendationDataType[];
         fullStoryCards: FullStoryDataType[];
       }>,
@@ -92,7 +98,7 @@ export function CountryPage() {
           <Spacer size='8xl' />
           <Spacer size='8xl' />
           <section id='scrolly' className='mx-auto w-full'>
-            <ScrollyTellingViz />
+            <ScrollyTellingViz data={data.scrollyTelling} />
           </section>
           <Spacer size='6xl' />
           <section id='themes' className='mx-auto w-full px-4 py-16'>
