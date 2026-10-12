@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { CardEl } from '@/components/CardEl';
 import type { ScrollySectionDataType, SlideContent } from '@/types';
 import { IconCluster } from './iconCluster';
+import { MethodologyEl } from './methodologyEl';
 import { NeighborhoodViz, NeighborhoodVizDef } from './neighborhoodViz';
 
 function generateSlides(data: ScrollySectionDataType[]) {
@@ -31,6 +32,7 @@ function generateSlides(data: ScrollySectionDataType[]) {
                 // biome-ignore lint/suspicious/noArrayIndexKey: index is unique in this context
                 key={i}
                 marginBottom={i === item.text.content.split('\n\n').length - 1 ? 'none' : 'base'}
+                leading='xl'
               >
                 {paragraph}
               </P>
@@ -39,14 +41,18 @@ function generateSlides(data: ScrollySectionDataType[]) {
             <P
               // biome-ignore lint/suspicious/noArrayIndexKey: index is unique in this context
               key={i}
-              marginBottom={i === item.text.content.split('\n\n').length - 1 ? 'none' : 'base'}
-              leading='2xl'
+              marginBottom={
+                i === item.text.content.split('\n\n').length - 1 && !item.text.methodology
+                  ? 'none'
+                  : 'base'
+              }
+              leading='xl'
             >
               {paragraph.split(badgeRegex).map((text, j) =>
                 j % 2 === 1 ? (
                   <span
                     key={text}
-                    className={`rounded-full px-2 py-1 font-medium ${
+                    className={`rounded-full px-2.5 py-0.5 font-semibold ${
                       badgeClasses[text.toLowerCase()] ?? 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -59,6 +65,7 @@ function generateSlides(data: ScrollySectionDataType[]) {
             </P>
           );
         })}
+        {item.text.methodology && <MethodologyEl text={item.text.methodology} />}
       </CardEl>
     ),
   }));
@@ -103,7 +110,7 @@ export default function ScrollyTellingViz({ data }: { data: ScrollySectionDataTy
       <div className='mx-auto flex w-full max-w-7xl flex-col justify-between gap-x-10 gap-y-0 px-4 lg:flex-row'>
         <div className='sticky top-0 mx-auto flex h-screen w-full flex-col items-center justify-center px-4 py-4 md:px-6 md:py-12'>
           <div className='h-24 w-full'>
-            <H5 weight='bold' marginBottom='xs'>
+            <H5 weight='bold' marginBottom='2xs'>
               {activeSlide.vizContent.title}
             </H5>
             <P size='sm' className='text-content-tertiary' marginBottom='none'>

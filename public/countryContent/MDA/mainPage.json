@@ -13,7 +13,7 @@
       },
       "text": {
         "title": "Same localities, different realities",
-        "content": "Roma and non-Roma people live side by side in the same localities. Yet their experiences can be very different. To better understand these disparities and bring to light the vulnerabilities experienced by Roma, households from both groups were surveyed across the same localities.\n\nThe results show significant disparities between Roma and non-Roma populations across a wide range of issues, including housing, education, employment, health, and experience of discrimination and violence. These differences often reflect systemic inequalities and disadvantages faced by Roma communities.",
+        "content": "Roma and non-Roma people live side by side in the same localities. Yet their experiences can be very different.\n\nTo better understand these disparities, Roma households were surveyed along with their non-Roma neighbours.",
         "methodology": "This story is based on 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, covering 700 Roma and 300 non-Roma households across 63 localities, micro-narratives study collecting 547 personal accounts of Roma individuals and geospatial analysis of access to services."
       }
     },
@@ -46,11 +46,11 @@
       "vizContent": {
         "romaHighlighted": 73,
         "nonRomaHighlighted": 33,
-        "theme": "Employment",
         "title": "Have informal jobs",
         "subTitle": "Employed people aged 15 to 64."
       },
       "text": {
+        "theme": "Employment",
         "title": "Finding work does not ensure a secure livelihood",
         "content": "Roma women have fewer openings into work, and men more often work without contracts or protection."
       }
@@ -59,11 +59,11 @@
       "vizContent": {
         "romaHighlighted": 62,
         "nonRomaHighlighted": 40,
-        "theme": "Housing",
         "title": "Live in overcrowded homes",
         "subTitle": "Too few rooms for the household"
       },
       "text": {
+        "theme": "Housing",
         "title": "Having a roof does not ensure adequate space, sanitation or warmth",
         "content": "Roma homes are more often overcrowded, damp or without indoor sanitation. Insecure renting forces families to move."
       }
@@ -72,11 +72,11 @@
       "vizContent": {
         "romaHighlighted": 42,
         "nonRomaHighlighted": 19,
-        "theme": "Health",
-        "title": "Have no medical insuranc",
+        "title": "Have no medical insurance",
         "subTitle": "All ages"
       },
       "text": {
+        "theme": "Health",
         "title": "Poor health constrains opportunities for many Roma during their working years",
         "content": "Roma adults report poor health more often, and many lack insurance. Caring for relatives often means giving up paid work."
       }
@@ -85,11 +85,11 @@
       "vizContent": {
         "romaHighlighted": 62,
         "nonRomaHighlighted": 5,
-        "theme": "Discrimination",
         "title": "Experienced discrimination in the past year",
         "subTitle": "Because of ethnicity, skin colour or language."
       },
       "text": {
+        "theme": "Discrimination",
         "title": "Unequal treatment and administrative barriers restrict access to opportunities and support",
         "content": "A third of Roma faced discrimination in the past year. Services are nearby, but paperwork and repeated visits keep them out of reach."
       }
