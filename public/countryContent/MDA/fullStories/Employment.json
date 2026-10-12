@@ -81,6 +81,43 @@
           "settings":{
             "height": 240
           }
+        },
+        {
+          "type": "multiGraph",
+          "options": ["Informal employment", "Non-permanent employment"],
+          "title": ["Share of employed people working informally","Share of employed people in non-permanent jobs"],
+          "subTitle": ["Ages 18 to 65, %", "Ages 18 to 65, %"],
+          "graphType": "groupedBarChart",
+          "data":[[
+            {
+              "label": "Overall",
+              "size": [11,60]
+            },
+            {
+              "label": "Women",
+              "size": [8,59]
+            },
+            {
+              "label": "Men",
+              "size": [14,61]
+            }
+          ], [
+            {
+              "label": "Overall",
+              "size": [32,10]
+            },
+            {
+              "label": "Women",
+              "size": [28,12]
+            },
+            {
+              "label": "Men",
+              "size": [34,10]
+            }
+          ]],
+          "settings":{
+            "height": 240
+          }
         }
       ],
       "microViz":{
@@ -108,33 +145,9 @@
           "type": "graph",
           "title": "Reasons education stopped",
           "subTitle": "Roma aged 6 to 24 who had finished or stopped education completely, %",
-          "graphType": "barChart",
-          "data":[
-            {
-              "label": "Frequent changes of residence",
-              "size": 22
-            },
-            {
-              "label": "Work or earning income",
-              "size": 11
-            },
-            {
-              "label": "Marriage",
-              "size": 8
-            },
-            {
-              "label": "Leaving the country",
-              "size": 6
-            },
-            {
-              "label": "Helping family or work at home",
-              "size": 6
-            }
-          ],
-          "settings":{
-            "height": 240,
-            "leftMargin": 150
-          }
+          "graphType": "unitChart",
+          "value": 30,
+          "populationGroup": "roma"
         },
         {
           "type": "text",

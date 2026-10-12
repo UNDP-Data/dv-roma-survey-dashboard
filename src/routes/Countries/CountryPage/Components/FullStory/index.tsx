@@ -12,7 +12,7 @@ import { Spinner } from '@undp/design-system-react/Spinner';
 import { H2, H4, H6, P } from '@undp/design-system-react/Typography';
 import { BadgeEl } from '@/components/BadgeEl';
 import type { RecommendationDataType, Themes } from '@/types';
-import { GraphBlock } from './graphBlock';
+import { GraphBlock, MultiGraphBlock } from './graphBlock';
 import { MicroVizBlock } from './microVizBlock';
 import { QuoteBlock } from './QuoteBlock';
 import { TextBlock } from './textBlock';
@@ -142,6 +142,20 @@ export function FullStory({
                       {content.type === 'graph' && (
                         <GraphBlock
                           className={content.className}
+                          data={content.data}
+                          source={content.source}
+                          value={content.value}
+                          populationGroup={content.populationGroup}
+                          settings={content.settings}
+                          title={content.title}
+                          subTitle={content.subTitle}
+                          graphType={content.graphType}
+                        />
+                      )}
+                      {content.type === 'multiGraph' && (
+                        <MultiGraphBlock
+                          className={content.className}
+                          options={content.options}
                           data={content.data}
                           source={content.source}
                           value={content.value}
