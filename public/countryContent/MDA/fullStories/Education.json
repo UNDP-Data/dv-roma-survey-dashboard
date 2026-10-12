@@ -1,6 +1,6 @@
 {
   "title": "Gaps in education span the learning cycle and adulthood, leaving a trace along the life course",
-  "source": "Source: EU-MIDIS II and HBS 2017 data",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma. Quotes from the micro-narratives study.",
   "sections": [
     {
       "className": "",
@@ -9,59 +9,145 @@
         {
           "type": "text",
           "className": "",
-          "content": "##### Participation is lower at every stage of education\n\nParticipation is lower at every stage of education. Roma children and young people are less likely than their non-Roma neighbours to be enrolled at every stage, from preschool to university. The largest gaps come before primary school and at upper secondary level, when continued study can open the way to further qualifications and work."
-        },
-        { "type": "separator", "className": "" },
-        {
-          "type": "text",
-          "className": "",
-          "content": "##### Lorem ipsum Participation is lower at every stage of education\n\nParticipation is lower at every stage of education. Roma children and young people are less likely than their non-Roma neighbours to be enrolled at every stage, from preschool to university. The largest gaps come before primary school and at upper secondary level, when continued study can open the way to further qualifications and work."
+          "content": "Participation is lower at every stage of education. Roma children and young people are less likely than their non-Roma neighbours to be enrolled at every stage, from preschool to university. The largest gaps come before primary school and at upper secondary level, when continued study can open the way to further qualifications and work."
         },
         { "type": "separator", "className": "" },
         {
           "type": "graph",
-          "title": "Young people not in employment, education or training (NEET), ages 16 to 24",
-          "subTitle": "Share of all people aged 16 to 24 who are neither employed nor in education or training, shown for Roma and nearby non-Roma, overall and by sex",
+          "title": "Net enrolment by education stage",
+          "subTitle": "Roma and non-Roma, %",
           "graphType": "groupedBarChart",
           "data":[
             {
-              "label": "Total",
-              "size": [10,20]
+              "label": "Pre-primary",
+              "size": [22,95]
             },
             {
-              "label": "Men",
-              "size": [10,20]
+              "label": "Primary",
+              "size": [63,97]
             },
             {
-              "label": "Women",
-              "size": [10,20]
+              "label": "Lower secondary",
+              "size": [47,65]
+            },
+            {
+              "label": "Upper secondary",
+              "size": [15,64]
+            },
+            {
+              "label": "Tertiary",
+              "size": [15,36]
             }
           ],
-          "settings":{               
+          "settings":{
+            "height": 320
           }
-        },
-        {
-          "type": "graph",
-          "graphType": "unitChart",
-          "value": 34,
-          "populationGroup": "roma"
-        },
-        {
-          "type": "graph",
-          "graphType": "unitChart",
-          "value": 15,
-          "populationGroup": "non-roma"
-        },
-        {
-          "type": "quote",
-          "content": "Large gaps are visible before primary school and at upper secondary level.",
-          "author": "Elena"
         }
       ],
       "microViz":{
         "value": 2,
         "text":"Roma children are enrolled in pre-primary education"
       }
+    },
+    {
+      "className": "",
+      "title":"The children’s story at school is foreshadowed by parent’s educational attainment",
+      "content": [
+        {
+          "type": "text",
+          "className": "",
+          "content": "The gap also extends across adult life. Only about one in ten Roma aged 18 to 65 have at least an upper secondary qualification, compared with six in ten nearby non-Roma. Roma women are less likely to hold one than Roma men. Returning to learning means finding time alongside earning a living and supporting a family."
+        },
+        { "type": "separator", "className": "" },
+        {
+          "type": "graph",
+          "title": "Completed secondary education",
+          "subTitle": "Ages 18 to 65, %",
+          "graphType": "groupedBarChart",
+          "data":[
+            {
+              "label": "Overall",
+              "size": [11,60]
+            },
+            {
+              "label": "Women",
+              "size": [8,59]
+            },
+            {
+              "label": "Men",
+              "size": [14,61]
+            }
+          ],
+          "settings":{
+            "height": 240
+          }
+        }
+      ],
+      "microViz":{
+        "value": 1,
+        "text":"Roma aged 18 to 65 have at least an upper secondary qualification"
+      }
+    },
+    {
+      "className": "",
+      "title":"For the young Roma, family mobility is the most frequently reported reason for interrupted education",
+      "content": [
+        {
+          "type": "text",
+          "className": "",
+          "content": "Among young Roma who had finished or stopped education and gave a reason, frequent changes of residence were the most common response. Earning money, marriage and responsibilities at home also featured. These accounts of leaving education bring the household into view: staying in school depends partly on what happens outside it."
+        },
+        {
+          "type": "quote",
+          "className": "",
+          "author": "Female, aged 18 to 23",
+          "content": "“…I wanted to go to school, well, since my parents were constantly traveling abroad to work, they took me with them and I was not able to study well and finish school. Now I have entered courses in Chisinau, but my certificates are not suitable here…”"
+        },
+        { "type": "separator", "className": "" },
+        {
+          "type": "graph",
+          "title": "Reasons education stopped",
+          "subTitle": "Roma aged 6 to 24 who had finished or stopped education completely, %",
+          "graphType": "barChart",
+          "data":[
+            {
+              "label": "Frequent changes of residence",
+              "size": 22
+            },
+            {
+              "label": "Work or earning income",
+              "size": 11
+            },
+            {
+              "label": "Marriage",
+              "size": 8
+            },
+            {
+              "label": "Leaving the country",
+              "size": 6
+            },
+            {
+              "label": "Helping family or work at home",
+              "size": 6
+            }
+          ],
+          "settings":{
+            "height": 240,
+            "leftMargin": 150
+          }
+        },
+        {
+          "type": "text",
+          "className": "",
+          "content": "Interrupted schooling does not mean there is no drive to learn. Some respondents describe returning to courses, only to find that the documents or qualifications they bring are not accepted. Time and money spent on training can then fail to lead to the work they hoped for. Recognition of qualifications or lack of documentation become a barrier on Roma individuals’ education journeys. And the options for adult education is an option can be narrowed by competing work and family priorities."
+        },
+        {
+          "type": "quote",
+          "className": "",
+          "author": "Female, aged 18 to 23",
+          "content": "“I went to courses on eyelash extensions, nails, received a diploma, paid for the courses, but they said that my diplomas are invalid… without a diploma they won’t hire me.”"
+        }
+      ]
     }
   ]  
 }
