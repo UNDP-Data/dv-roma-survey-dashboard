@@ -3,6 +3,98 @@
     "title": "For Roma in Moldova, building a future means navigating compounding disadvantages in an uncertain present",
     "content": "Roma face disadvantages across education, work, housing, health and public services — with discrimination cutting through all of them. These pressures compound: exclusion in one area narrows what is possible in the next, so barriers accumulate within households and shape opportunities for the next generation.\n\nShared barriers affect people differently depending on the circumstance. Gender, age or place pull households onto different paths. Women are less likely to enter paid work, while men’s greater access often leads to informal jobs with little protection. For children, frequent moves can interrupt schooling; for older people, securing treatment and care becomes a greater concern. Where families live shapes these paths too: home ownership can offer little security amid worn-out infrastructure and arrears, and nearby services can remain out of reach because of discrimination.\n\nDespite this, Roma families continue to pursue better lives. They assemble strategies from seasonal, informal or entrepreneurial work, undertake care and housing labour for each other, and strive for their children to stay at school. They are resilient, managing what the day demands while aspiring for better and secure lives."
   },
+  "scrollyTelling": [
+    {
+      "vizContent": {
+        "romaHighlighted": 0,
+        "nonRomaHighlighted": 0,
+        "title": "",
+        "subTitle": ""
+      },
+      "text": {
+        "title": "Same localities, different realities",
+        "content": "Roma and non-Roma people live side by side in the same localities. Yet their experiences can be very different. To better understand these disparities and bring to light the vulnerabilities experienced by Roma, households from both groups were surveyed across the same localities.\n\nThe results show significant disparities between Roma and non-Roma populations across a wide range of issues, including housing, education, employment, health, and experience of discrimination and violence. These differences often reflect systemic inequalities and disadvantages faced by Roma communities.",
+        "methodology": "This story is based on 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, covering 700 Roma and 300 non-Roma households across 63 localities, micro-narratives study collecting 547 personal accounts of Roma individuals and geospatial analysis of access to services."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 100,
+        "nonRomaHighlighted": 100,
+        "title": "",
+        "subTitle": ""
+    },
+      "text": {
+        "title": "Disparities that carry through life",
+        "content": "These disparities begin in <Badge>education</Badge>, continue into <Badge>employment</Badge>, and shape adult life through <Badge>housing</Badge>, and <Badge>health</Badge>, while <Badge>discrimination</Badge> cuts across all these areas.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 89,
+        "nonRomaHighlighted": 40,
+        "title": "Have not completed secondary education",
+        "subTitle": "Adults aged 18 to 65. Only 11 in 100 Roma have completed secondary education, against 60 in 100 non-Roma."
+      },
+      "text": {
+        "theme": "Education",
+        "title": "Gaps in education span the learning cycle and adulthood",
+        "content": "Roma children are less likely to be enrolled at every stage, from preschool to university, and the gap carries into adult life."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 73,
+        "nonRomaHighlighted": 33,
+        "theme": "Employment",
+        "title": "Have informal jobs",
+        "subTitle": "Employed people aged 15 to 64."
+      },
+      "text": {
+        "title": "Finding work does not ensure a secure livelihood",
+        "content": "Roma women have fewer openings into work, and men more often work without contracts or protection."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 62,
+        "nonRomaHighlighted": 40,
+        "theme": "Housing",
+        "title": "Live in overcrowded homes",
+        "subTitle": "Too few rooms for the household"
+      },
+      "text": {
+        "title": "Having a roof does not ensure adequate space, sanitation or warmth",
+        "content": "Roma homes are more often overcrowded, damp or without indoor sanitation. Insecure renting forces families to move."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 42,
+        "nonRomaHighlighted": 19,
+        "theme": "Health",
+        "title": "Have no medical insuranc",
+        "subTitle": "All ages"
+      },
+      "text": {
+        "title": "Poor health constrains opportunities for many Roma during their working years",
+        "content": "Roma adults report poor health more often, and many lack insurance. Caring for relatives often means giving up paid work."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 62,
+        "nonRomaHighlighted": 5,
+        "theme": "Discrimination",
+        "title": "Experienced discrimination in the past year",
+        "subTitle": "Because of ethnicity, skin colour or language."
+      },
+      "text": {
+        "title": "Unequal treatment and administrative barriers restrict access to opportunities and support",
+        "content": "A third of Roma faced discrimination in the past year. Services are nearby, but paperwork and repeated visits keep them out of reach."
+      }
+    }
+  ],
   "recommendations": [
     {
       "theme": "Education",

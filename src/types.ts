@@ -73,6 +73,21 @@ export interface RecommendationDataType {
   detailedRecommendations: string[];
 }
 
+export interface ScrollySectionDataType {
+  vizContent: {
+    title: string;
+    subTitle: string;
+    romaHighlighted: number;
+    nonRomaHighlighted: number;
+  };
+  text: {
+    title: string;
+    theme?: Themes;
+    content: string;
+    methodology?: string;
+  };
+}
+
 export interface FullStoryDataType {
   theme: Themes;
   description: string;
