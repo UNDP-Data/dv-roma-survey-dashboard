@@ -1,0 +1,107 @@
+{
+  "title": "Unequal treatment and administrative barriers restrict access to opportunities and support",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma. Quotes from the micro-narratives study.",
+  "sections": [
+    {
+      "title": "Unequal treatment is widespread",
+      "content": [
+        {
+          "type": "text",
+          "content": "Around 34 percent of Roma respondents experienced discrimination because of ethnicity, skin colour or language in the previous year, compared with 5 percent of nearby non-Roma respondents."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 34,
+          "populationGroup": "roma",
+          "title": "Discrimination on grounds of ethnicity, skin colour or language",
+          "subTitle": "Previous year, all interviewed respondents. Each figure is one person in a hundred"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 5,
+          "populationGroup": "non-roma"
+        }
+      ]
+    },
+    {
+      "title": "Discrimination also obstructs the search for work",
+      "content": [
+        {
+          "type": "text",
+          "content": "Almost half of Roma respondents who sought work in the previous five years reported discrimination while doing so: 47 percent, compared with 10 percent of nearby non-Roma jobseekers."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 47,
+          "populationGroup": "roma",
+          "title": "Discrimination while seeking work",
+          "subTitle": "Any ground, previous five years, among respondents who sought work"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 10,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "quote",
+          "content": "“For many years I have not been able to find a suitable job for myself… if somewhere there are good options, then they do not take me because I am Roma.”",
+          "author": "Male, aged 30 to 49"
+        }
+      ]
+    },
+    {
+      "title": "A nearby service can still be difficult to use",
+      "content": [
+        {
+          "type": "text",
+          "content": "The geographical analysis finds no substantial difference in travel time to employment offices, social welfare offices, banks or post offices between Roma and nearby non-Roma. Yet being able to reach a building does not settle whether someone can complete an application or obtain help.\n\nThe internet gap at home matters here too. Online information and applications are harder to use without a connection or practical help. In-person services remain essential for people who cannot complete these steps online."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 64,
+          "populationGroup": "roma",
+          "title": "Internet access at home for personal use",
+          "subTitle": "All interviewed respondents"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 80,
+          "populationGroup": "non-roma"
+        }
+      ],
+      "microViz": {
+        "value": 3,
+        "text": "Cannot afford to have internet access at home for personal use"
+      }
+    },
+    {
+      "title": "Section subtitle to be added",
+      "content": [
+        {
+          "type": "text",
+          "content": "At the office itself, residence registration, recognition of documents and repeated visits to claim services can create further obstacles. One respondent describes the recurring expense:"
+        },
+        {
+          "type": "quote",
+          "content": "“I feel discriminated against every year, every year I have to spend money on their bureaucracy and go from the village to the cities to pass all the commissions…”",
+          "author": "Female, aged 30 to 49"
+        },
+        {
+          "type": "text",
+          "content": "Each visit takes time and money from a household already managing work and care. Even making a complaint may leave the original problem unresolved.\n\nUsing the formal route does not always settle the matter either:"
+        },
+        {
+          "type": "quote",
+          "content": "“My children are always bullied at school and in kindergarten… I contacted the human rights protection service, they gave me a warning, but the situation still has not changed.”",
+          "author": "Female, aged 30 to 49"
+        }
+      ]
+    }
+  ]
+}
