@@ -1,0 +1,93 @@
+{
+  "title": "Barriers to healthcare put Roma well-being at risk, while unmet care needs deepen household insecurity",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma. Quotes from the micro-narratives study.",
+  "sections": [
+    {
+      "title": "Poor health constrains opportunities for many Roma during their working years",
+      "content": [
+        {
+          "type": "text",
+          "content": "Roma adults report bad or very bad health more often than nearby non-Roma, both during working age and in later life. Illness is therefore part of the picture of earning a living and supporting a household, as well as a concern in older age."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Bad or very bad self-rated health",
+          "subTitle": "By age band, people with a valid health response",
+          "data": [
+            {
+              "label": "25 to 64",
+              "size": [
+                26,
+                11
+              ]
+            },
+            {
+              "label": "65 and over",
+              "size": [
+                60,
+                45
+              ]
+            }
+          ],
+          "settings": {
+            "height": 176
+          }
+        }
+      ],
+      "microViz": {
+        "value": 3,
+        "text": "Roma aged 25 to 64 report bad or very bad health"
+      }
+    },
+    {
+      "title": "Paying for treatment adds to the pressure on family income",
+      "content": [
+        {
+          "type": "text",
+          "content": "More than twice the share of Roma lack medical insurance compared with nearby non-Roma. The accounts also describe difficulties paying for medicines and examinations. For households with little to spare, these costs arrive alongside rent, food and heating."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 42,
+          "populationGroup": "roma",
+          "title": "No medical insurance, all ages"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 19,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "text",
+          "content": "Treatment takes money; providing care takes time. When a relative needs continuing assistance, another household member may have to reduce or stop paid work:"
+        },
+        {
+          "type": "quote",
+          "content": "“My aunt needs medication, constant examinations, and constant care, so I cannot go to work so that I can look after her since she is bedridden…”",
+          "author": "Female, aged 30 to 49"
+        },
+        {
+          "type": "text",
+          "content": "Relatives make daily care possible, sometimes at the cost of earnings the family needs. Similar demands arise when parents arrange work around childcare, relying on the time other family members can give.\n\nCare can also determine the form of work available, not only its quantity:"
+        },
+        {
+          "type": "quote",
+          "content": "“I rent a place with my children, but after my husband died I can’t pay it. I need to work steadily to pay it but I can’t because I have a baby… I find part-time jobs for a couple of hours while the older children help, and my mother-in-law lives with me… she is old and can’t do anything.”",
+          "author": "Female, aged 30 to 49"
+        },
+        {
+          "type": "text",
+          "content": "The same arithmetic holds when the need arrives without warning, and for men as well as women:"
+        },
+        {
+          "type": "quote",
+          "content": "“An accident turned our whole life upside down. My wife is now disabled, she had a stroke and became bedridden… I cannot be at work all the time… we do not have the funds to pay all the expenses.”",
+          "author": "Male, aged 50 to 64"
+        }
+      ]
+    }
+  ]
+}

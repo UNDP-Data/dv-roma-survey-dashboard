@@ -1,0 +1,167 @@
+{
+  "title": "Having a roof does not ensure adequate space, sanitation or warmth",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma. Quotes from the micro-narratives study.",
+  "sections": [
+    {
+      "title": "Overcrowding makes it harder to study, rest and find privacy at home",
+      "content": [
+        {
+          "type": "text",
+          "content": "Overcrowding means fitting different needs and routines into the same limited space. For children, it also shapes the conditions in which they grow and learn. Limited space can make it harder to concentrate on schoolwork, sleep well or find privacy, adding to the challenges they face beyond the classroom."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "People living in overcrowded homes",
+          "subTitle": "Share of all people aged 16 to 24 who are neither employed nor in education or training, shown for Roma and nearby non-Roma, overall and by sex",
+          "data": [
+            {
+              "label": "All ages",
+              "size": [
+                62,
+                40
+              ]
+            },
+            {
+              "label": "Children aged 0 to 14",
+              "size": [
+                81,
+                57
+              ]
+            }
+          ],
+          "settings": {
+            "height": 176,
+            "leftMargin": 130
+          }
+        }
+      ],
+      "microViz": {
+        "value": 8,
+        "text": "young Roma women are not in employment, education or training"
+      }
+    },
+    {
+      "title": "Where the infrastructure exists, households are not always able to connect to it",
+      "content": [
+        {
+          "type": "text",
+          "content": "Many Roma homes lack indoor sanitation or need repairs to roofs, walls and floors. Sewerage connections and internet access are also less common than among nearby non-Roma. These gaps affect the home’s everyday use, from washing and keeping rooms dry to studying or looking for work online."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Facilities in the dwelling",
+          "subTitle": "Share of people whose home lacks each one",
+          "data": [
+            {
+              "label": "Leaking roof, damp or rot",
+              "size": [
+                67,
+                31
+              ]
+            },
+            {
+              "label": "No toilet inside the dwelling",
+              "size": [
+                63,
+                34
+              ]
+            },
+            {
+              "label": "Not connected to public sewerage",
+              "size": [
+                72,
+                53
+              ]
+            },
+            {
+              "label": "No internet access at home",
+              "size": [
+                32,
+                15
+              ]
+            }
+          ],
+          "settings": {
+            "height": 304,
+            "leftMargin": 150
+          }
+        }
+      ]
+    },
+    {
+      "title": "Households meet daily costs with difficulty and hold little in reserve",
+      "content": [
+        {
+          "type": "text",
+          "content": "For many Roma families, getting through the month leaves little room to plan beyond it. Food, heating and other essentials compete for limited money, while in some households, members remain hungry for a whole day due to lack of money. More than 1 in 2 Roma households do not have a bank account. Financial exclusion intensifies the pressure of making ends meet and limits the options for household budgets."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Household economic security",
+          "subTitle": "Percentages show how many people live in households struggling to cover expenses, lacking a bank account or experiencing severe food insecurity",
+          "data": [
+            {
+              "label": "Difficulty making ends meet",
+              "size": [
+                60,
+                45
+              ]
+            },
+            {
+              "label": "No bank account in the household (ages 16+)",
+              "size": [
+                58,
+                34
+              ]
+            },
+            {
+              "label": "Severe food insecurity",
+              "size": [
+                27,
+                7
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240,
+            "leftMargin": 200
+          }
+        },
+        {
+          "type": "quote",
+          "content": "“Winter is cold and there is no work, we have no wood to heat our houses with.”",
+          "author": "Male, aged 50 to 64"
+        },
+        {
+          "type": "text",
+          "content": "Finding somewhere affordable to live can mean accepting unsuitable conditions or relying on relatives and friends. For some families, even keeping that accommodation is uncertain."
+        },
+        {
+          "type": "quote",
+          "content": "“I live with five children in rented housing… the landlady where we rent is unhappy with the number of people living in it… I am looking for a house on the ground because there are many children.”",
+          "author": "Male, aged 30 to 49"
+        },
+        {
+          "type": "text",
+          "content": "Another respondent describes moving when a lasting arrangement cannot be found:"
+        },
+        {
+          "type": "quote",
+          "content": "“We have no stability. We migrate from one city to another because we can’t find apartments to rent and we stay with friends.”",
+          "author": "Male, aged 30 to 49"
+        },
+        {
+          "type": "text",
+          "content": "The search for a home can therefore unsettle other parts of family life. Each move can mean another interruption to schooling and another effort to keep work and care going.\n\nHousing insecurity reaches beyond the dwelling itself. Repeated moves can disrupt the continuity that schooling, work and ongoing care require."
+        }
+      ],
+      "microViz": {
+        "value": 6,
+        "text": "Roma live in households without a bank account"
+      }
+    }
+  ]
+}
