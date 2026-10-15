@@ -9,10 +9,12 @@ export function CardEl({
   showBadge = true,
   childrenClassName,
   children,
+  isHoverable = false,
 }: React.ComponentProps<'div'> & {
   variant?: Themes;
   showBadge?: boolean;
   childrenClassName?: string;
+  isHoverable?: boolean;
 }) {
   const bgColorClass =
     variant === 'Education'
@@ -27,7 +29,13 @@ export function CardEl({
               ? 'bg-discrimination'
               : 'bg-secondary';
   return (
-    <div className={cn('flex h-full w-full flex-col border border-stroke p-0', className)}>
+    <div
+      className={cn(
+        'flex h-full w-full flex-col border border-stroke p-0',
+        isHoverable && 'cursor-pointer hover:bg-surface-2xs',
+        className,
+      )}
+    >
       <div className={`h-1.5 w-full ${bgColorClass}`} />
       <Spacer size='2xl' />
       {variant && showBadge && (

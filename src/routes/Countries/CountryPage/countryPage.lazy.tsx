@@ -100,7 +100,6 @@ export function CountryPage() {
           <section id='scrolly' className='mx-auto w-full'>
             <ScrollyTellingViz data={data.scrollyTelling} />
           </section>
-          <Spacer size='6xl' />
           <section id='themes' className='mx-auto w-full px-4 py-16'>
             <div className='mx-auto max-w-7xl'>
               <H4 weight='bold'>Read the full story behind each theme</H4>
@@ -116,7 +115,12 @@ export function CountryPage() {
                       }}
                     >
                       <DrawerTrigger className='w-full'>
-                        <CardEl variant={theme.theme} showBadge={true} className='min-h-87.5'>
+                        <CardEl
+                          variant={theme.theme}
+                          showBadge={true}
+                          className='min-h-87.5'
+                          isHoverable
+                        >
                           <P size='xl' marginBottom='none' className='grow'>
                             {theme.description}
                           </P>
@@ -146,7 +150,6 @@ export function CountryPage() {
               </Grid>
             </div>
           </section>
-          <Spacer size='6xl' />
           <section
             id='recommendations'
             className='mx-auto w-full bg-secondary px-4 py-16 text-content-reverse'
@@ -175,6 +178,7 @@ export function CountryPage() {
                       <CardEl
                         variant={recommendation.theme}
                         showBadge={true}
+                        isHoverable={true}
                         className='items-start border-0 bg-background'
                       >
                         <div className='flex w-full items-center justify-between'>
@@ -263,7 +267,7 @@ export function CountryPage() {
                 className='group cursor-pointer bg-background text-content-primary'
               >
                 <Link to='/countries/$countryId' params={{ countryId: country.id }}>
-                  <CardEl>
+                  <CardEl isHoverable>
                     <H5>{country.name}</H5>
                     <P size='base' className='grow' marginBottom='none'>
                       How Roma households compare with their neighbours in {country.name}.
