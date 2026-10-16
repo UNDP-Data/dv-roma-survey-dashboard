@@ -2,73 +2,18 @@ import { Spacer } from '@undp/design-system-react/Spacer';
 import { H5, P } from '@undp/design-system-react/Typography';
 import { animate, motion, useMotionValue } from 'motion/react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { CardEl } from '@/components/CardEl';
+import { NarrativeCard } from '@/components/NarrativeCard';
 import type { ScrollySectionDataType, SlideContent } from '@/types';
 import { IconCluster } from './iconCluster';
-import { MethodologyEl } from './methodologyEl';
 import { NeighborhoodViz, NeighborhoodVizDef } from './neighborhoodViz';
 
 function generateSlides(data: ScrollySectionDataType[]) {
-  const badgeRegex = /<Badge>(.*?)<\/Badge>/g;
-  const badgeClasses: Record<string, string> = {
-    education: 'bg-education-light text-education',
-    employment: 'bg-employment-light text-employment',
-    housing: 'bg-housing-light text-housing',
-    health: 'bg-health-light text-health',
-    discrimination: 'bg-discrimination-light text-discrimination',
-  };
-  const slides: SlideContent[] = data.map((item) => ({
-    vizContent: item.vizContent,
-    slideContent: (
-      <CardEl variant={item.text.theme}>
-        <P weight='bold' size='xl'>
-          {item.text.title}
-        </P>
-        {item.text.content.split('\n\n').map((paragraph, i) => {
-          const containsBadge = badgeRegex.test(paragraph);
-          if (!containsBadge)
-            return (
-              <P
-                // biome-ignore lint/suspicious/noArrayIndexKey: index is unique in this context
-                key={i}
-                marginBottom={i === item.text.content.split('\n\n').length - 1 ? 'none' : 'base'}
-                leading='xl'
-              >
-                {paragraph}
-              </P>
-            );
-          return (
-            <P
-              // biome-ignore lint/suspicious/noArrayIndexKey: index is unique in this context
-              key={i}
-              marginBottom={
-                i === item.text.content.split('\n\n').length - 1 && !item.text.methodology
-                  ? 'none'
-                  : 'base'
-              }
-              leading='xl'
-            >
-              {paragraph.split(badgeRegex).map((text, j) =>
-                j % 2 === 1 ? (
-                  <span
-                    key={text}
-                    className={`rounded-full px-2.5 py-0.5 font-semibold ${
-                      badgeClasses[text.toLowerCase()] ?? 'bg-gray-100 text-gray-700'
-                    }`}
-                  >
-                    {text}
-                  </span>
-                ) : (
-                  text
-                ),
-              )}
-            </P>
-          );
-        })}
-        {item.text.methodology && <MethodologyEl text={item.text.methodology} />}
-      </CardEl>
-    ),
-  }));
+  const slides: SlideContent[] = data.map((item) => {
+    return {
+      vizContent: item.vizContent,
+      slideContent: <NarrativeCard text={item.text} />,
+    };
+  });
   return slides;
 }
 

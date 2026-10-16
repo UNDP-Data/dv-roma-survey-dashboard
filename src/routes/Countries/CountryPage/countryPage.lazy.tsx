@@ -33,6 +33,7 @@ import type {
   Themes,
 } from '@/types';
 import { FullStory } from './Components/FullStory';
+import InlineNarrative from './Components/InlineNarrative';
 import ScrollyTellingViz from './Components/ScrollyTellingViz';
 
 function usePageContentData(isoCode: string) {
@@ -98,7 +99,11 @@ export function CountryPage() {
           <Spacer size='8xl' />
           <Spacer size='8xl' />
           <section id='scrolly' className='mx-auto w-full'>
-            <ScrollyTellingViz data={data.scrollyTelling} />
+            {window.innerWidth > 640 ? (
+              <ScrollyTellingViz data={data.scrollyTelling} />
+            ) : (
+              <InlineNarrative data={data.scrollyTelling} />
+            )}
           </section>
           <section id='themes' className='mx-auto w-full px-4 py-16'>
             <div className='mx-auto max-w-7xl'>
