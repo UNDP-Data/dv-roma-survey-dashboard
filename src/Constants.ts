@@ -4,6 +4,8 @@ export const COUNTRIES = [
   { id: 'ukraine', name: 'Ukraine', isoCode: 'UKR' },
 ];
 
+export const THEMES = ['Education', 'Health', 'Employment', 'Housing', 'Discrimination'] as const;
+
 export const COLORS = ['var(--accent-red)', 'var(--accent-violet)'];
 export const GROUPS = ['Roma', 'non-Roma'];
 
