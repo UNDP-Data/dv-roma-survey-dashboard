@@ -7,6 +7,15 @@ export const COUNTRIES = [
 ];
 
 export const THEMES: Themes[] = ['Education', 'Health', 'Employment', 'Housing', 'Discrimination'];
+
+export const THEME_LABELS = {
+  Education: 'Education',
+  Health: 'Health',
+  Employment: 'Economic security',
+  Housing: 'Living conditions',
+  Discrimination: 'Discrimination',
+};
+
 export const COLORS = ['var(--accent-red)', 'var(--accent-violet)'];
 export const GROUPS = ['Roma', 'non-Roma'];
 

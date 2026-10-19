@@ -4,7 +4,7 @@ import { Spacer } from '@undp/design-system-react/Spacer';
 import { P } from '@undp/design-system-react/Typography';
 import { ArrowDown, ArrowUp } from 'lucide-react';
 import { useState } from 'react';
-import { THEMES } from '@/Constants';
+import { THEME_LABELS, THEMES } from '@/Constants';
 import { CardEl } from '@/components/CardEl';
 import type { ScrollySectionDataType } from '@/types';
 
@@ -25,8 +25,10 @@ export function NarrativeCard({ text }: { text: ScrollySectionDataType['text'] }
         >
           {paragraph.split(/<Badge>(.*?)<\/Badge>/g).map((part, j) => {
             if (j % 2 === 0) return part;
-            const theme = part.toLowerCase();
-            const themed = THEMES.some((t) => t.toLowerCase() === theme);
+            const theme = THEMES.find(
+              (t) => THEME_LABELS[t].toLowerCase() === part.toLowerCase(),
+            )?.toLowerCase();
+            const themed = Boolean(theme);
             return (
               <span
                 // biome-ignore lint/suspicious/noArrayIndexKey: a label can repeat, position cannot
