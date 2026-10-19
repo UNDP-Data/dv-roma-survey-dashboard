@@ -2,9 +2,9 @@ import { Spacer } from '@undp/design-system-react/Spacer';
 import { H5, P } from '@undp/design-system-react/Typography';
 import { animate, motion, useMotionValue } from 'motion/react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { NarrativeCard } from '@/components/NarrativeCard';
 import type { ScrollySectionDataType, SlideContent } from '@/types';
 import { DESKTOP_POSITIONS, IconCluster, IconClusterDef, MOBILE_POSITIONS } from './iconCluster';
+import { NarrativeCard } from './narrativeCard';
 import { NeighborhoodViz, NeighborhoodVizDef } from './neighborhoodViz';
 
 function ClusterFigure({

@@ -1,11 +1,15 @@
 import { cn } from '@undp/design-system-react/cn';
+import { Separator } from '@undp/design-system-react/Separator';
+import { Spacer } from '@undp/design-system-react/Spacer';
 import { P } from '@undp/design-system-react/Typography';
+import { ArrowDown, ArrowUp } from 'lucide-react';
+import { useState } from 'react';
 import { THEMES } from '@/Constants';
+import { CardEl } from '@/components/CardEl';
 import type { ScrollySectionDataType } from '@/types';
-import { CardEl } from './CardEl';
-import { MethodologyEl } from './MethodologyEl';
 
 export function NarrativeCard({ text }: { text: ScrollySectionDataType['text'] }) {
+  const [methodologyOpen, setMethodologyOpen] = useState(false);
   const paragraphs = text.content.split('\n\n');
   return (
     <CardEl variant={text.theme} className='bg-background'>
@@ -43,7 +47,28 @@ export function NarrativeCard({ text }: { text: ScrollySectionDataType['text'] }
           })}
         </P>
       ))}
-      {text.methodology && <MethodologyEl text={text.methodology} />}
+      {text.methodology && (
+        <>
+          <Spacer size='xl' />
+          <Separator color='surface-md' />
+          <Spacer size='xl' />
+          <button
+            type='button'
+            onClick={() => setMethodologyOpen(!methodologyOpen)}
+            className='mb-2.5 flex items-center gap-0.5'
+          >
+            <P size='base' weight='bold' marginBottom='none'>
+              Methodology
+            </P>
+            {methodologyOpen ? <ArrowUp size={16} /> : <ArrowDown size={16} />}
+          </button>
+          {methodologyOpen && (
+            <P size='base' className='text-content-secondary' marginBottom='none'>
+              {text.methodology}
+            </P>
+          )}
+        </>
+      )}
     </CardEl>
   );
 }
