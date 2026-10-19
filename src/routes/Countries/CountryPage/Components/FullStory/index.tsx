@@ -9,7 +9,7 @@ import { DrawerBody, DrawerFooter, DrawerHeader } from '@undp/design-system-reac
 import { Separator } from '@undp/design-system-react/Separator';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { Spinner } from '@undp/design-system-react/Spinner';
-import { H2, H4, H6, P } from '@undp/design-system-react/Typography';
+import { H2, H3, H4, P } from '@undp/design-system-react/Typography';
 import { BadgeEl } from '@/components/BadgeEl';
 import type { RecommendationDataType, Themes } from '@/types';
 import { GraphBlock, MultiGraphBlock } from './graphBlock';
@@ -26,7 +26,7 @@ function Footer({ section, setOpenDrawer }: { section: string; setOpenDrawer?: (
       onClick={setOpenDrawer}
     >
       <div className='py-16 pl-32'>
-        <P weight='bold' className='text-sm! uppercase opacity-50' marginBottom='xs'>
+        <P weight='bold' size='sm' className='uppercase opacity-50' marginBottom='2xs'>
           Next
         </P>
         <H2 weight='bold' marginBottom='none'>
@@ -104,9 +104,9 @@ export function FullStory({
       <DrawerHeader className='flex flex-row items-center justify-between bg-secondary py-24! pr-32! pl-32! text-content-reverse'>
         <div className='flex w-full flex-col gap-4 md:w-1/2'>
           <BadgeEl variant={theme} reverse className='w-fit' />
-          <H2 marginBottom='none' weight='bold' className='text-5xl!'>
+          <H3 marginBottom='none' weight='bold' className='text-5xl!'>
             {data.title}
-          </H2>
+          </H3>
         </div>
         <div className='hidden w-1/2 max-w-120! md:block'>
           <img src={`/imgs/drawerBanners/${theme}.webp`} alt='Theme banner' className='w-full' />
@@ -184,9 +184,14 @@ export function FullStory({
         <Spacer size='xl' />
         <div className={cn('w-full p-12', bgColorClass)}>
           <div className='w-full max-w-3xl'>
-            <H6 marginBottom='xs' className={cn('text-sm!', textColorClass)}>
+            <P
+              size='sm'
+              weight='bold'
+              marginBottom='2xs'
+              className={cn('uppercase tracking-wider', textColorClass)}
+            >
               Policy options
-            </H6>
+            </P>
             <H4 weight='bold' marginBottom='none' className={textColorClass}>
               {recommendation.mainRecommendation}
             </H4>
