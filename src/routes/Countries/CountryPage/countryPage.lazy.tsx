@@ -13,11 +13,7 @@ import { Button } from '@undp/design-system-react/Button';
 import { Drawer, DrawerContent, DrawerTrigger } from '@undp/design-system-react/Drawer';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
 import { MarkdownRenderer } from '@undp/design-system-react/MarkdownRenderer';
-import {
-  PageHeader,
-  PageHeaderContent,
-  PageHeaderHead,
-} from '@undp/design-system-react/PageHeader';
+import { PageHeaderContent, PageHeaderHead } from '@undp/design-system-react/PageHeader';
 import { Separator } from '@undp/design-system-react/Separator';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { Spinner } from '@undp/design-system-react/Spinner';
@@ -57,8 +53,11 @@ export function CountryPage() {
   const [selectedRecommendation, setSelectedRecommendation] = useState<Themes | null>(null);
   return (
     <div className='w-full antialiased'>
-      <section id='header' className='mx-auto w-full'>
-        <div className='flex @2xl:min-h-160.5 @5xl:min-h-186.5 min-h-auto w-full flex-col gap-4 bg-center bg-cover py-20 @2xl:pl-[8.3333%] pl-4 text-content-reverse @2xl:rtl:pr-[8.3333%] rtl:pr-4 @2xl:rtl:pl-0 rtl:pl-0'>
+      <section
+        id='header'
+        className='mx-auto flex 5xl:min-h-186.5 min-h-auto w-full flex-col items-center justify-between gap-0 bg-secondary px-4 py-20 text-content-reverse md:flex-row md:gap-10 2xl:min-h-160.5 2xl:px-[8.3333%]'
+      >
+        <div className='flex flex-col gap-4'>
           <PageHeaderHead>
             <Breadcrumb variant='reverse'>
               <BreadcrumbList>
@@ -80,6 +79,9 @@ export function CountryPage() {
             <H1 size='sm'>Lives on narrow margins in {country}</H1>
             <H4 marginBottom='none'>Barriers, opportunities and strategies of Roma</H4>
           </PageHeaderContent>
+        </div>
+        <div>
+          <img src='/imgs/country_hero_cube.webp' className='h-auto w-full max-w-131' alt='hero' />
         </div>
       </section>
       <Spacer size='8xl' />
