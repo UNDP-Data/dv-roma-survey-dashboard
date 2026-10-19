@@ -97,9 +97,7 @@ export function CountryPage() {
           </section>
           <Spacer size='8xl' />
           <Spacer size='8xl' />
-          <section id='scrolly' className='mx-auto w-full'>
-            <CountryNarrative data={data.scrollyTelling} />
-          </section>
+          <CountryNarrative data={data.scrollyTelling} />
           <section id='themes' className='mx-auto w-full px-4 py-16'>
             <div className='mx-auto max-w-7xl'>
               <H4 weight='bold'>Read the full story behind each theme</H4>

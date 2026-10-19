@@ -1,7 +1,7 @@
 import { P } from '@undp/design-system-react/Typography';
-import { type MotionValue, motion, useTransform } from 'motion/react';
+import { type MotionValue, motion, useMotionValue, useTransform } from 'motion/react';
 
-export const DESKTOP_POSITIONS = [
+const DESKTOP_POSITIONS = [
   61, 14, 347, 79, 128, 8, 33, 30, 450, 6, 273, 42, 251, 64, 267, 71, 291, 83, 484, 6, 445, 58, 434,
   22, 77, 29, 0, 126, 53, 43, 250, 21, 342, 6, 316, 0, 228, 8, 442, 82, 396, 52, 214, 99, 378, 20,
   270, 4, 187, 82, 398, 95, 161, 2, 97, 100, 72, 122, 21, 77, 61, 84, 84, 67, 164, 86, 164, 131,
@@ -14,7 +14,7 @@ export const DESKTOP_POSITIONS = [
   95, 161, 360, 104, 376, 115, 358, 138,
 ];
 
-export const MOBILE_POSITIONS = [
+const MOBILE_POSITIONS = [
   330, 105, 314, 120, 320, 150, 70, 6, 152, 0, 94, 0, 44, 5, 110, 15, 11, 34, 54, 21, 79, 29, 67,
   52, 77, 72, 29, 50, 43, 69, 98, 40, 118, 44, 154, 46, 173, 9, 136, 26, 198, 23, 241, 0, 263, 11,
   18, 80, 291, 11, 29, 95, 220, 9, 308, 16, 180, 35, 233, 33, 299, 34, 325, 43, 211, 45, 272, 38,
@@ -27,38 +27,26 @@ export const MOBILE_POSITIONS = [
   206, 3, 195, 162, 214, 298, 207, 0, 148,
 ];
 
-export function IconClusterDef() {
-  return (
-    <defs>
-      <g id='person-icon'>
-        <path d='M14.3594 13.8594C19.0938 13.8595 22.9315 17.6973 22.9316 22.4317V30.1475C22.9316 32.9882 20.6288 35.291 17.7881 35.291H6.64355C3.80293 35.291 1.50009 32.9881 1.5 30.1475V22.4317C1.50012 17.6972 5.33875 13.8594 10.0732 13.8594H14.3594ZM12.2158 1.85745C15.2933 1.85745 17.7881 4.35225 17.7881 7.42972C17.7881 10.5072 15.2933 13.002 12.2158 13.002C9.13842 13.0019 6.64356 10.5071 6.64355 7.42972C6.64355 4.35229 9.13841 1.85753 12.2158 1.85745Z' />
-        <path
-          d='M22.9316 22.4317C22.9315 17.6973 19.0938 13.8595 14.3594 13.8594H10.0732C5.33875 13.8594 1.50012 17.6972 1.5 22.4317V30.1475C1.50009 32.9881 3.80293 35.291 6.64355 35.291H17.7881C20.6288 35.291 22.9316 32.9882 22.9316 30.1475V22.4317ZM17.7881 7.42972C17.7881 4.35225 15.2933 1.85745 12.2158 1.85745C9.13841 1.85753 6.64355 4.35229 6.64355 7.42972C6.64356 10.5071 9.13842 13.0019 12.2158 13.002C15.2933 13.002 17.7881 10.5072 17.7881 7.42972ZM19.2881 7.42972C19.2881 9.52084 18.3793 11.3986 16.9365 12.6934C21.09 13.7897 24.1936 17.4711 24.4189 21.9131L24.4316 22.4317V30.1475C24.4315 33.8165 21.4572 36.791 17.7881 36.791H6.64355C2.97453 36.7909 0.000112534 33.8165 0 30.1475V22.4317C0.000118523 17.7602 3.18079 13.8326 7.49414 12.6934C6.05171 11.3986 5.14356 9.52057 5.14355 7.42972C5.14355 3.52383 8.31005 0.357548 12.2158 0.357452L12.5801 0.366241C16.3167 0.555809 19.2881 3.64598 19.2881 7.42972Z'
-          fill='#F8F7F3'
-        />
-      </g>
-    </defs>
-  );
-}
-
-function AnimatedCount({ animatedNumber }: { animatedNumber: MotionValue<number> }) {
-  const label = useTransform(animatedNumber, (value) => `${Math.round(value)} out of 100`);
-  return <motion.span>{label}</motion.span>;
-}
-
 export function IconCluster({
   populationGroup,
   value,
-  positions,
   activeSlideIndex,
   animatedNumber,
+  isMobile = false,
 }: {
   populationGroup: 'roma' | 'non-roma';
   value: number;
-  positions: number[];
   activeSlideIndex: number;
   animatedNumber?: MotionValue<number>;
+  isMobile?: boolean;
 }) {
+  const positions = isMobile ? MOBILE_POSITIONS : DESKTOP_POSITIONS;
+
+  const fallbackNumber = useMotionValue(0);
+  const animatedLabel = useTransform(
+    animatedNumber ?? fallbackNumber,
+    (value) => `${Math.round(value)} out of 100`,
+  );
   const populationGroupTitleCase = populationGroup === 'roma' ? 'Roma' : 'Non-Roma';
   return (
     <>
@@ -71,8 +59,8 @@ export function IconCluster({
           leading='xs'
         >
           {activeSlideIndex > 1 ? (
-            animatedNumber ? (
-              <AnimatedCount animatedNumber={animatedNumber} />
+            !isMobile && animatedNumber ? (
+              <motion.span>{animatedLabel}</motion.span>
             ) : (
               `${value} out of 100`
             )
@@ -86,7 +74,7 @@ export function IconCluster({
       </foreignObject>
       <g transform='translate(0, 50)'>
         {[...Array(100).keys()].map((i) =>
-          animatedNumber ? (
+          !isMobile && animatedNumber ? (
             <motion.use
               key={`${populationGroup}-${i}`}
               href='#person-icon'
