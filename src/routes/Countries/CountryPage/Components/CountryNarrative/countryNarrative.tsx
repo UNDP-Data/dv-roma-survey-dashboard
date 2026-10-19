@@ -162,7 +162,7 @@ export default function CountryNarrative({ data }: { data: ScrollySectionDataTyp
                 </motion.svg>
               </div>
             </div>
-            <div className='mx-auto w-full max-w-100 shrink-0'>
+            <div className='relative z-10 mx-auto w-full max-w-100 shrink-0'>
               {slides.map((slide, index) => (
                 <div
                   className='flex min-h-screen items-center px-4 md:px-0'
