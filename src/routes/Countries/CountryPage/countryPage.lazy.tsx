@@ -58,7 +58,7 @@ export function CountryPage() {
   return (
     <div className='w-full antialiased'>
       <section id='header' className='mx-auto w-full'>
-        <PageHeader backgroundImage='/imgs/country_hero.webp' contentMode='dark'>
+        <div className='flex @2xl:min-h-160.5 @5xl:min-h-186.5 min-h-auto w-full flex-col gap-4 bg-center bg-cover py-20 @2xl:pl-[8.3333%] pl-4 text-content-reverse @2xl:rtl:pr-[8.3333%] rtl:pr-4 @2xl:rtl:pl-0 rtl:pl-0'>
           <PageHeaderHead>
             <Breadcrumb variant='reverse'>
               <BreadcrumbList>
@@ -76,11 +76,11 @@ export function CountryPage() {
               </BreadcrumbList>
             </Breadcrumb>
           </PageHeaderHead>
-          <PageHeaderContent className='@2xl:w-1/3'>
+          <PageHeaderContent>
             <H1 size='sm'>Lives on narrow margins in {country}</H1>
             <H4 marginBottom='none'>Barriers, opportunities and strategies of Roma</H4>
           </PageHeaderContent>
-        </PageHeader>
+        </div>
       </section>
       <Spacer size='8xl' />
       <Spacer size='8xl' />
