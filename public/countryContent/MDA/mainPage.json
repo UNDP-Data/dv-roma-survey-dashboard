@@ -25,8 +25,8 @@
         "subTitle": ""
     },
       "text": {
-        "title": "Disparities that carry through life",
-        "content": "These disparities begin in <Badge>education</Badge>, continue into <Badge>employment</Badge>, and shape adult life through <Badge>housing</Badge>, and <Badge>health</Badge>, while <Badge>discrimination</Badge> cuts across all these areas.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
+        "title": "Disadvantages that carry through life",
+        "content": "These disadvantages begin in <Badge>education</Badge>, put <Badge>economic security</Badge> at risk, and shape everyday life through <Badge>living conditions</Badge> and <Badge>health</Badge>, while <Badge>discrimination</Badge> cuts across all these areas.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
       }
     },
     {
@@ -38,8 +38,8 @@
       },
       "text": {
         "theme": "Education",
-        "title": "Gaps in education span the learning cycle and adulthood",
-        "content": "Roma children are less likely to be enrolled at every stage, from preschool to university, and the gap carries into adult life."
+        "title": "Education gaps extend into adult life",
+        "content": "The discrepancy in formal schooling leaves Roma at a disadvantage when seeking work, pursuing further learning or accessing services."
       }
     },
     {
@@ -52,7 +52,7 @@
       "text": {
         "theme": "Employment",
         "title": "Finding work does not ensure a secure livelihood",
-        "content": "Roma women have fewer openings into work, and men more often work without contracts or protection."
+        "content": "Informal work often leaves Roma with uncertain earnings and little social protection, making it harder to cover household costs and plan ahead."
       }
     },
     {
@@ -65,7 +65,7 @@
       "text": {
         "theme": "Housing",
         "title": "Having a roof does not ensure adequate space, sanitation or warmth",
-        "content": "Roma homes are more often overcrowded, damp or without indoor sanitation. Insecure renting forces families to move."
+        "content": "Many Roma families live in overcrowded houses with damp and insufficient indoor sanitation. Insecure renting conditions can force families to move frequently."
       }
     },
     {
