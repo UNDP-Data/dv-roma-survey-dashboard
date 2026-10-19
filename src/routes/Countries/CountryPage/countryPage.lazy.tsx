@@ -77,7 +77,7 @@ export function CountryPage() {
             </Breadcrumb>
           </PageHeaderHead>
           <PageHeaderContent className='@2xl:w-1/3'>
-            <H1 size='sm'>Lives on narrow margins in {country}</H1>
+            <H1 size='sm'>Lives on narrow margins in {country}</H1>
             <H4 marginBottom='none'>Barriers, opportunities and strategies of Roma</H4>
           </PageHeaderContent>
         </PageHeader>
@@ -155,7 +155,15 @@ export function CountryPage() {
             className='mx-auto w-full bg-secondary px-4 py-16 text-content-reverse'
           >
             <div className='mx-auto max-w-7xl'>
-              <H4 weight='bold'>Recommendations</H4>
+              <P
+                size='sm'
+                marginBottom='2xs'
+                weight='bold'
+                className='text-white/50 uppercase tracking-wider'
+              >
+                Policy options
+              </P>
+              <H4 weight='bold'>More choices. Greater security. Equal participation</H4>
               <Spacer size='2xl' />
               <Grid noOfCol={{ base: 1, sm: 1, md: 1, lg: 1 }} gap='16px'>
                 {data.recommendations.map((recommendation) => (
@@ -223,8 +231,8 @@ export function CountryPage() {
                   <div className='flex h-full w-full flex-col p-8'>
                     <H5>Download the full report</H5>
                     <P size='base' className='grow' marginBottom='none'>
-                      Findings, personal accounts, methodology and recommendations for Roma in
-                      Moldova.
+                      Findings, personal accounts, methodology and recommendations for Roma in{' '}
+                      {country}
                     </P>
                     <Spacer size='2xl' />
                     <div>
