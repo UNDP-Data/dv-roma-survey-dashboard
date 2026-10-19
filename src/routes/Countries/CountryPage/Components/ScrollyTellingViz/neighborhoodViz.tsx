@@ -1,6 +1,6 @@
 export function NeighborhoodViz() {
   return (
-    <g filter='url(#filter0_d_7223_14821)'>
+    <g filter='url(#neighborhoodFilter)'>
       <path
         d='M224.68 486.133C227.406 486.133 229.615 483.922 229.615 481.194C229.615 478.467 227.406 476.256 224.68 476.256C221.954 476.256 219.744 478.467 219.744 481.194C219.744 483.922 221.954 486.133 224.68 486.133Z'
         fill='#DA5D38'
@@ -767,46 +767,5 @@ export function NeighborhoodViz() {
       />
       <line x1='301.25' y1='28.4375' x2='301.25' y2='53.4375' stroke='#84929D' stroke-width='0.5' />
     </g>
-  );
-}
-
-export function NeighborhoodVizDef() {
-  return (
-    <defs>
-      <filter
-        id='filter0_d_7223_14821'
-        x='-1'
-        y='0'
-        width='602'
-        height='494'
-        filterUnits='userSpaceOnUse'
-        color-interpolation-filters='sRGB'
-      >
-        <feFlood flood-opacity='0' result='BackgroundImageFix' />
-        <feColorMatrix
-          in='SourceAlpha'
-          type='matrix'
-          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
-          result='hardAlpha'
-        />
-        <feMorphology
-          radius='1'
-          operator='erode'
-          in='SourceAlpha'
-          result='effect1_dropShadow_7223_14821'
-        />
-        <feOffset dy='1' />
-        <feGaussianBlur stdDeviation='1' />
-        <feComposite in2='hardAlpha' operator='out' />
-        <feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0' />
-        <feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_7223_14821' />
-        <feBlend
-          mode='normal'
-          in='SourceGraphic'
-          in2='effect1_dropShadow_7223_14821'
-          result='shape'
-        />
-      </filter>
-    </defs>
   );
 }

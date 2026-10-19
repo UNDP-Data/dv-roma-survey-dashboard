@@ -1,5 +1,5 @@
 import { P } from '@undp/design-system-react/Typography';
-import { type MotionValue, motion, useTransform } from 'motion/react';
+import { type MotionValue, motion, useMotionValue, useTransform } from 'motion/react';
 
 const POSITION_DATA = [
   61, 14, 347, 79, 128, 8, 33, 30, 450, 6, 273, 42, 251, 64, 267, 71, 291, 83, 484, 6, 445, 58, 434,
@@ -14,19 +14,39 @@ const POSITION_DATA = [
   95, 161, 360, 104, 376, 115, 358, 138,
 ];
 
+const MOBILE_POSITION_DATA = [
+  330, 105, 314, 120, 320, 150, 70, 6, 152, 0, 94, 0, 44, 5, 110, 15, 11, 34, 54, 21, 79, 29, 67,
+  52, 77, 72, 29, 50, 43, 69, 98, 40, 118, 44, 154, 46, 173, 9, 136, 26, 198, 23, 241, 0, 263, 11,
+  18, 80, 291, 11, 29, 95, 220, 9, 308, 16, 180, 35, 233, 33, 299, 34, 325, 43, 211, 45, 272, 38,
+  251, 52, 56, 87, 11, 125, 166, 131, 290, 126, 213, 80, 313, 69, 297, 88, 280, 63, 192, 68, 173,
+  164, 232, 63, 145, 131, 105, 75, 69, 174, 48, 155, 24, 174, 26, 135, 50, 117, 121, 142, 131, 173,
+  153, 165, 210, 159, 189, 137, 214, 121, 196, 100, 175, 97, 252, 76, 234, 100, 233, 132, 249, 147,
+  233, 175, 300, 159, 272, 143, 275, 94, 167, 60, 137, 67, 153, 90, 130, 98, 108, 105, 81, 92, 91,
+  127, 71, 134, 93, 157, 109, 177, 190, 175, 262, 179, 285, 177, 337, 177, 258, 110, 197, 205, 316,
+  185, 278, 199, 257, 209, 225, 198, 166, 187, 144, 203, 94, 195, 52, 183, 37, 195, 121, 206, 68,
+  206, 3, 195, 162, 214, 298, 207, 0, 148,
+];
+
 export function IconCluster({
   activeSlideIndex,
   populationGroup,
   animatedNumber,
   value,
+  isMobile,
 }: {
   activeSlideIndex: number;
   value: number;
-  animatedNumber: MotionValue<number>;
+  animatedNumber?: MotionValue<number>;
   populationGroup: 'roma' | 'non-roma';
+  isMobile: boolean;
 }) {
-  const animatedLabel = useTransform(animatedNumber, (value) => `${Math.round(value)} out of 100`);
+  const fallbackNumber = useMotionValue(0);
+  const animatedLabel = useTransform(
+    animatedNumber ?? fallbackNumber,
+    (value) => `${Math.round(value)} out of 100`,
+  );
   const populationGroupTitleCase = populationGroup === 'roma' ? 'Roma' : 'Non-Roma';
+  const positions = isMobile ? MOBILE_POSITION_DATA : POSITION_DATA;
   return (
     <>
       <foreignObject width='100%' height='75px' x={0} y={0}>
@@ -38,7 +58,11 @@ export function IconCluster({
           leading='xs'
         >
           {activeSlideIndex > 1 ? (
-            <motion.span>{animatedLabel}</motion.span>
+            !isMobile && animatedNumber ? (
+              <motion.span>{animatedLabel}</motion.span>
+            ) : (
+              `${value} out of 100`
+            )
           ) : (
             populationGroupTitleCase
           )}
@@ -47,29 +71,32 @@ export function IconCluster({
           {activeSlideIndex > 1 ? populationGroupTitleCase : '100 people'}
         </P>
       </foreignObject>
-      <g id={`${populationGroup}-dot-plot`} transform='translate(0, 50)'>
-        {[...Array(100).keys()].map((i) => (
-          <g
-            key={`${populationGroup}-${i}`}
-            transform={`translate(${POSITION_DATA[2 * i]}, ${POSITION_DATA[2 * i + 1]})`}
-          >
-            <motion.path
-              key={`${populationGroup}-${i}`}
-              d='M14.3594 13.8594C19.0938 13.8595 22.9315 17.6973 22.9316 22.4317V30.1475C22.9316 32.9882 20.6288 35.291 17.7881 35.291H6.64355C3.80293 35.291 1.50009 32.9881 1.5 30.1475V22.4317C1.50012 17.6972 5.33875 13.8594 10.0732 13.8594H14.3594ZM12.2158 1.85745C15.2933 1.85745 17.7881 4.35225 17.7881 7.42972C17.7881 10.5072 15.2933 13.002 12.2158 13.002C9.13842 13.0019 6.64356 10.5071 6.64355 7.42972C6.64355 4.35229 9.13841 1.85753 12.2158 1.85745Z'
-              initial={{
-                fill: `var(--${populationGroup})`,
-              }}
-              animate={{
-                fill: i < value ? `var(--${populationGroup})` : 'var(--gray-400)',
-              }}
-              transition={{ duration: 0.5 }}
-            />
-            <path
-              d='M22.9316 22.4317C22.9315 17.6973 19.0938 13.8595 14.3594 13.8594H10.0732C5.33875 13.8594 1.50012 17.6972 1.5 22.4317V30.1475C1.50009 32.9881 3.80293 35.291 6.64355 35.291H17.7881C20.6288 35.291 22.9316 32.9882 22.9316 30.1475V22.4317ZM17.7881 7.42972C17.7881 4.35225 15.2933 1.85745 12.2158 1.85745C9.13841 1.85753 6.64355 4.35229 6.64355 7.42972C6.64356 10.5071 9.13842 13.0019 12.2158 13.002C15.2933 13.002 17.7881 10.5072 17.7881 7.42972ZM19.2881 7.42972C19.2881 9.52084 18.3793 11.3986 16.9365 12.6934C21.09 13.7897 24.1936 17.4711 24.4189 21.9131L24.4316 22.4317V30.1475C24.4315 33.8165 21.4572 36.791 17.7881 36.791H6.64355C2.97453 36.7909 0.000112534 33.8165 0 30.1475V22.4317C0.000118523 17.7602 3.18079 13.8326 7.49414 12.6934C6.05171 11.3986 5.14356 9.52057 5.14355 7.42972C5.14355 3.52383 8.31005 0.357548 12.2158 0.357452L12.5801 0.366241C16.3167 0.555809 19.2881 3.64598 19.2881 7.42972Z'
-              fill='#F8F7F3'
-            />
-          </g>
-        ))}
+      <g transform='translate(0, 50)'>
+        {isMobile
+          ? [...Array(100).keys()].map((i) => (
+              <motion.use
+                key={`${populationGroup}-${i}`}
+                href='#person-icon'
+                x={positions[2 * i]}
+                y={positions[2 * i + 1]}
+                initial={{
+                  fill: `var(--${populationGroup})`,
+                }}
+                animate={{
+                  fill: i < value ? `var(--${populationGroup})` : 'var(--gray-400)',
+                }}
+                transition={{ duration: 0.5 }}
+              />
+            ))
+          : [...Array(100).keys()].map((i) => (
+              <use
+                key={`${populationGroup}-${i}`}
+                href='#person-icon'
+                x={positions[2 * i]}
+                y={positions[2 * i + 1]}
+                style={{ fill: i < value ? `var(--${populationGroup})` : 'var(--gray-400)' }}
+              />
+            ))}
       </g>
     </>
   );
