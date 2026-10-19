@@ -627,7 +627,7 @@
   {
     "id": "household_had_self_employment_income",
     "title": "Household received self-employment income",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Livelihoods",
     "source": "UNDP",
     "calculationTypeForDisaggregation": {
@@ -652,7 +652,7 @@
   {
     "id": "produces_vegetables_for_own_consumption",
     "title": "Produces vegetables for own consumption",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Livelihoods",
     "source": "UNDP",
     "calculationTypeForDisaggregation": {
@@ -877,7 +877,7 @@
   {
     "id": "youth_neet",
     "title": "People living in households with a youth NEET (ages 15–29)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "UNDP",
     "calculationTypeForDisaggregation": {
@@ -1002,7 +1002,7 @@
   {
     "id": "unemployment_and_seasonal_occasional_employment",
     "title": "Household members affected by job insecurity of a household member",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "UNDP",
     "calculationTypeForDisaggregation": {
@@ -1027,7 +1027,7 @@
   {
     "id": "informal_employment",
     "title": "People living in households with informal employment",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "UNDP",
     "calculationTypeForDisaggregation": {
@@ -1052,7 +1052,7 @@
   {
     "id": "child_and_adolescent_labour_proxy",
     "title": "People living in households where at least one child or adolescent (ages 5–17) performs some economic activity",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "UNDP",
     "calculationTypeForDisaggregation": {
@@ -1727,7 +1727,7 @@
   {
     "id": "wb_employed_15_64",
     "title": "Employed last week (ILO, ages 15–64)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1752,7 +1752,7 @@
   {
     "id": "wb_unemployed_15_64",
     "title": "Unemployed, ages 15–64",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1777,7 +1777,7 @@
   {
     "id": "wb_inactive_15_64",
     "title": "Inactive (15–64)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1802,7 +1802,7 @@
   {
     "id": "wb_employed_25_64",
     "title": "Employed (25–64)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1827,7 +1827,7 @@
   {
     "id": "wb_unemployed_25_64",
     "title": "Unemployed (25–64)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1852,7 +1852,7 @@
   {
     "id": "wb_inactive_25_64",
     "title": "Inactive (25–64)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1877,7 +1877,7 @@
   {
     "id": "wb_employed_15_24",
     "title": "Employed (15–24)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1902,7 +1902,7 @@
   {
     "id": "wb_unemployed_15_24",
     "title": "Unemployed (15–24)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1927,7 +1927,7 @@
   {
     "id": "wb_inactive_in_education_15_24",
     "title": "Inactive in education (15–24)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1952,7 +1952,7 @@
   {
     "id": "wb_neet_inactive_not_in_education_15_24",
     "title": "NEET inactive not in education (15–24)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -1977,7 +1977,7 @@
   {
     "id": "wb_neet_15_24",
     "title": "NEET, ages 15–24",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -2152,7 +2152,7 @@
   {
     "id": "wb_informal_employment_employed_15_64",
     "title": "Informal employment among employed, ages 15–64",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "World Bank",
     "calculationTypeForDisaggregation": {
@@ -2727,7 +2727,7 @@
   {
     "id": "fra_work",
     "title": "Main activity is paid work, ages 20–64",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "FRA",
     "calculationTypeForDisaggregation": {
@@ -2752,7 +2752,7 @@
   {
     "id": "fra_neet",
     "title": "NEET, ages 16–24",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "FRA",
     "calculationTypeForDisaggregation": {
@@ -2952,7 +2952,7 @@
   {
     "id": "fra_gender_employment_gap",
     "title": "Gender gap in paid work (men − women, ages 20–64, pp)",
-    "category": "work and employment",
+    "category": "economic security",
     "subCategory": "Employment",
     "source": "FRA",
     "calculationTypeForDisaggregation": {
