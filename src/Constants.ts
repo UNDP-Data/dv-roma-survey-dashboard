@@ -1,11 +1,12 @@
+import type { Themes } from './types';
+
 export const COUNTRIES = [
   { id: 'georgia', name: 'Georgia', isoCode: 'GEO' },
   { id: 'moldova', name: 'Moldova', isoCode: 'MDA' },
   { id: 'ukraine', name: 'Ukraine', isoCode: 'UKR' },
 ];
 
-export const THEMES = ['Education', 'Health', 'Employment', 'Housing', 'Discrimination'] as const;
-
+export const THEMES: Themes[] = ['Education', 'Health', 'Employment', 'Housing', 'Discrimination'];
 export const COLORS = ['var(--accent-red)', 'var(--accent-violet)'];
 export const GROUPS = ['Roma', 'non-Roma'];
 
