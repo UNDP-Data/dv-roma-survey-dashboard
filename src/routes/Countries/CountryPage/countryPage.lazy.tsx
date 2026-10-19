@@ -32,7 +32,7 @@ import type {
   ScrollySectionDataType,
   Themes,
 } from '@/types';
-import CountryNarrative from './Components/CountryNarrative/countryNarrative';
+import CountryNarrative from './Components/CountryNarrative';
 import { FullStory } from './Components/FullStory';
 
 function usePageContentData(isoCode: string) {
