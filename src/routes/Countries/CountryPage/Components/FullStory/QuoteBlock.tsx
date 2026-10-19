@@ -1,6 +1,6 @@
 import { cn } from '@undp/design-system-react/cn';
 import { Spacer } from '@undp/design-system-react/Spacer';
-import { H4, H6, P } from '@undp/design-system-react/Typography';
+import { H5, P } from '@undp/design-system-react/Typography';
 import { CardEl } from '@/components/CardEl';
 import type { Themes } from '@/types';
 
@@ -20,17 +20,23 @@ export function QuoteBlock({
       className={cn('border-0 bg-surface', className)}
       showBadge={false}
       variant={theme}
-      childrenClassName='p-12'
+      childrenClassName='pt-2 pr-16 pb-10 pl-12'
     >
-      <H6 marginBottom='none' style={{ color: `var(--${theme.toLowerCase()})` }}>
+      <P
+        size='sm'
+        weight='bold'
+        marginBottom='none'
+        className='uppercase tracking-wider'
+        style={{ color: `var(--${theme.toLowerCase()})` }}
+      >
         Stories behind statistics
-      </H6>
+      </P>
       <Spacer size='xl' />
-      <H4 weight='medium' marginBottom='none'>
+      <H5 weight='semibold' marginBottom='none'>
         {quote}
-      </H4>
-      <Spacer size='4xl' />
-      <P size='base' className='text-content-secondary' marginBottom='none'>
+      </H5>
+      <Spacer size='xl' />
+      <P size='base' className='text-content-tertiary' marginBottom='none'>
         {author}
       </P>
     </CardEl>
