@@ -26,7 +26,7 @@ function Footer({ section, setOpenDrawer }: { section: string; setOpenDrawer?: (
       onClick={setOpenDrawer}
     >
       <div className='py-16 pl-32'>
-        <P size='xs' weight='bold' className='uppercase opacity-70' marginBottom='xs'>
+        <P weight='bold' className='text-sm! uppercase opacity-50' marginBottom='xs'>
           Next
         </P>
         <H2 weight='bold' marginBottom='none'>
@@ -34,7 +34,7 @@ function Footer({ section, setOpenDrawer }: { section: string; setOpenDrawer?: (
         </H2>
       </div>
       <img
-        src={`/imgs/drawerFooter/${section}.png`}
+        src={`/imgs/drawerFooter/${section}.webp`}
         alt='Theme banner'
         className='hidden h-55 md:block'
       />
@@ -101,15 +101,15 @@ export function FullStory({
   if (!data) return <P>No data found</P>;
   return (
     <>
-      <DrawerHeader className='flex flex-row items-center justify-between bg-secondary py-33.5! pr-32! pl-32! text-content-reverse'>
+      <DrawerHeader className='flex flex-row items-center justify-between bg-secondary py-24! pr-32! pl-32! text-content-reverse'>
         <div className='flex w-full flex-col gap-4 md:w-1/2'>
           <BadgeEl variant={theme} reverse className='w-fit' />
-          <H2 marginBottom='none' weight='bold'>
+          <H2 marginBottom='none' weight='bold' className='text-5xl!'>
             {data.title}
           </H2>
         </div>
-        <div className='hidden w-1/2 max-w-100! md:block'>
-          <img src={`/imgs/drawerBanners/${theme}.png`} alt='Theme banner' className='w-full' />
+        <div className='hidden w-1/2 max-w-120! md:block'>
+          <img src={`/imgs/drawerBanners/${theme}.webp`} alt='Theme banner' className='w-full' />
         </div>
       </DrawerHeader>
       <DrawerBody className='flex-col gap-5 pl-32'>
@@ -184,7 +184,7 @@ export function FullStory({
         <Spacer size='xl' />
         <div className={cn('w-full p-12', bgColorClass)}>
           <div className='w-full max-w-3xl'>
-            <H6 marginBottom='xs' className={textColorClass}>
+            <H6 marginBottom='xs' className={cn('text-sm!', textColorClass)}>
               Policy options
             </H6>
             <H4 weight='bold' marginBottom='none' className={textColorClass}>
