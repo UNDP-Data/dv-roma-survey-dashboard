@@ -190,7 +190,7 @@ export default function CountryNarrative({ data }: { data: ScrollySectionDataTyp
               .getElementById('themes')
               ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
           }
-          className='mb-6 flex cursor-pointer items-center gap-2 rounded-full bg-background px-6 py-3 font-semibold text-accent-blue shadow-lg transition-shadow hover:shadow-xl'
+          className='mb-6 flex cursor-pointer items-center gap-2 rounded-full bg-background px-6 py-3 font-semibold text-secondary shadow-lg transition-shadow hover:shadow-xl'
         >
           Skip intro
           <ArrowDown size={20} />
