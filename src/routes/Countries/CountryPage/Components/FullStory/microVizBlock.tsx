@@ -3,7 +3,7 @@ import { H4, P } from '@undp/design-system-react/Typography';
 
 export function MicroVizBlock({ text, value }: { text: string; value: number }) {
   return (
-    <div className='hidden w-full pr-6 md:block md:w-1/4'>
+    <div className='hidden w-full pr-6 md:block md:w-1/4 md:max-w-60'>
       <H4 weight='bold' marginBottom='none' style={{ color: 'var(--roma)' }}>
         {value} out of 100
       </H4>
