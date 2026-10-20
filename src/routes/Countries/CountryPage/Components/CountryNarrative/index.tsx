@@ -1,5 +1,6 @@
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { H5, P } from '@undp/design-system-react/Typography';
+import { ArrowDown } from 'lucide-react';
 import { animate, motion, useMotionValue } from 'motion/react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ScrollySectionDataType, SlideContent } from '@/types';
@@ -180,6 +181,20 @@ export default function CountryNarrative({ data }: { data: ScrollySectionDataTyp
             ))}
           </div>
         )}
+      </div>
+      <div className='sticky bottom-0 z-20 flex h-0 items-end justify-center'>
+        <button
+          type='button'
+          onClick={() =>
+            document
+              .getElementById('themes')
+              ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
+          className='mb-6 flex cursor-pointer items-center gap-2 rounded-full bg-background px-6 py-3 font-semibold text-accent-blue shadow-lg transition-shadow hover:shadow-xl'
+        >
+          Skip intro
+          <ArrowDown size={20} />
+        </button>
       </div>
     </section>
   );
