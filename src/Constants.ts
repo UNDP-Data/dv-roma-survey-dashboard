@@ -7,11 +7,20 @@ export const COUNTRIES = [
 ];
 
 export const THEMES: Themes[] = ['Education', 'Health', 'Employment', 'Housing', 'Discrimination'];
+
+export const THEME_LABELS = {
+  Education: 'Education',
+  Health: 'Health',
+  Employment: 'Economic security',
+  Housing: 'Living conditions',
+  Discrimination: 'Discrimination',
+};
+
 export const COLORS = ['var(--accent-red)', 'var(--accent-violet)'];
 export const GROUPS = ['Roma', 'non-Roma'];
 
 export const FEATURED_INDICATORS = {
-  'work and employment': [
+  'economic security': [
     'wb_unemployed_15_64',
     'wb_employed_25_64',
     'wb_informal_employment_employed_15_64',
