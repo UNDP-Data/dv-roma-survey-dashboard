@@ -82,23 +82,34 @@ export function CountryPage() {
           </PageHeaderContent>
         </PageHeader>
       </section>
-      <Spacer size='8xl' />
-      <Spacer size='8xl' />
       {isLoading && <Spinner size='lg' className='mx-auto my-20' />}
       {isError && <P>Error loading</P>}
       {data && !isLoading && !isError && (
         <>
-          <section id='intro-text' className='mx-auto w-full px-4'>
+          <section id='intro-text' className='relative mx-auto w-full px-4 pt-36 pb-16 xl:pb-36'>
+            <img src='/imgs/patterns/p01.svg' alt='' className='absolute top-0 left-0' />
+            <img
+              src='/imgs/patterns/p02.svg'
+              alt=''
+              className='absolute right-0 bottom-0 max-xl:hidden'
+            />
             <div className='mx-auto max-w-190'>
               <H3 marginBottom='none'>{data.intro.title}</H3>
               <Spacer size='2xl' />
               <MarkdownRenderer text={data.intro.content} size='base-responsive' />
             </div>
           </section>
-          <Spacer size='8xl' />
-          <Spacer size='8xl' />
           <CountryNarrative data={data.scrollyTelling} />
-          <section id='themes' className='mx-auto w-full px-4 py-16'>
+          <section
+            id='themes'
+            className='relative mx-auto w-full px-4 pt-16 pb-36 xl:pt-32 xl:pb-64'
+          >
+            <img src='/imgs/patterns/p03.svg' alt='' className='absolute bottom-0 left-0' />
+            <img
+              src='/imgs/patterns/p04.svg'
+              alt=''
+              className='absolute right-0 bottom-0 max-xl:hidden'
+            />
             <div className='mx-auto max-w-7xl'>
               <H4 weight='bold'>Read the full story behind each theme</H4>
               <Spacer size='2xl' />
@@ -262,7 +273,11 @@ export function CountryPage() {
           </section>
         </>
       )}
-      <section id='explore-other-countries' className='mx-auto w-full bg-surface px-4 py-16'>
+      <section
+        id='explore-other-countries'
+        className='relative mx-auto w-full bg-surface px-4 pt-16 pb-36 xl:pt-24 xl:pb-48'
+      >
+        <img src='/imgs/patterns/p05.svg' alt='' className='absolute right-0 bottom-0' />
         <div className='mx-auto max-w-7xl'>
           <H4 weight='bold'>Other countries</H4>
           <Spacer size='2xl' />
