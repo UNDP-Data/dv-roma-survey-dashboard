@@ -107,38 +107,38 @@
     },
     {
       "theme": "Employment",
-      "mainRecommendation": "Keep education open across generations",
+      "mainRecommendation": "Open pathways into formal, protected work",
       "detailedRecommendations": [
-        "Expand preschool outreach, school-readiness programmes and help with participation costs",
-        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
-        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+        "Build employer partnerships for apprenticeships, targeted recruitment and incentives for formal hiring, including wage subsidies",
+        "Monitor discriminatory recruitment and workplace practices",
+        "Give Roma women dedicated support combining childcare, skills development, flexible schedules and direct routes into formal employment"
       ]
     },
     {
       "theme": "Housing",
-      "mainRecommendation": "Keep education open across generations",
+      "mainRecommendation": "Improve homes and help households meet essential costs",
       "detailedRecommendations": [
-        "Expand preschool outreach, school-readiness programmes and help with participation costs",
-        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
-        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+        "Combine housing repairs with sanitation, water, electricity, heating and help resolving documentation and service-access barriers",
+        "Prioritise localities where disadvantages overlap, using household and spatial evidence alongside community knowledge",
+        "Provide targeted assistance with utilities, heating and emergency needs before financial difficulties become crises"
       ]
     },
     {
       "theme": "Health",
-      "mainRecommendation": "Keep education open across generations",
+      "mainRecommendation": "Make treatment affordable and recognise unpaid care",
       "detailedRecommendations": [
-        "Expand preschool outreach, school-readiness programmes and help with participation costs",
-        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
-        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+        "Expand community and mobile health services for prevention, insurance registration and continuity of treatment",
+        "Target medicine subsidies and reduced out-of-pocket costs to households in hardship",
+        "Assess care responsibilities within social and employment programmes, connect carers to available support and adapt training and work schedules so they can participate"
       ]
     },
     {
       "theme": "Discrimination",
-      "mainRecommendation": "Keep education open across generations",
+      "mainRecommendation": "Make equal access an institutional responsibility",
       "detailedRecommendations": [
-        "Expand preschool outreach, school-readiness programmes and help with participation costs",
-        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
-        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+        "Provide proactive documentation assistance, simplify referrals and reduce repeated visits",
+        "Retain in-person services and expand assisted digital access",
+        "Require practical anti-discrimination training for frontline staff, backed by regular review of complaints and user experience, corrective measures and follow-up"
       ]
     }
   ],
