@@ -13,11 +13,7 @@ import { Button } from '@undp/design-system-react/Button';
 import { Drawer, DrawerContent, DrawerTrigger } from '@undp/design-system-react/Drawer';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
 import { MarkdownRenderer } from '@undp/design-system-react/MarkdownRenderer';
-import {
-  PageHeader,
-  PageHeaderContent,
-  PageHeaderHead,
-} from '@undp/design-system-react/PageHeader';
+import { PageHeaderContent, PageHeaderHead } from '@undp/design-system-react/PageHeader';
 import { Separator } from '@undp/design-system-react/Separator';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { Spinner } from '@undp/design-system-react/Spinner';
@@ -57,8 +53,11 @@ export function CountryPage() {
   const [selectedRecommendation, setSelectedRecommendation] = useState<Themes | null>(null);
   return (
     <div className='w-full antialiased'>
-      <section id='header' className='mx-auto w-full'>
-        <PageHeader backgroundImage='/imgs/country_hero.webp' contentMode='dark'>
+      <section
+        id='header'
+        className='mx-auto flex 5xl:min-h-186.5 min-h-auto w-full flex-col items-center justify-between gap-0 bg-secondary px-4 py-20 text-content-reverse md:flex-row md:gap-10 2xl:min-h-160.5 2xl:px-[8.3333%]'
+      >
+        <div className='flex flex-col gap-4'>
           <PageHeaderHead>
             <Breadcrumb variant='reverse'>
               <BreadcrumbList>
@@ -76,11 +75,14 @@ export function CountryPage() {
               </BreadcrumbList>
             </Breadcrumb>
           </PageHeaderHead>
-          <PageHeaderContent className='@2xl:w-1/3'>
-            <H1 size='sm'>Lives on narrow margins in {country}</H1>
+          <PageHeaderContent>
+            <H1 size='sm'>Lives on narrow margins in {country}</H1>
             <H4 marginBottom='none'>Barriers, opportunities and strategies of Roma</H4>
           </PageHeaderContent>
-        </PageHeader>
+        </div>
+        <div>
+          <img src='/imgs/country_hero_cube.webp' className='h-auto w-full max-w-131' alt='hero' />
+        </div>
       </section>
       {isLoading && <Spinner size='lg' className='mx-auto my-20' />}
       {isError && <P>Error loading</P>}
