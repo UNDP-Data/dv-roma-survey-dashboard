@@ -1,0 +1,55 @@
+<svg width="351" height="140" viewBox="0 0 351 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7598_10606)">
+<rect width="70" height="70" transform="matrix(1.19249e-08 1 1 -1.19249e-08 140 0)" fill="#DA573A"/>
+<path d="M140 0L140 70L210 -8.34742e-07L140 0Z" fill="white"/>
+</g>
+<g clip-path="url(#clip1_7598_10606)">
+<rect width="70" height="70" transform="translate(0 70)" fill="white"/>
+<path d="M70 140.378L0 140.378L70 70.3784L70 140.378Z" fill="#0F326B"/>
+</g>
+<g clip-path="url(#clip2_7598_10606)">
+<rect width="70" height="70" transform="translate(70 140) rotate(-90)" fill="#A5D7F5"/>
+<path d="M70 140L70 70L140 140L70 140Z" fill="white"/>
+<path d="M69 140L69 70L139 140L69 140Z" fill="white"/>
+</g>
+<g clip-path="url(#clip3_7598_10606)">
+<rect width="70" height="70" transform="translate(140 70)" fill="#0076C1"/>
+<path d="M140 70.3784H210L140 140.378V70.3784Z" fill="#0F326B"/>
+</g>
+<g clip-path="url(#clip4_7598_10606)">
+<rect width="70" height="70" transform="translate(280) rotate(90)" fill="#F8F7F3"/>
+<path d="M280 0L280 70L210 -8.34742e-07L280 0Z" fill="white"/>
+</g>
+<g clip-path="url(#clip5_7598_10606)">
+<rect width="70" height="70" transform="translate(350 70) rotate(90)" fill="#31AB67"/>
+<path d="M350 70L350 140L280 70L350 70Z" fill="white"/>
+<path d="M351 70L351 140L281 70L351 70Z" fill="white"/>
+</g>
+<g clip-path="url(#clip6_7598_10606)">
+<rect width="70" height="70" transform="matrix(-1 0 0 -1 280 140)" fill="#0076C1"/>
+<path d="M280 139.622H210L280 69.6216V139.622Z" fill="#0F326B"/>
+</g>
+<defs>
+<clipPath id="clip0_7598_10606">
+<rect width="70" height="70" fill="white" transform="matrix(1.19249e-08 1 1 -1.19249e-08 140 0)"/>
+</clipPath>
+<clipPath id="clip1_7598_10606">
+<rect width="70" height="70" fill="white" transform="translate(0 70)"/>
+</clipPath>
+<clipPath id="clip2_7598_10606">
+<rect width="70" height="70" fill="white" transform="translate(70 140) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip3_7598_10606">
+<rect width="70" height="70" fill="white" transform="translate(140 70)"/>
+</clipPath>
+<clipPath id="clip4_7598_10606">
+<rect width="70" height="70" fill="white" transform="translate(280) rotate(90)"/>
+</clipPath>
+<clipPath id="clip5_7598_10606">
+<rect width="70" height="70" fill="white" transform="translate(350 70) rotate(90)"/>
+</clipPath>
+<clipPath id="clip6_7598_10606">
+<rect width="70" height="70" fill="white" transform="matrix(-1 0 0 -1 280 140)"/>
+</clipPath>
+</defs>
+</svg>
