@@ -55,9 +55,9 @@ export function CountryPage() {
     <div className='w-full antialiased'>
       <section
         id='header'
-        className='mx-auto flex 5xl:min-h-186.5 min-h-auto w-full flex-col items-center justify-between gap-0 bg-secondary px-4 py-20 text-content-reverse md:flex-row md:gap-10 2xl:min-h-160.5 2xl:px-[8.3333%]'
+        className='mx-auto flex min-h-auto w-full flex-col items-center justify-between gap-0 bg-secondary px-4 py-20 text-content-reverse md:flex-row md:gap-10 2xl:min-h-160.5 2xl:px-[8.3333%]'
       >
-        <div className='flex flex-col gap-4'>
+        <div className='flex w-full flex-col gap-4 pr-0 md:w-1/2 md:pr-10'>
           <PageHeaderHead>
             <Breadcrumb variant='reverse'>
               <BreadcrumbList>
@@ -80,8 +80,8 @@ export function CountryPage() {
             <H4 marginBottom='none'>Barriers, opportunities and strategies of Roma</H4>
           </PageHeaderContent>
         </div>
-        <div>
-          <img src='/imgs/country_hero_cube.webp' className='h-auto w-full max-w-131' alt='hero' />
+        <div className='w-full px-4 md:w-1/2 md:px-0'>
+          <img src='/imgs/country_hero_cube.webp' className='h-auto w-full' alt='hero' />
         </div>
       </section>
       <Spacer size='8xl' />
