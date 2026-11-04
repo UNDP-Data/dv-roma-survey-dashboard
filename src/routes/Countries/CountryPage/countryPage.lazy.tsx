@@ -44,6 +44,8 @@ function usePageContentData(isoCode: string) {
         scrollyTelling: ScrollySectionDataType[];
         recommendations: RecommendationDataType[];
         fullStoryCards: FullStoryDataType[];
+        title: string;
+        subTitle: string;
       }>,
   });
 }
@@ -76,9 +78,15 @@ export function CountryPage() {
               </BreadcrumbList>
             </Breadcrumb>
           </PageHeaderHead>
-          <PageHeaderContent className='@2xl:w-1/3'>
-            <H1 size='sm'>Lives on narrow margins in {country}</H1>
-            <H4 marginBottom='none'>Barriers, opportunities and strategies of Roma</H4>
+          <PageHeaderContent>
+            {isLoading && <Spinner size='lg' className='mx-auto my-20' />}
+            {isError && <P>Error loading</P>}
+            {data && !isLoading && !isError && (
+              <>
+                <H1 size='sm'>{data?.title}</H1>
+                <H4 marginBottom='none'>{data?.subTitle}</H4>
+              </>
+            )}
           </PageHeaderContent>
         </PageHeader>
       </section>
@@ -284,10 +292,10 @@ export function CountryPage() {
           <Grid noOfCol={{ base: 1, sm: 2, md: 2 }} gap='16px'>
             {COUNTRIES.filter((d) => d.isoCode !== countryCode).map((country) => (
               <GridItem
-                key={country.id}
+                key={country.isoCode}
                 className='group cursor-pointer bg-background text-content-primary'
               >
-                <Link to='/countries/$countryId' params={{ countryId: country.id }}>
+                <Link to='/countries/$countryId' params={{ countryId: country.isoCode }}>
                   <CardEl isHoverable>
                     <H5>{country.name}</H5>
                     <P size='base' className='grow' marginBottom='none'>
@@ -296,7 +304,7 @@ export function CountryPage() {
                     <Spacer size='2xl' />
                     <div>
                       <Button variant='link' endIcon='arrow' padding='none'>
-                        Open data explorer
+                        Explore country
                       </Button>
                     </div>
                   </CardEl>

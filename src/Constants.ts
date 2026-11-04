@@ -1,9 +1,9 @@
 import type { Themes } from './types';
 
 export const COUNTRIES = [
-  { id: 'georgia', name: 'Georgia', isoCode: 'GEO' },
-  { id: 'moldova', name: 'Moldova', isoCode: 'MDA' },
-  { id: 'ukraine', name: 'Ukraine', isoCode: 'UKR' },
+  { name: 'Georgia', isoCode: 'GEO' },
+  { name: 'Moldova', isoCode: 'MDA' },
+  { name: 'Ukraine', isoCode: 'UKR' },
 ];
 
 export const THEMES: Themes[] = ['Education', 'Health', 'Employment', 'Housing', 'Discrimination'];

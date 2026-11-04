@@ -6,12 +6,12 @@ import {
   BannerBodySidebar,
 } from '@undp/design-system-react/Banner';
 import { Button } from '@undp/design-system-react/Button';
-import { Card, CardFooter, CardHeader, CardImage, CardTitle } from '@undp/design-system-react/Card';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
 import { PageHeader, PageHeaderContent } from '@undp/design-system-react/PageHeader';
 import { Spacer } from '@undp/design-system-react/Spacer';
-import { H1, H2, H4 } from '@undp/design-system-react/Typography';
+import { H1, H2, H4, H5, P } from '@undp/design-system-react/Typography';
 import { COUNTRIES } from './Constants';
+import { CardEl } from './components/CardEl';
 
 function App() {
   return (
@@ -230,21 +230,25 @@ function App() {
       <section id='country-cards' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
         <H2>Explore countries</H2>
         <Spacer size='2xl' />
-        <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} gap='32px'>
+        <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} gap='16px'>
           {COUNTRIES.map((country) => (
-            <GridItem key={country.id}>
-              <Link to='/countries/$countryId' params={{ countryId: country.id }}>
-                <Card border={false} backgroundColor='background' size='full' variant='with-image'>
-                  <CardHeader>
-                    <CardImage src='/imgs/placeholder.webp' className='min-h-100' />
-                    <CardTitle>{country.name}</CardTitle>
-                  </CardHeader>
-                  <CardFooter>
-                    <Button padding='none' variant='link'>
-                      Read more
+            <GridItem
+              key={country.isoCode}
+              className='group cursor-pointer bg-background text-content-primary'
+            >
+              <Link to='/countries/$countryId' params={{ countryId: country.isoCode }}>
+                <CardEl isHoverable>
+                  <H5>{country.name}</H5>
+                  <P size='base' className='grow' marginBottom='none'>
+                    How Roma households compare with their neighbours in {country.name}.
+                  </P>
+                  <Spacer size='2xl' />
+                  <div>
+                    <Button variant='link' endIcon='arrow' padding='none'>
+                      Explore country
                     </Button>
-                  </CardFooter>
-                </Card>
+                  </div>
+                </CardEl>
               </Link>
             </GridItem>
           ))}

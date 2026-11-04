@@ -1,0 +1,109 @@
+{
+  "title": "Unaffordable treatment and limited care support put Roma well-being and household security at risk",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Zakarpattia Oblast. Quotes from the micro-narratives study, collected across several regions of Ukraine.",
+  "sections": [
+    {
+      "title": "Poor health restricts opportunities during the working years",
+      "content": [
+        {
+          "type": "text",
+          "content": "Poor health is more common among working-age Roma than among their non-Roma neighbors. For people relying on physically demanding or irregular work, this can affect both their ability to earn and the household’s resources for care."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Bad or very bad self-rated health",
+          "subTitle": "Reporting of bad or very bad health within each age group.",
+          "data": [
+            {
+              "label": "25 to 64",
+              "size": [
+                28,
+                13
+              ]
+            },
+            {
+              "label": "65 and over",
+              "size": [
+                79,
+                33
+              ]
+            }
+          ],
+          "settings": {
+            "height": 176
+          }
+        }
+      ],
+      "microViz": {
+        "value": 3,
+        "text": "Roma aged 25 to 64 report bad or very bad health"
+      }
+    },
+    {
+      "title": "Insurance does not ensure affordable treatment",
+      "content": [
+        {
+          "type": "text",
+          "content": "Most Roma have medical insurance, yet treatment remains unaffordable for some. Medicines, tests and travel compete with food, heating and other essentials."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Medical insurance and unmet care needs",
+          "subTitle": "The insurance measure covers respondents; unmet care covers those who needed treatment in the previous year.",
+          "data": [
+            {
+              "label": "No medical insurance",
+              "size": [
+                9,
+                3
+              ]
+            },
+            {
+              "label": "Did not get care when needed",
+              "size": [
+                18,
+                6
+              ]
+            }
+          ],
+          "settings": {
+            "height": 176
+          }
+        },
+        {
+          "type": "text",
+          "content": "Regular medicine costs can leave little for other needs, even before additional treatment becomes necessary:"
+        },
+        {
+          "type": "quote",
+          "content": "“...they asked for 15,000 for the operation. I don’t have that money right now. [...] So, all the money I receive goes to medicine. I don’t have enough for food or anything else.”",
+          "author": "Female, aged 65 and over"
+        }
+      ]
+    },
+    {
+      "title": "Limited support for care reduces the options for earning a living",
+      "content": [
+        {
+          "type": "text",
+          "content": "When a child or an older relative needs constant care, someone has to stay home, usually a woman. For Roma women, who already have far fewer openings to pursue paid work than other women, care can clog the remaining ones."
+        },
+        {
+          "type": "text",
+          "content": "One mother caring for four children, including a son with a disability, described being unable to work:"
+        },
+        {
+          "type": "quote",
+          "content": "“No, I can’t. I have four children, and I take care of all of them on my own.”",
+          "author": "Female, aged 30 to 49"
+        },
+        {
+          "type": "text",
+          "content": "Care holds families together, but it is paid for in earnings the household cannot spare."
+        }
+      ]
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import { Separator } from '@undp/design-system-react/Separator';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { Spinner } from '@undp/design-system-react/Spinner';
 import { H2, H3, H4, P } from '@undp/design-system-react/Typography';
+import { THEME_LABELS } from '@/Constants';
 import { BadgeEl } from '@/components/BadgeEl';
 import type { RecommendationDataType, Themes } from '@/types';
 import { GraphBlock, MultiGraphBlock } from './graphBlock';
@@ -18,7 +19,13 @@ import { QuoteBlock } from './QuoteBlock';
 import { TextBlock } from './textBlock';
 import { TitleBlock } from './titleBlock';
 
-function Footer({ section, setOpenDrawer }: { section: string; setOpenDrawer?: () => void }) {
+function Footer({
+  section,
+  setOpenDrawer,
+}: {
+  section: Themes | 'Data explorer';
+  setOpenDrawer?: () => void;
+}) {
   return (
     <button
       type='button'
@@ -30,7 +37,7 @@ function Footer({ section, setOpenDrawer }: { section: string; setOpenDrawer?: (
           Next
         </P>
         <H2 weight='bold' marginBottom='none'>
-          {section}
+          {section === 'Data explorer' ? section : THEME_LABELS[section]}
         </H2>
       </div>
       <img
@@ -88,10 +95,10 @@ export function FullStory({
     theme === 'Education'
       ? 'Employment'
       : theme === 'Employment'
-        ? 'Health'
-        : theme === 'Health'
-          ? 'Housing'
-          : theme === 'Housing'
+        ? 'Housing'
+        : theme === 'Housing'
+          ? 'Health'
+          : theme === 'Health'
             ? 'Discrimination'
             : theme === 'Discrimination'
               ? 'Data explorer'
@@ -171,7 +178,12 @@ export function FullStory({
                   ))}
                 </div>
                 {section.microViz && (
-                  <MicroVizBlock value={section.microViz.value} text={section.microViz.text} />
+                  <MicroVizBlock
+                    value={section.microViz.value}
+                    text={section.microViz.text}
+                    maxValue={section.microViz.maxValue}
+                    titleText={section.microViz.titleText}
+                  />
                 )}
               </div>
               <Separator color='surface-md' className='mt-7 mb-10' />

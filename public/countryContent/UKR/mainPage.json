@@ -1,0 +1,168 @@
+{
+  "title": "Roma in Ukraine: Building a future on uneven ground",
+  "subTitle": "Longstanding disadvantages and the pressures of war shape everyday life, determining opportunities across generations.",
+  "intro": {
+    "title": "For Roma in Ukraine, rebuilding lives means confronting new losses and longstanding barriers.",
+    "content": "A steady income, a home in good repair, children able to stay in school. For many Roma families in Ukraine, these foundations of a secure life were already difficult to establish. The War has made them harder to sustain, disrupting livelihoods and education, displacing families and raising the cost of everyday needs.\n\nWhen resources are stretched thin, for Roma households, one setback can lead to another. Lost earnings can mean postponing treatment or repairs. Moving to find safety can interrupt schooling and access to support. The pressures households manage today can narrow their options for the future. Children grow up inside these pressures, so the difficulties facing parents shape the next generation’s chances.\n\nSimilar barriers appear in different forms in different households. Gender, age, place and displacement pull households onto separate paths. Care responsibilities restrict the work and training many women can pursue, while wartime mobility constraints limit some men’s search for work. Young people try to continue learning as costs rise. Displaced families must establish a home and livelihood while navigating unfamiliar services.\n\nRoma families keep looking for ways forward. They combine occasional construction, cleaning and trading work, share homes and costs with relatives, cut back on heating, turn to Roma mediators and civil society organizations, and save what they can for a course or a repair. These strategies get families through the day. Without fair access to documents, jobs and services, they rarely add up to security."
+  },
+  "scrollyTelling": [
+    {
+      "vizContent": {
+        "romaHighlighted": 0,
+        "nonRomaHighlighted": 0,
+        "title": "",
+        "subTitle": ""
+      },
+      "text": {
+        "title": "Shared neighborhoods, different life outcomes",
+        "content": "To better understand these disparities, Roma households were surveyed alongside their non-Roma neighbors in Zakarpattia. Their proximity gives a glimpse into the variation in experiences, opportunities and access to services.",
+        "methodology": "This story is based on 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, covering 668 Roma and 361 non-Roma households across 23 hromadas of Zakarpattia Oblast, micro-narratives study collecting 669 personal accounts of Roma individuals across several regions of Ukraine and geospatial analysis of access to services."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 100,
+        "nonRomaHighlighted": 100,
+        "title": "",
+        "subTitle": ""
+    },
+      "text": {
+        "title": "Disadvantages that carry through life",
+        "content": "Gaps between Roma and non-Roma open early, and they widen throughout the life course. These disadvantages begin in education, put economic security at risk, and shape everyday life through living conditions and health, while discrimination cuts across all these areas.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 96,
+        "nonRomaHighlighted": 33,
+        "title": "Have not completed secondary education",
+        "subTitle": "Adults aged 18 to 65. Only 11 in 100 Roma have completed secondary education, against 60 in 100 non-Roma."
+      },
+      "text": {
+        "theme": "Education",
+        "title": "Gaps in education narrow opportunities from childhood into adult life",
+        "content": "Limited formal schooling leaves many Roma at a disadvantage when seeking work, pursuing further learning or accessing services."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 78,
+        "nonRomaHighlighted": 27,
+        "title": "Have informal jobs",
+        "subTitle": "Employed people aged 15 to 64."
+      },
+      "text": {
+        "theme": "Employment",
+        "title": "Access to work is limited, and employment often brings little security",
+        "content": "Informal work leaves many Roma with unpredictable earnings and little protection against income loss, making household costs harder to manage."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 83,
+        "nonRomaHighlighted": 27,
+        "title": "Live in homes without an indoor toilet",
+        "subTitle": "People of all ages."
+      },
+      "text": {
+        "theme": "Housing",
+        "title": "Home ownership offers little security without adequate space, facilities and warmth",
+        "content": "Crowded homes and gaps in basic facilities add to daily costs and care responsibilities, while limited income puts improvements out of reach."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 18,
+        "nonRomaHighlighted": 6,
+        "title": "Did not get medical care when they needed it",
+        "subTitle": "Respondents who needed medical care in the previous year."
+      },
+      "text": {
+        "theme": "Health",
+        "title": "Unaffordable treatment and limited care support put Roma well-being and household security at risk",
+        "content": "Treatment costs compete with everyday needs, while unpaid care can reduce the time available to earn. Insurance alone does not resolve these pressures."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 16,
+        "nonRomaHighlighted": 7,
+        "title": "Experienced discrimination in the past year",
+        "subTitle": "Because of ethnicity, skin colour or language."
+      },
+      "text": {
+        "theme": "Discrimination",
+        "title": "Discrimination and administrative barriers restrict access to opportunities and support",
+        "content": "Missing documents and limited digital access compound unequal treatment, making jobs and public services harder to reach."
+      }
+    }
+  ],
+  "recommendations": [
+    {
+      "theme": "Education",
+      "mainRecommendation": "Keep children learning and open routes back into education",
+      "detailedRecommendations": [
+        "Support preschool participation and continued schooling, including rapid re-enrollment after displacement and access to remote learning",
+        "Offer literacy and vocational courses linked to jobs, with financial, childcare and transport support that makes participation possible, especially for young women"
+      ]
+    },
+    {
+      "theme": "Employment",
+      "mainRecommendation": "Open pathways into formal, protected work",
+      "detailedRecommendations": [
+        "Combine investment in water, sanitation and electricity with help to afford connections, repairs and heating",
+        "Ensure displaced families and those with documentation or tenure difficulties can access housing support",
+        "Coordinate assistance where several needs overlap"
+      ]
+    },
+    {
+      "theme": "Housing",
+      "mainRecommendation": "Make homes safe, warm and connected",
+      "detailedRecommendations": [
+        "Combine investment in water, sanitation and electricity with help to afford connections, repairs and heating",
+        "Ensure displaced families and those with documentation or tenure difficulties can access housing support",
+        "Coordinate assistance where several needs overlap"
+      ]
+    },
+    {
+      "theme": "Health",
+      "mainRecommendation": "Make treatment affordable and support those providing care",
+      "detailedRecommendations": [
+        "Reduce out-of-pocket costs and ensure medicine support reaches households with irregular incomes or documentation difficulties",
+        "Extend outreach where travel is a barrier",
+        "Provide community care, respite and disability support so caring for relatives does not require giving up a livelihood"
+      ]
+    },
+    {
+      "theme": "Discrimination",
+      "mainRecommendation": "Make equal access an institutional responsibility",
+      "detailedRecommendations": [
+        "Help people obtain documents and use services through both in-person and assisted digital channels",
+        "Establish accessible complaints procedures with clear follow-up",
+        "Involve Roma communities in identifying barriers and reviewing whether public institutions address them"
+      ]
+    }
+  ],
+  "fullStoryCards": [
+    {
+      "theme": "Education",
+      "description": "Gaps in education narrow opportunities from childhood into adult life"
+    },
+    {
+      "theme": "Employment",
+      "description": "Access to work is limited, and employment often brings little security"
+    },
+    {
+      "theme": "Housing",
+      "description": "Home ownership offers little security without adequate space, facilities and warmth"
+    },
+    {
+      "theme": "Health",
+      "description": "Unaffordable treatment and limited care support put Roma well-being and household security at risk"
+    },
+    {
+      "theme": "Discrimination",
+      "description": "Discrimination and administrative barriers restrict access to opportunities and support"
+    }
+  ]
+}
