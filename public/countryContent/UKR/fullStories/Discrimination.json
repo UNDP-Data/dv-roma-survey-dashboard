@@ -1,0 +1,129 @@
+{
+  "title": "Discrimination and administrative barriers restrict access to opportunities and support",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Zakarpattia Oblast. Quotes from the micro-narratives study, collected across several regions of Ukraine.",
+  "sections": [
+    {
+      "title": "Unequal treatment affects everyday access and participation",
+      "content": [
+        {
+          "type": "text",
+          "content": "Roma report discrimination in employment, public services and daily life. The gap with non-Roma neighbors is particularly pronounced among women."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 16,
+          "populationGroup": "roma",
+          "title": "Discrimination on grounds of ethnicity or skin color",
+          "subTitle": "Share of interviewed respondents reporting discrimination on these grounds in the previous year. Each figure is one person in a hundred"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 7,
+          "populationGroup": "non-roma"
+        }
+      ]
+    },
+    {
+      "title": "Qualifications and employment do not guarantee equal treatment",
+      "content": [
+        {
+          "type": "text",
+          "content": "Roma describe being refused jobs despite their qualifications. Those who find work can also face discrimination in the workplace:"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 16,
+          "populationGroup": "roma",
+          "title": "Discrimination at work",
+          "subTitle": "Share of respondents who had a job reporting workplace discrimination on any grounds in the previous five years."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 10,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "quote",
+          "content": "“They don’t want to hire me because I am Roma. As soon as they see that I’m Roma, they refuse to give me a job... I finished vocational school and university, but they still didn’t want to hire me.”",
+          "author": "Male, aged 24 to 29"
+        },
+        {
+          "type": "text",
+          "content": "These barriers narrow access to secure work, reinforcing the economic disadvantages described earlier."
+        }
+      ]
+    },
+    {
+      "title": "Missing documents can block both work and essential support",
+      "content": [
+        {
+          "type": "text",
+          "content": "Most Roma adults have identity documents, but those without them can face barriers to employment, assistance and healthcare. Displacement may make replacement harder, especially when records are missing and procedures require repeated visits."
+        },
+        {
+          "type": "quote",
+          "content": "“Well, it’s because I don’t have a passport, and no one will hire me without one. I want to get a job, but they won’t take me without documents.”",
+          "author": "Female, aged 24 to 29"
+        },
+        {
+          "type": "text",
+          "content": "Documentation problems can also interrupt access to treatment:"
+        },
+        {
+          "type": "quote",
+          "content": "“I have a sick son. We need to go to the hospital but we do not have access because the documents expired.”",
+          "author": "Female, aged 50 to 64"
+        }
+      ]
+    },
+    {
+      "title": "Digital services remain difficult to use without devices and connectivity",
+      "content": [
+        {
+          "type": "text",
+          "content": "During the war, applications, benefits, schooling and job searches have moved online. Many Roma have neither an internet connection at home nor a smartphone, and many Roma women have no money of their own to pay for either. Without a connection or an account, every application means a trip to an office or a favor to ask from someone else."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 43,
+          "populationGroup": "roma",
+          "title": "Internet access at home for personal use",
+          "subTitle": "Share of interviewed respondents with internet access at home for personal use."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 84,
+          "populationGroup": "non-roma"
+        }
+      ],
+      "microViz": {
+        "value": 4,
+        "text": "of Roma respondents own a smartphone"
+      }
+    },
+    {
+      "title": "Proximity to services does not ensure access",
+      "content": [
+        {
+          "type": "text",
+          "content": "Living near the same offices and clinics does not mean being able to use them on equal terms. Costs, paperwork, limited literacy and discrimination can stand in the way:"
+        },
+        {
+          "type": "quote",
+          "content": "“Discriminated against because of ethnic origin, the village council refused to provide assistance because we are Roma, and they also refuse to hire us for work.”",
+          "author": "Female, aged 30 to 49"
+        },
+        {
+          "type": "text",
+          "content": "Roma mediators and civil society organizations help people obtain documents and navigate services. Their support is valuable, but it cannot make up for reliable, institutionalized access."
+        }
+      ]
+    }
+  ]
+}

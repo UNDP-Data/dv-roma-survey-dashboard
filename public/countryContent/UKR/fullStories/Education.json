@@ -1,0 +1,309 @@
+{
+  "title": "Educational gaps for Roma open a trail of disadvantages that follow into the adult life",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Zakarpattia Oblast. Quotes from the micro-narratives study, collected across several regions of Ukraine.",
+  "sections": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "content": "Education gaps begin early and persist into adulthood. Limited access to preschool, interrupted schooling and few routes back into learning leave many Roma with fewer opportunities to gain skills and secure work."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "School attendance at compulsory age",
+          "subTitle": "Share of children of compulsory school age attending school, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                63,
+                86
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                62,
+                83
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                64,
+                89
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "text",
+          "content": "Few Roma children attend preschool or daycare. Costs and limited local provision can leave families without early learning opportunities, making the transition into school more difficult. Children who miss these early years will start school less prepared, and the distance from their classmates tends to grow at each later stage."
+        },
+        {
+          "type": "text",
+          "content": "On the other hand, low attendance to preschool means costs of education will be on the time spent on domestic care, mostly by Roma women – a mother, sibling, or a relative"
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Early childhood education",
+          "subTitle": "Share of children aged 3 to the start of primary school attending early childhood education, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                6,
+                37
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                5,
+                39
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                7,
+                34
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        }
+      ],
+      "microViz": {
+        "value": 1,
+        "maxValue": 3,
+        "text": "households with a child not attending daycare report daycare to be too expensive"
+      }
+    },
+    {
+      "title": "School attendance is widespread, but many Roma children drop out education before completion",
+      "content": [
+        {
+          "type": "text",
+          "content": "The education gap extends beyond whether children are in class. Roma and non-Roma children may live in the same neighborhoods, yet often learn in different school environments. Many Roma pupils attend schools where most or all classmates are Roma. Participation in schooling therefore sits alongside segregation within it, limiting the extent to which education provides a shared experience across communities."
+        },
+        {
+          "type": "text",
+          "content": "A sharper divide comes clear in how far learning continues for them. Few young Roma adults have completed upper secondary education. This leaves many Roma approaching working life without the qualifications that could expand their options. The divide concerns both the school environments children experience and the educational foundations they carry into adulthood."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "School attendance, ages 6 to 15",
+          "subTitle": "Share of children aged 6–15 attending school, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                90,
+                97
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                90,
+                97
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                90,
+                98
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Completed upper secondary education, ages 20 to 24",
+          "subTitle": "Share of young people aged 20–24 who have completed upper secondary education, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                4,
+                63
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                3,
+                61
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                6,
+                66
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 62,
+          "populationGroup": "roma",
+          "title": "Children ages 6 to 15 attending mostly or exclusively Roma schools"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 28,
+          "populationGroup": "non-roma"
+        }
+      ]
+    },
+    {
+      "title": "Continuing education depends on what young people can manage at home",
+      "content": [
+        {
+          "type": "text",
+          "content": "Into the adulthood, the household’s needs start to compete with the classroom. Financial pressures, care responsibilities and expectations around marriage can interrupt schooling even when young people want to continue."
+        },
+        {
+          "type": "text",
+          "content": "Many adult Roma are determined to keep learning, with out-of-pocket money – and with less time to allocate:"
+        },
+        {
+          "type": "quote",
+          "content": "“After 9th grade I wanted to continue my studies and have an education, but my parents were against it, against becoming like modern girls. I wanted to be educated, to be in a circle of educated people. I went to work part-time, earned money to pay for my studies.”",
+          "author": "Female, aged 18 to 23"
+        }
+      ]
+    },
+    {
+      "title": "War has pushed learning online, but many Roma households lack the means to adapt",
+      "content": [
+        {
+          "type": "text",
+          "content": "Online education shifts more of the costs and responsibilities of learning onto households. For many Roma families, limited internet access, unaffordable devices and crowded homes make that shift difficult to manage. Parents’ own gaps in schooling can make supporting lessons harder, while reduced contact with teachers and classmates leaves children with fewer sources of help."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 66,
+          "populationGroup": "roma",
+          "title": "Households with children and no internet access"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 34,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "quote",
+          "content": "“My child is already in the fourth grade, but she only saw her classmates during the first half of the first grade. She misses them a lot... They sit at home and receive knowledge through a computer, but I understand that they need real communication, both with the teacher and with their classmates.”",
+          "author": "Female, aged 30 to 49"
+        }
+      ]
+    },
+    {
+      "title": "Progress in education remains fragile, even as Roma individuals make it to the higher education",
+      "content": [
+        {
+          "type": "text",
+          "content": "Reaching university does not end these pressures. Roma individuals who manage to make it to tertiary education are caught up by other challenges. In their stories, they allude frequently to skyrocketing cost of living during the war and the difficulty of covering the tuition, which, in tandem with experiences of entrenched discrimination in the job market, leave fewer ways to support themselves through their studies."
+        },
+        {
+          "type": "quote",
+          "content": "“...I am engaged to a Roma man. My older brother is half Roma on my father’s side, and since childhood, I have been closely connected with the Roma community. ... Currently, my education is taking place remotely due to the threat posed by the War. I want to highlight that my fiancé has repeatedly faced segregation from his professors, experiencing distrust and discrimination. It is deeply upsetting to witness such treatment of Roma people. This raises fears for our future children, who may also suffer from bullying and harassment in educational institutions simply because of their skin color.”",
+          "author": "Female, aged 18 to 23"
+        },
+        {
+          "type": "quote",
+          "content": "“My biggest problem right now is income. I am a displaced person from Kupiansk, and due to the fighting in my hometown. I had to move to Kharkiv, where I currently rent an apartment. I am also studying at a university. Because of this and my age, I can’t find a stable job that I can balance with my studies. Every month, I have to pay for rent, tuition, and personal expenses.”",
+          "author": "Female, aged 18 to 23"
+        },
+        {
+          "type": "text",
+          "content": "Most Roma adults left school before completing secondary education. Without that qualification, formal jobs and vocational courses stay out of reach. Filling in a form or checking a prescription can depend on someone else’s help. Returning to learning means finding time and money alongside earning a living and supporting a family."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Completed secondary education, ages 18 to 65",
+          "subTitle": "Share of people aged 18 to 65 who have completed secondary education",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                4,
+                67
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                3,
+                67
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                5,
+                67
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "quote",
+          "content": "“I got married early, so I didn’t finish school, and there are big problems because of this. I can’t read, I can’t write.”",
+          "author": "Female, aged 18 to 23"
+        },
+        {
+          "type": "quote",
+          "content": "“I am 50 years old. I would like to study. I am illiterate. I cannot read or write. I would like to learn to write and read, because I cannot, I do not know, I do not understand anything.”",
+          "author": "Female, aged 50 to 64"
+        }
+      ],
+      "microViz": {
+        "titleText": "Fewer than 1 in 20",
+        "value": 1,
+        "maxValue": 20,
+        "text": "Roma aged 18 to 65 have completed secondary education"
+      }
+    }
+  ]
+}

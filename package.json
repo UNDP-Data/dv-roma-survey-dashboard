@@ -23,8 +23,8 @@
     "@dnd-kit/modifiers": "^9.0.0",
     "@tanstack/react-query": "^5.90.12",
     "@tanstack/react-router": "^1.141.1",
-    "@undp/data-viz": "^3.7.7",
-    "@undp/design-system-react": "^3.3.6",
+    "@undp/data-viz": "^3.8.0",
+    "@undp/design-system-react": "^3.4.0",
     "ajv": "^8.17.1",
     "dom-to-svg": "^0.12.2",
     "file-saver": "^2.0.5",
@@ -58,7 +58,7 @@
     "tailwindcss": "^4.1.17",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.9.3",
-    "vite": "^8.0.13",
+    "vite": "^8.3.5",
     "vite-plugin-static-copy": "^4.1.0"
   }
 }

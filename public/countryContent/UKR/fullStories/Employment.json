@@ -1,0 +1,308 @@
+{
+  "title": "Work is scarce, and the work does not always offer protection",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Zakarpattia Oblast. Quotes from the micro-narratives study, collected across several regions of Ukraine.",
+  "sections": [
+    {
+      "title": "For young Roma, the move from learning into work offers few secure routes",
+      "content": [
+        {
+          "type": "text",
+          "content": "Many young Roma leave school without a qualification and find neither a course nor a job to move into. Young Roma women are particularly likely to miss these opportunities. Household duties often begin in childhood, leaving less time for learning, while early marriage can further narrow their options. As their peers enter training or gain work experience, many have few opportunities to do the same. This makes an independent income harder to establish and can leave them reliant on occasional, unprotected work."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Young people not in employment, education or training (NEET), ages 16 to 24",
+          "subTitle": "Share of young people aged 16–24 who are neither employed nor in education or training, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                51,
+                26
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                65,
+                29
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                36,
+                19
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "text",
+          "content": "More Roma young women are NEETs, and overall, Roma women are pronouncedly left out of the labor force. The rate is 29 percentage points higher than non-Roma women, and 24 percentage points higher than Roma men."
+        },
+        {
+          "type": "text",
+          "content": "The unequal care burden comes on top of school dropout and the search for paid work:"
+        },
+        {
+          "type": "quote",
+          "content": "“The problem is that I can’t take part in the courses they offered. Often I can’t because I have younger brothers and a sister, I help them, I cook food.”",
+          "author": "Female, aged 18 to 23"
+        },
+        {
+          "type": "quote",
+          "content": "“It’s hard to find a job, especially now, yes, temporary side jobs, but from time to time. My family helps, yes, relatives, my sister, but sometimes I want more, a lot of concerns. They offered courses, retraining, manicure, haircuts. Someone needs to stay at home.”",
+          "author": "Female, aged 24 to 29"
+        }
+      ],
+      "microViz": {
+        "value": 2,
+        "maxValue": 3,
+        "text": "young Roma women are not in employment, education or training"
+      }
+    },
+    {
+      "title": "Steady work with a fair wage and protection remains out of reach for most",
+      "content": [
+        {
+          "type": "text",
+          "content": "Paid work is the exception rather than the rule for working-age Roma. Low literacy, employers who turn Roma applicants away and care duties commingle to narrow the options. Roma women are far less likely to have paid work than non-Roma women in their localities, and Roma men far less likely than non-Roma men."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Employed",
+          "subTitle": "Share of people aged 15–64 who are employed.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                24,
+                56
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                15,
+                53
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                36,
+                62
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "text",
+          "content": "Widespread informality indicates that for Roma households, a job does not necessarily bring economic security. Roma who work do so without a written contract or social contributions, paid by the day or the task. When work stops, there is no sick pay, unemployment benefit or pension contribution to fall back on, and the household’s income stops with it."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Employed in informal employment",
+          "subTitle": "Share of employed people aged 15–64 working informally.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                78,
+                27
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                62,
+                26
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                87,
+                29
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "People in a household affected by job insecurity",
+          "subTitle": "People living in a household where a member aged 16 to 64 is unemployed or works only seasonally or occasionally",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                23,
+                10
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                22,
+                8
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                24,
+                12
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "text",
+          "content": "Many more are outside the labor market altogether, neither working nor looking for work. The exclusion is shaped by a dynamic process of care responsibility, poor health, school dropouts, low literacy and the experiences of discrimination."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Economically inactive",
+          "subTitle": "Share of people aged 15–64 who are neither employed nor looking for work.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                64,
+                41
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                75,
+                45
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                51,
+                35
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        }
+      ]
+    },
+    {
+      "title": "The war has narrowed the options further",
+      "content": [
+        {
+          "type": "text",
+          "content": "Job losses and mobility constraints make alternative work harder to find, with wartime mobility restrictions limiting how far some people can travel for work. For some families, this places greater pressure on the income of those still able to earn:"
+        },
+        {
+          "type": "quote",
+          "content": "“I am 55 years old. I have three adult children and a husband who cannot find a job because he doesn’t have a military exemption. I work as a cleaner at a school. One salary is not enough for my family.”",
+          "author": "Female, aged 50 to 64"
+        },
+        {
+          "type": "text",
+          "content": "Construction, cleaning, trading and farm work help families cover immediate needs. But occasional jobs rarely offer the continuity needed to regain financial stability:"
+        },
+        {
+          "type": "quote",
+          "content": "“Well, my biggest problem is probably the lack of a stable income. Before the war, I worked at a company, but I was laid off. Now I do occasional construction work, but the money isn’t enough to support my family. I have seven children.”",
+          "author": "Female, aged 30 to 49"
+        }
+      ]
+    },
+    {
+      "title": "For households, a job is not necessarily a way out of poverty",
+      "content": [
+        {
+          "type": "text",
+          "content": "Even households with a working head can struggle to afford food, bills and unexpected expenses. Limited savings leave little protection against unplanned, sudden household expenses. Social assistance helps some households through, but they soften the shortfall without closing it."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "When the head of household has a job",
+          "subTitle": "People living in a household whose head is in paid work",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                42,
+                7
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                73,
+                28
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                55,
+                12
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Households receiving social assistance",
+          "subTitle": "Share of surveyed households receiving each type of benefit.",
+          "data": [
+            {
+              "label": "Child or family benefits",
+              "size": [
+                10,
+                2
+              ]
+            },
+            {
+              "label": "Last-resort assistance",
+              "size": [
+                3,
+                1
+              ]
+            }
+          ],
+          "settings": {
+            "height": 160
+          }
+        }
+      ],
+      "microViz": {
+        "titleText": "< 1 month",
+        "text": "of living costs is what Roma households could cover from their savings, on average"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<svg width="210" height="140" viewBox="0 0 210 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7598_10605)">
+<rect width="70" height="70" transform="matrix(-1.19249e-08 -1 -1 1.19249e-08 70 140)" fill="#DA573A"/>
+<path d="M70 140L70 70L0 140L70 140Z" fill="white"/>
+</g>
+<g clip-path="url(#clip1_7598_10605)">
+<rect width="70" height="70" transform="matrix(-1 0 0 -1 210 70)" fill="white"/>
+<path d="M140 -0.378418L210 -0.378412L140 69.6216L140 -0.378418Z" fill="#0F326B"/>
+</g>
+<g clip-path="url(#clip2_7598_10605)">
+<rect width="70" height="70" transform="translate(140) rotate(90)" fill="#A5D7F5"/>
+<path d="M140 0L140 70L70 -8.34742e-07L140 0Z" fill="white"/>
+<path d="M141 0L141 70L71 -8.34742e-07L141 0Z" fill="white"/>
+</g>
+<g clip-path="url(#clip3_7598_10605)">
+<rect width="70" height="70" transform="matrix(-1 0 0 -1 70 70)" fill="#0076C1"/>
+<path d="M70 69.6216H0L70 -0.378418V69.6216Z" fill="#0F326B"/>
+</g>
+<defs>
+<clipPath id="clip0_7598_10605">
+<rect width="70" height="70" fill="white" transform="matrix(-1.19249e-08 -1 -1 1.19249e-08 70 140)"/>
+</clipPath>
+<clipPath id="clip1_7598_10605">
+<rect width="70" height="70" fill="white" transform="matrix(-1 0 0 -1 210 70)"/>
+</clipPath>
+<clipPath id="clip2_7598_10605">
+<rect width="70" height="70" fill="white" transform="translate(140) rotate(90)"/>
+</clipPath>
+<clipPath id="clip3_7598_10605">
+<rect width="70" height="70" fill="white" transform="matrix(-1 0 0 -1 70 70)"/>
+</clipPath>
+</defs>
+</svg>

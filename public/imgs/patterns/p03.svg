@@ -1,0 +1,26 @@
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7598_10536)">
+<rect width="70" height="70" transform="translate(70) rotate(90)" fill="#F8F7F3"/>
+<path d="M70 0L70 70L0 -8.34742e-07L70 0Z" fill="white"/>
+</g>
+<g clip-path="url(#clip1_7598_10536)">
+<rect width="70" height="70" transform="translate(140 70) rotate(90)" fill="#31AB67"/>
+<path d="M140 70L140 140L70 70L140 70Z" fill="white"/>
+<path d="M141 70L141 140L71 70L141 70Z" fill="white"/>
+</g>
+<g clip-path="url(#clip2_7598_10536)">
+<rect width="70" height="70" transform="matrix(-1 0 0 -1 70 140)" fill="#0076C1"/>
+<path d="M70 139.622H0L70 69.6216V139.622Z" fill="#0F326B"/>
+</g>
+<defs>
+<clipPath id="clip0_7598_10536">
+<rect width="70" height="70" fill="white" transform="translate(70) rotate(90)"/>
+</clipPath>
+<clipPath id="clip1_7598_10536">
+<rect width="70" height="70" fill="white" transform="translate(140 70) rotate(90)"/>
+</clipPath>
+<clipPath id="clip2_7598_10536">
+<rect width="70" height="70" fill="white" transform="matrix(-1 0 0 -1 70 140)"/>
+</clipPath>
+</defs>
+</svg>

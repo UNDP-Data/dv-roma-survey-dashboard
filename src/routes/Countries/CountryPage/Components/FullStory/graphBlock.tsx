@@ -50,6 +50,7 @@ export function GraphBlock({
         <SimpleBarGraph
           data={data}
           trackColor='var(--gray-200)'
+          colors={['var(--roma)']}
           cornerRadius={4}
           showValues
           maxValue={100}
@@ -77,7 +78,7 @@ export function GraphBlock({
           maxValue={100}
           orientation='horizontal'
           colorDomain={['Roma', 'Non-Roma']}
-          colors={['var(--roma', 'var(--non-roma']}
+          colors={['var(--roma)', 'var(--non-roma)']}
           leftMargin={96}
           numberDisplayOptions={{ suffix: '%' }}
           source={source}
@@ -107,7 +108,7 @@ export function GraphBlock({
             width={540}
             gridSize={20}
             height={200}
-            colors={[`var(--${populationGroup})`, 'var(--gray-300']}
+            colors={[`var(--${populationGroup})`, 'var(--gray-300)']}
             showColorScale={false}
             source={source}
             data={[
@@ -205,6 +206,7 @@ export function MultiGraphBlock({
         <SimpleBarGraph
           data={data?.[selectedOptionIndex]}
           trackColor='var(--gray-200)'
+          colors={['var(--roma)']}
           cornerRadius={4}
           showValues
           maxValue={100}
@@ -233,7 +235,7 @@ export function MultiGraphBlock({
           maxValue={100}
           orientation='horizontal'
           colorDomain={['Roma', 'Non-Roma']}
-          colors={['var(--roma', 'var(--non-roma']}
+          colors={['var(--roma)', 'var(--non-roma)']}
           leftMargin={96}
           numberDisplayOptions={{ suffix: '%' }}
           source={source}
@@ -264,7 +266,7 @@ export function MultiGraphBlock({
             width={540}
             gridSize={20}
             height={200}
-            colors={[`var(--${populationGroup})`, 'var(--gray-300']}
+            colors={[`var(--${populationGroup})`, 'var(--gray-300)']}
             showColorScale={false}
             source={source}
             data={[

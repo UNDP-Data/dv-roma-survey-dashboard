@@ -1,4 +1,6 @@
 {
+  "title": "Lives on narrow margins in Moldova",
+  "subTitle": "Barriers, opportunities and strategies of Roma",
   "intro": {
     "title": "For Roma in Moldova, building a future means navigating compounding disadvantages in an uncertain present",
     "content": "Roma face disadvantages across education, work, housing, health and public services — with discrimination cutting through all of them. These pressures compound: exclusion in one area narrows what is possible in the next, so barriers accumulate within households and shape opportunities for the next generation.\n\nShared barriers affect people differently depending on the circumstance. Gender, age or place pull households onto different paths. Women are less likely to enter paid work, while men’s greater access often leads to informal jobs with little protection. For children, frequent moves can interrupt schooling; for older people, securing treatment and care becomes a greater concern. Where families live shapes these paths too: home ownership can offer little security amid worn-out infrastructure and arrears, and nearby services can remain out of reach because of discrimination.\n\nDespite this, Roma families continue to pursue better lives. They assemble strategies from seasonal, informal or entrepreneurial work, undertake care and housing labour for each other, and strive for their children to stay at school. They are resilient, managing what the day demands while aspiring for better and secure lives."
@@ -107,38 +109,38 @@
     },
     {
       "theme": "Employment",
-      "mainRecommendation": "Keep education open across generations",
+      "mainRecommendation": "Open pathways into formal, protected work",
       "detailedRecommendations": [
-        "Expand preschool outreach, school-readiness programmes and help with participation costs",
-        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
-        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+        "Build employer partnerships for apprenticeships, targeted recruitment and incentives for formal hiring, including wage subsidies",
+        "Monitor discriminatory recruitment and workplace practices",
+        "Give Roma women dedicated support combining childcare, skills development, flexible schedules and direct routes into formal employment"
       ]
     },
     {
       "theme": "Housing",
-      "mainRecommendation": "Keep education open across generations",
+      "mainRecommendation": "Improve homes and help households meet essential costs",
       "detailedRecommendations": [
-        "Expand preschool outreach, school-readiness programmes and help with participation costs",
-        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
-        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+        "Combine housing repairs with sanitation, water, electricity, heating and help resolving documentation and service-access barriers",
+        "Prioritise localities where disadvantages overlap, using household and spatial evidence alongside community knowledge",
+        "Provide targeted assistance with utilities, heating and emergency needs before financial difficulties become crises"
       ]
     },
     {
       "theme": "Health",
-      "mainRecommendation": "Keep education open across generations",
+      "mainRecommendation": "Make treatment affordable and recognise unpaid care",
       "detailedRecommendations": [
-        "Expand preschool outreach, school-readiness programmes and help with participation costs",
-        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
-        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+        "Expand community and mobile health services for prevention, insurance registration and continuity of treatment",
+        "Target medicine subsidies and reduced out-of-pocket costs to households in hardship",
+        "Assess care responsibilities within social and employment programmes, connect carers to available support and adapt training and work schedules so they can participate"
       ]
     },
     {
       "theme": "Discrimination",
-      "mainRecommendation": "Keep education open across generations",
+      "mainRecommendation": "Make equal access an institutional responsibility",
       "detailedRecommendations": [
-        "Expand preschool outreach, school-readiness programmes and help with participation costs",
-        "Support the transition to upper secondary education through mentoring, career guidance and scholarships",
-        "Offer flexible second-chance and vocational courses linked to local job demand, with recognition of prior learning and qualifications obtained elsewhere"
+        "Provide proactive documentation assistance, simplify referrals and reduce repeated visits",
+        "Retain in-person services and expand assisted digital access",
+        "Require practical anti-discrimination training for frontline staff, backed by regular review of complaints and user experience, corrective measures and follow-up"
       ]
     }
   ],

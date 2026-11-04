@@ -1,0 +1,198 @@
+{
+  "title": "A home is more than a roof: it is shared resources, care, but also challenges that affect each household member",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Zakarpattia Oblast. Quotes from the micro-narratives study, collected across several regions of Ukraine.",
+  "sections": [
+    {
+      "title": "Many Roma families try to navigate towards a future from inadequate housing conditions",
+      "content": [
+        {
+          "type": "text",
+          "content": "Most Roma households own the house they live in. On paper, this looks like security. Behind the door, many of these homes are too small for the families they accommodate, with inadequate infrastructure and amenities. In too many instances, Roma households are unable to afford a repair or improvement."
+        },
+        {
+          "type": "text",
+          "content": "Ownership protects families from rent and eviction. It does not give them space, sanitation or warmth."
+        }
+      ]
+    },
+    {
+      "title": "Overcrowding makes it harder to study, rest and find privacy at home",
+      "content": [
+        {
+          "type": "text",
+          "content": "When several people share few rooms, studying, sleeping and caring for someone who is ill compete for space. Children have fewer opportunities for quiet learning, and family members less privacy."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "People living in overcrowded homes",
+          "subTitle": "Share of people living in homes with too few rooms for the household’s size and composition, overall and by household size",
+          "data": [
+            {
+              "label": "All household sizes",
+              "size": [
+                90,
+                60
+              ]
+            },
+            {
+              "label": "Households of 1 to 3 people",
+              "size": [
+                71,
+                43
+              ]
+            },
+            {
+              "label": "Households of 4 or more",
+              "size": [
+                97,
+                81
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240,
+            "leftMargin": 150
+          }
+        }
+      ],
+      "microViz": {
+        "value": 9,
+        "text": "Roma live in overcrowded homes"
+      }
+    },
+    {
+      "title": "Basic facilities stop at the door",
+      "content": [
+        {
+          "type": "text",
+          "content": "In most Roma households, the toilet is outside, water comes from a well or a yard tap, and there is no sewer connection. Roofs leak and walls stay damp. These gaps cost time and health every day: water to carry, laundry done by hand, rooms that will not dry. Living near the same networks as their neighbors does not mean being connected to them, because connection fees, installation and repairs cost money many households do not have."
+        },
+        {
+          "type": "text",
+          "content": "Leaking roofs and drafty windows let the heat out, so a poor house needs more fuel to stay warm. That fuel is usually wood, bought and stored before winter. When money runs short, rooms go cold."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Housing conditions and basic facilities",
+          "subTitle": "Share of people living with each housing problem or gap in facilities.",
+          "data": [
+            {
+              "label": "Leaking roof, damp or rot",
+              "size": [
+                54,
+                31
+              ]
+            },
+            {
+              "label": "No toilet inside the dwelling",
+              "size": [
+                83,
+                27
+              ]
+            },
+            {
+              "label": "No piped water inside the dwelling",
+              "size": [
+                83,
+                43
+              ]
+            },
+            {
+              "label": "Not connected to public sewerage",
+              "size": [
+                86,
+                33
+              ]
+            },
+            {
+              "label": "No internet access at home",
+              "size": [
+                67,
+                29
+              ]
+            }
+          ],
+          "settings": {
+            "height": 340,
+            "leftMargin": 150
+          }
+        },
+        {
+          "type": "quote",
+          "content": "“I am a single mother with multiple children, and I don’t have enough money to fix the windows. We have gaps in the windows and doors, and our roof is leaking. The doors are old and drafty. The money I receive is barely enough for food, clothing, and some toys for the children. I have a small child, only 9 months old, so I can’t go to work.”",
+          "author": "Female, aged 24 to 29"
+        },
+        {
+          "type": "quote",
+          "content": "“...I have nothing to heat with, there is nothing to heat the stove with, there is no firewood. I don’t have anything for the children to have food, light. I have nothing, good people, help me, please. I need this. Six, six children live, we live poorly. Right now the war is going on.”",
+          "author": "Male, aged 30 to 49"
+        }
+      ],
+      "microViz": {
+        "value": 5,
+        "text": "of Roma live in homes they cannot afford to keep warm"
+      }
+    },
+    {
+      "title": "Living conditions shape opportunities beyond the home",
+      "content": [
+        {
+          "type": "text",
+          "content": "The problems of the house carry over into every other part of family life. Basic needs compete for the same limited resources. Children do their homework in a crowded, cold room, often with no internet connection. During the war, remote lessons assumed a quiet corner and a connection that these homes do not have."
+        },
+        {
+          "type": "text",
+          "content": "Inadequate facilities also make care and household tasks more demanding, adding to pressures on those who combine them with paid work. Limited transport connections can make reaching jobs and services harder still."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Household economic security",
+          "subTitle": "Percentages show how many people live in households struggling to cover expenses, lacking a bank account or experiencing severe food insecurity. The bank account measure covers ages 16 and over.",
+          "data": [
+            {
+              "label": "Difficulty making ends meet",
+              "size": [
+                60,
+                28
+              ]
+            },
+            {
+              "label": "No bank account in the household (ages 16+)",
+              "size": [
+                56,
+                28
+              ]
+            },
+            {
+              "label": "Severe food insecurity",
+              "size": [
+                52,
+                14
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240,
+            "leftMargin": 200
+          }
+        },
+        {
+          "type": "text",
+          "content": "For families displaced by the war or evicted from their home, the search starts again. Repeated moves disrupt schooling, work and access to services. A stable, adequate home helps families maintain these connections and plan beyond their immediate needs."
+        },
+        {
+          "type": "quote",
+          "content": "“...we were evicted. We are from Kharkiv, because we were evicted, because we are Roma, and we do not know where to go now. I have 7 children, I do not know what to do.”",
+          "author": "Female, aged 30 to 49"
+        }
+      ],
+      "microViz": {
+        "value": 8,
+        "text": "of surveyed Roma households have no public transport line within one kilometer"
+      }
+    }
+  ]
+}

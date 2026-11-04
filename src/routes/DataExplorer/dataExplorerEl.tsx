@@ -44,7 +44,7 @@ function useDataExplorerData(country: string) {
 type Theme = keyof typeof FEATURED_INDICATORS;
 
 export const DataExplorerEl = ({ country }: { country: string }) => {
-  const [selectedTheme, setSelectedTheme] = useState<Theme>('work and employment');
+  const [selectedTheme, setSelectedTheme] = useState<Theme>('education');
   const [selectedIndicator, setSelectedIndicator] = useState('acceptance_as_spouse');
   const { data, isLoading, isError, metaData } = useDataExplorerData(country);
   const exploreSectionRef = useRef<HTMLDivElement>(null);
@@ -97,25 +97,21 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
         className='h-16 overflow-x-auto sm:h-20'
       >
         <VisualizationWidgetHeaderItem
-          value='work and employment'
-          className='basis-0 sm:min-w-32 sm:shrink-0'
-        >
-          <BriefcaseBusiness
-            size={20}
-            strokeWidth={selectedTheme === 'work and employment' ? 2 : 1.5}
-          />
-          <span className='hidden sm:inline'>Work and employment</span>
-        </VisualizationWidgetHeaderItem>
-        <VisualizationWidgetHeaderItem
           value='education'
           className='basis-0 sm:min-w-32 sm:shrink-0'
         >
           <GraduationCap size={20} strokeWidth={selectedTheme === 'education' ? 2 : 1.5} />
           <span className='hidden sm:inline'>Education</span>
         </VisualizationWidgetHeaderItem>
-        <VisualizationWidgetHeaderItem value='health' className='basis-0 sm:min-w-32 sm:shrink-0'>
-          <Heart size={20} strokeWidth={selectedTheme === 'health' ? 2 : 1.5} />
-          <span className='hidden sm:inline'>Health</span>
+        <VisualizationWidgetHeaderItem
+          value='economic security'
+          className='basis-0 sm:min-w-32 sm:shrink-0'
+        >
+          <BriefcaseBusiness
+            size={20}
+            strokeWidth={selectedTheme === 'economic security' ? 2 : 1.5}
+          />
+          <span className='hidden sm:inline'>Economic security</span>
         </VisualizationWidgetHeaderItem>
         <VisualizationWidgetHeaderItem
           value='living conditions'
@@ -123,6 +119,10 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
         >
           <House size={20} strokeWidth={selectedTheme === 'living conditions' ? 2 : 1.5} />
           <span className='hidden sm:inline'>Living conditions</span>
+        </VisualizationWidgetHeaderItem>
+        <VisualizationWidgetHeaderItem value='health' className='basis-0 sm:min-w-32 sm:shrink-0'>
+          <Heart size={20} strokeWidth={selectedTheme === 'health' ? 2 : 1.5} />
+          <span className='hidden sm:inline'>Health</span>
         </VisualizationWidgetHeaderItem>
         <VisualizationWidgetHeaderItem
           value='discrimination'

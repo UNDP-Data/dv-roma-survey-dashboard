@@ -155,7 +155,11 @@
         },
         {
           "type": "text",
-          "content": "The search for a home can therefore unsettle other parts of family life. Each move can mean another interruption to schooling and another effort to keep work and care going.\n\nHousing insecurity reaches beyond the dwelling itself. Repeated moves can disrupt the continuity that schooling, work and ongoing care require."
+          "content": "The search for a home can therefore unsettle other parts of family life. Each move can mean another interruption to schooling and another effort to keep work and care going."
+        },
+        {
+          "type": "text",
+          "content": "Housing insecurity reaches beyond the dwelling itself. Repeated moves can disrupt the continuity that schooling, work and ongoing care require."
         }
       ],
       "microViz": {

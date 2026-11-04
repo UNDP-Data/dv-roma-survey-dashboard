@@ -58,7 +58,11 @@
       "content": [
         {
           "type": "text",
-          "content": "The geographical analysis finds no substantial difference in travel time to employment offices, social welfare offices, banks or post offices between Roma and nearby non-Roma. Yet being able to reach a building does not settle whether someone can complete an application or obtain help.\n\nThe internet gap at home matters here too. Online information and applications are harder to use without a connection or practical help. In-person services remain essential for people who cannot complete these steps online."
+          "content": "The geographical analysis finds no substantial difference in travel time to employment offices, social welfare offices, banks or post offices between Roma and nearby non-Roma. Yet being able to reach a building does not settle whether someone can complete an application or obtain help."
+        },
+        {
+          "type": "text",
+          "content": "The internet gap at home matters here too. Online information and applications are harder to use without a connection or practical help. In-person services remain essential for people who cannot complete these steps online."
         },
         {
           "type": "graph",
@@ -94,7 +98,11 @@
         },
         {
           "type": "text",
-          "content": "Each visit takes time and money from a household already managing work and care. Even making a complaint may leave the original problem unresolved.\n\nUsing the formal route does not always settle the matter either:"
+          "content": "Each visit takes time and money from a household already managing work and care. Even making a complaint may leave the original problem unresolved."
+        },
+        {
+          "type": "text",
+          "content": "Using the formal route does not always settle the matter either:"
         },
         {
           "type": "quote",
