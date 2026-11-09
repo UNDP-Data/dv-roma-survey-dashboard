@@ -230,7 +230,7 @@
         {
           "type": "quote",
           "content": "“Well, my biggest problem is probably the lack of a stable income. Before the war, I worked at a company, but I was laid off. Now I do occasional construction work, but the money isn’t enough to support my family. I have seven children.”",
-          "author": "Female, aged 30 to 49"
+          "author": "Male, aged 30 to 49"
         }
       ]
     },
@@ -248,21 +248,21 @@
           "subTitle": "People living in a household whose head is in paid work",
           "data": [
             {
-              "label": "Overall",
+              "label": "Someone went a whole day without eating",
               "size": [
                 42,
                 7
               ]
             },
             {
-              "label": "Women",
+              "label": "Cannot afford an unexpected expense",
               "size": [
                 73,
                 28
               ]
             },
             {
-              "label": "Men",
+              "label": "Difficulty making ends meet",
               "size": [
                 55,
                 12
@@ -270,7 +270,8 @@
             }
           ],
           "settings": {
-            "height": 240
+            "height": 240,
+            "leftMargin": 160
           }
         },
         {
@@ -295,7 +296,8 @@
             }
           ],
           "settings": {
-            "height": 160
+            "height": 160,
+             "leftMargin": 160
           }
         }
       ],

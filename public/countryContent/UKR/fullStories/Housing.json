@@ -127,12 +127,12 @@
         {
           "type": "quote",
           "content": "“...I have nothing to heat with, there is nothing to heat the stove with, there is no firewood. I don’t have anything for the children to have food, light. I have nothing, good people, help me, please. I need this. Six, six children live, we live poorly. Right now the war is going on.”",
-          "author": "Male, aged 30 to 49"
+          "author": "Female, aged 30 to 49"
         }
       ],
       "microViz": {
         "value": 5,
-        "text": "of Roma live in homes they cannot afford to keep warm"
+        "text": "Roma live in homes they cannot afford to keep warm"
       }
     },
     {
@@ -155,7 +155,7 @@
             {
               "label": "Difficulty making ends meet",
               "size": [
-                60,
+                69,
                 28
               ]
             },
@@ -191,7 +191,7 @@
       ],
       "microViz": {
         "value": 8,
-        "text": "of surveyed Roma households have no public transport line within one kilometer"
+        "text": "surveyed Roma households have no public transport line within one kilometer"
       }
     }
   ]
