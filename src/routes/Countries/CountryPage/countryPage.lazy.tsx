@@ -89,7 +89,11 @@ export function CountryPage() {
           </PageHeaderContent>
         </div>
         <div className='w-full px-4 md:w-1/2 md:px-0'>
-          <img src='/imgs/country_hero_cube.webp' className='h-auto w-full' alt='hero' />
+          <img
+            src={`/imgs/country_hero_cube_${countryCode}.webp`}
+            className='h-auto w-full'
+            alt='hero'
+          />
         </div>
       </section>
       {isLoading && <Spinner size='lg' className='mx-auto my-20' />}

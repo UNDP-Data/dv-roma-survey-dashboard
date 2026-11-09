@@ -36,7 +36,7 @@
         "romaHighlighted": 96,
         "nonRomaHighlighted": 33,
         "title": "Have not completed secondary education",
-        "subTitle": "Adults aged 18 to 65. Only 11 in 100 Roma have completed secondary education, against 60 in 100 non-Roma."
+        "subTitle": "Adults aged 18 to 65."
       },
       "text": {
         "theme": "Education",
@@ -88,7 +88,7 @@
         "romaHighlighted": 16,
         "nonRomaHighlighted": 7,
         "title": "Experienced discrimination in the past year",
-        "subTitle": "Because of ethnicity, skin colour or language."
+        "subTitle": "Interviewed respondents reporting discrimination because of ethnicity or skin color."
       },
       "text": {
         "theme": "Discrimination",
@@ -110,9 +110,9 @@
       "theme": "Employment",
       "mainRecommendation": "Open pathways into formal, protected work",
       "detailedRecommendations": [
-        "Combine investment in water, sanitation and electricity with help to afford connections, repairs and heating",
-        "Ensure displaced families and those with documentation or tenure difficulties can access housing support",
-        "Coordinate assistance where several needs overlap"
+        "Connect training and recruitment to secure jobs through employer partnerships, apprenticeships and help with documentation",
+        "Address discrimination and support formal employment, with childcare and flexible participation for carers",
+        "Assess progress through earnings, contracts and sustained employment"
       ]
     },
     {
