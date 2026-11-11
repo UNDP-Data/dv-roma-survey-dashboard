@@ -25,8 +25,8 @@ export const FeaturedIndicatorsTable = ({
         <TableHead className='w-[40%] pr-2 md:w-[50%] md:pr-4'>Indicator</TableHead>
         <TableHead className='w-[20%] pr-2 text-right md:w-[10%] md:pr-4'>Roma</TableHead>
         <TableHead className='w-[20%] pr-2 text-right md:w-[10%] md:pr-4'>Non-Roma</TableHead>
-        <TableHead className='hidden pr-2 md:block md:w-[20%] md:pr-4'>Comparison</TableHead>
-        <TableHead className='w-[20%] pr-2 text-right md:w-[10%] md:pr-4'>Source</TableHead>
+        <TableHead className='w-[20%] pr-2 md:block md:w-[20%] md:pr-4'>Comparison</TableHead>
+        <TableHead className='w-[15%] pr-2 text-right md:w-[10%] md:pr-4'>Source</TableHead>
       </TableRow>
     </TableHeader>
     <TableBody className='[&>tr]:border-stroke'>
@@ -57,7 +57,7 @@ export const FeaturedIndicatorsTable = ({
               {nonRomaValue?.toFixed(1)}
               {suffix}
             </TableCell>
-            <TableCell className='hidden py-2 pr-2 text-p-sm sm:w-[20%] sm:pr-4 md:table-cell md:text-p-sm lg:text-p-sm'>
+            <TableCell className='w-[20%] py-2 pr-2 text-p-sm sm:w-[20%] sm:pr-4 md:table-cell md:text-p-sm lg:text-p-sm'>
               {romaValue !== undefined && nonRomaValue !== undefined ? (
                 <DumbbellChart
                   data={[{ label: title, x: [nonRomaValue, romaValue] }]}
@@ -73,6 +73,7 @@ export const FeaturedIndicatorsTable = ({
                   topMargin={0}
                   bottomMargin={0}
                   minValue={0}
+                  animate={false}
                   maxValue={romaData?.yesPercent !== undefined ? 100 : undefined}
                   showLabels={false}
                   showValues={false}

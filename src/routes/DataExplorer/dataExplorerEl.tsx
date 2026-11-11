@@ -204,14 +204,14 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               gap='16px'
               noOfCol={{
                 base: 1,
-                md: 12,
+                lg: 12,
                 sm: 2,
               }}
             >
               <GridItem
                 noOfColSpan={{
                   base: 1,
-                  md: 5,
+                  lg: 5,
                   sm: 1,
                 }}
               >
@@ -233,7 +233,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               <GridItem
                 noOfColSpan={{
                   base: 1,
-                  md: 3,
+                  lg: 3,
                   sm: 1,
                 }}
               >
@@ -255,7 +255,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               <GridItem
                 noOfColSpan={{
                   base: 1,
-                  md: 2,
+                  lg: 2,
                   sm: 1,
                 }}
               >
@@ -290,7 +290,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               <GridItem
                 noOfColSpan={{
                   base: 1,
-                  md: 2,
+                  lg: 2,
                   sm: 1,
                 }}
               >

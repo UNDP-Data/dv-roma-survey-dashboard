@@ -1,7 +1,8 @@
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { H5, P } from '@undp/design-system-react/Typography';
 import { ArrowDown } from 'lucide-react';
-import { animate, motion, useMotionValue } from 'motion/react';
+import { animate, domAnimation, LazyMotion, useMotionValue } from 'motion/react';
+import * as m from 'motion/react-m';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ScrollySectionDataType, SlideContentDataType } from '@/types';
 import { IconCluster } from './iconCluster';
@@ -38,77 +39,80 @@ export default function CountryNarrative({ data }: { data: ScrollySectionDataTyp
     <section id='country-narrative' className='mx-auto w-full'>
       <div ref={containerRef} className='w-full'>
         <div className='relative mx-auto hidden w-full flex-col justify-between gap-x-10 gap-y-0 bg-surface px-4 sm:flex lg:flex-row'>
-          <div className='mx-auto flex w-full max-w-7xl flex-col justify-between gap-x-10 gap-y-0 px-4 lg:flex-row'>
-            <div className='sticky top-0 mx-auto flex h-screen w-full flex-col items-center justify-center px-4 py-4 md:px-6 md:py-12'>
-              <div className='h-24 w-full'>
-                <H5 weight='bold' marginBottom='2xs'>
-                  {activeSlide.vizContent.title}
-                </H5>
-                <P size='sm' className='text-content-tertiary' marginBottom='none'>
-                  {activeSlide.vizContent.subTitle}
-                </P>
-              </div>
-              <Spacer size='base' />
-              <div className='flex h-[calc(100vh-6rem)] w-full items-center'>
-                <motion.svg viewBox='0 0 620 590' className='mx-auto h-full w-full'>
-                  <motion.g
-                    initial={{
-                      opacity: 1,
-                    }}
-                    animate={{
-                      opacity: activeSlideIndex === 0 ? 1 : 0,
-                    }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <NeighborhoodViz />
-                  </motion.g>
-                  <motion.g
-                    initial={{
-                      opacity: 0,
-                    }}
-                    animate={{
-                      opacity: activeSlideIndex === 0 ? 0 : 1,
-                    }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <g>
-                      <IconCluster
-                        populationGroup='roma'
-                        value={activeSlide.vizContent.romaHighlighted}
-                        activeSlideIndex={activeSlideIndex}
-                        animatedNumber={romaCount}
-                      />
-                    </g>
-                    <g transform='translate(0,300)'>
-                      <IconCluster
-                        populationGroup='non-roma'
-                        value={activeSlide.vizContent.nonRomaHighlighted}
-                        activeSlideIndex={activeSlideIndex}
-                        animatedNumber={nonRomaCount}
-                      />
-                    </g>
-                  </motion.g>
-                </motion.svg>
-              </div>
-            </div>
-            <div className='relative z-10 mx-auto w-full max-w-100 shrink-0'>
-              {slides.map((slide, index) => (
-                <div
-                  className='flex min-h-screen items-center px-4 md:px-0'
-                  // biome-ignore lint/suspicious/noArrayIndexKey:index can be used because key is static
-                  key={index}
-                >
-                  <motion.div
-                    className='my-6 w-full bg-background'
-                    onViewportEnter={() => setActiveSlideIndex(index)}
-                    viewport={{ amount: 0.5 }}
-                  >
-                    {slide.slideContent}
-                  </motion.div>
+          <LazyMotion features={domAnimation}>
+            <div className='mx-auto flex w-full max-w-7xl flex-col justify-between gap-x-10 gap-y-0 px-4 lg:flex-row'>
+              <div className='sticky top-0 mx-auto flex h-screen w-full flex-col items-center justify-center px-4 py-4 md:px-6 md:py-12'>
+                <div className='h-24 w-full'>
+                  <H5 weight='bold' marginBottom='2xs'>
+                    {activeSlide.vizContent.title}
+                  </H5>
+                  <P size='sm' className='text-content-tertiary' marginBottom='none'>
+                    {activeSlide.vizContent.subTitle}
+                  </P>
                 </div>
-              ))}
+                <Spacer size='base' />
+                <div className='flex h-[calc(100vh-6rem)] w-full items-center'>
+                  <svg viewBox='0 0 620 590' className='mx-auto h-full w-full'>
+                    <title>Scrollytelling viz</title>
+                    <m.g
+                      initial={{
+                        opacity: 1,
+                      }}
+                      animate={{
+                        opacity: activeSlideIndex === 0 ? 1 : 0,
+                      }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <NeighborhoodViz />
+                    </m.g>
+                    <m.g
+                      initial={{
+                        opacity: 0,
+                      }}
+                      animate={{
+                        opacity: activeSlideIndex === 0 ? 0 : 1,
+                      }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <g>
+                        <IconCluster
+                          populationGroup='roma'
+                          value={activeSlide.vizContent.romaHighlighted}
+                          activeSlideIndex={activeSlideIndex}
+                          animatedNumber={romaCount}
+                        />
+                      </g>
+                      <g transform='translate(0,300)'>
+                        <IconCluster
+                          populationGroup='non-roma'
+                          value={activeSlide.vizContent.nonRomaHighlighted}
+                          activeSlideIndex={activeSlideIndex}
+                          animatedNumber={nonRomaCount}
+                        />
+                      </g>
+                    </m.g>
+                  </svg>
+                </div>
+              </div>
+              <div className='relative z-10 mx-auto w-full max-w-100 shrink-0'>
+                {slides.map((slide, index) => (
+                  <div
+                    className='flex min-h-screen items-center px-4 md:px-0'
+                    // biome-ignore lint/suspicious/noArrayIndexKey:index can be used because key is static
+                    key={index}
+                  >
+                    <m.div
+                      className='my-6 w-full bg-background'
+                      onViewportEnter={() => setActiveSlideIndex(index)}
+                      viewport={{ amount: 0.5 }}
+                    >
+                      {slide.slideContent}
+                    </m.div>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          </LazyMotion>
         </div>
         <div className='mx-auto flex w-full max-w-2xl flex-col gap-16 bg-surface px-4 py-8 sm:hidden'>
           {data.map((section, index) => (

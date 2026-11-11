@@ -1,5 +1,6 @@
 import { P } from '@undp/design-system-react/Typography';
-import { type MotionValue, motion, useMotionValue, useTransform } from 'motion/react';
+import { type MotionValue, useMotionValue, useTransform } from 'motion/react';
+import * as m from 'motion/react-m';
 
 const DESKTOP_POSITIONS = [
   61, 14, 347, 79, 128, 8, 33, 30, 450, 6, 273, 42, 251, 64, 267, 71, 291, 83, 484, 6, 445, 58, 434,
@@ -60,7 +61,7 @@ export function IconCluster({
         >
           {activeSlideIndex > 1 ? (
             !isMobile && animatedNumber ? (
-              <motion.span>{animatedLabel}</motion.span>
+              <m.span>{animatedLabel}</m.span>
             ) : (
               `${value} out of 100`
             )
@@ -75,7 +76,7 @@ export function IconCluster({
       <g transform='translate(0, 50)'>
         {[...Array(100).keys()].map((i) =>
           !isMobile && animatedNumber ? (
-            <motion.use
+            <m.use
               key={`${populationGroup}-${i}`}
               href='#person-icon'
               x={positions[2 * i]}
