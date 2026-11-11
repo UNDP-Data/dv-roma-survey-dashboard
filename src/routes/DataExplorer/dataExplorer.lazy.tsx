@@ -12,9 +12,9 @@ export const dataExplorer = () => {
     value: 'moldova',
   });
   return (
-    <div className='mx-auto my-8 w-full px-4 antialiased md:px-16'>
+    <div className='mx-auto my-8 w-full antialiased'>
       <Spacer size='2xl' />
-      <section id='data-explorer' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-48'>
+      <section id='data-explorer' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 xl:px-48'>
         <P marginBottom='2xs' size='sm'>
           Select country
         </P>
@@ -50,7 +50,7 @@ export const dataExplorer = () => {
         <DataExplorerEl country={selectedCountry.value} />
       </section>
       <Spacer size='2xl' />
-      <section id='download-data' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-48'>
+      <section id='download-data' className='mx-auto w-full max-w-[1920px] px-4 sm:px-6 xl:px-48'>
         <div className='flex w-full flex-col bg-surface p-6 md:p-10'>
           <H4 weight='bold'>Download Data</H4>
           <P size='lg' marginBottom='none'>

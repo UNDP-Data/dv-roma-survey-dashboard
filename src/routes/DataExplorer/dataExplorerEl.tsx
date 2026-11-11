@@ -22,63 +22,79 @@ import {
   Heart,
   House,
 } from 'lucide-react';
-import { useRef, useState } from 'react';
-import { COLORS, FEATURED_INDICATORS, GROUPS } from '@/Constants';
-import type { IndicatorMetaData, SurveyIndicator } from '@/types';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { FEATURED_INDICATORS, GROUPS } from '@/Constants';
+import type { IndicatorMetaDataType, SurveyIndicatorDataType, Themes } from '@/types';
 import { DisaggregationsPanel } from './components/disaggregationsPanel';
 import { FeaturedIndicatorsTable } from './components/featuredIndicatorsTable';
 
 function useDataExplorerData(country: string) {
   const { data, isLoading, isError } = useQuery({
     queryKey: ['survey-data', country],
-    queryFn: () => fetchAndParseJSON(`./data/${country}.json`) as Promise<SurveyIndicator[]>,
+    queryFn: () =>
+      fetchAndParseJSON(`./data/${country}.json`) as Promise<SurveyIndicatorDataType[]>,
   });
-  const { data: metaData } = useQuery({
+  const {
+    data: metaData,
+    isLoading: isMetaDataLoading,
+    isError: isMetaDataError,
+  } = useQuery({
     queryKey: ['indicator-metadata'],
     queryFn: () =>
-      fetchAndParseJSON('./data/indicatorMetaData.json') as Promise<IndicatorMetaData[]>,
+      fetchAndParseJSON('./data/indicatorMetaData.json') as Promise<IndicatorMetaDataType[]>,
   });
-  return { data, isLoading, isError, metaData };
+  return {
+    data,
+    isLoading: isLoading || isMetaDataLoading,
+    isError: isError || isMetaDataError,
+    metaData,
+  };
 }
 
-type Theme = keyof typeof FEATURED_INDICATORS;
-
 export const DataExplorerEl = ({ country }: { country: string }) => {
-  const [selectedTheme, setSelectedTheme] = useState<Theme>('education');
-  const [selectedIndicator, setSelectedIndicator] = useState('acceptance_as_spouse');
+  const [selectedTheme, setSelectedTheme] = useState<Themes>('Education');
+  const [selectedIndicator, setSelectedIndicator] = useState('child_enrolled_in_daycare');
   const { data, isLoading, isError, metaData } = useDataExplorerData(country);
   const exploreSectionRef = useRef<HTMLDivElement>(null);
+
+  const metaDataFilteredByCategory = useMemo(
+    () => metaData?.filter((d) => d.category === selectedTheme),
+    [selectedTheme, metaData],
+  );
+
+  useEffect(() => {
+    if (metaDataFilteredByCategory) setSelectedIndicator(metaDataFilteredByCategory[0].id);
+  }, [metaDataFilteredByCategory]);
 
   const handleFeaturedSelect = (id: string) => {
     setSelectedIndicator(id);
     exploreSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  if (isLoading) return <Spinner size='lg' className='mx-auto my-20' />;
+  if (isError) return <>Error</>;
 
-  if (isError || !data) return <>Error</>;
+  if (isLoading || !data || !metaData) return <Spinner size='lg' className='mx-auto my-20' />;
 
   const featuredIndicators = FEATURED_INDICATORS[selectedTheme]
     .map((id) => data.find((d) => d.id === id))
-    .filter((d): d is SurveyIndicator => d !== undefined);
+    .filter((d) => d !== undefined);
 
-  const metaById = new Map((metaData ?? []).map((m) => [m.id, m]));
-  const themeIndicators = data.filter((d) => metaById.get(d.id)?.category === selectedTheme);
+  const metaDataSubCategoryFilteredByCategory = [
+    ...new Set(metaDataFilteredByCategory?.map((d) => d.subCategory)),
+  ];
 
-  const indicatorGroups = new Map<string, { label: string; value: string }[]>();
-  for (const d of themeIndicators) {
-    const meta = metaById.get(d.id);
-    const groupKey = meta?.subCategory ?? 'Other';
-    const group = indicatorGroups.get(groupKey) ?? [];
-    group.push({ label: meta ? `${meta.title} (${meta.source})` : d.description, value: d.id });
-    indicatorGroups.set(groupKey, group);
-  }
-  const indicatorOptions = [...indicatorGroups.entries()]
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([label, options]) => ({ label, options }));
+  const indicatorOptionsBySubCategory = metaDataSubCategoryFilteredByCategory.map((d) => ({
+    label: d,
+    options: (metaDataFilteredByCategory || [])
+      .filter((el) => el.subCategory === d)
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((el) => ({ label: el.title, value: el.id })),
+  }));
 
-  const selectedIndicatorData = data.find((d) => d.id === selectedIndicator);
-  const selectedMeta = metaById.get(selectedIndicator);
+  const selectedIndicatorData = data.find(
+    (d) => d.id === selectedIndicator,
+  ) as SurveyIndicatorDataType;
+  const selectedMeta = metaData.find((d) => d.id === selectedIndicator) as IndicatorMetaDataType;
   const romaRow = selectedIndicatorData?.roma.find((el) => el.disaggregation === 'none');
   const nonRomaRow = selectedIndicatorData?.nonRoma.find((el) => el.disaggregation === 'none');
   const romaValue = romaRow?.yesPercent ?? romaRow?.mean ?? romaRow?.gapPp;
@@ -91,46 +107,40 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
       <VisualizationWidgetHeader
         defaultValue={selectedTheme}
         onChange={(value) => {
-          if (value in FEATURED_INDICATORS) setSelectedTheme(value as Theme);
+          setSelectedTheme(value as Themes);
         }}
-        activeItemClass='bg-background font-bold text-accent-blue shadow-[inset_0_3px_0_0_var(--accent-blue)]'
+        activeItemClass='bg-background font-bold text-secondary shadow-[inset_0_3px_0_0_var(--secondary)]'
         className='h-16 overflow-x-auto sm:h-20'
       >
         <VisualizationWidgetHeaderItem
-          value='education'
+          value='Education'
           className='basis-0 sm:min-w-32 sm:shrink-0'
         >
-          <GraduationCap size={20} strokeWidth={selectedTheme === 'education' ? 2 : 1.5} />
+          <GraduationCap size={20} strokeWidth={selectedTheme === 'Education' ? 2 : 1.5} />
           <span className='hidden sm:inline'>Education</span>
         </VisualizationWidgetHeaderItem>
         <VisualizationWidgetHeaderItem
-          value='economic security'
+          value='Employment'
           className='basis-0 sm:min-w-32 sm:shrink-0'
         >
-          <BriefcaseBusiness
-            size={20}
-            strokeWidth={selectedTheme === 'economic security' ? 2 : 1.5}
-          />
+          <BriefcaseBusiness size={20} strokeWidth={selectedTheme === 'Employment' ? 2 : 1.5} />
           <span className='hidden sm:inline'>Economic security</span>
         </VisualizationWidgetHeaderItem>
-        <VisualizationWidgetHeaderItem
-          value='living conditions'
-          className='basis-0 sm:min-w-32 sm:shrink-0'
-        >
-          <House size={20} strokeWidth={selectedTheme === 'living conditions' ? 2 : 1.5} />
+        <VisualizationWidgetHeaderItem value='Housing' className='basis-0 sm:min-w-32 sm:shrink-0'>
+          <House size={20} strokeWidth={selectedTheme === 'Housing' ? 2 : 1.5} />
           <span className='hidden sm:inline'>Living conditions</span>
         </VisualizationWidgetHeaderItem>
-        <VisualizationWidgetHeaderItem value='health' className='basis-0 sm:min-w-32 sm:shrink-0'>
-          <Heart size={20} strokeWidth={selectedTheme === 'health' ? 2 : 1.5} />
+        <VisualizationWidgetHeaderItem value='Health' className='basis-0 sm:min-w-32 sm:shrink-0'>
+          <Heart size={20} strokeWidth={selectedTheme === 'Health' ? 2 : 1.5} />
           <span className='hidden sm:inline'>Health</span>
         </VisualizationWidgetHeaderItem>
         <VisualizationWidgetHeaderItem
-          value='discrimination'
+          value='Discrimination'
           className='basis-0 sm:min-w-32 sm:shrink-0'
         >
           <AlignHorizontalJustifyCenter
             size={20}
-            strokeWidth={selectedTheme === 'discrimination' ? 2 : 1.5}
+            strokeWidth={selectedTheme === 'Discrimination' ? 2 : 1.5}
           />
           <span className='hidden sm:inline'>Discrimination</span>
         </VisualizationWidgetHeaderItem>
@@ -141,7 +151,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
             size='sm'
             weight='bold'
             marginBottom='sm'
-            className='text-accent-blue uppercase sm:hidden'
+            className='text-secondary uppercase sm:hidden'
           >
             {selectedTheme}
           </P>
@@ -149,13 +159,17 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
             <P size='xl' weight='bold' marginBottom='sm' className='text-2xl'>
               Featured indicators
             </P>
-            <ColorLegend colors={COLORS} colorDomain={GROUPS} showNAColor={false} />
+            <ColorLegend
+              colors={GROUPS.map((d) => `var(--${d.toLowerCase()})`)}
+              colorDomain={GROUPS}
+              showNAColor={false}
+            />
           </div>
           <Spacer size='base' />
           <div className='w-full min-w-0 rounded-xs border border-stroke bg-background'>
             <FeaturedIndicatorsTable
               indicators={featuredIndicators}
-              metaById={metaById}
+              metaDataFilteredByCategory={metaDataFilteredByCategory || []}
               onSelect={handleFeaturedSelect}
             />
           </div>
@@ -173,7 +187,7 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
               value={{ label: selectedMeta?.title, value: selectedMeta?.id }}
               // biome-ignore lint/suspicious/noExplicitAny: Need to fix in the DS
               onChange={(d: any) => setSelectedIndicator(d.value)}
-              options={indicatorOptions}
+              options={indicatorOptionsBySubCategory}
               classNames={{
                 groupHeading: () =>
                   'font-bold! text-xs! uppercase! py-2! m-0! bg-transparent! text-content-tertiary! cursor-default!',
@@ -255,34 +269,22 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                     No. of respondent
                   </P>
                   <Spacer size='base' />
-                  <div className='flex items-center gap-2'>
-                    <span
-                      className='h-3 w-3 shrink-0 rounded-full'
-                      style={{ backgroundColor: COLORS[0] }}
-                    />
-                    <P size='base' marginBottom='none'>
-                      Roma
-                    </P>
-                    <P size='base' weight='bold' marginBottom='none'>
-                      {selectedIndicatorData?.roma
-                        .find((el) => el.disaggregation === 'none')
-                        ?.noOfRespondents.toLocaleString('en-US')}
-                    </P>
-                  </div>
-                  <div className='flex items-center gap-2'>
-                    <span
-                      className='h-3 w-3 shrink-0 rounded-full'
-                      style={{ backgroundColor: COLORS[1] }}
-                    />
-                    <P size='base' marginBottom='none'>
-                      Non-Roma
-                    </P>
-                    <P size='base' weight='bold' marginBottom='none'>
-                      {selectedIndicatorData?.nonRoma
-                        .find((el) => el.disaggregation === 'none')
-                        ?.noOfRespondents.toLocaleString('en-US')}
-                    </P>
-                  </div>
+                  {GROUPS.map((d) => (
+                    <div className='flex items-center gap-2' key={d}>
+                      <span
+                        className='h-3 w-3 shrink-0 rounded-full'
+                        style={{ backgroundColor: `var(--${d.toLocaleLowerCase()})` }}
+                      />
+                      <P size='base' marginBottom='none'>
+                        {d}
+                      </P>
+                      <P size='base' weight='bold' marginBottom='none'>
+                        {selectedIndicatorData?.[d === 'Roma' ? 'roma' : 'nonRoma']
+                          .find((el) => el.disaggregation === 'none')
+                          ?.noOfRespondents.toLocaleString('en-US')}
+                      </P>
+                    </div>
+                  ))}
                 </div>
               </GridItem>
               <GridItem
@@ -323,87 +325,70 @@ export const DataExplorerEl = ({ country }: { country: string }) => {
                 </div>
                 <Spacer size='base' />
                 <div className='grid auto-rows-fr grid-cols-1 gap-4'>
-                  <div className='flex items-stretch justify-between gap-4 rounded-xs border border-stroke bg-background p-6'>
-                    <div className='flex flex-col gap-2'>
-                      <P size='xs' weight='bold' marginBottom='none' className='uppercase'>
-                        Roma
-                      </P>
-                      <div className='flex grow flex-col justify-center gap-2'>
-                        <div className='flex items-baseline gap-1'>
-                          <H3 marginBottom='none' style={{ color: COLORS[0] }}>
-                            {romaValue}
-                          </H3>
-                          {romaRow?.yesPercent !== undefined ? (
-                            <P size='lg' marginBottom='none' style={{ color: COLORS[0] }}>
-                              %
-                            </P>
-                          ) : null}
+                  {GROUPS.map((d) => {
+                    const rowData = d === 'Roma' ? romaRow : nonRomaRow;
+                    return (
+                      <div
+                        key={d}
+                        className='flex items-stretch justify-between gap-4 rounded-xs border border-stroke bg-background p-6'
+                      >
+                        <div className='flex flex-col gap-2'>
+                          <P size='xs' weight='bold' marginBottom='none' className='uppercase'>
+                            {d}
+                          </P>
+                          <div className='flex grow flex-col justify-center gap-2'>
+                            <div className='flex items-baseline gap-1'>
+                              <H3
+                                marginBottom='none'
+                                style={{ color: `var(--${d.toLowerCase()})` }}
+                              >
+                                {d === 'Roma' ? romaValue : nonRomaValue}
+                              </H3>
+                              {rowData?.yesPercent !== undefined ? (
+                                <P
+                                  size='lg'
+                                  marginBottom='none'
+                                  style={{ color: `var(--${d.toLowerCase()})` }}
+                                >
+                                  %
+                                </P>
+                              ) : null}
+                            </div>
+                            {gap !== undefined && d === 'Roma' && (
+                              <Badge
+                                color='surface-sm'
+                                size='sm'
+                                rounded='sm'
+                                className='w-fit rounded-lg'
+                              >
+                                {gap > 0 ? '+' : ''}
+                                {gap.toFixed(1)}{' '}
+                                {rowData?.yesPercent !== undefined
+                                  ? 'pp vs non-Roma'
+                                  : 'vs non-Roma'}
+                              </Badge>
+                            )}
+                          </div>
                         </div>
-                        {gap !== undefined ? (
-                          <Badge
-                            color='surface-sm'
-                            size='sm'
-                            rounded='sm'
-                            className='w-fit rounded-lg'
-                          >
-                            {gap > 0 ? '+' : ''}
-                            {gap.toFixed(1)} pp vs non-Roma
-                          </Badge>
-                        ) : null}
-                      </div>
-                    </div>
-                    <div className='hidden w-30 shrink-0 self-center xl:block'>
-                      {romaRow?.yesPercent !== undefined ? (
-                        <DonutChart
-                          data={[
-                            { label: 'yes', size: romaRow.yesPercent },
-                            { label: 'no', size: romaRow.noPercent },
-                          ]}
-                          width={120}
-                          height={120}
-                          padding='0'
-                          strokeWidth={15}
-                          colors={[COLORS[0], 'var(--surface-sm)']}
-                          showColorScale={false}
-                        />
-                      ) : null}
-                    </div>
-                  </div>
-                  <div className='flex items-stretch justify-between gap-4 rounded-xs border border-stroke bg-background p-6'>
-                    <div className='flex flex-col gap-2'>
-                      <P size='xs' weight='bold' marginBottom='none' className='uppercase'>
-                        Non-Roma
-                      </P>
-                      <div className='flex grow flex-col justify-center gap-2'>
-                        <div className='flex items-baseline gap-1'>
-                          <H3 marginBottom='none' style={{ color: COLORS[1] }}>
-                            {nonRomaValue}
-                          </H3>
-                          {nonRomaRow?.yesPercent !== undefined ? (
-                            <P size='lg' marginBottom='none' style={{ color: COLORS[1] }}>
-                              %
-                            </P>
-                          ) : null}
+                        <div className='hidden w-30 shrink-0 self-center xl:block'>
+                          {rowData?.yesPercent !== undefined && (
+                            <DonutChart
+                              data={[
+                                { label: 'yes', size: rowData.yesPercent },
+                                { label: 'no', size: rowData.noPercent },
+                              ]}
+                              width={120}
+                              height={120}
+                              padding='0'
+                              strokeWidth={15}
+                              colors={[`var(--${d.toLowerCase()})`, 'var(--surface-sm)']}
+                              showColorScale={false}
+                            />
+                          )}
                         </div>
                       </div>
-                    </div>
-                    <div className='hidden w-30 shrink-0 self-center xl:block'>
-                      {nonRomaRow?.yesPercent !== undefined ? (
-                        <DonutChart
-                          data={[
-                            { label: 'yes', size: nonRomaRow.yesPercent },
-                            { label: 'no', size: nonRomaRow.noPercent },
-                          ]}
-                          width={120}
-                          height={120}
-                          padding='0'
-                          strokeWidth={15}
-                          colors={[COLORS[1], 'var(--surface-sm)']}
-                          showColorScale={false}
-                        />
-                      ) : null}
-                    </div>
-                  </div>
+                    );
+                  })}
                 </div>
                 <Spacer size='base' />
                 <P size='sm' marginBottom='none' className='text-content-tertiary'>

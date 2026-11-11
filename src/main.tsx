@@ -147,8 +147,8 @@ if (rootElement) {
             discrimination: '#B94F78',
             'discrimination-hover': '#A24066',
             'discrimination-light': '#F5EAF0',
-            roma: '#da5d38',
-            'non-roma': '#0076c1',
+            roma: '#DA573A',
+            'non-roma': '#0076C1',
           },
         }}
       >

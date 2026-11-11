@@ -1,13 +1,11 @@
-import { Link } from '@tanstack/react-router';
 import {
   Header,
   HeaderLogoUnit,
   HeaderMainNavUnit,
+  HeaderMenuDropdown,
+  HeaderMenuLink,
   HeaderMenuUnit,
 } from '@undp/design-system-react/Header';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@undp/design-system-react/HoverCard';
-import { P } from '@undp/design-system-react/Typography';
-import { ChevronDown } from 'lucide-react';
 import { COUNTRIES } from '@/Constants';
 
 export default function HeaderEl() {
@@ -17,35 +15,21 @@ export default function HeaderEl() {
         hyperlink='/'
         siteName='Roma Socio-Economic Scoreboard'
         siteSubName='Europe and Central Asia'
+        siteSubNameUrl='https://www.undp.org/eurasia'
       />
       <HeaderMainNavUnit>
-        <HeaderMenuUnit className='justify-end! gap-12! pr-4'>
-          <Link to='/'>Home</Link>
-          <Link to='/data-explorer'>Data explorer</Link>
-          <HoverCard openDelay={0} closeDelay={60}>
-            <HoverCardTrigger className='flex items-center gap-1'>
-              Countries
-              <ChevronDown size={16} />
-            </HoverCardTrigger>
-            <HoverCardContent side='bottom' align='center' className='p-0'>
-              <div className='flex flex-col px-0 py-2'>
-                {COUNTRIES.map((country) => (
-                  <Link
-                    to='/countries/$countryId'
-                    params={{ countryId: country.isoCode }}
-                    key={country.isoCode}
-                    className='w-full p-3 hover:bg-surface-hover hover:text-primary'
-                  >
-                    <P size='sm' marginBottom='none'>
-                      {country.name}
-                    </P>
-                  </Link>
-                ))}
-              </div>
-            </HoverCardContent>
-          </HoverCard>
-          <Link to='/resources'>Resources</Link>
-          <Link to='/about'>About</Link>
+        <HeaderMenuUnit align='end'>
+          <HeaderMenuLink href='/'>Home</HeaderMenuLink>
+          <HeaderMenuLink href='/data-explorer'>Data explorer</HeaderMenuLink>
+          <HeaderMenuDropdown
+            label='Countries'
+            items={COUNTRIES.map((country) => ({
+              label: country.name,
+              href: `/countries/${country.isoCode}`,
+            }))}
+          />
+          <HeaderMenuLink href='/resources'>Resources</HeaderMenuLink>
+          <HeaderMenuLink href='/about'>About</HeaderMenuLink>
         </HeaderMenuUnit>
       </HeaderMainNavUnit>
     </Header>

@@ -38,7 +38,7 @@ export interface GapRow extends BaseRow {
 
 export type DisaggregationRow = PercentageRow | MeanRow | GapRow;
 
-export interface SurveyIndicator {
+export interface SurveyIndicatorDataType {
   id: string;
   description: string;
   metaData: string;
@@ -52,7 +52,7 @@ export interface OptionType {
   value: string;
 }
 
-export interface IndicatorMetaData {
+export interface IndicatorMetaDataType {
   id: string;
   title: string;
   category: string;
@@ -61,7 +61,13 @@ export interface IndicatorMetaData {
   formula: string;
   surveyBase: string;
   valueType: string;
-  calculationTypeForDisaggregation: Record<string, string>;
+  maxValue: number;
+  calculationTypeForDisaggregation: {
+    sex: string;
+    age: string;
+    education: string;
+    employment: string;
+  };
   availableDisaggregations: string[];
 }
 
@@ -93,7 +99,7 @@ export interface FullStoryDataType {
   description: string;
 }
 
-export interface SlideContent {
+export interface SlideContentDataType {
   vizContent: {
     title: string;
     subTitle: string;
