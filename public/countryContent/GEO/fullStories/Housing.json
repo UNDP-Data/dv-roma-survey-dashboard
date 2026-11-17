@@ -12,6 +12,24 @@
         {
           "type": "graph",
           "graphType": "unitChart",
+          "value": 47,
+          "populationGroup": "roma",
+          "title": "Households owned their dwelling",
+          "subTitle": "Share of households that owned their dwelling."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 87,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
           "value": 48,
           "populationGroup": "roma",
           "title": "Renting home from someone outside the household",
