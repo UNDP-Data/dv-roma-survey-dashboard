@@ -1,0 +1,272 @@
+{
+  "title": "The cost of keeping a home leaves little for improving it",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Georgia. Quotes from the micro-narratives study with Roma respondents in Georgia.",
+  "sections": [
+    {
+      "title": "Rent comes first and crowds out the budget for everything else",
+      "content": [
+        {
+          "type": "text",
+          "content": "Unlike the majority of their non-Roma neighbors, many Roma families in Georgia rent their homes, some for decades. Rent takes a regular share of highly irregular income, before utilities, school transport or medicines. Home ownership does not always settle the problem either: some families’ homes are tied to debts they struggle to repay."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 48,
+          "populationGroup": "roma",
+          "title": "Renting home from someone outside the household",
+          "subTitle": "Share of households renting their home from someone outside the household."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 8,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "quote",
+          "content": "“...I live with my husband in a rented place, and we pay 600 GEL. My husband is unemployed. He has had heart surgery and can’t work. I have to work at the market. We need our own apartment. Our income is not enough.”",
+          "author": "Female, aged 30 to 49"
+        }
+      ],
+      "microViz": {
+        "titleText": "3 times",
+        "text": "as many Roma households as non-Roma households are very worried about eviction"
+      }
+    },
+    {
+      "title": "Overcrowding is not just a challenge for large families",
+      "content": [
+        {
+          "type": "text",
+          "content": "Overcrowding is nearly universal among Roma, and even Roma households with fewer members are far more often short of space than their neighbors. Affordability pushes Roma to contend with smaller properties that are often rented or hard to furnish with additional rooms."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "People living in overcrowded homes",
+          "subTitle": "Share of people living in homes with too few rooms for the household’s size and composition, overall and by household size",
+          "data": [
+            {
+              "label": "All household sizes",
+              "size": [
+                93,
+                64
+              ]
+            },
+            {
+              "label": "Households of 1 to 3 people",
+              "size": [
+                70,
+                34
+              ]
+            },
+            {
+              "label": "Households of 4 or more",
+              "size": [
+                96,
+                81
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240,
+            "leftMargin": 150
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "quote",
+          "content": "“...I live with my husband in a rented place, and we pay 600 GEL. My husband is unemployed. He has had heart surgery and can’t work. I have to work at the market. We need our own apartment. Our income is not enough.”",
+          "author": "Male, aged 50 to 64"
+        },
+        {
+          "type": "quote",
+          "content": "“...I do have a house, but I can’t build (complete) it. I live in two rooms with my two children, and they are growing up. I can’t build anything because I don’t have the means.”",
+          "author": "Female, aged 30 to 49"
+        }
+      ],
+      "microViz": {
+        "value": 9,
+        "text": "Roma live in overcrowded homes"
+      }
+    },
+    {
+      "title": "What a home lacks compounds the daily workload",
+      "content": [
+        {
+          "type": "text",
+          "content": "Limited living space is only part of what families contend with indoors. Without a toilet or piped water inside, washing and caring take more time and effort. Leaks and damp make rooms harder to keep warm. Repairs could improve these conditions, but require money that is already allocated for rent, bills and the basic needs."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Housing conditions and basic facilities",
+          "subTitle": "Share of people living with each housing problem or gap in facilities.",
+          "data": [
+            {
+              "label": "Leaking roof, damp or rot",
+              "size": [
+                53,
+                35
+              ]
+            },
+            {
+              "label": "No toilet inside the dwelling",
+              "size": [
+                57,
+                15
+              ]
+            },
+            {
+              "label": "No piped water inside the dwelling",
+              "size": [
+                27,
+                8
+              ]
+            },
+            {
+              "label": "Not connected to public sewerage",
+              "size": [
+                24,
+                11
+              ]
+            },
+            {
+              "label": "No internet access at home",
+              "size": [
+                15,
+                6
+              ]
+            }
+          ],
+          "settings": {
+            "height": 340,
+            "leftMargin": 150
+          }
+        }
+      ],
+      "microViz": {
+        "titleText": "More than 1 in 3",
+        "value": 4,
+        "text": "Roma live in homes they cannot afford to keep warm"
+      }
+    },
+    {
+      "title": "A working household can still have nothing to fall back on",
+      "content": [
+        {
+          "type": "text",
+          "content": "With so much income committed to everyday needs, there is no financial cushion to absorb sudden changes in circumstances. Roma families are far more likely than their neighbors to fall behind on payments, struggle to make ends meet or experience acute food insecurity. These differences remain wide even when the head of household works. An unexpected expense therefore calls for more than finding extra money: it can mean deciding which existing need will have to wait."
+        },
+        {
+          "type": "multiGraph",
+          "graphType": "groupedBarChart",
+          "options": [
+            "Household economic security",
+            "Economic security when the head of household has a job"
+          ],
+          "title": [
+            "Household economic security",
+            "Economic security when the head of household has a job"
+          ],
+          "subTitle": [
+            "Share of people living in households in arrears on rent, utility or loan payments, experiencing severe food insecurity, unable to afford an unexpected expense, or making ends meet with difficulty.",
+            "The same measures, for people living in a household whose head is in paid work."
+          ],
+          "data": [
+            [              
+              {
+                "label": "Arrears on rent, utility or loan payments",
+                "size": [
+                  45,
+                  14
+                ]
+              },
+              {
+                "label": "Severe food insecurity",
+                "size": [
+                  29,
+                  4
+                ]
+              },
+              {
+                "label": "Cannot afford unexpected expenses",
+                "size": [
+                  76,
+                  45
+                ]
+              },
+              {
+                "label": "Difficulty making ends meet",
+                "size": [
+                  49,
+                  17
+                ]
+              }
+            ],
+            [              
+              {
+                "label": "Arrears on rent, utility or loan payments",
+                "size": [
+                  42,
+                  14
+                ]
+              },
+              {
+                "label": "Severe food insecurity",
+                "size": [
+                  23,
+                  2
+                ]
+              },
+              {
+                "label": "Cannot afford unexpected expenses",
+                "size": [
+                  70,
+                  36
+                ]
+              },
+              {
+                "label": "Difficulty making ends meet",
+                "size": [
+                  44,
+                  10
+                ]
+              }
+            ]
+          ],
+          "settings": {
+            "height": 320,
+            "leftMargin": 200
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "quote",
+          "content": "“We live in a household of 9 people, out of which 4 work... We spend the whole day at the market, but still, the income is not enough... It’s just the daily money we have. But if something unexpected happens, there is no money in the family. As we go forward, things are getting worse.”",
+          "author": "Female, aged 30 to 49"
+        },
+        {
+          "type": "quote",
+          "content": "“We need housing; we are living in a rented place. Work does not provide much support, and whatever we earn is spent on food. The municipality helps us with firewood. This job is seasonal, and it would be great if there were permanent employment opportunities in Dedoplistskaro.”",
+          "author": "Female, aged 50 to 64"
+        },
+        {
+          "type": "text",
+          "content": "Children grow up within these limits. A crowded room, a cold home or a shortage of food is part of everyday life, rather than an expense that can simply be postponed. Keeping the household afloat can still leave much of what children need unmet."
+        }
+      ],
+      "microViz": {
+        "value": 4,
+        "text": "Roma children live in a household where someone went to bed hungry"
+      }
+    }
+  ]
+}

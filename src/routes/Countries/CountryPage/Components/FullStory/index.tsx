@@ -12,7 +12,7 @@ import { Spinner } from '@undp/design-system-react/Spinner';
 import { H2, H3, H4, P } from '@undp/design-system-react/Typography';
 import { THEME_LABELS } from '@/Constants';
 import { BadgeEl } from '@/components/BadgeEl';
-import type { RecommendationDataType, Themes } from '@/types';
+import type { RecommendationObjDataType, Themes } from '@/types';
 import { GraphBlock, MultiGraphBlock } from './graphBlock';
 import { MicroVizBlock } from './microVizBlock';
 import { QuoteBlock } from './QuoteBlock';
@@ -63,7 +63,7 @@ export function FullStory({
 }: {
   isoCode: string;
   theme: Themes;
-  recommendation: RecommendationDataType;
+  recommendation: RecommendationObjDataType;
   setOpenDrawer: (open: string) => void;
 }) {
   const { data, isLoading, isError } = useFullStoryData(isoCode, theme);

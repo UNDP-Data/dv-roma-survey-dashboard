@@ -1,0 +1,269 @@
+{
+  "title": "For Roma, early exits from education leave lasting gaps in skills and qualifications",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Georgia. Quotes from the micro-narratives study with Roma respondents in Georgia",
+  "sections": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "content": "A mother wants her children to have the education she missed. A young woman hopes college will lead to a career in hairdressing. Such ambitions appear throughout Roma accounts, yet completing secondary school remains uncommon. Understanding that distance between aspirations and outcomes means looking at what happens both inside school and at home."
+        }
+      ]
+    },
+    {
+      "title": "A divide that has not narrowed between generations",
+      "content": [
+        {
+          "type": "text",
+          "content": "Only about one in ten Roma aged 20 to 24 have completed upper secondary education, the same share as among Roma adults overall. Among their non-Roma neighbors, completion is the norm in both age groups."
+        },
+        {
+          "type": "text",
+          "content": "There is little sign that finishing secondary school has become easier for the younger generation."
+        },
+        {
+          "type": "multiGraph",
+          "graphType": "groupedBarChart",
+          "options": [
+            "Completed secondary education, ages 18 to 65",
+            "Completed upper secondary education, ages 20 to 24"
+          ],
+          "title": [
+            "Completed secondary education, ages 18 to 65",
+            "Completed upper secondary education, ages 20 to 24"
+          ],
+          "subTitle": [
+            "Share of people aged 18 to 65 who have completed secondary education, overall and by sex.",
+            "Share of people aged 20 to 24 who have completed upper secondary education, overall and by sex."
+          ],
+          "data": [
+            [
+              {
+                "label": "Overall",
+                "size": [
+                  11,
+                  89
+                ]
+              },
+              {
+                "label": "Women",
+                "size": [
+                  7,
+                  91
+                ]
+              },
+              {
+                "label": "Men",
+                "size": [
+                  16,
+                  87
+                ]
+              }
+            ],
+            [
+              {
+                "label": "Overall",
+                "size": [
+                  11,
+                  91
+                ]
+              },
+              {
+                "label": "Women",
+                "size": [
+                  11,
+                  97
+                ]
+              },
+              {
+                "label": "Men",
+                "size": [
+                  10,
+                  83
+                ]
+              }
+            ]
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "text",
+          "content": "The consequences are felt well beyond school. Limited literacy can prevent someone with practical skills from meeting a job’s requirements, while missing qualifications restricts access to further training. Roma women face particularly large gaps in attainment, often alongside care responsibilities that make returning to education difficult:"
+        },
+        {
+          "type": "quote",
+          "content": "“I don’t have an education, that’s why I can’t find work, and because of the kids, since I’m alone at home, I take care of them. That’s why I can’t work. But I want to work.”",
+          "author": "Female, aged 24 to 29"
+        },
+        {
+          "type": "text",
+          "content": "Parents who left school early are often most determined to see their children go further. But they often have fewer means and skills to prepare their children for the classroom. Without support beyond the household, children can encounter some of the same barriers their parents hoped education would empower them to overcome."
+        }
+      ],
+      "microViz": {
+        "titleText": "About 1 in 10",
+        "value": 1,
+        "maxValue": 10,
+        "text": "young Roma have completed secondary education"
+      }
+    },
+    {
+      "title": "Early education depends on access and parents’ confidence in care",
+      "content": [
+        {
+          "type": "text",
+          "content": "Early childhood education reaches only a small minority of Roma children, compared with most of their neighbors. Many therefore miss this critical foundation for classroom learning, while families provide the daytime care themselves."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 16,
+          "populationGroup": "roma",
+          "title": "Child (aged 0 to 5) enrolled in daycare"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 52,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 92,
+          "populationGroup": "roma",
+          "title": "Living in a household where the five-year-old is not in preschool"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 8,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "text",
+          "content": "Some families point to costs or the lack of a daycare nearby, but access also depends on trust. For one mother, concerns about the care her child would receive outweighed the prospect of enrolling:"
+        },
+        {
+          "type": "quote",
+          "content": "“I didn’t enroll my child in kindergarten because I don’t trust them; they don’t take good care of children there. That’s why I decided to take care of my child myself.”",
+          "author": "Female, aged 18 to 23"
+        }
+      ]
+    },
+    {
+      "title": "A place in class does not always create a sense of belonging",
+      "content": [
+        {
+          "type": "text",
+          "content": "Most Roma children of compulsory school age attend school, though a clear gap remains with non-Roma children. Being present in class does not ensure a child feels included. When exclusion by classmates meets little attention from teachers, the wish to attend can wear away, and parents working long days have little time to make up for it. One mother describes how this happened to her children:"
+        },        
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "School attendance at compulsory age",
+          "subTitle": "Share of children of compulsory school age attending school, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                75,
+                94
+              ]
+            },
+            {
+              "label": "Girls",
+              "size": [
+                76,
+                93
+              ]
+            },
+            {
+              "label": "Boys",
+              "size": [
+                74,
+                96
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Left education early, ages 18 to 24",
+          "subTitle": "Share of people aged 18 to 24 who have completed at most lower secondary education and are not in education or training, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                83,
+                8
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                81,
+                2
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                85,
+                14
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "quote",
+          "content": "“My children used to do well at school, but their classmates didn’t want to be friends with them... Teachers used to sit them in the last row in class and never ask them questions, do not engage them. They used to be very happy to go to school. I did everything I could to make sure they didn’t end up uneducated like me. Over time, they started finding reasons not to go to school... I am doing trade, but I can’t give them enough attention.”",
+          "author": "Female, aged 30 to 49"
+        }
+      ]
+    },
+    {
+      "title": "Learning competes with the immediate demand to earn a living and care responsibilities for the family",
+      "content": [
+        {
+          "type": "text",
+          "content": "Responsibilities at home can begin well before adulthood. Looking after younger siblings or helping relatives earn takes time from school, and pursuing further study may require money or care arrangements a family cannot manage. Social expectations about how much schooling is enough also vary."
+        },
+        {
+          "type": "text",
+          "content": "Yet leaving school early does not mean giving up the wish to learn. One young woman recalls the career she aspired that tertiary education would make possible:"
+        },
+        {
+          "type": "quote",
+          "content": "“I wanted to study at the college, but at that time, I couldn’t. I had very serious problems, I was selling things, and I couldn’t attend because I needed money and taking care of my brother, my little sister, and my children. It was a big obstacle for me. I wanted to be a hair stylist, build my career, and think about my future.”",
+          "author": "Female, aged 18 to 23"
+        },
+        {
+          "type": "text",
+          "content": "By the time they seek work, many young Roma are already trying to compensate for schooling they missed. Their first employment choices are made with fewer qualifications and, for some, family responsibilities already in place."
+        }
+      ]
+    }
+  ]
+}

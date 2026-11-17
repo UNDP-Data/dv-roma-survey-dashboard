@@ -25,6 +25,7 @@ import { CardEl } from '@/components/CardEl';
 import type {
   FullStoryDataType,
   RecommendationDataType,
+  RecommendationObjDataType,
   ScrollySectionDataType,
   Themes,
 } from '@/types';
@@ -38,7 +39,7 @@ function usePageContentData(isoCode: string) {
       fetchAndParseJSON(`/countryContent/${isoCode}/mainPage.json`) as Promise<{
         intro: { title: string; content: string };
         scrollyTelling: ScrollySectionDataType[];
-        recommendations: RecommendationDataType[];
+        recommendations: RecommendationDataType;
         fullStoryCards: FullStoryDataType[];
         title: string;
         subTitle: string;
@@ -160,9 +161,9 @@ export function CountryPage() {
                           isoCode={countryCode}
                           theme={theme.theme}
                           recommendation={
-                            data.recommendations.find(
+                            data.recommendations.recommendations.find(
                               (el) => el.theme === theme.theme,
-                            ) as RecommendationDataType
+                            ) as RecommendationObjDataType
                           }
                           setOpenDrawer={setOpenDrawer}
                         />
@@ -186,10 +187,10 @@ export function CountryPage() {
               >
                 Policy options
               </P>
-              <H4 weight='bold'>More choices. Greater security. Equal participation</H4>
+              <H4 weight='bold'>{data.recommendations.title}</H4>
               <Spacer size='2xl' />
               <Grid noOfCol={{ base: 1, sm: 1, md: 1, lg: 1 }} gap='16px'>
-                {data.recommendations.map((recommendation) => (
+                {data.recommendations.recommendations.map((recommendation) => (
                   <GridItem
                     key={recommendation.theme}
                     className='bg-background text-content-primary'

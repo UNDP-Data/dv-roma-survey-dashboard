@@ -1,0 +1,184 @@
+{
+  "title": "Discrimination closes the opportunities that investments in time and skills are meant to unlock",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Georgia. Quotes from the micro-narratives study with Roma respondents in Georgia.",
+  "sections": [
+    {
+      "title": "Unequal treatment meets young Roma at a formative stage when they try to find their place in society",
+      "content": [
+        {
+          "type": "text",
+          "content": "A steadier job could make rent more manageable and leave money for treatment. Continuing education could widen the choice of work. But pursuing these possibilities also means being accepted by people who have the power to grant or deny them opportunities. Roma individuals report ethnic discrimination far more often than their neighbors, with the highest share among young people. At a formative stage of life when they are seeking to establish independence, prejudice can narrow the choices they are trying to expand."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Discrimination on grounds of ethnicity or skin color",
+          "subTitle": "Share of interviewed respondents reporting discrimination on these grounds in the previous year, overall and by age",
+          "data": [
+            {
+              "label": "All ages",
+              "size": [
+                13,
+                1
+              ]
+            },
+            {
+              "label": "15-24",
+              "size": [
+                23,
+                0
+              ]
+            },
+            {
+              "label": "25-64",
+              "size": [
+                9,
+                2
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        }
+      ]
+    },
+    {
+      "title": "Discrimination closes off jobs and follows people into work",
+      "content": [
+        {
+          "type": "text",
+          "content": "Job seekers describe rejection, and workers recount dismissal after their ethnicity becomes known or lower pay for harder work. Such treatment makes an insecure job harder to leave: seeking an alternative can mean facing the same prejudice again. For some young people, this turns a wish to work in Georgia into a reluctant decision to live and work abroad:"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 28,
+          "populationGroup": "roma",
+          "title": "Discrimination when looking for work, past five years",
+          "subTitle": "Share of respondents who looked for work in the previous five years reporting discrimination on any ground while doing so."
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 4,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "quote",
+          "content": "“...They also reduce my salary, even though I do more difficult work than others... I tried to find something else, but when they find out I’m a Roma, they don’t hire me. It’s hard because in Georgia, I don’t feel like a full citizen.”",
+          "author": "Male, aged 18 to 23"
+        },
+        {
+          "type": "quote",
+          "content": "“...When people hear I am Roma, they assume I must be a thief... I don’t want to leave the country, but I have to go to Poland. I don’t want to leave; I want to stay in Georgia, have a job, and not leave my homeland.”",
+          "author": "Male, aged 24 to 29"
+        }
+      ]
+    },
+    {
+      "title": "Gaps in banking and digital access make everyday tasks harder",
+      "content": [
+        {
+          "type": "text",
+          "content": "As wages, benefits, job vacancies and public services increasingly run through bank accounts and phones, for many Roma without a bank account, smartphone or internet at home, these channels are obstacles rather than shortcuts."
+        },
+        {
+          "type": "text",
+          "content": "They rely on others or on in-person visits to apply for jobs, receive payments or use public services."
+        },
+        {
+          "type": "text",
+          "content": "The gaps in financial and digital access are most pronounced for Roma women. When viewed together with access rates for non-Roma women, fewer Roma have internet at home for their own use and more live in a household without any bank account. When wages and benefits arrive through someone else’s account or phone, women can have less say over the money that comes into the household."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Internet access at home for personal use",
+          "subTitle": "Share of interviewed respondents with internet access at home for personal use, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                74,
+                91
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                66,
+                91
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                82,
+                91
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        },     
+        {
+          "type": "spacer",
+          "size": "xl"
+        },   
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "No bank account in the household",
+          "subTitle": "Share of people aged 16 and over living in a household with no bank account, overall and by sex.",
+          "data": [
+            {
+              "label": "Overall",
+              "size": [
+                23,
+                6
+              ]
+            },
+            {
+              "label": "Women",
+              "size": [
+                25,
+                6
+              ]
+            },
+            {
+              "label": "Men",
+              "size": [
+                20,
+                6
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240
+          }
+        }
+      ],
+      "microViz": {
+        "value": 5,
+        "titleText": "About half",
+        "text": "Roma respondents own a smartphone"
+      }
+    },
+    {
+      "title": "Social assistance should not leave families with another problem to solve",
+      "content": [
+        {
+          "type": "text",
+          "content": "For many Roma households, making a formal request for social assistance, or access to a public service, means cumbersome encounters with institutions. Barriers cast by missing documents, discrimination, or digital and financial exclusion leave them uncertain about how to navigate the process or where to look for support. Civil society organizations accompany them, but ensuring access requires action from the institutions. Without that, seeking assistance becomes another demand on their time and resources, as families strive to meet basic household needs."
+        },
+        {
+          "type": "quote",
+          "content": "“I didn’t go to school because I didn’t have documents...”",
+          "author": "Male, aged 18 to 23"
+        }
+      ]
+    }
+  ]
+}

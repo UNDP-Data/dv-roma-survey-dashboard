@@ -73,10 +73,15 @@ export interface IndicatorMetaDataType {
 
 export type Themes = 'Education' | 'Health' | 'Employment' | 'Housing' | 'Discrimination';
 
-export interface RecommendationDataType {
+export interface RecommendationObjDataType {
   theme: Themes;
   mainRecommendation: string;
   detailedRecommendations: string[];
+}
+
+export interface RecommendationDataType {
+  title: string;
+  recommendations: RecommendationObjDataType[];
 }
 
 export interface ScrollySectionDataType {

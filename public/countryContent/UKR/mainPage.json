@@ -28,7 +28,7 @@
     },
       "text": {
         "title": "Disadvantages that carry through life",
-        "content": "Gaps between Roma and non-Roma open early, and they widen throughout the life course. These disadvantages begin in education, put economic security at risk, and shape everyday life through living conditions and health, while discrimination cuts across all these areas.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
+        "content": "Gaps between Roma and non-Roma open early, and they widen throughout the life course. These disadvantages begin in <Badge>education</Badge>, put <Badge>economic security</Badge> at risk, and shape everyday life through <Badge>living conditions</Badge> and <Badge>health</Badge>, while <Badge>discrimination</Badge> cuts across all these areas.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
       }
     },
     {
@@ -97,52 +97,55 @@
       }
     }
   ],
-  "recommendations": [
-    {
-      "theme": "Education",
-      "mainRecommendation": "Keep children learning and open routes back into education",
-      "detailedRecommendations": [
-        "Support preschool participation and continued schooling, including rapid re-enrollment after displacement and access to remote learning",
-        "Offer literacy and vocational courses linked to jobs, with financial, childcare and transport support that makes participation possible, especially for young women"
-      ]
-    },
-    {
-      "theme": "Employment",
-      "mainRecommendation": "Open pathways into formal, protected work",
-      "detailedRecommendations": [
-        "Connect training and recruitment to secure jobs through employer partnerships, apprenticeships and help with documentation",
-        "Address discrimination and support formal employment, with childcare and flexible participation for carers",
-        "Assess progress through earnings, contracts and sustained employment"
-      ]
-    },
-    {
-      "theme": "Housing",
-      "mainRecommendation": "Make homes safe, warm and connected",
-      "detailedRecommendations": [
-        "Combine investment in water, sanitation and electricity with help to afford connections, repairs and heating",
-        "Ensure displaced families and those with documentation or tenure difficulties can access housing support",
-        "Coordinate assistance where several needs overlap"
-      ]
-    },
-    {
-      "theme": "Health",
-      "mainRecommendation": "Make treatment affordable and support those providing care",
-      "detailedRecommendations": [
-        "Reduce out-of-pocket costs and ensure medicine support reaches households with irregular incomes or documentation difficulties",
-        "Extend outreach where travel is a barrier",
-        "Provide community care, respite and disability support so caring for relatives does not require giving up a livelihood"
-      ]
-    },
-    {
-      "theme": "Discrimination",
-      "mainRecommendation": "Make equal access an institutional responsibility",
-      "detailedRecommendations": [
-        "Help people obtain documents and use services through both in-person and assisted digital channels",
-        "Establish accessible complaints procedures with clear follow-up",
-        "Involve Roma communities in identifying barriers and reviewing whether public institutions address them"
-      ]
-    }
-  ],
+  "recommendations": {
+    "title":"More choices. Greater security. Equal participation",
+    "recommendations": [
+      {
+        "theme": "Education",
+        "mainRecommendation": "Keep children learning and open routes back into education",
+        "detailedRecommendations": [
+          "Support preschool participation and continued schooling, including rapid re-enrollment after displacement and access to remote learning",
+          "Offer literacy and vocational courses linked to jobs, with financial, childcare and transport support that makes participation possible, especially for young women"
+        ]
+      },
+      {
+        "theme": "Employment",
+        "mainRecommendation": "Open pathways into formal, protected work",
+        "detailedRecommendations": [
+          "Connect training and recruitment to secure jobs through employer partnerships, apprenticeships and help with documentation",
+          "Address discrimination and support formal employment, with childcare and flexible participation for carers",
+          "Assess progress through earnings, contracts and sustained employment"
+        ]
+      },
+      {
+        "theme": "Housing",
+        "mainRecommendation": "Make homes safe, warm and connected",
+        "detailedRecommendations": [
+          "Combine investment in water, sanitation and electricity with help to afford connections, repairs and heating",
+          "Ensure displaced families and those with documentation or tenure difficulties can access housing support",
+          "Coordinate assistance where several needs overlap"
+        ]
+      },
+      {
+        "theme": "Health",
+        "mainRecommendation": "Make treatment affordable and support those providing care",
+        "detailedRecommendations": [
+          "Reduce out-of-pocket costs and ensure medicine support reaches households with irregular incomes or documentation difficulties",
+          "Extend outreach where travel is a barrier",
+          "Provide community care, respite and disability support so caring for relatives does not require giving up a livelihood"
+        ]
+      },
+      {
+        "theme": "Discrimination",
+        "mainRecommendation": "Make equal access an institutional responsibility",
+        "detailedRecommendations": [
+          "Help people obtain documents and use services through both in-person and assisted digital channels",
+          "Establish accessible complaints procedures with clear follow-up",
+          "Involve Roma communities in identifying barriers and reviewing whether public institutions address them"
+        ]
+      }
+    ]
+  },
   "fullStoryCards": [
     {
       "theme": "Education",

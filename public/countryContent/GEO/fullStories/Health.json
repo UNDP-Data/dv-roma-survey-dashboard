@@ -1,0 +1,112 @@
+{
+  "title": "Illness takes more from a household than the cost of treatment",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Georgia. Quotes from the micro-narratives study with Roma respondents in Georgia.",
+  "sections": [
+    {
+      "title": "Families have to manage illness with less money and more demands on their time, even when they have insurance",
+      "content": [
+        {
+          "type": "text",
+          "content": "Working-age Roma report poor health more often than their non-Roma neighbors. For a family already stretching its income across basic needs and housing, illness is a pressure that the household cannot afford. Medical expenses impose out-of-pocket costs, while the recovery time stalls the income of a household with already little savings. When the breadwinner becomes ill, another family member is often forced to cover more of the household’s needs just as those needs grow."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Bad or very bad self-rated health",
+          "subTitle": "Reporting of bad or very bad health within each age group.",
+          "data": [
+            {
+              "label": "25 to 64",
+              "size": [
+                9,
+                2
+              ]
+            },
+            {
+              "label": "65 and over",
+              "size": [
+                25,
+                12
+              ]
+            }
+          ],
+          "settings": {
+            "height": 176
+          }
+        }
+      ],
+      "microViz": {
+        "value": 1,
+        "maxValue": 4,
+        "text": "Roma aged 25 to 64 report bad or very bad health"
+      }
+    },
+    {
+      "title": "Even when insured, the costs of healthcare still remain unaffordable for many Roma households",
+      "content": [
+        {
+          "type": "text",
+          "content": "Roma and non-Roma are equally likely to have medical insurance, yet Roma are much more likely to go without treatment they need. Consultation fees and medicines still have to be paid for, and with earnings that change from week to week, care waits until there is cash:"
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Medical insurance and unmet care needs",
+          "subTitle": "The insurance measure covers respondents; unmet care covers those who needed treatment in the previous year.",
+          "data": [
+            {
+              "label": "No medical insurance",
+              "size": [
+                34,
+                36
+              ]
+            },
+            {
+              "label": "Did not get care when needed",
+              "size": [
+                51,
+                32
+              ]
+            }
+          ],
+          "settings": {
+            "height": 176
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "quote",
+          "content": "“...When we need to go to the doctor, we go when we have money.”",
+          "author": "Male, aged 24 to 29"
+        },
+        {
+          "type": "quote",
+          "content": "“...Sometimes my husband doesn’t have his medicine. I walk around selling tights and socks. Sometimes I don’t sell anything, and I need to buy food for the kids, or medicine. Sometimes I don’t buy food for the children and instead buy my husband’s medicine.”",
+          "author": "Female, aged 30 to 49"
+        }
+      ]
+    },
+    {
+      "title": "Care responsibilities shape the employment choices available for Roma women",
+      "content": [
+        {
+          "type": "text",
+          "content": "Illness of a family member frequently draws another member away from paid work due to increased care responsibilities. Alongside childcare, these often fall to women. Some manage to squeeze informal trading around care; others cannot leave home for income. The arrangements for sustaining the household often leave women with virtually no choice about their own working lives."
+        },
+        {
+          "type": "quote",
+          "content": "“First of all, I’m a single mother, I have a small child, I live with my brother. I can’t go to work either”",
+          "author": "Female, aged 18 to 23"
+        },
+        {
+          "type": "quote",
+          "content": "“...I work day and night... and I can’t afford to hire a babysitter. Since we live in a rented place, it’s very hard for us.”",
+          "author": "Female, aged 24 to 29"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "title": "Roma in Georgia: Working, but not getting ahead",
+  "subTitle": "Roma households are easy to miss in national averages. Up close, the same jobs, schools and services provide them less foundation to build a better future.",
+  "intro": {
+    "title": "Even with more than one income earner, many Roma households in Georgia cannot make ends meet.",
+    "content": "In a Roma family of nine, four members spend their days selling goods at the town market. There is money for daily needs, but nothing to draw on when an unexpected expense arrives. Work is a constant in their lives; a steady income is not, and the future well-being remains elusive.\n\nAcross the surveyed communities, Roma households describe assembling a living from what is available: goods to sell, scrap to collect, a harvest that brings a few weeks of paid work, or a day on a construction site. These activities keep families afloat but offer no predictability for the week ahead. Rent, medicines and school expenses still have to be met.\n\nThe routes into this kind of precarious work almost always begin with interrupted schooling. Young Roma adults today are no more likely to have completed secondary school than their parents’ generation. They enter adulthood with few qualifications, and even those who complete vocational training can meet employers unwilling to hire them. Informal trading, collecting scrap or seasonal farm work become the practical ways to earn, with little prospect of long-term stability.\n\nBreaking this cycle can be difficult even when Roma are determined to be the authors of their own futures. A woman who aspires to train as a hairstylist cannot balance the necessary training for qualifications with earning and caring for her family. A man with a driver’s license is refused a job because he cannot read and write. Following his aspirations, a Roma person who trained as a bartender found himself dismissed when employers learn his background. Where missing schooling does not hold Roma back, stigma at the workplace often does.\n\nTo survive, families must pool their meager earnings, share crowded homes and combine informal work with social assistance. Many actively search for training, better housing and stable employment. Their accounts show the vast distance between their efforts to sustain a household and the means to change its future.\n\nTheir lived experiences raise a question that runs through this story: what would it take to turn the daily pursuits of a Roma family into a pathway towards dignified social and economic life? The answer starts in the classroom, but also hinges on the jobs, quality housing and accessible services within the Roma family’s reach."
+  },
+  "scrollyTelling": [
+    {
+      "vizContent": {
+        "romaHighlighted": 0,
+        "nonRomaHighlighted": 0,
+        "title": "",
+        "subTitle": ""
+      },
+      "text": {
+        "title": "Shared neighborhoods, different prospects",
+        "content": "To better understand these disparities, Roma households were surveyed alongside their non-Roma neighbors in nine locations across Georgia, from Tbilisi and Kutaisi to the Black Sea coast and settlements in Kakheti and Kvemo Kartli. Their proximity gives a detailed picture of how opportunities and services are available unevenly to households living side by side.",
+        "methodology": "This story is based on the 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, covering 159 Roma and 300 nearby non-Roma households in Tbilisi, Kutaisi, Kobuleti, Poti, Dedoplistskaro, Telavi, Gardabani, Rustavi and Agara, and a micro-narratives study collecting 153 personal accounts of Roma individuals."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 100,
+        "nonRomaHighlighted": 100,
+        "title": "",
+        "subTitle": ""
+    },
+      "text": {
+        "title": "How disadvantages compound one another",
+        "content": "Gaps between Roma and non-Roma open early, and they widen throughout the life course. These disadvantages begin in <Badge>education</Badge>, put <Badge>economic security</Badge> at risk, and shape everyday life through <Badge>living conditions</Badge> and <Badge>health</Badge>, while <Badge>discrimination</Badge> cuts across all these areas.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 83,
+        "nonRomaHighlighted": 8,
+        "title": "Left education early, ages 18 to 24",
+        "subTitle": "People aged 18–24 who have completed at most lower secondary education and are not in education or training."
+      },
+      "text": {
+        "theme": "Education",
+        "title": "Too few young Roma leave education with the qualifications to choose what comes next",
+        "content": "Exclusion in the classroom and pressures at home can interrupt schooling, leaving gaps that are harder to address later."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 94,
+        "nonRomaHighlighted": 57,
+        "title": "Have informal jobs",
+        "subTitle": "Employed people aged 15 to 64."
+      },
+      "text": {
+        "theme": "Employment",
+        "title": "Having a job says little about how secure a Roma household is",
+        "content": "Employment rates are relatively close to those of nearby non-Roma, but informal work and low income offer much less to rely on."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 45,
+        "nonRomaHighlighted": 14,
+        "title": "Live in households behind on housing payments",
+        "subTitle": "People of all ages."
+      },
+      "text": {
+        "theme": "Housing",
+        "title": "Often overcrowded and rented, housing costs compete with other basic needs",
+        "content": "Rent and bills absorb income while overcrowding and missing basic amenities set back health, education and work."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 51,
+        "nonRomaHighlighted": 32,
+        "title": "Did not get medical care when they needed it",
+        "subTitle": "Respondents who needed medical care in the previous year."
+      },
+      "text": {
+        "theme": "Health",
+        "title": "Roma are as likely as their neighbors to be insured, but not to get the care they need",
+        "content": "Similar coverage conceals a much wider gap in access to treatment, as consultation and medicine costs compete with other basic needs."
+      }
+    },
+    {
+      "vizContent": {
+        "romaHighlighted": 13,
+        "nonRomaHighlighted": 1,
+        "title": "Experienced discrimination in the past year",
+        "subTitle": "Interviewed respondents reporting discrimination because of ethnicity or skin color."
+      },
+      "text": {
+        "theme": "Discrimination",
+        "title": "Unequal treatment is made part of everyday life for many Roma",
+        "content": "Unequal treatment narrows the opportunities and services within reach, especially for young Roma."
+      }
+    }
+  ],
+  "recommendations": {
+    "title":"Real and lasting change is possible when education and work offer concrete pathways to opportunities for Roma",
+    "recommendations": [
+    {
+      "theme": "Education",
+      "mainRecommendation": "Make staying in education, and returning to it, a realistic option",
+      "detailedRecommendations": [
+        "Support Roma children in continuing into upper secondary school, particularly for Roma girls, and respond early to exclusion and dropouts.",
+        "Work with families, mothers in particular, and offer paths back to the classroom for literacy, second-chance learning and vocational training that people can combine with work and care responsibilities."
+      ]
+    },
+    {
+      "theme": "Employment",
+      "mainRecommendation": "Support informal trading and practical skills to lead to formal work with social protection",
+      "detailedRecommendations": [
+        "Bridge the gap between skills, training and formal employment through partnerships with employers, apprenticeships and fair recruitment.",
+        "Support informal traders with registration, banking and reliable trading spaces.",
+        "Give clear guidance on how formal work and income affect social assistance eligibility, and expand childcare services so women can choose more secure work."
+      ]
+    },
+    {
+      "theme": "Housing",
+      "mainRecommendation": "Address the cost of housing alongside its condition",
+      "detailedRecommendations": [
+        "Combine sanitation upgrades, repairs and heating support with support for rent, arrears and housing debt.",
+        "Link housing support with employment and social assistance so households can sustain improvements."
+      ]
+    },
+    {
+      "theme": "Health",
+      "mainRecommendation": "Make treatment affordable and care easier to combine with work",
+      "detailedRecommendations": [
+        "Reduce out-of-pocket costs by subsidizing or waiving fees for consultations and medicines for households with low or irregular incomes.",
+        "Extend community health outreach and care services, so families can get treatment without giving up essentials or a livelihood."
+      ]
+    },
+    {
+      "theme": "Discrimination",
+      "mainRecommendation": "Make fair treatment a standard in everyday public service delivery",
+      "detailedRecommendations": [
+        "Establish robust monitoring to track discrimination in recruitment, schools, health care and local administration.",
+        "Create channels for complaints and grievances open to people with limited literacy, strengthen referrals between services, and involve Roma community and women’s organizations in reviewing how services work."
+      ]
+    }
+  ]},
+  "fullStoryCards": [
+    {
+      "theme": "Education",
+      "description": "Too few young Roma leave education with the qualifications to choose what comes next"
+    },
+    {
+      "theme": "Employment",
+      "description": "Having a job says little about how secure a Roma household is"
+    },
+    {
+      "theme": "Housing",
+      "description": "Often overcrowded and rented, housing costs compete with other basic needs"
+    },
+    {
+      "theme": "Health",
+      "description": "Roma are as likely as their neighbors to be insured, but not to get the care they need"
+    },
+    {
+      "theme": "Discrimination",
+      "description": "Unequal treatment is made part of everyday life for many Roma"
+    }
+  ]
+}

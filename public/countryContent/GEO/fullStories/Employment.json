@@ -1,0 +1,330 @@
+{
+  "title": "Similar employment rates between Roma and non-Roma conceal a wide gap in working conditions and dependable income",
+  "source": "Source: 2025 Multi-Country Survey on Socio-Economic Vulnerabilities of Roma, surveyed communities in Georgia. Quotes from the micro-narratives study with Roma respondents in Georgia.",
+  "sections": [
+    {
+      "title": "Young Roma’s working life paths take a different course from the start",
+      "content": [
+        {
+          "type": "text",
+          "content": "Roma and non-Roma aged 15 to 24 are equally likely to have a job. The sharper difference is among those without one: most young non-Roma in this position are still studying, while many young Roma are not in employment, education or training."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Employment and education status of young people",
+          "subTitle": "Share of young people aged 15 to 24 who are employed, in education (not working), or not in employment, education or training.",
+          "data": [
+            {
+              "label": "Employed",
+              "size": [
+                32,
+                32
+              ]
+            },
+            {
+              "label": "In education (not working)",
+              "size": [
+                16,
+                55
+              ]
+            },
+            {
+              "label": "Not in employment, education or training (NEET)",
+              "size": [
+                45,
+                11
+              ]
+            }
+          ],
+          "settings": {
+            "height": 300,
+            "leftMargin": 150,
+            "footNote": "Note: NEET follows the FRA definition and covers young people aged 16 to 24 who are not in employment, education or training. The Employed and In Education (not working) indicators are for the ages 15 to 24."
+          }
+        },
+        {
+          "type": "text",
+          "content": "Without a course to attend or a first job to build on, the critical years in which their peers gain qualifications slip by. Returning takes more than an open place: training has to match the schooling people have and fit around care and the daily need to earn income."
+        }
+      ]
+    },
+    {
+      "title": "Roma women are locked out of both the labor market and the educational opportunities in early adulthood",
+      "content": [
+        {
+          "type": "text",
+          "content": "Young Roma women are much less likely than their non-Roma peers to be studying, and more than half are neither in employment, education or training. Accounts of care responsibilities for children and younger siblings help explain why a course or job can be difficult to take up."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Employment and education status of young women",
+          "subTitle": "Share of young women who are employed, in education (not working) or not in employment, education or training.",
+          "data": [
+            {
+              "label": "Employed",
+              "size": [
+                23,
+                31
+              ]
+            },
+            {
+              "label": "n education (not working)",
+              "size": [
+                21,
+                60
+              ]
+            },
+            {
+              "label": "Not in employment, education or training (NEET)",
+              "size": [
+                53,
+                7
+              ]
+            }
+          ],
+          "settings": {
+            "height": 240,
+            "leftMargin": 150,
+            "footNote": "Note: NEET follows the FRA definition and covers young people aged 16 to 24 who are not in employment, education or training. The Employed and In Education (not working) indicators are for the ages 15 to 24."
+          }
+        },
+        {
+          "type": "text",
+          "content": "For Roma men, the trajectory of work life pulls the other way: young Roma men work more often than their non-Roma peers, but those aged 25 to 64 work less often. Starting work early does not lead to a stronger position in the labor market or to more secure jobs later on."
+        }
+      ],
+      "microViz": {
+        "titleText": "Fewer than half",
+        "value": 5,
+        "maxValue": 10,
+        "text": "of Roma women decide how to spend money of their own"
+      }
+    },
+    {
+      "title": "Employment patterns unfold differently based on age and gender",
+      "content": [
+        {
+          "type": "text",
+          "content": "The compounding education and employment gaps translate into economic insecurity for Roma households, which frequently depends on precarious, irregular work with no social security."
+        },
+        {
+          "type": "text",
+          "content": "Informality is common among Roma workers at both younger and older age cohorts. When income depends on occasional or seasonal jobs, the uncertainty reaches everyone who relies on them. Roma are disproportionately more likely to live in a household affected by unemployment or intermittent work."
+        },
+        {
+          "type": "text",
+          "content": "Among adults aged 25 to 64, Roma women are more likely to work than non-Roma women. Yet the near-universal informality of women’s employment makes clear how little a job alone says about their economic independence. For working conditions, street vending or trading in local markets offer flexibility to fit income-generating activities around care responsibilities, but they have little protection when adversities interrupt their income."
+        },
+        {
+          "type": "multiGraph",
+          "graphType": "groupedBarChart",
+          "options": [
+            "In informal employment by sex",
+            "In informal employment by age"
+          ],
+          "title": [
+            "In informal employment by sex",
+            "In informal employment by age"
+          ],
+          "subTitle": [
+            "Share of employed people aged 15–64 working informally, overall, and by sex",
+            "Share of employed people aged 15–64 working informally, overall, and by age"
+          ],
+          "data": [
+            [
+              {
+                "label": "Overall",
+                "size": [
+                  94,
+                  57
+                ]
+              },
+              {
+                "label": "Women",
+                "size": [
+                  100,
+                  54
+                ]
+              },
+              {
+                "label": "Men",
+                "size": [
+                  88,
+                  59
+                ]
+              }
+            ],
+            [
+              {
+                "label": "Overall",
+                "size": [
+                  94,
+                  57
+                ]
+              },
+              {
+                "label": "Ages 15 to 24",
+                "size": [
+                  91,
+                  44
+                ]
+              },
+              {
+                "label": "Ages 25 to 64",
+                "size": [
+                  95,
+                  58
+                ]
+              }
+            ]
+          ],
+          "settings": {
+            "height": 240
+          }
+        }
+      ],
+      "microViz": {
+        "titleText": "More than half",
+        "value": 5,
+        "maxValue": 10,
+        "text": "of young Roma women are not in employment, education or training"
+      }
+    },
+    {
+      "title": "Even a qualification does not secure a formal job",
+      "content": [
+        {
+          "type": "text",
+          "content": "Schooling does make a difference to whether Roma find work. Roma with secondary education or more are employed as often as their non-Roma neighbors with the same schooling."
+        },
+        {
+          "type": "text",
+          "content": "However, it makes far less difference to the job quality. Even with a secondary school diploma, most Roma who work have no written contract and no social contributions, far more often than their non-Roma neighbors with the same qualifications."
+        },
+        {
+          "type": "text",
+          "content": "Some qualified young Roma describe being hired, then let go once an employer learns they are Roma, as one trained bartender recounts:"
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Employed, by level of education",
+          "subTitle": "Share of people aged 15–64 who did paid work in the past week, including informal work and self-employment, by their own highest level of education.",
+          "data": [
+            {
+              "label": "Below secondary education",
+              "size": [
+                49,
+                33
+              ]
+            },
+            {
+              "label": "Secondary education or more",
+              "size": [
+                58,
+                59
+              ]
+            }
+          ],
+          "settings": {
+            "height": 160
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 81,
+          "populationGroup": "roma",
+          "title": "In informal employment, secondary education or more (aged 15-64)"
+        },
+        {
+          "type": "graph",
+          "graphType": "unitChart",
+          "value": 56,
+          "populationGroup": "non-roma"
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "quote",
+          "content": "“I have vocational education and I am a bartender. Despite being skilled in my profession, I haven’t been able to find job. Bar owners initially hire me, but when they find out that I am Roma, they ask me to leave for various reasons. This really hurts me.”",
+          "author": "Male, aged 18 to 23"
+        }
+      ]
+    },
+    {
+      "title": "Families piece together livelihoods from the work available locally",
+      "content": [
+        {
+          "type": "text",
+          "content": "In urban areas, many Roma rely on market and street trading. In Kakheti, families follow the vineyard and orchard harvests and travel abroad for work in winter. Households combine seasonal work and mobility with informal and irregular gigs."
+        },
+        {
+          "type": "text",
+          "content": "Informal trading matters most where women head the household. Roma households headed by women are far more likely to rely on self-employment than households headed by non-Roma women, making the local market stall the main source of income."
+        },
+        {
+          "type": "graph",
+          "graphType": "groupedBarChart",
+          "title": "Households with income from self-employment",
+          "subTitle": "Share of households receiving income from self-employment, in cities and in towns or villages.",
+          "data": [
+            {
+              "label": "City",
+              "size": [
+                60,
+                21
+              ]
+            },
+            {
+              "label": "TOwn or village",
+              "size": [
+                15,
+                14
+              ]
+            }
+          ],
+          "settings": {
+            "height": 160
+          }
+        },
+        {
+          "type": "spacer",
+          "size": "xl"
+        },
+        {
+          "type": "quote",
+          "content": "“Share of households receiving income from self-employment, in cities and in towns or villages.”",
+          "author": "Male, aged 18 to 23"
+        },
+        {
+          "type": "quote",
+          "content": "“The main problem is that there are no permanent jobs in Dedoplistskaro, only seasonal work. That’s why I work in vineyards during the summer and go to Poland for work in the winter. It would be great if there were permanent jobs so that we wouldn’t have to go abroad.”",
+          "author": "Female, aged 18 to 23"
+        }
+      ]
+    },
+    {
+      "title": "Fear of losing the social assistance that supports the tight household budgets makes formal employment a less preferred option",
+      "content": [
+        {
+          "type": "text",
+          "content": "Social assistance supports families in covering the costs that the income from informal work cannot meet. When that support is essential, uncertainty about how a registered wage would affect eligibility can discourage a move into formal work. One woman describes the risk as she understands it:"
+        },
+        {
+          "type": "quote",
+          "content": "“...Despite receiving social assistance, it is very difficult for a person to pay rent. I can’t officially go out to work because if my salary is deposited, they will immediately cancel my assistance.”",
+          "author": "Male, aged 30 to 49"
+        }
+      ]
+    }
+  ]
+}
