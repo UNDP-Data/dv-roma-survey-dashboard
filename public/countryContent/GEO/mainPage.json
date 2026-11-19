@@ -28,8 +28,8 @@
     },
       "text": {
         "title": "How disadvantages compound one another",
-        "content": "Gaps between Roma and non-Roma open early, and they widen throughout the life course. These disadvantages begin in <Badge>education</Badge>, put <Badge>economic security</Badge> at risk, and shape everyday life through <Badge>living conditions</Badge> and <Badge>health</Badge>, while <Badge>discrimination</Badge> cuts across all these areas.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
-      }
+        "content": "Early exits from <Badge>education</Badge> restrict access to secure work. Irregular earnings leave less for <Badge>living conditions</Badge> and <Badge>health</Badge>, while <Badge>discrimination</Badge> can limit opportunities even for Roma who have the qualifications. These connections help explain why <Badge>economic security</Badge> remains out of reach for many Roma households.\n\nTo make these differences easier to see and compare across areas, each result is shown out of 100 people."
+       }
     },
     {
       "vizContent": {
@@ -62,7 +62,7 @@
         "romaHighlighted": 45,
         "nonRomaHighlighted": 14,
         "title": "Live in households behind on housing payments",
-        "subTitle": "People of all ages."
+        "subTitle": "People of all ages living in a household in arrears on mortgage, rent, utility bills or hire-purchase payments."
       },
       "text": {
         "theme": "Housing",
@@ -87,8 +87,8 @@
       "vizContent": {
         "romaHighlighted": 13,
         "nonRomaHighlighted": 1,
-        "title": "Experienced discrimination in the past year",
-        "subTitle": "Interviewed respondents reporting discrimination because of ethnicity or skin color."
+        "title": "Experienced discrimination",
+        "subTitle": "Interviewed respondents reporting discrimination because of ethnicity or skin color in the previous year."
       },
       "text": {
         "theme": "Discrimination",

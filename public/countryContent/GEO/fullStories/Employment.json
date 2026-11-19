@@ -70,7 +70,7 @@
               ]
             },
             {
-              "label": "n education (not working)",
+              "label": "In education (not working)",
               "size": [
                 21,
                 60
@@ -85,7 +85,7 @@
             }
           ],
           "settings": {
-            "height": 240,
+            "height": 300,
             "leftMargin": 150,
             "footNote": "Note: NEET follows the FRA definition and covers young people aged 16 to 24 who are not in employment, education or training. The Employed and In Education (not working) indicators are for the ages 15 to 24."
           }
@@ -241,7 +241,8 @@
           "graphType": "unitChart",
           "value": 81,
           "populationGroup": "roma",
-          "title": "In informal employment, secondary education or more (aged 15-64)"
+          "title": "In informal employment, secondary education or more (aged 15-64)",
+          "subTitle": "Share of employed people aged 15–64 with secondary education or more who work without a written contract or social contributions."
         },
         {
           "type": "graph",
@@ -285,7 +286,7 @@
               ]
             },
             {
-              "label": "TOwn or village",
+              "label": "Town or village",
               "size": [
                 15,
                 14
@@ -302,7 +303,7 @@
         },
         {
           "type": "quote",
-          "content": "“Share of households receiving income from self-employment, in cities and in towns or villages.”",
+          "content": "“I am a young guy and I don’t have a stable income... I get paid daily, sometimes for scrap metal, sometimes for cleaning yards, sometimes for construction work. In short, the conditions are bad, and I really want to have a permanent job.”",
           "author": "Male, aged 18 to 23"
         },
         {
@@ -322,7 +323,7 @@
         {
           "type": "quote",
           "content": "“...Despite receiving social assistance, it is very difficult for a person to pay rent. I can’t officially go out to work because if my salary is deposited, they will immediately cancel my assistance.”",
-          "author": "Male, aged 30 to 49"
+          "author": "Female, aged 30 to 49"
         }
       ]
     }

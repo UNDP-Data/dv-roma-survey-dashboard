@@ -16,14 +16,14 @@
           "subTitle": "Reporting of bad or very bad health within each age group.",
           "data": [
             {
-              "label": "25 to 64",
+              "label": "15 to 24",
               "size": [
                 9,
                 2
               ]
             },
             {
-              "label": "65 and over",
+              "label": "25 to 64",
               "size": [
                 25,
                 12

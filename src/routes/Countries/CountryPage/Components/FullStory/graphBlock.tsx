@@ -5,7 +5,7 @@ import { SegmentedControl } from '@undp/design-system-react/SegmentedControl';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { H4, P } from '@undp/design-system-react/Typography';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function GraphBlock({
   className,
@@ -30,6 +30,13 @@ export function GraphBlock({
   // biome-ignore lint/suspicious/noExplicitAny: Setting is custom
   settings?: any;
 }) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <div className={cn('flex w-full flex-col', className)}>
       {title && (
@@ -95,34 +102,34 @@ export function GraphBlock({
         />
       )}
       {graphType === 'unitChart' && (
-        <div className='flex flex-row gap-6'>
-          <UnitChart
-            gridIcon={{
-              width: 24,
-              height: 37,
-              d: [
-                'M14.3594 13.8594C19.0938 13.8595 22.9315 17.6973 22.9316 22.4317V30.1475C22.9316 32.9882 20.6288 35.291 17.7881 35.291H6.64355C3.80293 35.291 1.50009 32.9881 1.5 30.1475V22.4317C1.50012 17.6972 5.33875 13.8594 10.0732 13.8594H14.3594ZM12.2158 1.85745C15.2933 1.85745 17.7881 4.35225 17.7881 7.42972C17.7881 10.5072 15.2933 13.002 12.2158 13.002C9.13842 13.0019 6.64356 10.5071 6.64355 7.42972C6.64355 4.35229 9.13841 1.85753 12.2158 1.85745Z',
-              ],
-            }}
-            size={540}
-            width={540}
-            gridSize={20}
-            height={200}
-            colors={[`var(--${populationGroup})`, 'var(--gray-300)']}
-            showColorScale={false}
-            source={source}
-            data={[
-              {
-                label: 'yes',
-                value: value,
-              },
-              {
-                label: 'no',
-                value: 100 - value,
-              },
-            ]}
-            {...(settings ?? {})}
-          />
+        <div className='flex w-full flex-row flex-wrap-reverse gap-6'>
+          <div className='w-full max-w-135'>
+            <UnitChart
+              gridIcon={{
+                width: 24,
+                height: 37,
+                d: [
+                  'M14.3594 13.8594C19.0938 13.8595 22.9315 17.6973 22.9316 22.4317V30.1475C22.9316 32.9882 20.6288 35.291 17.7881 35.291H6.64355C3.80293 35.291 1.50009 32.9881 1.5 30.1475V22.4317C1.50012 17.6972 5.33875 13.8594 10.0732 13.8594H14.3594ZM12.2158 1.85745C15.2933 1.85745 17.7881 4.35225 17.7881 7.42972C17.7881 10.5072 15.2933 13.002 12.2158 13.002C9.13842 13.0019 6.64356 10.5071 6.64355 7.42972C6.64355 4.35229 9.13841 1.85753 12.2158 1.85745Z',
+                ],
+              }}
+              gridSize={windowWidth < 600 ? 10 : 20}
+              height={windowWidth < 600 ? 400 : 200}
+              colors={[`var(--${populationGroup})`, 'var(--gray-300)']}
+              showColorScale={false}
+              source={source}
+              data={[
+                {
+                  label: 'yes',
+                  value: value,
+                },
+                {
+                  label: 'no',
+                  value: 100 - value,
+                },
+              ]}
+              {...(settings ?? {})}
+            />
+          </div>
           <div className='flex grow flex-col gap-2'>
             <H4
               weight='bold'

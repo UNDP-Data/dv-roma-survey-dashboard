@@ -1,6 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
 import { createLazyRoute, Link, useParams } from '@tanstack/react-router';
 import { fetchAndParseJSON } from '@undp/data-viz/fetchAndParseData';
+import { Separator } from '@undp/design-system-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@undp/design-system-react/Accordion';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -12,13 +19,12 @@ import {
 import { Button } from '@undp/design-system-react/Button';
 import { Drawer, DrawerContent, DrawerTrigger } from '@undp/design-system-react/Drawer';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
+import { Ul } from '@undp/design-system-react/List';
 import { MarkdownRenderer } from '@undp/design-system-react/MarkdownRenderer';
 import { PageHeaderContent, PageHeaderHead } from '@undp/design-system-react/PageHeader';
-import { Separator } from '@undp/design-system-react/Separator';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import { Spinner } from '@undp/design-system-react/Spinner';
 import { H1, H3, H4, H5, P } from '@undp/design-system-react/Typography';
-import { Minus, Plus } from 'lucide-react';
 import { useState } from 'react';
 import { COUNTRIES } from '@/Constants';
 import { CardEl } from '@/components/CardEl';
@@ -27,7 +33,6 @@ import type {
   RecommendationDataType,
   RecommendationObjDataType,
   ScrollySectionDataType,
-  Themes,
 } from '@/types';
 import CountryNarrative from './Components/CountryNarrative';
 import { FullStory } from './Components/FullStory';
@@ -53,7 +58,6 @@ export function CountryPage() {
   const countryCode: string = params.countryId || 'MDA';
   const { data, isLoading, isError } = usePageContentData(countryCode);
   const country = COUNTRIES.find((country) => country.isoCode === countryCode)?.name;
-  const [selectedRecommendation, setSelectedRecommendation] = useState<Themes | null>(null);
   return (
     <div className='w-full antialiased'>
       <section
@@ -188,65 +192,26 @@ export function CountryPage() {
                 Policy options
               </P>
               <H4 weight='bold'>{data.recommendations.title}</H4>
-              <Spacer size='2xl' />
+              <Spacer size='xl' />
+              <Separator color='background' />
               <Grid noOfCol={{ base: 1, sm: 1, md: 1, lg: 1 }} gap='16px'>
-                {data.recommendations.recommendations.map((recommendation) => (
-                  <GridItem
-                    key={recommendation.theme}
-                    className='bg-background text-content-primary'
-                  >
-                    <button
-                      type='button'
-                      aria-expanded={selectedRecommendation === recommendation.theme}
-                      className='flex w-full flex-col items-start p-0'
-                      onClick={() =>
-                        setSelectedRecommendation(
-                          selectedRecommendation === recommendation.theme
-                            ? null
-                            : recommendation.theme,
-                        )
-                      }
-                    >
-                      <CardEl
-                        variant={recommendation.theme}
-                        showBadge={true}
-                        isHoverable={true}
-                        className='items-start border-0 bg-background'
-                      >
-                        <div className='flex w-full items-center justify-between'>
-                          <H4 weight='bold' marginBottom='none'>
-                            {recommendation.mainRecommendation}
-                          </H4>
-                          {selectedRecommendation === recommendation.theme ? (
-                            <Minus size={20} />
-                          ) : (
-                            <Plus size={20} />
-                          )}
-                        </div>
-                        {selectedRecommendation === recommendation.theme && (
-                          <div className='pt-5'>
-                            {recommendation.detailedRecommendations.map((d, i) => (
-                              <P
-                                key={d}
-                                marginBottom='none'
-                                className={
-                                  i < recommendation.detailedRecommendations.length - 1
-                                    ? 'border-stroke border-b py-3'
-                                    : 'pt-3'
-                                }
-                              >
-                                {d}
-                              </P>
-                            ))}
-                          </div>
-                        )}
-                      </CardEl>
-                    </button>
-                  </GridItem>
-                ))}
+                <Accordion collapsible reverse color='background' type='single' variant='tertiary'>
+                  {data.recommendations.recommendations.map((recommendation) => (
+                    <AccordionItem value={recommendation.theme} key={recommendation.theme}>
+                      <AccordionTrigger>{recommendation.mainRecommendation}</AccordionTrigger>
+                      <AccordionContent>
+                        <Ul>
+                          {recommendation.detailedRecommendations.map((d) => (
+                            <li key={d} className='mb-2'>
+                              {d}
+                            </li>
+                          ))}
+                        </Ul>
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
               </Grid>
-              <Spacer size='4xl' />
-              <Separator color='background' className='opacity-20' />
               <Spacer size='4xl' />
               <H4 weight='bold'>What's next</H4>
               <Spacer size='2xl' />

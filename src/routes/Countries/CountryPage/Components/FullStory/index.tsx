@@ -32,7 +32,7 @@ function Footer({
       className='flex w-full cursor-pointer justify-between bg-secondary text-content-reverse'
       onClick={setOpenDrawer}
     >
-      <div className='py-16 pl-32'>
+      <div className='py-16 pl-6 sm:pl-8 md:pl-16 lg:pl-32'>
         <P weight='bold' size='sm' className='uppercase opacity-50' marginBottom='2xs'>
           Next
         </P>
@@ -108,10 +108,10 @@ export function FullStory({
   if (!data) return <P>No data found</P>;
   return (
     <>
-      <DrawerHeader className='flex flex-row items-center justify-between bg-secondary py-24! pr-32! pl-32! text-content-reverse'>
+      <DrawerHeader className='flex flex-row items-center justify-between bg-secondary py-24! text-content-reverse sm:px-8 md:px-16 lg:px-32'>
         <div className='flex w-full flex-col gap-4 md:w-1/2'>
           <BadgeEl variant={theme} reverse className='w-fit' />
-          <H3 marginBottom='none' weight='bold' className='text-5xl!'>
+          <H3 marginBottom='none' weight='bold'>
             {data.title}
           </H3>
         </div>
@@ -119,7 +119,7 @@ export function FullStory({
           <img src={`/imgs/drawerBanners/${theme}.webp`} alt='Theme banner' className='w-full' />
         </div>
       </DrawerHeader>
-      <DrawerBody className='flex-col gap-5 pl-32'>
+      <DrawerBody className='flex-col gap-5 sm:pl-8 md:pl-16 lg:pl-32'>
         <Spacer size='6xl' />
         <div>
           {data.sections.map((section: any, i: number) => (
