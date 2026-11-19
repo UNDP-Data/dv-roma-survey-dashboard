@@ -134,7 +134,7 @@ export function CountryPage() {
               <Spacer size='2xl' />
               <Grid noOfCol={{ base: 1, sm: 2, md: 2, lg: 3, xl: 5 }} gap='16px'>
                 {data.fullStoryCards.map((theme) => (
-                  <GridItem key={theme.theme} className='group cursor-pointer'>
+                  <GridItem key={theme.theme} className='group'>
                     <Drawer
                       direction='right'
                       open={openDrawer === theme.theme}
@@ -142,7 +142,7 @@ export function CountryPage() {
                         setOpenDrawer(open ? theme.theme : null);
                       }}
                     >
-                      <DrawerTrigger className='w-full'>
+                      <DrawerTrigger className='w-full cursor-pointer'>
                         <CardEl
                           variant={theme.theme}
                           showBadge={true}
