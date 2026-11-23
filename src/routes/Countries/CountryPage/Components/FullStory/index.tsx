@@ -15,7 +15,7 @@ import { BadgeEl } from '@/components/BadgeEl';
 import type { RecommendationObjDataType, Themes } from '@/types';
 import { GraphBlock, MultiGraphBlock } from './graphBlock';
 import { MicroVizBlock } from './microVizBlock';
-import { QuoteBlock } from './QuoteBlock';
+import { QuoteBlock } from '../../../../../components/QuoteBlock';
 import { TextBlock } from './textBlock';
 import { TitleBlock } from './titleBlock';
 

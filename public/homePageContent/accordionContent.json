@@ -1,0 +1,42 @@
+[
+    {
+        "section": "Education",
+        "content": "Access to education shapes the choices available from childhood well into working life. Education indicators show steep disparities between Roma and non-Roma, from preschool and school attendance to segregated schooling, early school leaving and tertiary education, with inequalities that are hard to reverse later in life.",
+        "keyIndicator": "14",
+        "keyIndicatorValue": "indicators on education and early childhood",
+        "quote": "“…I never studied anywhere, neither did my father, my mother, or my brother. I want my children to study, to get an education, and to go to school.”", 
+        "quoteBy": "Male, aged 30 to 49, Ukraine"
+    },
+    {
+        "section": "Employment",
+        "content": "The work that keeps households afloat comes in different forms. Many Roma find employment in insecure conditions, without a contract, regular pay or social protection. These indicators cover employment, unemployment, informality, inactivity and NEET, and extend beyond them to show how work shapes household security.",
+        "keyIndicator": "21",
+        "keyIndicatorValue": "indicators on economic security and employment",
+        "quote": "“The main problem is that there are no permanent jobs… only seasonal work… It would be great if there were permanent jobs so that we wouldn’t have to go abroad.”", 
+        "quoteBy": "Female, aged 18 to 23, Georgia"
+    },
+    {
+        "section": "Housing",
+        "content": "In a household, Roma share resources, care and common challenges that affect them differently. A child’s space to study, a family’s health and the jobs adults can reach all depend in part on where and how the family lives. The indicators show how crowded and well-equipped homes are, what families cannot afford, from heating to food, and how they get by, through savings, community support or social assistance.",
+        "keyIndicator": "67",
+        "keyIndicatorValue": "indicators on education and early childhood",
+        "quote": "“The roof leaks, two doors do not close well, it is cold in winter, the stove does not heat well… I want normal housing and living conditions for my children.”", 
+        "quoteBy": "Female, aged 24 to 29, Moldova"
+    },
+    {
+        "section": "Health",
+        "content": "The medical expenditures for Roma households can mean a double bill: it adds costs while taking away earnings and time for care. The indicators cover the perceptions of health and quality of services received by Roma households, together with indicators showing rates of access to health and care.",
+        "keyIndicator": "8",
+        "keyIndicatorValue": "indicators on health",
+        "quote": "“…my husband is sick and all the responsibility in the family has fallen on me… I work and provide for our family. My salary is too small to cover all the needs of our family, especially the care and medications of my husband.”", 
+        "quoteBy": "Female, aged 50 to 64, Moldova"
+    },
+    {
+        "section": "Discrimination",
+        "content": "Roma have the same rights to education, work and public services as their neighbors. In practice, however, unequal treatment can limit access, while a lack of documentation can shut people out of services altogether. The survey indicators and many personal stories expose experiences of discrimination in different contexts and on multiple grounds.",
+        "keyIndicator": "16",
+        "keyIndicatorValue": "indicators on discrimination and documentation",
+        "quote": "“They don’t want to hire me because I am Roma. As soon as they see that I’m Roma, they refuse to give me a job… I finished vocational school and university, but they still don’t want to hire me.”", 
+        "quoteBy": "Male, aged 24 to 29, Ukraine"
+    }
+]

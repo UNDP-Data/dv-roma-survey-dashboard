@@ -19,7 +19,6 @@ export default function HeaderEl() {
       />
       <HeaderMainNavUnit>
         <HeaderMenuUnit align='end'>
-          <HeaderMenuLink href='/'>Home</HeaderMenuLink>
           <HeaderMenuLink href='/data-explorer'>Data explorer</HeaderMenuLink>
           <HeaderMenuDropdown
             label='Countries'

@@ -1,80 +1,92 @@
 import { createLazyRoute } from '@tanstack/react-router';
+import { PageSection } from '@undp/design-system-react/PageSection';
 import { Spacer } from '@undp/design-system-react/Spacer';
-import { H1, P } from '@undp/design-system-react/Typography';
+import { H1, H4, P } from '@undp/design-system-react/Typography';
 
 export function About() {
   return (
-    <div className='mx-auto my-8 w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
-      <H1 size='sm'>About</H1>
+    <PageSection className='max-w-5xl'>
+      <H1 size='sm'>About the Roma Socio-economic Scoreboard</H1>
       <Spacer size='2xl' />
       <P>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies mauris vitae enim
-        mollis, ac vulputate dui pretium. Fusce laoreet sapien magna, vitae dignissim ante
-        pellentesque non. Nam enim dui, hendrerit ut sem quis, facilisis euismod massa. Donec sit
-        amet mauris eget eros ullamcorper eleifend ac nec augue. Fusce sapien elit, tincidunt sit
-        amet leo vitae, maximus interdum felis. Vivamus et tempor erat, eget lacinia ante. Etiam vel
-        pulvinar arcu. Mauris porta pretium nibh. Integer sollicitudin sapien ligula, quis blandit
-        lectus maximus id. Pellentesque congue euismod lacinia. Nunc tempor massa non justo
-        interdum, et blandit magna pharetra. Phasellus pharetra ligula varius justo ultrices
-        accumsan. Sed laoreet, neque ullamcorper dignissim bibendum, lorem mi egestas enim, ut
-        accumsan enim purus sed tellus. Nunc ornare velit sodales augue aliquam venenatis.
-        <br />
-        <br />
-        Vivamus pellentesque, elit a pulvinar fringilla, lacus leo pellentesque nunc, sed tempor
-        ante eros vel justo. Maecenas sodales euismod elit, quis elementum metus faucibus non. Fusce
-        blandit maximus odio at dictum. Morbi tempor vel magna vel elementum. Sed sed velit
-        scelerisque, pellentesque leo eu, egestas lectus. Vestibulum fermentum dolor vitae egestas
-        consequat. Quisque a mauris convallis, lobortis nisl non, interdum odio. Quisque pulvinar
-        imperdiet molestie. Pellentesque ac sem pulvinar ex ultrices rutrum ut sodales diam. Vivamus
-        vel cursus lorem. Donec et lectus ipsum. Praesent diam velit, dapibus at placerat
-        scelerisque, scelerisque ac augue. Nulla suscipit ut lacus condimentum porttitor.
-        <br />
-        <br />
-        Pellentesque quis leo facilisis, pretium ipsum nec, rutrum orci. Fusce lectus diam, porta ac
-        urna id, aliquet lacinia erat. Duis vehicula sodales quam, eget vulputate enim pharetra in.
-        Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
-        enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
-        est, vitae finibus eros diam a turpis.
-        <br />
-        <br />
-        Vivamus pellentesque, elit a pulvinar fringilla, lacus leo pellentesque nunc, sed tempor
-        ante eros vel justo. Maecenas sodales euismod elit, quis elementum metus faucibus non. Fusce
-        blandit maximus odio at dictum. Morbi tempor vel magna vel elementum. Sed sed velit
-        scelerisque, pellentesque leo eu, egestas lectus. Vestibulum fermentum dolor vitae egestas
-        consequat. Quisque a mauris convallis, lobortis nisl non, interdum odio. Quisque pulvinar
-        imperdiet molestie. Pellentesque ac sem pulvinar ex ultrices rutrum ut sodales diam. Vivamus
-        vel cursus lorem. Donec et lectus ipsum. Praesent diam velit, dapibus at placerat
-        scelerisque, scelerisque ac augue. Nulla suscipit ut lacus condimentum porttitor.
-        <br />
-        <br />
-        Pellentesque quis leo facilisis, pretium ipsum nec, rutrum orci. Fusce lectus diam, porta ac
-        urna id, aliquet lacinia erat. Duis vehicula sodales quam, eget vulputate enim pharetra in.
-        Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
-        enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
-        est, vitae finibus eros diam a turpis.
-        <br />
-        <br />
-        Pellentesque quis leo facilisis, pretium ipsum nec, rutrum orci. Fusce lectus diam, porta ac
-        urna id, aliquet lacinia erat. Duis vehicula sodales quam, eget vulputate enim pharetra in.
-        Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
-        enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
-        est, vitae finibus eros diam a turpis.
-        <br />
-        <br />
-        Pellentesque quis leo facilisis, pretium ipsum nec, rutrum orci. Fusce lectus diam, porta ac
-        urna id, aliquet lacinia erat. Duis vehicula sodales quam, eget vulputate enim pharetra in.
-        Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
-        enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
-        est, vitae finibus eros diam a turpis.
-        <br />
-        <br />
-        Pellentesque quis leo facilisis, pretium ipsum nec, rutrum orci. Fusce lectus diam, porta ac
-        urna id, aliquet lacinia erat. Duis vehicula sodales quam, eget vulputate enim pharetra in.
-        Nullam lobortis tincidunt mi, eu maximus nisi iaculis sed. Aenean et nunc sagittis, molestie
-        enim quis, pellentesque magna. Morbi feugiat, metus at rutrum auctor, nulla ligula blandit
-        est, vitae finibus eros diam a turpis.
+        The Roma Socio-economic Scoreboard offers a deep and granular view of the socio-economic
+        conditions and multidimensional vulnerabilities of Roma communities across EU enlargement
+        countries, launching with comprehensive and harmonized evidence from Georgia, Moldova and
+        Ukraine. Presented through an exploratory dashboard and country-specific data stories, the
+        evidence can identify priorities for Roma-inclusive policies, direct resources where they
+        are most needed and establish baselines for measuring progress.
       </P>
-    </div>
+      <Spacer size='2xl' />
+      <H4 weight='bold'>The Roma Well-being Assessment</H4>
+      <P>
+        The data displayed on the Scoreboard was collected through an assessment that combines a
+        household survey, qualitative (micro-narrative) research, and geospatial analysis of access
+        to services.{' '}
+        <strong>The 2025 Multi-country Survey on Socio-economic Vulnerabilities of Roma</strong> is
+        a household survey harmonized across the surveyed countries with a common methodological
+        framework, collecting data on vulnerable Roma, as well as non-Roma living in their vicinity
+        to illustrate the disparities across key socio-economic dimension: education, employment and
+        economic security, living conditions, health, and discrimination.
+      </P>
+      <P>
+        The Data Explorer presents indicators calculated from household survey responses using
+        common definitions across the three countries. Where available, breakdowns by sex, age and
+        other individual and household characteristics allow users to see differences that
+        country-level figures can obscure.
+      </P>
+      <P>
+        The Country Snapshots for Georgia, Moldova and Ukraine examine how vulnerabilities across
+        these areas relate to one another. Personal accounts describe circumstances behind the
+        survey findings, while geospatial analysis examines access to schools, health facilities,
+        transport and other services.
+      </P>
+      <P>
+        Each Snapshot draws on this evidence to present policy recommendations that address both the
+        immediate pressures households face and the longstanding barriers identified in each
+        country.
+      </P>
+      <Spacer size='2xl' />
+      <H4 weight='bold'>Supporting Roma-inclusive policies</H4>
+      <P>
+        Roma inclusion is integral part of the path to EU enlargement. Accession negotiations assess
+        progress on fundamental rights, including the protection of minorities. The European Pillar
+        of Social Rights provides a reference for social inclusion, while the EU Roma Strategic
+        Framework for Equality, Inclusion and Participation 2020–2030 calls on enlargement countries
+        to align their national strategies with its objectives.
+      </P>
+      <P>
+        The Scoreboard helps translate these commitments into evidence-driven policy cycles. Its
+        findings can inform national Roma inclusion strategies and wider policies on education,
+        employment, health, housing, discrimination and access to services. Granular data enables
+        identifying priorities, design measures suited to circumstances of Roma households and set
+        measurable targets. The assessment provides baselines against which subsequent data can be
+        compared, supporting governments and their partners in monitoring outcomes, reporting on
+        commitments and adjusting policies as evidence develops.
+      </P>
+      <Spacer size='2xl' />
+      <H4 weight='bold'>Partners and contributions</H4>
+      <P>
+        The assessment was conducted as part of the EU-funded project, Multi-Country Survey on the
+        Socio-Economic Vulnerabilities of Roma, co-implemented by UNDP and the World Bank. The
+        Scoreboard was developed by UNDP and funded by the European Union. The indicators presented
+        on the Data Explorer are generated based on the survey questionnaires and data and
+        harmonized with international definitions and methodologies.
+      </P>
+      <P>
+        The Assessment was designed with contributions from the European Union Agency for
+        Fundamental Rights and the World Bank. It also benefited from contributions of national
+        institutions, statistical offices, civil society and advocacy organizations, Roma community
+        mediators, and on the experiences of participating Roma and neighboring non-Roma households.
+      </P>
+      <div className='flex flex-wrap items-center gap-x-6'>
+        <img src='/imgs/logos/logo-eu-en.png' alt='European Union' className='h-32' />
+        <img
+          src='/imgs/logos/undp.svg'
+          alt='United Nations Development Programme'
+          className='h-32'
+        />
+      </div>
+    </PageSection>
   );
 }
 
