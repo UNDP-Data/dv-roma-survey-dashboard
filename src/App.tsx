@@ -2,23 +2,16 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from '@tanstack/react-router';
 import { fetchAndParseJSON } from '@undp/data-viz/fetchAndParseData';
 import {
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-  Skeleton,
-} from '@undp/design-system-react';
-import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@undp/design-system-react/Accordion';
 import { Button } from '@undp/design-system-react/Button';
-import { Card } from '@undp/design-system-react/Card';
 import { Grid, GridItem } from '@undp/design-system-react/Grid';
-import { PageHeader, PageHeaderContent } from '@undp/design-system-react/PageHeader';
+import { PageHeaderContent } from '@undp/design-system-react/PageHeader';
 import { PageSection } from '@undp/design-system-react/PageSection';
+import { Skeleton } from '@undp/design-system-react/Skeleton';
 import { Spacer } from '@undp/design-system-react/Spacer';
 import {
   StatCard,
@@ -26,7 +19,7 @@ import {
   StatCardTitle,
   StatCardValue,
 } from '@undp/design-system-react/StatCard';
-import { H1, H2, H3, H4, H5, H6, P } from '@undp/design-system-react/Typography';
+import { H1, H2, H3, H4, H5, P } from '@undp/design-system-react/Typography';
 import { THEME_LABELS } from './Constants';
 import { CardEl } from './components/CardEl';
 import { QuoteBlock } from './components/QuoteBlock';
@@ -95,17 +88,22 @@ function App() {
   const { data, isLoading, isError } = useAccordionContentData();
   return (
     <div className='flex flex-col antialiased'>
-      <PageHeader
-        className='h-auto px-0 sm:px-2 md:h-[calc(100vh-115px)]'
-        backgroundImage='imgs/header_img.webp'
-        contentMode='dark'
+      <section
+        id='header'
+        className='mx-auto flex min-h-auto w-full flex-col items-center justify-between gap-0 bg-linear-to-b from-[#9ACFF0] via-[#CFE6F4] to-[#F6F0E6] pt-20 pl-4 text-content-reverse md:flex-row md:gap-10 2xl:min-h-160.5 2xl:pl-[8.3333%]'
       >
-        <PageHeaderContent className='max-w-full sm:max-w-[50%]'>
-          <H1 size='sm'>Roma Socio-Economic Scoreboard</H1>
-        </PageHeaderContent>
-      </PageHeader>
+        <div className='flex w-full flex-col gap-4 pr-0 md:w-1/2 md:pr-10'>
+          <PageHeaderContent>
+            <H1 size='sm' className='text-content-primary'>
+              Roma Socio-economic Scoreboard
+            </H1>
+          </PageHeaderContent>
+        </div>
+        <div className='w-full pl-4 md:w-1/2 md:px-0'>
+          <img src={`/imgs/homepage-hero.svg`} className='h-auto w-full' alt='hero' />
+        </div>
+      </section>
       <section id='intro-text' className='relative mx-auto w-full px-4 pt-36 pb-16 xl:pb-36'>
-        <img src='/imgs/patterns/p01.svg' alt='' className='absolute top-0 left-0' />
         <img
           src='/imgs/patterns/p02.svg'
           alt=''
@@ -198,84 +196,81 @@ function App() {
           </GridItem>
         </Grid>
       </PageSection>
-      <PageSection>
-        <div className='max-w-5xl'>
-          <H2>Key socio-economic dimensions</H2>
-          <P>
-            The indicators derived from the 2025 Multi-country Survey on Socio-economic
-            Vulnerabilities of Roma measure disparities between Roma and neighboring non-Roma
-            households across five key socio-economic dimensions, complemented by personal stories
-            collected from 1,369 individuals across Georgia, Moldova and Ukraine, and geospatial
-            findings. The dimensions shed light on the distinct barriers Roma face in accessing
-            education and vocational training, economic security, safe and adequate housing, or
-            health care, each compounding one another to shape pathways of vulnerability.
-          </P>
-        </div>
-        <Spacer size='2xl' />
-        <Accordion type='single' variant='secondary' collapsible defaultValue='item-1'>
-          {isError && <P className='text-error'>Error loading data</P>}
-          {(isLoading || !data) && <Skeleton />}
-          {data?.map((d) => (
-            <AccordionItem value={d.section} key={d.section} className='border-b-surface-md'>
-              <AccordionTrigger className='cursor-pointer'>
-                <div className='flex items-center gap-2 font-bold text-[1.25rem] uppercase'>
-                  {THEME_LABELS[d.section]}
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                <Grid noOfCol={{ base: 1, md: 2 }} gap='32px'>
-                  <GridItem noOfColSpan={1}>
-                    <div className='flex flex-col'>
-                      <P>{d.content}</P>
-                      <H4 weight='bold' marginBottom='none'>
-                        {d.keyIndicator}
-                      </H4>
-                      <P size='base'>{d.keyIndicatorValue}</P>
-                    </div>
-                  </GridItem>
-                  <GridItem noOfColSpan={1}>
-                    <QuoteBlock
-                      theme={d.section}
-                      quote={d.quote}
-                      author={d.quoteBy}
-                      className='bg-background'
-                    />
-                  </GridItem>
-                </Grid>
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </PageSection>
+      <div className='relative'>
+        <img
+          src='/imgs/patterns/p03.svg'
+          alt=''
+          className='absolute bottom-0 left-0 max-xl:hidden'
+        />
+        <img
+          src='/imgs/patterns/p06.svg'
+          alt=''
+          className='absolute right-0 bottom-0 max-xl:hidden'
+        />
+        <PageSection>
+          <div className='max-w-5xl'>
+            <H2>Key socio-economic dimensions</H2>
+            <P>
+              The indicators derived from the 2025 Multi-country Survey on Socio-economic
+              Vulnerabilities of Roma measure disparities between Roma and neighboring non-Roma
+              households across five key socio-economic dimensions, complemented by personal stories
+              collected from 1,369 individuals across Georgia, Moldova and Ukraine, and geospatial
+              findings. The dimensions shed light on the distinct barriers Roma face in accessing
+              education and vocational training, economic security, safe and adequate housing, or
+              health care, each compounding one another to shape pathways of vulnerability.
+            </P>
+          </div>
+          <Spacer size='2xl' />
+          <Accordion type='single' variant='tertiary' collapsible defaultValue='item-1'>
+            {isError && <P className='text-error'>Error loading data</P>}
+            {(isLoading || !data) && <Skeleton />}
+            {data?.map((d) => (
+              <AccordionItem value={d.section} key={d.section} className='border-b-surface-md'>
+                <AccordionTrigger className='cursor-pointer'>
+                  <div className='text-[1.25rem]'>{THEME_LABELS[d.section]}</div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <Grid noOfCol={{ base: 1, md: 2 }} gap='32px'>
+                    <GridItem noOfColSpan={1}>
+                      <div className='flex flex-col'>
+                        <P>{d.content}</P>
+                        <H4 weight='bold' marginBottom='none'>
+                          {d.keyIndicator}
+                        </H4>
+                        <P size='base'>{d.keyIndicatorValue}</P>
+                      </div>
+                    </GridItem>
+                    <GridItem noOfColSpan={1}>
+                      <QuoteBlock theme={d.section} quote={d.quote} author={d.quoteBy} />
+                    </GridItem>
+                  </Grid>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </PageSection>
+        <Spacer size='8xl' />
+      </div>
       <PageSection backgroundColor='surface'>
         <Grid noOfCol={{ base: 1, md: 2, lg: 4 }} gap='24px'>
           <GridItem noOfColSpan={1}>
-            <H2>What You Can Explore</H2>
+            <H2>What the scoreboard offers</H2>
           </GridItem>
           {whatTheScoreboardOffersCards.map((el) => (
             <GridItem noOfColSpan={1} key={el.title}>
               <Link to={el.route}>
-                <Card
-                  size='full'
-                  variant='without-image'
-                  className='relative h-full min-h-75 overflow-hidden border-none pt-4 hover:bg-background/60'
-                >
-                  <CardHeader>
-                    <img
-                      src={el.icon}
-                      alt={`${el.title} icon`}
-                      className='mx-6 mt-2 h-20 w-20'
-                      aria-hidden
-                    />
-                    <CardTitle>{el.title}</CardTitle>
-                    <CardDescription className='mb-8'>{el.description}</CardDescription>
-                  </CardHeader>
-                  <CardFooter>
-                    <Button padding='none' variant='link' endIcon='arrow'>
+                <CardEl className='group bg-background hover:bg-background/50'>
+                  <div className='flex h-full flex-col justify-between'>
+                    <div>
+                      <H5>{el.title}</H5>
+                      <P>{el.description}</P>
+                      <Spacer size='2xl' />
+                    </div>
+                    <Button padding='none' variant='link' endIcon='arrow' className='w-fit'>
                       Explore
                     </Button>
-                  </CardFooter>
-                </Card>
+                  </div>
+                </CardEl>
               </Link>
             </GridItem>
           ))}
@@ -290,23 +285,25 @@ function App() {
           </P>
         </div>
         <Spacer size='2xl' />
-        <Grid noOfCol={{ base: 1, md: 3 }} gap='24px'>
-          {whatYouCanDoCards.map((el, i) => (
-            <GridItem noOfColSpan={1} key={el.title}>
-              <CardEl>
-                <H6>0{i + 1}</H6>
-                <H5>{el.title}</H5>
+        <Grid noOfCol={{ base: 1, md: 3 }} gap='48px'>
+          {whatYouCanDoCards.map((el) => (
+            <GridItem
+              noOfColSpan={1}
+              key={el.title}
+              className='h-full border-r-0 border-r-surface-md border-b border-b-stroke pb-0 last-of-type:border-b-0 md:border-r md:border-b-0 md:pr-12 md:last-of-type:border-r-0'
+            >
+              <div>
+                <H5 weight='bold'>{el.title}</H5>
                 <P size='base' className='grow' marginBottom='none'>
                   {el.description}
                 </P>
-              </CardEl>
+              </div>
             </GridItem>
           ))}
         </Grid>
       </PageSection>
       <PageSection backgroundColor='surface'>
-        <H6>With support from</H6>
-        <img src='/imgs/logos/logo-eu-en.png' alt='European Union' className='h-40' />
+        <img src='/imgs/logos/logo-eu-en.png' alt='European Union' className='mx-auto h-40' />
       </PageSection>
     </div>
   );
