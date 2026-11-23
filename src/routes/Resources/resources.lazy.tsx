@@ -1,6 +1,8 @@
 import { createLazyRoute } from '@tanstack/react-router';
-import { Button } from '@undp/design-system-react/Button';
-import { Grid, GridItem } from '@undp/design-system-react/Grid';
+// import { Button } from '@undp/design-system-react/Button';
+// import { Grid, GridItem } from '@undp/design-system-react/Grid';
+import { PageSection } from '@undp/design-system-react/PageSection';
+/* 
 import {
   ResourceCard,
   ResourceCardContent,
@@ -9,10 +11,12 @@ import {
   ResourceCardImage,
   ResourceCardTitle,
 } from '@undp/design-system-react/ResourceCard';
+*/
 import { Spacer } from '@undp/design-system-react/Spacer';
-import { H1 } from '@undp/design-system-react/Typography';
+import { H1, P } from '@undp/design-system-react/Typography';
 
 export function Resource() {
+  /*
   const resourceCards = [
     {
       title: 'Resource 1',
@@ -39,11 +43,15 @@ export function Resource() {
       url: 'https://www.undp.org/',
     },
   ];
+  */
   return (
-    <div className='mx-auto my-8 w-full max-w-[1920px] px-4 sm:px-6 lg:px-8'>
+    <PageSection>
       <H1 size='sm'>Resources</H1>
       <Spacer size='2xl' />
-      <Grid noOfCol={{ base: 1, sm: 2, md: 4, lg: 6 }}>
+      <P>Coming soon</P>
+      {/*
+        
+      <Grid noOfCol={{ base: 1, sm: 2, md: 4 }} gap='32px'>
         {resourceCards.map((card) => (
           <GridItem key={card.title}>
             <ResourceCard href={card.url}>
@@ -53,13 +61,16 @@ export function Resource() {
                 <ResourceCardDescription>{card.text}</ResourceCardDescription>
               </ResourceCardContent>
               <ResourceCardFooter>
-                <Button variant='link'>Download</Button>
+                <Button variant='link' endIcon='download'>
+                  Download
+                </Button>
               </ResourceCardFooter>
             </ResourceCard>
           </GridItem>
         ))}
-      </Grid>
-    </div>
+      </Grid
+      */}
+    </PageSection>
   );
 }
 
