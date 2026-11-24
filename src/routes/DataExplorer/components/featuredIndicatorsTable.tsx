@@ -7,7 +7,6 @@ import {
   TableHeader,
   TableRow,
 } from '@undp/design-system-react/Table';
-import { GROUPS } from '@/Constants';
 import type { IndicatorMetaDataType, SurveyIndicatorDataType } from '@/types';
 
 export const FeaturedIndicatorsTable = ({
@@ -61,8 +60,8 @@ export const FeaturedIndicatorsTable = ({
               {romaValue !== undefined && nonRomaValue !== undefined ? (
                 <DumbbellChart
                   data={[{ label: title, x: [nonRomaValue, romaValue] }]}
-                  colorDomain={GROUPS.reverse()}
-                  colors={GROUPS.reverse().map((d) => `var(--${d.toLowerCase()})`)}
+                  colorDomain={['Roma', 'Non-Roma']}
+                  colors={['var(--non-roma)', 'var(--roma)']}
                   orientation='horizontal'
                   height={24}
                   radius={4}

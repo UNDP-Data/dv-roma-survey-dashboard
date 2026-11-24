@@ -23935,303 +23935,303 @@
     "id": "wb_neet_15_24",
     "description": "NEET, ages 15–24 (World Bank)",
     "metaData": "% of household members aged 15–24 who are not employed and not enrolled in education or training",
-    "noOfRespondents": 3781,
+    "noOfRespondents": 832,
     "roma": [
       {
         "disaggregation": "none",
         "category": "none",
-        "noOfRespondents": 2698,
-        "yesPercent": 61.1,
-        "noPercent": 38.9
+        "noOfRespondents": 612,
+        "yesPercent": 52.6,
+        "noPercent": 47.4
       },
       {
         "disaggregation": "sex",
         "category": "Female",
-        "noOfRespondents": 1435,
-        "yesPercent": 68.4,
-        "noPercent": 31.6
+        "noOfRespondents": 315,
+        "yesPercent": 64.6,
+        "noPercent": 35.4
       },
       {
         "disaggregation": "sex",
         "category": "Male",
-        "noOfRespondents": 1261,
-        "yesPercent": 52.9,
-        "noPercent": 47.1
+        "noOfRespondents": 297,
+        "yesPercent": 40.1,
+        "noPercent": 59.9
       },
       {
         "disaggregation": "age group",
         "category": "0-15",
-        "noOfRespondents": 1237,
-        "yesPercent": 59.2,
-        "noPercent": 40.8
+        "noOfRespondents": 79,
+        "yesPercent": 29.2,
+        "noPercent": 70.8
       },
       {
         "disaggregation": "age group",
         "category": "16-29",
-        "noOfRespondents": 668,
-        "yesPercent": 53.4,
-        "noPercent": 46.6
+        "noOfRespondents": 533,
+        "yesPercent": 56.1,
+        "noPercent": 43.9
       },
       {
         "disaggregation": "age group",
         "category": "30-44",
-        "noOfRespondents": 399,
-        "yesPercent": 65.8,
-        "noPercent": 34.2
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       },
       {
         "disaggregation": "age group",
         "category": "45+",
-        "noOfRespondents": 394,
-        "yesPercent": 75.3,
-        "noPercent": 24.7
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       },
       {
         "disaggregation": "urbanisation",
         "category": "City",
-        "noOfRespondents": 1269,
-        "yesPercent": 60.7,
-        "noPercent": 39.3
+        "noOfRespondents": 273,
+        "yesPercent": 49.3,
+        "noPercent": 50.7
       },
       {
         "disaggregation": "urbanisation",
         "category": "Town or village",
-        "noOfRespondents": 1429,
-        "yesPercent": 61.5,
-        "noPercent": 38.5
+        "noOfRespondents": 339,
+        "yesPercent": 55.4,
+        "noPercent": 44.6
       },
       {
         "disaggregation": "education",
         "category": "Below secondary",
-        "noOfRespondents": 2429,
-        "yesPercent": 62.5,
-        "noPercent": 37.5
+        "noOfRespondents": 548,
+        "yesPercent": 55.2,
+        "noPercent": 44.8
       },
       {
         "disaggregation": "education",
         "category": "Secondary and above",
-        "noOfRespondents": 234,
-        "yesPercent": 47.6,
-        "noPercent": 52.4
+        "noOfRespondents": 62,
+        "yesPercent": 30.1,
+        "noPercent": 69.9
       },
       {
         "disaggregation": "employment status",
         "category": "Employed",
-        "noOfRespondents": 363,
-        "yesPercent": 0,
-        "noPercent": 0
+        "noOfRespondents": 160,
+        "yesPercent": 47.4,
+        "noPercent": 52.6
       },
       {
         "disaggregation": "employment status",
         "category": "Not employed",
-        "noOfRespondents": 2268,
-        "yesPercent": 0,
-        "noPercent": 0
+        "noOfRespondents": 452,
+        "yesPercent": 54.4,
+        "noPercent": 45.6
       },
       {
         "disaggregation": "household size",
         "category": "1-3",
-        "noOfRespondents": 685,
-        "yesPercent": 66.9,
-        "noPercent": 33.1
+        "noOfRespondents": 184,
+        "yesPercent": 47.9,
+        "noPercent": 52.1
       },
       {
         "disaggregation": "household size",
         "category": "4+",
-        "noOfRespondents": 2013,
-        "yesPercent": 59.1,
-        "noPercent": 40.9
+        "noOfRespondents": 428,
+        "yesPercent": 54.6,
+        "noPercent": 45.4
       },
       {
         "disaggregation": "children in household",
         "category": "With children",
-        "noOfRespondents": 2281,
-        "yesPercent": 60.1,
-        "noPercent": 39.9
+        "noOfRespondents": 545,
+        "yesPercent": 54.3,
+        "noPercent": 45.7
       },
       {
         "disaggregation": "children in household",
         "category": "Without children",
-        "noOfRespondents": 417,
-        "yesPercent": 66.3,
-        "noPercent": 33.7
+        "noOfRespondents": 67,
+        "yesPercent": 38.3,
+        "noPercent": 61.7
       },
       {
         "disaggregation": "age (wb)",
         "category": "0-14",
-        "noOfRespondents": 1158,
-        "yesPercent": 61.4,
-        "noPercent": 38.6
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       },
       {
         "disaggregation": "age (wb)",
         "category": "15-24",
         "noOfRespondents": 612,
-        "yesPercent": 47.9,
-        "noPercent": 52.1
+        "yesPercent": 52.6,
+        "noPercent": 47.4
       },
       {
         "disaggregation": "age (wb)",
         "category": "25-64",
-        "noOfRespondents": 877,
-        "yesPercent": 67.9,
-        "noPercent": 32.1
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       },
       {
         "disaggregation": "age (wb)",
         "category": "65+",
-        "noOfRespondents": 51,
-        "yesPercent": 94.4,
-        "noPercent": 5.6
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       }
     ],
     "nonRoma": [
       {
         "disaggregation": "none",
         "category": "none",
-        "noOfRespondents": 1083,
-        "yesPercent": 39.4,
-        "noPercent": 60.6
+        "noOfRespondents": 220,
+        "yesPercent": 25.2,
+        "noPercent": 74.8
       },
       {
         "disaggregation": "sex",
         "category": "Female",
-        "noOfRespondents": 614,
-        "yesPercent": 44.4,
-        "noPercent": 55.6
+        "noOfRespondents": 129,
+        "yesPercent": 29.4,
+        "noPercent": 70.6
       },
       {
         "disaggregation": "sex",
         "category": "Male",
-        "noOfRespondents": 468,
-        "yesPercent": 31.2,
-        "noPercent": 68.8
+        "noOfRespondents": 91,
+        "yesPercent": 18,
+        "noPercent": 82
       },
       {
         "disaggregation": "age group",
         "category": "0-15",
-        "noOfRespondents": 282,
-        "yesPercent": 36.6,
-        "noPercent": 63.4
+        "noOfRespondents": 22,
+        "yesPercent": 19.4,
+        "noPercent": 80.6
       },
       {
         "disaggregation": "age group",
         "category": "16-29",
-        "noOfRespondents": 245,
-        "yesPercent": 26.3,
-        "noPercent": 73.7
+        "noOfRespondents": 198,
+        "yesPercent": 25.8,
+        "noPercent": 74.2
       },
       {
         "disaggregation": "age group",
         "category": "30-44",
-        "noOfRespondents": 223,
-        "yesPercent": 25.5,
-        "noPercent": 74.5
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       },
       {
         "disaggregation": "age group",
         "category": "45+",
-        "noOfRespondents": 333,
-        "yesPercent": 59,
-        "noPercent": 41
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       },
       {
         "disaggregation": "urbanisation",
         "category": "City",
-        "noOfRespondents": 568,
-        "yesPercent": 38,
-        "noPercent": 62
+        "noOfRespondents": 133,
+        "yesPercent": 23.9,
+        "noPercent": 76.1
       },
       {
         "disaggregation": "urbanisation",
         "category": "Town or village",
-        "noOfRespondents": 515,
-        "yesPercent": 46.4,
-        "noPercent": 53.6
+        "noOfRespondents": 87,
+        "yesPercent": 32.9,
+        "noPercent": 67.1
       },
       {
         "disaggregation": "education",
         "category": "Below secondary",
-        "noOfRespondents": 461,
-        "yesPercent": 46.7,
-        "noPercent": 53.3
+        "noOfRespondents": 73,
+        "yesPercent": 51.3,
+        "noPercent": 48.7
       },
       {
         "disaggregation": "education",
         "category": "Secondary and above",
-        "noOfRespondents": 605,
-        "yesPercent": 35.4,
-        "noPercent": 64.6
+        "noOfRespondents": 147,
+        "yesPercent": 16.1,
+        "noPercent": 83.9
       },
       {
         "disaggregation": "employment status",
         "category": "Employed",
-        "noOfRespondents": 376,
-        "yesPercent": 0,
-        "noPercent": 0
+        "noOfRespondents": 130,
+        "yesPercent": 15.6,
+        "noPercent": 84.4
       },
       {
         "disaggregation": "employment status",
         "category": "Not employed",
-        "noOfRespondents": 695,
-        "yesPercent": 0,
-        "noPercent": 0
+        "noOfRespondents": 90,
+        "yesPercent": 38.5,
+        "noPercent": 61.5
       },
       {
         "disaggregation": "household size",
         "category": "1-3",
-        "noOfRespondents": 458,
-        "yesPercent": 37,
-        "noPercent": 63
+        "noOfRespondents": 92,
+        "yesPercent": 15.8,
+        "noPercent": 84.2
       },
       {
         "disaggregation": "household size",
         "category": "4+",
-        "noOfRespondents": 625,
-        "yesPercent": 42.2,
-        "noPercent": 57.8
-      },
-      {
-        "disaggregation": "children in household",
-        "category": "With children",
-        "noOfRespondents": 672,
+        "noOfRespondents": 128,
         "yesPercent": 37,
         "noPercent": 63
       },
       {
         "disaggregation": "children in household",
+        "category": "With children",
+        "noOfRespondents": 131,
+        "yesPercent": 33.7,
+        "noPercent": 66.3
+      },
+      {
+        "disaggregation": "children in household",
         "category": "Without children",
-        "noOfRespondents": 411,
-        "yesPercent": 41.7,
-        "noPercent": 58.3
+        "noOfRespondents": 89,
+        "yesPercent": 17,
+        "noPercent": 83
       },
       {
         "disaggregation": "age (wb)",
         "category": "0-14",
-        "noOfRespondents": 260,
-        "yesPercent": 38.4,
-        "noPercent": 61.6
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       },
       {
         "disaggregation": "age (wb)",
         "category": "15-24",
         "noOfRespondents": 220,
-        "yesPercent": 25,
-        "noPercent": 75
+        "yesPercent": 25.2,
+        "noPercent": 74.8
       },
       {
         "disaggregation": "age (wb)",
         "category": "25-64",
-        "noOfRespondents": 506,
-        "yesPercent": 36,
-        "noPercent": 64
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       },
       {
         "disaggregation": "age (wb)",
         "category": "65+",
-        "noOfRespondents": 97,
-        "yesPercent": 87.2,
-        "noPercent": 12.8
+        "noOfRespondents": 0,
+        "yesPercent": null,
+        "noPercent": null
       }
     ]
   },

@@ -61,7 +61,7 @@ const whatTheScoreboardOffersCards = [
     title: 'Resources',
     description:
       'Country reports with integrated and policy-relevant analysis of Roma vulnerabilities.',
-    route: '/rsosurces',
+    route: '/resources',
     icon: '/imgs/03-resources.svg',
   },
 ];
